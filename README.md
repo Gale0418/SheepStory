@@ -8,10 +8,22 @@ This repository is designed around one practical rule:
 Do not make the AI write more. Make it remember, reason, face constraints, and only then write.
 ```
 
-## Current skill
+## Skill entrypoints
+
+This repo now supports two common layouts:
+
+```text
+SKILL.md                         # Root compatibility entrypoint
+skills/my-novel-writing/SKILL.md # Full skill implementation
+```
+
+Use the nested skill directly when your agent supports skill folders. Use the root `SKILL.md` when your agent only scans the repository root.
+
+## Current package
 
 ```text
 skills/my-novel-writing/
+├── README.md
 ├── SKILL.md
 └── references/
     ├── anti-ai-flavour.md
@@ -23,6 +35,24 @@ skills/my-novel-writing/
     ├── source-map.md
     ├── story-project-layout.md
     └── style-preservation.md
+```
+
+## Supporting files
+
+```text
+docs/
+├── fiction-skill-design.md
+└── quality-checklist.md
+
+examples/
+├── usage-prompts.md
+└── worked-outline-example.md
+
+templates/story-project/
+├── story.md
+├── characters/_template.md
+├── chapters/_template.md
+└── continuity/state.md
 ```
 
 ## Core rules
@@ -46,6 +76,28 @@ Use my-novel-writing to polish this dialogue without making it polite.
 Use my-novel-writing to design a genius-vs-genius scene with limited resources.
 ```
 
+If your agent only supports one root skill file, use:
+
+```text
+Use sheep-story to plan the next chapter.
+```
+
+## Quality checks
+
+Before treating a new version as release-ready, run through:
+
+```text
+docs/quality-checklist.md
+```
+
+The checklist includes tests for:
+
+- outline gate behavior
+- missing continuity behavior
+- conflict smoothing detection
+- fake genius rejection
+- anti-AI-flavour preservation
+
 ## Design notes
 
 The long design discussion is kept in:
@@ -59,3 +111,7 @@ The implementation mapping and source inspirations are in:
 ```text
 skills/my-novel-writing/references/source-map.md
 ```
+
+## License
+
+MIT. See `LICENSE`.
