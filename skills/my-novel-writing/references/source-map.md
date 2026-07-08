@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file records which external skill projects inspired each SheepStory module. It is a design map, not a verbatim copy plan.
+This file records which external skill projects and craft preferences inspired each SheepStory module. It is a design map, not a verbatim copy plan.
 
 ## Skill Mapping
 
@@ -13,7 +13,30 @@ This file records which external skill projects inspired each SheepStory module.
 | `continuity-check` / future `my-continuity-check` | `danjdewhurst/story-skills` + `haowjy/creative-writing-skills` story-memory concept | persistent story state, open questions, promises, object state, who knows what | Do not overbuild a database before markdown state files work |
 | `dialogue-checklist` / future `my-dialogue-polish` | `JoelLewis/skill-library` dialogue-craft concept | intention, obstacle, subtext, anti-exposition, read-aloud check | Do not force English screenwriting voice onto Chinese prose |
 | `anti-ai-flavour` + `style-preservation` / future `my-style-polish` | `d-wwei/great-writer` humanizer + `haowjy/creative-writing-skills` style-creator concept | anti-AI flavour, oral test, rhythm variation, style learning, author texture | Do not over-polish fiction into sterile commercial copy |
+| `cinematic-scene-texture` / future `my-scene-texture` | User preference for detailed military / hard-SF / cinematic prose such as To the Stars, Halo novels, and Project Hail Mary at the broad craft level | concrete objects, close-to-wide visual movement, POV-filtered sensory detail, worldbuilding through action/friction/desire | Do not copy protected prose, franchise lore, institutions, plots, or distinctive author voice |
 | `genius-strategy` / future `my-genius-strategy` | Derived from the SheepStory discussion | constrained genius, adversarial red-team, battlefield anomaly, twist budget | Do not portray genius as perfect prediction or enemy stupidity |
+
+## Copyright Boundary
+
+SheepStory may use broad, non-copyrightable craft principles:
+
+- concrete daily objects
+- scene-contained worldbuilding
+- close-to-wide visual movement
+- hard-SF friction and constraints
+- military chain-of-command pressure
+- sensory detail through POV
+- character longing attached to setting
+
+SheepStory must not copy:
+
+- protected passages
+- distinctive phrasing
+- named franchise lore
+- specific institutions from another work
+- plot sequences
+- characters
+- scene structure that is too close to a protected source
 
 ## License Notes
 
@@ -37,12 +60,13 @@ Version 1 keeps one practical skill:
 skills/my-novel-writing/
 ```
 
-It internally contains the five planned modules:
+It internally contains the planned modules:
 
 ```text
 story init / layout
 chapter writing / outline gate
 continuity check
+scene texture
 dialogue polish
 style polish / anti-AI flavour
 genius strategy
@@ -54,6 +78,7 @@ Future versions may split them into independent skills:
 my-story-init/
 my-chapter-writing/
 my-continuity-check/
+my-scene-texture/
 my-dialogue-polish/
 my-style-polish/
 my-genius-strategy/
@@ -61,4 +86,4 @@ my-genius-strategy/
 
 ## Principle
 
-Borrow structure. Rewrite method. Keep attribution. Avoid license fog.
+Borrow structure. Rewrite method. Keep attribution. Avoid license fog. Do not copy protected expression.
