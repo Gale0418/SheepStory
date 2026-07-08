@@ -19,6 +19,7 @@ First reconstruct current continuity state.
 Then produce a beat outline.
 Each beat must include desire, obstacle, cost, turn, and irreversible change.
 Also include a Scene Texture Plan when the chapter needs atmosphere, setting, technology, military detail, or worldbuilding.
+If the chapter includes science, engineering, survival, or equipment constraints, include a Technical Reasoning Beat.
 Do not write prose until I explicitly approve the outline.
 ```
 
@@ -27,7 +28,7 @@ Do not write prose until I explicitly approve the outline.
 ```text
 大綱 OK，照這個寫。
 Use my-novel-writing to draft the chapter.
-After drafting, run continuity, conflict pressure, scene texture, dialogue, style preservation, and anti-AI-flavour checks before showing the final text.
+After drafting, run continuity, conflict pressure, scene texture, technical explanation, dialogue, style preservation, and anti-AI-flavour checks before showing the final text.
 ```
 
 ## 4. Continuity Check
@@ -81,7 +82,25 @@ Show technology and systems through maintenance, checklists, constraints, latenc
 Do not start with specs or lore unless a character is actively using them under pressure.
 ```
 
-## 10. Genius-vs-Genius Strategy
+## 10. Technical Explanation Voice
+
+```text
+Use my-novel-writing to add technical explanation voice.
+The explanation must be caused by a scene problem and must change an action, decision, risk, or emotional beat.
+Use practical reasoning, measurements, uncertainty, dry crisis humor, and first-person competence if appropriate.
+Do not make it sound like a textbook.
+Do not copy any specific copyrighted passage or recognizable author voice.
+```
+
+## 11. Worked Reasoning Beat
+
+```text
+Use my-novel-writing to plan a technical reasoning beat.
+Include immediate problem, observed clue, known rule, quick estimate, uncertainty, decision, risk if wrong, and human reaction.
+Make the reasoning practical and scene-driven, not decorative.
+```
+
+## 12. Genius-vs-Genius Strategy
 
 ```text
 Use my-novel-writing to design a genius-vs-genius confrontation.
@@ -91,7 +110,7 @@ Red-team the protagonist's plan before choosing the best available plan.
 No perfect plan. No enemy stupidity.
 ```
 
-## 11. Battlefield Anomaly
+## 13. Battlefield Anomaly
 
 ```text
 Use my-novel-writing to plan a tactical scene where the protagonist's model fails.
@@ -99,7 +118,7 @@ Define expected enemy behavior, hidden anomaly, model failure, damage control, a
 The genius may fail, but the failure must teach them something.
 ```
 
-## 12. Twist Budget
+## 14. Twist Budget
 
 ```text
 Use my-novel-writing to review this chapter for twist budget.
