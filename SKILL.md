@@ -1,6 +1,6 @@
 ---
 name: sheep-story
-description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, or polishing fiction with outline approval, story state, conflict pressure, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
+description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, or polishing fiction with outline approval, story state, conflict pressure, cinematic scene texture, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
 ---
 
 # SheepStory
@@ -25,6 +25,7 @@ Before writing prose, verify:
 Do I know the current story state?
 Do I know the scene goal?
 Do I know the conflict pressure?
+Do I know the scene texture plan?
 Has the user approved the outline?
 ```
 
@@ -38,6 +39,7 @@ When available, load and follow:
 - `skills/my-novel-writing/references/outline-gate.md`
 - `skills/my-novel-writing/references/continuity-check.md`
 - `skills/my-novel-writing/references/conflict-pressure.md`
+- `skills/my-novel-writing/references/cinematic-scene-texture.md`
 - `skills/my-novel-writing/references/genius-strategy.md`
 - `skills/my-novel-writing/references/dialogue-checklist.md`
 - `skills/my-novel-writing/references/style-preservation.md`
@@ -53,13 +55,14 @@ When available, load and follow:
 5. No perfect plan: strategy must be the best available plan under current constraints.
 6. No enemy stupidity: competent opponents get a red-team pass.
 7. No over-polishing: remove AI flavour without sterilizing the author's voice.
+8. No detached worldbuilding lecture: setting and systems must enter through scene texture.
 
 ## Default Workflow
 
-1. Identify task stage: setup, planning, drafting, review, dialogue polish, style polish, or genius strategy.
+1. Identify task stage: setup, planning, drafting, review, dialogue polish, style polish, scene texture, or genius strategy.
 2. Reconstruct current story state.
-3. Produce a discussion outline.
-4. Run continuity, conflict, and relevant strategy checks.
+3. Produce a discussion outline with scene texture when setting or worldbuilding matters.
+4. Run continuity, conflict, texture, and relevant strategy checks.
 5. Ask for explicit approval.
 6. Draft only after approval.
 7. Run post-draft checks.
@@ -79,4 +82,4 @@ Generic reactions like 「嗯嗯」「好像可以」「有趣」「繼續想」
 
 ## Principle
 
-SheepStory is not for making AI write more. It is for making AI remember, reason, face constraints, and only then write.
+SheepStory is not for making AI write more. It is for making AI remember, reason, face constraints, see the scene, and only then write.
