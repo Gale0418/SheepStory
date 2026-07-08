@@ -35,7 +35,8 @@ skills/my-novel-writing/
     ├── outline-gate.md
     ├── source-map.md
     ├── story-project-layout.md
-    └── style-preservation.md
+    ├── style-preservation.md
+    └── technical-explanation-voice.md
 ```
 
 ## Supporting files
@@ -66,6 +67,7 @@ templates/story-project/
 6. No enemy stupidity: competent opponents get a red-team pass.
 7. No over-polishing: remove AI flavour without sterilizing the author's voice.
 8. No detached worldbuilding lecture: setting and systems must enter through scene texture.
+9. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
 
 ## Recommended use
 
@@ -77,6 +79,7 @@ Use my-novel-writing to continuity-check this outline.
 Use my-novel-writing to polish this dialogue without making it polite.
 Use my-novel-writing to design a genius-vs-genius scene with limited resources.
 Use my-novel-writing to add cinematic scene texture without story-external worldbuilding lectures.
+Use my-novel-writing to add technical reasoning with dry crisis humor and practical stakes.
 ```
 
 If your agent only supports one root skill file, use:
@@ -96,7 +99,17 @@ SheepStory can be steered toward detailed, cinematic, lived-in prose where world
 - close-to-wide visual movement
 - character longing and denial
 
-It must not copy any specific copyrighted prose, franchise setting, institution, plot, or author voice. The goal is to borrow broad craft techniques, not protected expression.
+For hard-SF, engineering, survival, or military scenes, SheepStory can also use technical explanation voice:
+
+- practical calculations
+- material limits
+- equipment constraints
+- measurement and anomaly detection
+- dry humor under pressure
+- first-person competence with uncertainty
+- explanation that changes the next action
+
+It must not copy any specific copyrighted prose, franchise setting, institution, plot, character, or author voice. The goal is to borrow broad craft techniques, not protected expression.
 
 ## Quality checks
 
@@ -113,6 +126,7 @@ The checklist includes tests for:
 - conflict smoothing detection
 - fake genius rejection
 - scene texture without lore dumps
+- technical explanation with scene consequence
 - anti-AI-flavour preservation
 
 ## Design notes
