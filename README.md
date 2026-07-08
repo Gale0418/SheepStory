@@ -1,11 +1,11 @@
 # SheepStory
 
-SheepStory is a fiction-writing Agent Skill project for outline-first, continuity-safe, conflict-aware AI-assisted novel writing.
+SheepStory is a fiction-writing Agent Skill project for outline-first, continuity-safe, conflict-aware, scene-textured AI-assisted novel writing.
 
 This repository is designed around one practical rule:
 
 ```text
-Do not make the AI write more. Make it remember, reason, face constraints, and only then write.
+Do not make the AI write more. Make it remember, reason, see the scene, face constraints, and only then write.
 ```
 
 ## Skill entrypoints
@@ -27,6 +27,7 @@ skills/my-novel-writing/
 ├── SKILL.md
 └── references/
     ├── anti-ai-flavour.md
+    ├── cinematic-scene-texture.md
     ├── conflict-pressure.md
     ├── continuity-check.md
     ├── dialogue-checklist.md
@@ -64,6 +65,7 @@ templates/story-project/
 5. No perfect plan: strategy must be the best available plan under current constraints.
 6. No enemy stupidity: competent opponents get a red-team pass.
 7. No over-polishing: remove AI flavour without sterilizing the author's voice.
+8. No detached worldbuilding lecture: setting and systems must enter through scene texture.
 
 ## Recommended use
 
@@ -74,6 +76,7 @@ Use my-novel-writing to plan the next chapter.
 Use my-novel-writing to continuity-check this outline.
 Use my-novel-writing to polish this dialogue without making it polite.
 Use my-novel-writing to design a genius-vs-genius scene with limited resources.
+Use my-novel-writing to add cinematic scene texture without story-external worldbuilding lectures.
 ```
 
 If your agent only supports one root skill file, use:
@@ -81,6 +84,19 @@ If your agent only supports one root skill file, use:
 ```text
 Use sheep-story to plan the next chapter.
 ```
+
+## Style target
+
+SheepStory can be steered toward detailed, cinematic, lived-in prose where worldbuilding emerges from:
+
+- body and habit
+- daily objects
+- rooms, streets, vehicles, stations, ships, or battlefields
+- friction, cost, scarcity, latency, maintenance, or surveillance
+- close-to-wide visual movement
+- character longing and denial
+
+It must not copy any specific copyrighted prose, franchise setting, institution, plot, or author voice. The goal is to borrow broad craft techniques, not protected expression.
 
 ## Quality checks
 
@@ -96,6 +112,7 @@ The checklist includes tests for:
 - missing continuity behavior
 - conflict smoothing detection
 - fake genius rejection
+- scene texture without lore dumps
 - anti-AI-flavour preservation
 
 ## Design notes
