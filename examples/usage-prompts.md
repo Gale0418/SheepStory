@@ -18,6 +18,7 @@ Use my-novel-writing to plan the next chapter.
 First reconstruct current continuity state.
 Then produce a beat outline.
 Each beat must include desire, obstacle, cost, turn, and irreversible change.
+Also include a Scene Texture Plan when the chapter needs atmosphere, setting, technology, military detail, or worldbuilding.
 Do not write prose until I explicitly approve the outline.
 ```
 
@@ -26,7 +27,7 @@ Do not write prose until I explicitly approve the outline.
 ```text
 大綱 OK，照這個寫。
 Use my-novel-writing to draft the chapter.
-After drafting, run continuity, conflict pressure, dialogue, style preservation, and anti-AI-flavour checks before showing the final text.
+After drafting, run continuity, conflict pressure, scene texture, dialogue, style preservation, and anti-AI-flavour checks before showing the final text.
 ```
 
 ## 4. Continuity Check
@@ -62,7 +63,25 @@ Preserve roughness, ambiguity, narrator rhythm, and character voice.
 Do not over-polish.
 ```
 
-## 8. Genius-vs-Genius Strategy
+## 8. Cinematic Scene Texture
+
+```text
+Use my-novel-writing to add cinematic scene texture.
+Do not copy any specific copyrighted source.
+Do not add story-external encyclopedia worldbuilding.
+Reveal the world through body, objects, room/street/vehicle detail, windows/screens/vistas, daily friction, sensory layers, and character longing.
+Use close-to-wide movement: body → object → room → vista → wider world → desire.
+```
+
+## 9. Hard-SF / Military Texture
+
+```text
+Use my-novel-writing to improve this hard-SF or military scene.
+Show technology and systems through maintenance, checklists, constraints, latency, heat, oxygen, ammunition, chain-of-command friction, and what the equipment cannot do.
+Do not start with specs or lore unless a character is actively using them under pressure.
+```
+
+## 10. Genius-vs-Genius Strategy
 
 ```text
 Use my-novel-writing to design a genius-vs-genius confrontation.
@@ -72,7 +91,7 @@ Red-team the protagonist's plan before choosing the best available plan.
 No perfect plan. No enemy stupidity.
 ```
 
-## 9. Battlefield Anomaly
+## 11. Battlefield Anomaly
 
 ```text
 Use my-novel-writing to plan a tactical scene where the protagonist's model fails.
@@ -80,7 +99,7 @@ Define expected enemy behavior, hidden anomaly, model failure, damage control, a
 The genius may fail, but the failure must teach them something.
 ```
 
-## 10. Twist Budget
+## 12. Twist Budget
 
 ```text
 Use my-novel-writing to review this chapter for twist budget.
