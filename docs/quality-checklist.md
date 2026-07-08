@@ -22,6 +22,9 @@ Use this checklist before calling the skill release-ready.
 - [ ] Scenes with setting or worldbuilding include a scene texture plan.
 - [ ] Worldbuilding enters through action, objects, friction, sensory detail, POV, or desire.
 - [ ] The skill rejects story-external encyclopedia lore dumps unless explicitly requested.
+- [ ] Technical explanation is caused by a scene problem.
+- [ ] Technical explanation changes action, decision, risk, or emotion.
+- [ ] Technical explanation preserves human voice, uncertainty, and pressure.
 - [ ] Genius characters require domain, observation, reasoning chain, options, cost, and blind spot.
 - [ ] Competent opponents receive a red-team pass.
 - [ ] Strategy scenes avoid perfect resources and perfect information.
@@ -111,7 +114,22 @@ Expected behavior:
 - Shows technology through constraints, maintenance, checklists, heat, oxygen, latency, ammunition, damage control, or chain-of-command friction.
 - Does not start with specs detached from action.
 
-### 7. Over-Polish Test
+### 7. Technical Explanation Test
+
+Prompt:
+
+```text
+Use my-novel-writing to add technical explanation to this survival scene.
+```
+
+Expected behavior:
+
+- Identifies immediate problem, observed clue, principle, estimate, uncertainty, decision, risk, and human reaction.
+- Technical explanation changes what the character does next.
+- Does not become decorative textbook exposition.
+- Preserves human voice and pressure.
+
+### 8. Over-Polish Test
 
 Prompt:
 
@@ -138,6 +156,7 @@ A release-ready version should include:
 - [ ] Quality checklist
 - [ ] At least one worked example
 - [ ] Scene texture gate
+- [ ] Technical explanation gate
 
 ## Principle
 
