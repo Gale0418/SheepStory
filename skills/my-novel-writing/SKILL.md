@@ -1,6 +1,6 @@
 ---
 name: my-novel-writing
-description: Use when planning, drafting, revising, continuity-checking, or polishing fiction where outline approval, story state, conflict pressure, scene texture, authorial voice, or genius-level strategy matters. This skill is for novels, serial fiction, scenes, chapters, dialogue, and story-world continuity.
+description: Use when planning, drafting, revising, continuity-checking, or polishing fiction where outline approval, story state, conflict pressure, scene texture, technical explanation voice, authorial voice, or genius-level strategy matters. This skill is for novels, serial fiction, scenes, chapters, dialogue, and story-world continuity.
 ---
 
 # My Novel Writing
@@ -9,7 +9,7 @@ description: Use when planning, drafting, revising, continuity-checking, or poli
 
 This skill helps write fiction without letting the AI become a smooth, forgetful, over-polite content machine.
 
-It is designed to prevent eight common failures:
+It is designed to prevent nine common failures:
 
 1. Drafting prose before the outline is approved.
 2. Forgetting previous plot, character state, emotional consequences, object state, or timeline.
@@ -19,6 +19,7 @@ It is designed to prevent eight common failures:
 6. Making competent opponents stupid so the protagonist can win.
 7. Removing AI flavour so aggressively that the author's voice becomes sterile.
 8. Explaining worldbuilding outside the scene instead of revealing it through lived details.
+9. Adding science, math, or engineering explanation that does not change a scene decision, risk, action, or emotional beat.
 
 ## When to Use
 
@@ -29,6 +30,7 @@ Use this skill when the user asks to:
 - write or continue fiction prose
 - revise a chapter while preserving voice
 - add cinematic detail, atmosphere, visual continuity, or lived-in worldbuilding
+- add practical science, engineering, military, or hard-SF reasoning in character voice
 - check continuity, timeline, promises, payoffs, or character knowledge
 - polish dialogue that feels expository, too polite, or too direct
 - remove AI flavour from prose
@@ -53,6 +55,7 @@ Do I know the current story state?
 Do I know the scene goal?
 Do I know the conflict pressure?
 Do I know the scene texture plan?
+Do I know whether technical reasoning is needed and what action it changes?
 Has the user approved the outline?
 ```
 
@@ -83,6 +86,7 @@ Read:
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
 - `references/cinematic-scene-texture.md` when atmosphere, setting, visual detail, or worldbuilding matters
+- `references/technical-explanation-voice.md` when science, engineering, math, hard-SF, equipment, or practical reasoning matters
 - `references/genius-strategy.md` when high-intelligence planning or tactics are involved
 
 Output a discussion outline and stop. Do not draft prose until explicit approval.
@@ -97,6 +101,7 @@ Before drafting, read:
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
 - `references/cinematic-scene-texture.md`
+- `references/technical-explanation-voice.md` when the scene includes calculations, scientific explanation, engineering improvisation, equipment constraints, or crisis competence
 - `references/style-preservation.md`
 - `references/dialogue-checklist.md` if the scene has dialogue
 - `references/genius-strategy.md` if the scene contains high-intelligence tactics, mystery, deduction, or mastermind planning
@@ -112,6 +117,7 @@ Read:
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
 - `references/cinematic-scene-texture.md` when the prose lacks image, atmosphere, or lived-in worldbuilding
+- `references/technical-explanation-voice.md` when technical explanation feels like a textbook, useless jargon, or disconnected research
 - `references/dialogue-checklist.md`
 - `references/style-preservation.md`
 - `references/anti-ai-flavour.md`
@@ -120,13 +126,14 @@ Output concrete findings first. Include location, issue, why it fails, and how t
 
 ### 5. Style Polish / Anti-AI Flavour
 
-Use when the user asks to remove AI flavour, make text more human, preserve roughness, add scene texture, or avoid generic writing.
+Use when the user asks to remove AI flavour, make text more human, preserve roughness, add scene texture, preserve technical voice, or avoid generic writing.
 
 Read:
 
 - `references/anti-ai-flavour.md`
 - `references/style-preservation.md`
 - `references/cinematic-scene-texture.md` when the passage needs concrete image, sensory detail, or scene-contained worldbuilding
+- `references/technical-explanation-voice.md` when the passage needs technical reasoning, dry humor, or practical competence
 
 Never over-polish. Fiction should feel chosen, not sterilized.
 
@@ -193,6 +200,21 @@ Avoid:
 - institutional explanations before the character touches their consequences
 - lore that does not change action, mood, choice, or tension
 
+### Technical Explanation Must Change the Scene
+
+If a scene includes science, math, engineering, military procedure, or practical reasoning, the explanation must be motivated by scene pressure.
+
+Before including technical explanation, know:
+
+- the immediate problem
+- the observed clue
+- the known rule or remembered principle
+- the estimate, calculation, or test
+- the uncertainty or safety margin
+- the action, decision, risk, or emotional beat changed by the result
+
+If nothing changes, cut or compress the explanation.
+
 ### No Peaceful Scene Unless Earned
 
 A peaceful scene is allowed only if it creates contrast, dread, intimacy, false safety, setup, or future damage.
@@ -231,6 +253,7 @@ After drafting prose, run an anti-AI-flavour pass:
 - make dialogue pursue intention against obstacle
 - preserve ambiguity, roughness, rhythm, and authorial texture
 - keep concrete scene texture that carries world, character, and desire
+- keep technical explanation practical, pressured, and voiced
 
 Do not make every sentence elegant. Do not turn fiction into sanitized content.
 
@@ -239,11 +262,11 @@ Do not make every sentence elegant. Do not turn fiction into sanitized content.
 1. Identify the stage.
 2. Load the minimum required reference files.
 3. Reconstruct story state before any prose task.
-4. Produce a discussion outline with scene texture when needed.
-5. Run continuity, conflict, texture, and relevant strategy gates on the outline.
+4. Produce a discussion outline with scene texture and technical reasoning beats when needed.
+5. Run continuity, conflict, texture, technical explanation, and relevant strategy gates on the outline.
 6. Ask for explicit approval.
 7. Draft only after approval.
-8. Run post-draft checks: continuity, conflict, scene texture, dialogue, style preservation, anti-AI flavour.
+8. Run post-draft checks: continuity, conflict, scene texture, technical explanation, dialogue, style preservation, anti-AI flavour.
 9. Present the result and list any unresolved risks.
 
 ## Output Expectations
@@ -268,6 +291,16 @@ When planning, use this shape:
 - Emotional filter:
 - What the character wants from this place:
 - What this place denies them:
+
+### Technical Reasoning Beat
+- Immediate problem:
+- Observed clue:
+- Known rule / remembered principle:
+- Quick estimate:
+- Uncertainty / margin:
+- Decision:
+- Risk if wrong:
+- Human reaction:
 
 ### Beats
 
@@ -303,6 +336,7 @@ When drafting, produce prose only after the user approves the outline.
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
 - `references/cinematic-scene-texture.md`
+- `references/technical-explanation-voice.md`
 - `references/genius-strategy.md`
 - `references/dialogue-checklist.md`
 - `references/style-preservation.md`
