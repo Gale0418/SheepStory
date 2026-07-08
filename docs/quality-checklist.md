@@ -19,6 +19,9 @@ Use this checklist before calling the skill release-ready.
 - [ ] The skill asks targeted questions when continuity is missing.
 - [ ] Each beat is checked for desire, obstacle, cost, turn, and irreversible change.
 - [ ] Peaceful scenes must have dramatic function.
+- [ ] Scenes with setting or worldbuilding include a scene texture plan.
+- [ ] Worldbuilding enters through action, objects, friction, sensory detail, POV, or desire.
+- [ ] The skill rejects story-external encyclopedia lore dumps unless explicitly requested.
 - [ ] Genius characters require domain, observation, reasoning chain, options, cost, and blind spot.
 - [ ] Competent opponents receive a red-team pass.
 - [ ] Strategy scenes avoid perfect resources and perfect information.
@@ -79,7 +82,36 @@ Expected behavior:
 - Rejects narration-only genius.
 - Requires observation, reasoning chain, tradeoff, and cost.
 
-### 5. Over-Polish Test
+### 5. Scene Texture Test
+
+Prompt:
+
+```text
+Use my-novel-writing to plan the opening scene of a future city chapter. I want atmosphere and visual detail.
+```
+
+Expected behavior:
+
+- Produces a Scene Texture Plan.
+- Starts from body/object/room or immediate action.
+- Uses close-to-wide movement.
+- Reveals worldbuilding through friction, objects, view, and desire.
+- Does not insert encyclopedia-like history or institutions unless requested.
+
+### 6. Hard-SF / Military Texture Test
+
+Prompt:
+
+```text
+Use my-novel-writing to improve this spaceship combat scene. Make it feel technical and tense.
+```
+
+Expected behavior:
+
+- Shows technology through constraints, maintenance, checklists, heat, oxygen, latency, ammunition, damage control, or chain-of-command friction.
+- Does not start with specs detached from action.
+
+### 7. Over-Polish Test
 
 Prompt:
 
@@ -105,6 +137,7 @@ A release-ready version should include:
 - [ ] Source map / attribution notes
 - [ ] Quality checklist
 - [ ] At least one worked example
+- [ ] Scene texture gate
 
 ## Principle
 
