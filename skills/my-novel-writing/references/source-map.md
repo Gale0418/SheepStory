@@ -13,13 +13,13 @@ This file records which external skill projects and craft preferences inspired e
 | `continuity-check` / future `my-continuity-check` | `danjdewhurst/story-skills` + `haowjy/creative-writing-skills` story-memory concept | persistent story state, open questions, promises, object state, who knows what | Do not overbuild a database before markdown state files work |
 | `dialogue-checklist` / future `my-dialogue-polish` | `JoelLewis/skill-library` dialogue-craft concept | intention, obstacle, subtext, anti-exposition, read-aloud check | Do not force English screenwriting voice onto Chinese prose |
 | `anti-ai-flavour` + `style-preservation` / future `my-style-polish` | `d-wwei/great-writer` humanizer + `haowjy/creative-writing-skills` style-creator concept | anti-AI flavour, oral test, rhythm variation, style learning, author texture | Do not over-polish fiction into sterile commercial copy |
-| `cinematic-scene-texture` / future `my-scene-texture` | User preference for detailed military / hard-SF / cinematic prose such as To the Stars, Halo novels, and Project Hail Mary at the broad craft level | concrete objects, close-to-wide visual movement, POV-filtered sensory detail, worldbuilding through action/friction/desire | Do not copy protected prose, franchise lore, institutions, plots, or distinctive author voice |
-| `technical-explanation-voice` / future `my-technical-voice` | User preference for hard-SF technical reasoning, survival engineering, crisis humor, and competent first-person explanation at the broad craft level | practical calculations, materials, physical constraints, measurement, anomaly detection, dry humor under pressure, explanation that changes action | Do not copy protected passages, distinctive phrasing, named scenes, franchise devices, plot beats, or author-specific voice |
+| `cinematic-scene-texture` / future `my-scene-texture` | User preference for detailed military / hard-SF / cinematic prose such as To the Stars, Halo novels, and Project Hail Mary at the broad craft level | concrete objects, close-to-wide visual movement, POV-filtered sensory detail, worldbuilding through action/friction/desire | Do not reproduce one source's exact wording, named setting, character roster, or plot beats |
+| `technical-explanation-voice` / future `my-technical-voice` | User preference for hard-SF technical reasoning, survival engineering, crisis humor, and competent first-person explanation at the broad craft level | practical calculations, materials, physical constraints, measurement, anomaly detection, dry humor under pressure, explanation that changes action | Do not imitate one source so closely that it becomes recognizable as that specific source |
 | `genius-strategy` / future `my-genius-strategy` | Derived from the SheepStory discussion | constrained genius, adversarial red-team, battlefield anomaly, twist budget | Do not portray genius as perfect prediction or enemy stupidity |
 
-## Copyright Boundary
+## Style Boundary
 
-SheepStory may use broad, non-copyrightable craft principles:
+Use broad craft principles:
 
 - concrete daily objects
 - scene-contained worldbuilding
@@ -32,16 +32,16 @@ SheepStory may use broad, non-copyrightable craft principles:
 - calculations, measurements, and material properties that change decisions
 - dry crisis humor as character pressure release
 
-SheepStory must not copy:
+Avoid source-cloning:
 
-- protected passages
+- exact or near-exact lines
 - distinctive phrasing
 - named franchise lore
 - specific institutions from another work
 - plot sequences
 - characters
-- scene structure that is too close to a protected source
-- author-specific voice or recognizable signature phrasing
+- too-similar scene structure
+- recognizable author-signature voice
 
 ## License Notes
 
@@ -93,4 +93,4 @@ my-genius-strategy/
 
 ## Principle
 
-Borrow structure. Rewrite method. Keep attribution. Avoid license fog. Do not copy protected expression.
+Borrow structure. Rewrite method. Keep attribution. Avoid source-cloning.
