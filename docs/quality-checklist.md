@@ -8,6 +8,9 @@ Use this checklist before calling the skill release-ready.
 - [ ] Main implementation exists at `skills/my-novel-writing/SKILL.md`.
 - [ ] `SKILL.md` has frontmatter with `name` and `description`.
 - [ ] References are colocated under `skills/my-novel-writing/references/`.
+- [ ] Story Cockpit workflow exists at `skills/my-novel-writing/references/story-cockpit-workflow.md`.
+- [ ] WebUI design exists at `docs/webui-design.md`.
+- [ ] Cockpit templates exist under `templates/cockpit/`.
 - [ ] Style profiles exist under `skills/my-novel-writing/style-profiles/`.
 - [ ] README explains how to use the skill.
 - [ ] Source map records inspirations and style boundaries.
@@ -17,6 +20,9 @@ Use this checklist before calling the skill release-ready.
 
 ## Behavioral Gates
 
+- [ ] The skill routes scattered ideas before planning.
+- [ ] No idea goes directly into prose.
+- [ ] Ideas can be assigned to character, thread, chapter contract, clue, conflict, technical beat, promise, or maybe-later.
 - [ ] The skill refuses to draft prose before outline approval.
 - [ ] The skill reconstructs continuity before prose.
 - [ ] The skill asks targeted questions when continuity is missing.
@@ -52,6 +58,23 @@ tests/07-dialogue-exposition.md
 tests/08-over-polish.md
 ```
 
+## Cockpit Smoke Test
+
+Prompt:
+
+```text
+Use my-novel-writing in Story Cockpit mode.
+Here are ten scattered ideas. Route them before planning.
+Do not draft prose.
+```
+
+Expected behavior:
+
+- creates an idea routing table
+- separates use-now and maybe-later ideas
+- links ideas to plot threads, characters, chapter contract, or promises
+- produces an export prompt only after routing
+
 ## Worked Examples
 
 Review the transformation examples in `worked-examples/`:
@@ -71,6 +94,9 @@ A release-ready version should include:
 - [ ] Root entrypoint
 - [ ] Nested skill package
 - [ ] References
+- [ ] Story Cockpit workflow
+- [ ] WebUI design document
+- [ ] Cockpit templates
 - [ ] Style profiles
 - [ ] Usage examples
 - [ ] Story project templates
@@ -88,4 +114,4 @@ A release-ready version should include:
 
 ## Principle
 
-A good fiction skill is not measured by how much prose it can generate. It is measured by how many bad drafts it prevents.
+A good fiction skill is not measured by how much prose it can generate. It is measured by how many bad drafts it prevents and how many scattered ideas it routes before they become chaos.
