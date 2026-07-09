@@ -1,13 +1,13 @@
 ---
 name: my-novel-writing
-description: Use when planning, drafting, revising, continuity-checking, or polishing fiction where outline approval, story state, conflict pressure, scene texture, technical explanation voice, review quality, memory updates, authorial voice, or genius-level strategy matters. This skill is for novels, serial fiction, scenes, chapters, dialogue, and story-world continuity.
+description: Use when planning, drafting, revising, continuity-checking, polishing, reviewing, or organizing fiction where outline approval, story state, idea routing, chapter contracts, conflict pressure, scene texture, technical explanation voice, memory updates, authorial voice, or genius-level strategy matters. This skill supports both prose work and SheepStory Cockpit workflows for preventing scattered ideas from breaking continuity.
 ---
 
 # My Novel Writing
 
 ## Purpose
 
-This skill helps write fiction without letting the AI become a smooth, forgetful, over-polite content machine.
+This skill helps write and organize fiction without letting the AI become a smooth, forgetful, over-polite content machine.
 
 It is designed to prevent ten common failures:
 
@@ -20,15 +20,18 @@ It is designed to prevent ten common failures:
 7. Removing AI flavour so aggressively that the author's voice becomes sterile.
 8. Explaining worldbuilding outside the scene instead of revealing it through lived details.
 9. Adding science, math, or engineering explanation that does not change a scene decision, risk, action, or emotional beat.
-10. Reviewing drafts without naming failure modes, preservation targets, and memory updates.
+10. Letting scattered ideas enter prose without being routed to story purpose, chapter contract, or continuity state.
 
 ## When to Use
 
 Use this skill when the user asks to:
 
+- capture, sort, or route scattered story ideas
+- design a WebUI / dashboard / story cockpit
+- create a chapter contract
 - start a fiction project or story bible
 - plan a chapter, scene, arc, reveal, or confrontation
-- write or continue fiction prose
+- write or continue fiction prose after approval
 - revise a chapter while preserving voice
 - add cinematic detail, atmosphere, visual continuity, or lived-in worldbuilding
 - add practical science, engineering, military, or hard-SF reasoning in character voice
@@ -36,9 +39,8 @@ Use this skill when the user asks to:
 - polish dialogue that feels expository, too polite, or too direct
 - remove AI flavour from prose
 - review a draft and identify what fails and what to preserve
+- update long-story memory after a chapter
 - write genius, strategist, detective, mastermind, scientist, inventor, tactician, or high-IQ antagonist scenes
-- design a plan under limited resources
-- make sure a twist has setup, cost, and consequences
 
 Do not use this skill for:
 
@@ -50,11 +52,12 @@ Do not use this skill for:
 
 ## Operating Law
 
-Before writing prose, ask:
+Before writing prose, verify:
 
 ```text
 Do I know the current story state?
 Do I know the chapter contract or scene goal?
+Do I know which ideas belong here and which must wait?
 Do I know the conflict pressure?
 Do I know the scene texture plan?
 Do I know whether technical reasoning is needed and what action it changes?
@@ -65,7 +68,27 @@ If any answer is no, do not draft prose yet.
 
 ## Stage Selection
 
-First route the task to the right stage.
+### 0. Story Cockpit / Idea Routing
+
+Use when the user has scattered ideas, wants a WebUI, does not know what they want, or needs to prevent plot fragmentation.
+
+Read:
+
+- `references/story-cockpit-workflow.md`
+- `references/voice-calibration.md`
+- `references/story-memory-ops.md`
+- `references/chapter-contract.md`
+
+Output one of:
+
+- idea routing table
+- plot thread map
+- story state checklist
+- chapter contract
+- export prompt for `my-novel-writing`
+- WebUI / data model guidance
+
+Do not draft prose in this stage.
 
 ### 1. Project Setup
 
@@ -74,6 +97,7 @@ Use when the user wants to start a new story, organize a long story, or create r
 Read:
 
 - `references/story-project-layout.md`
+- `references/story-cockpit-workflow.md`
 - `references/story-memory-ops.md`
 - `references/voice-calibration.md`
 - `references/source-map.md` when explaining what inspired the structure
@@ -87,6 +111,7 @@ Use when the user is deciding what a chapter, scene, arc, or reveal should do be
 Read:
 
 - `references/voice-calibration.md`
+- `references/story-cockpit-workflow.md` if ideas need routing
 - `references/chapter-contract.md` for chapters, turning points, or complex scenes
 - `references/outline-gate.md`
 - `references/continuity-check.md`
@@ -125,8 +150,8 @@ Read:
 - `references/failure-modes.md`
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
-- `references/cinematic-scene-texture.md` when the prose lacks image, atmosphere, or lived-in worldbuilding
-- `references/technical-explanation-voice.md` when technical explanation feels like a textbook, useless jargon, or disconnected research
+- `references/cinematic-scene-texture.md`
+- `references/technical-explanation-voice.md`
 - `references/dialogue-checklist.md`
 - `references/style-preservation.md`
 - `references/anti-ai-flavour.md`
@@ -169,9 +194,24 @@ When the user requests a specific texture, optionally load a profile from `style
 - `style-profiles/light-novel-dialogue.md`
 - `style-profiles/dark-strategy.md`
 
-Profiles are preferences, not hard rules. The current story state and user instructions take priority.
+Profiles are preferences, not hard rules. Current story state and user instructions take priority.
 
 ## Hard Rules
+
+### No Idea Goes Directly Into Prose
+
+Every new idea must be routed to at least one of:
+
+- character
+- plot thread
+- chapter contract
+- worldbuilding rule
+- technical reasoning beat
+- conflict pressure
+- foreshadowing / promise
+- maybe-later pile
+
+If an idea has no story purpose yet, keep it in Idea Inbox or maybe-later.
 
 ### Outline Approval Gate
 
@@ -197,17 +237,7 @@ If the context is missing, produce a continuity question list instead of draftin
 
 For long, high-continuity, tactical, technical, or emotional turning-point chapters, create a chapter contract before the beat outline.
 
-The contract must identify:
-
-- what the chapter must accomplish
-- what it must not do
-- required continuity
-- required emotional change
-- required conflict pressure
-- required scene texture
-- required technical reasoning, if any
-- forbidden shortcuts
-- end state
+The contract must identify what the chapter must accomplish, what it must not do, which ideas are allowed, which ideas must wait, required continuity, emotional change, conflict pressure, scene texture, technical reasoning, forbidden shortcuts, and end state.
 
 ### Conflict Pressure Required
 
@@ -245,106 +275,64 @@ After drafting prose, remove plastic phrasing while preserving ambiguity, roughn
 
 ### Review Must Preserve What Works
 
-Every review must include:
+Every review must include critical issues, medium issues when useful, what to preserve, revision plan, and unresolved questions only when blocking.
 
-- critical issues
-- medium issues when useful
-- what to preserve
-- revision plan
-- unresolved questions only when blocking
+## Cockpit Output Shapes
+
+### Idea Routing
+
+```markdown
+## Idea Routing
+
+| Idea | Type | Belongs to | Use now/later | Risk | Next action |
+|---|---|---|---|---|---|
+```
+
+### Export Prompt
+
+```markdown
+Use my-novel-writing.
+
+## Current Story State
+...
+
+## Chapter Contract
+...
+
+## Ideas To Use
+...
+
+## Ideas To Avoid
+...
+
+## Continuity Constraints
+...
+
+## Style Profiles
+...
+
+## Task
+Produce a discussion outline only. Do not draft prose until explicitly approved.
+```
 
 ## Working Pattern
 
 1. Identify the stage.
-2. Load the minimum required reference files.
-3. Reconstruct story state before any prose task.
-4. Create a chapter contract when needed.
-5. Produce a discussion outline with scene texture and technical reasoning beats when needed.
-6. Run continuity, conflict, texture, technical explanation, and relevant strategy gates on the outline.
-7. Ask for explicit approval.
-8. Draft only after approval.
-9. Run post-draft checks: continuity, conflict, scene texture, technical explanation, dialogue, style preservation, anti-AI flavour, failure modes.
-10. Output memory updates needed.
+2. If the user has scattered ideas, route ideas before planning.
+3. Load the minimum required reference files.
+4. Reconstruct story state before any prose task.
+5. Create a chapter contract when needed.
+6. Produce a discussion outline with scene texture and technical reasoning beats when needed.
+7. Run continuity, conflict, texture, technical explanation, failure-mode, and relevant strategy checks on the outline.
+8. Ask for explicit approval.
+9. Draft only after approval.
+10. Run post-draft checks and memory update notes.
 11. Present unresolved risks.
-
-## Output Expectations
-
-When planning, use this shape:
-
-```markdown
-## Chapter Contract
-
-## Proposed Outline
-
-### Scene / Chapter Goal
-
-### Current Continuity State
-
-### Scene Texture Plan
-- Close physical anchor:
-- Character object:
-- Daily friction:
-- Immediate room / vehicle / street detail:
-- Window, doorway, screen, scope, or vista:
-- Wider world detail revealed through action:
-- Sensory layer:
-- Emotional filter:
-- What the character wants from this place:
-- What this place denies them:
-
-### Technical Reasoning Beat
-- Immediate problem:
-- Observed clue:
-- Known rule / remembered principle:
-- Quick estimate:
-- Uncertainty / margin:
-- Decision:
-- Risk if wrong:
-- Human reaction:
-
-### Beats
-
-1. Beat name
-   - Purpose:
-   - POV:
-   - Desire:
-   - Obstacle:
-   - Cost:
-   - Turn:
-   - Irreversible change:
-
-### Risks
-
-### Questions for You
-```
-
-When reviewing, use this shape:
-
-```markdown
-## Review Summary
-
-## Scores
-
-| Category | Score | Reason |
-|---|---:|---|
-
-## Critical Issues
-
-| Location | Issue | Why it breaks the story | Fix direction |
-|---|---|---|---|
-
-## What To Preserve
-
-## Revision Plan
-
-## Unresolved Questions
-```
-
-When drafting, produce prose only after the user approves the outline.
 
 ## References
 
 - `references/voice-calibration.md`
+- `references/story-cockpit-workflow.md`
 - `references/story-project-layout.md`
 - `references/story-memory-ops.md`
 - `references/chapter-contract.md`
