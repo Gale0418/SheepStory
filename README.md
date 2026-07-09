@@ -109,7 +109,7 @@ For hard-SF, engineering, survival, or military scenes, SheepStory can also use 
 - first-person competence with uncertainty
 - explanation that changes the next action
 
-It must not copy any specific copyrighted prose, franchise setting, institution, plot, character, or author voice. The goal is to borrow broad craft techniques, not protected expression.
+Use broad craft techniques. Do not reproduce a specific source's exact phrasing, named setting, characters, or plot beats.
 
 ## Quality checks
 
