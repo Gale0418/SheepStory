@@ -1,6 +1,6 @@
 ---
 name: sheep-story
-description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, or polishing fiction with outline approval, story state, conflict pressure, cinematic scene texture, technical explanation voice, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
+description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, or polishing fiction with outline approval, story state, conflict pressure, cinematic scene texture, technical explanation voice, review quality, memory updates, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
 ---
 
 # SheepStory
@@ -23,7 +23,7 @@ Before writing prose, verify:
 
 ```text
 Do I know the current story state?
-Do I know the scene goal?
+Do I know the chapter contract or scene goal?
 Do I know the conflict pressure?
 Do I know the scene texture plan?
 Do I know whether technical reasoning is needed and what action it changes?
@@ -36,7 +36,10 @@ If any answer is no, do not draft prose yet.
 
 When available, load and follow:
 
+- `skills/my-novel-writing/references/voice-calibration.md`
 - `skills/my-novel-writing/references/story-project-layout.md`
+- `skills/my-novel-writing/references/story-memory-ops.md`
+- `skills/my-novel-writing/references/chapter-contract.md`
 - `skills/my-novel-writing/references/outline-gate.md`
 - `skills/my-novel-writing/references/continuity-check.md`
 - `skills/my-novel-writing/references/conflict-pressure.md`
@@ -46,6 +49,8 @@ When available, load and follow:
 - `skills/my-novel-writing/references/dialogue-checklist.md`
 - `skills/my-novel-writing/references/style-preservation.md`
 - `skills/my-novel-writing/references/anti-ai-flavour.md`
+- `skills/my-novel-writing/references/failure-modes.md`
+- `skills/my-novel-writing/references/review-rubric.md`
 - `skills/my-novel-writing/references/source-map.md`
 
 ## Non-Negotiable Rules
@@ -59,17 +64,19 @@ When available, load and follow:
 7. No over-polishing: remove AI flavour without sterilizing the author's voice.
 8. No detached worldbuilding lecture: setting and systems must enter through scene texture.
 9. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
+10. No vague review: name the failure mode, preserve what works, and list memory updates.
 
 ## Default Workflow
 
-1. Identify task stage: setup, planning, drafting, review, dialogue polish, style polish, scene texture, technical explanation, or genius strategy.
+1. Identify task stage: setup, planning, drafting, review, dialogue polish, style polish, scene texture, technical explanation, memory update, or genius strategy.
 2. Reconstruct current story state.
-3. Produce a discussion outline with scene texture and technical reasoning when setting, equipment, science, or hard-SF constraints matter.
-4. Run continuity, conflict, texture, technical explanation, and relevant strategy checks.
-5. Ask for explicit approval.
-6. Draft only after approval.
-7. Run post-draft checks.
-8. Present the result and list unresolved risks.
+3. Create a chapter contract when the chapter is complex, technical, tactical, or continuity-heavy.
+4. Produce a discussion outline with scene texture and technical reasoning when setting, equipment, science, or hard-SF constraints matter.
+5. Run continuity, conflict, texture, technical explanation, failure-mode, and relevant strategy checks.
+6. Ask for explicit approval.
+7. Draft only after approval.
+8. Run post-draft checks and memory update notes.
+9. Present the result and list unresolved risks.
 
 ## Approval Gate
 
@@ -85,4 +92,4 @@ Generic reactions like 「嗯嗯」「好像可以」「有趣」「繼續想」
 
 ## Principle
 
-SheepStory is not for making AI write more. It is for making AI remember, reason, see the scene, understand the technical pressure, and only then write.
+SheepStory is not for making AI write more. It is for making AI remember, reason, see the scene, understand the technical pressure, protect what works, and only then write.
