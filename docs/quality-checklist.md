@@ -8,15 +8,19 @@ Use this checklist before calling the skill release-ready.
 - [ ] Main implementation exists at `skills/my-novel-writing/SKILL.md`.
 - [ ] `SKILL.md` has frontmatter with `name` and `description`.
 - [ ] References are colocated under `skills/my-novel-writing/references/`.
+- [ ] Style profiles exist under `skills/my-novel-writing/style-profiles/`.
 - [ ] README explains how to use the skill.
-- [ ] Source map records inspirations and license constraints.
+- [ ] Source map records inspirations and style boundaries.
 - [ ] Templates exist for a story project.
+- [ ] Worked examples exist for common rewrite transformations.
+- [ ] Tests exist for common failure modes.
 
 ## Behavioral Gates
 
 - [ ] The skill refuses to draft prose before outline approval.
 - [ ] The skill reconstructs continuity before prose.
 - [ ] The skill asks targeted questions when continuity is missing.
+- [ ] Complex chapters use a chapter contract.
 - [ ] Each beat is checked for desire, obstacle, cost, turn, and irreversible change.
 - [ ] Peaceful scenes must have dramatic function.
 - [ ] Scenes with setting or worldbuilding include a scene texture plan.
@@ -28,119 +32,37 @@ Use this checklist before calling the skill release-ready.
 - [ ] Genius characters require domain, observation, reasoning chain, options, cost, and blind spot.
 - [ ] Competent opponents receive a red-team pass.
 - [ ] Strategy scenes avoid perfect resources and perfect information.
+- [ ] Reviews identify failure modes.
+- [ ] Reviews include what to preserve.
+- [ ] After drafting, the skill lists memory updates needed.
 - [ ] Anti-AI-flavour pass preserves voice and roughness.
 
 ## Test Prompts
 
-### 1. Outline Gate Test
-
-Prompt:
+Run the test files in `tests/`:
 
 ```text
-Use my-novel-writing to write chapter 1 about a runaway princess.
+tests/01-outline-gate.md
+tests/02-continuity-missing.md
+tests/03-too-peaceful.md
+tests/04-fake-genius.md
+tests/05-lore-dump.md
+tests/06-technical-decoration.md
+tests/07-dialogue-exposition.md
+tests/08-over-polish.md
 ```
 
-Expected behavior:
+## Worked Examples
 
-- Produces outline first.
-- Does not draft prose.
-- Asks for explicit approval.
-
-### 2. Missing Continuity Test
-
-Prompt:
+Review the transformation examples in `worked-examples/`:
 
 ```text
-Use my-novel-writing to continue chapter 8.
+worked-examples/lore-dump-to-scene-texture.md
+worked-examples/textbook-science-to-technical-voice.md
+worked-examples/polite-dialogue-to-subtext.md
+worked-examples/fake-genius-to-reasoning-chain.md
+worked-examples/peaceful-scene-to-conflict-pressure.md
 ```
-
-Expected behavior:
-
-- Asks for or reconstructs previous state.
-- Does not invent missing continuity.
-
-### 3. Too Peaceful Test
-
-Prompt:
-
-```text
-Use my-novel-writing to review this scene. Everyone talks honestly and resolves the conflict.
-```
-
-Expected behavior:
-
-- Flags conflict smoothing.
-- Suggests pressure, cost, misread motive, or delayed consequence.
-
-### 4. Fake Genius Test
-
-Prompt:
-
-```text
-Write a scene where the genius says he saw through everything.
-```
-
-Expected behavior:
-
-- Rejects narration-only genius.
-- Requires observation, reasoning chain, tradeoff, and cost.
-
-### 5. Scene Texture Test
-
-Prompt:
-
-```text
-Use my-novel-writing to plan the opening scene of a future city chapter. I want atmosphere and visual detail.
-```
-
-Expected behavior:
-
-- Produces a Scene Texture Plan.
-- Starts from body/object/room or immediate action.
-- Uses close-to-wide movement.
-- Reveals worldbuilding through friction, objects, view, and desire.
-- Does not insert encyclopedia-like history or institutions unless requested.
-
-### 6. Hard-SF / Military Texture Test
-
-Prompt:
-
-```text
-Use my-novel-writing to improve this spaceship combat scene. Make it feel technical and tense.
-```
-
-Expected behavior:
-
-- Shows technology through constraints, maintenance, checklists, heat, oxygen, latency, ammunition, damage control, or chain-of-command friction.
-- Does not start with specs detached from action.
-
-### 7. Technical Explanation Test
-
-Prompt:
-
-```text
-Use my-novel-writing to add technical explanation to this survival scene.
-```
-
-Expected behavior:
-
-- Identifies immediate problem, observed clue, principle, estimate, uncertainty, decision, risk, and human reaction.
-- Technical explanation changes what the character does next.
-- Does not become decorative textbook exposition.
-- Preserves human voice and pressure.
-
-### 8. Over-Polish Test
-
-Prompt:
-
-```text
-Remove AI flavour from this rough first-person passage.
-```
-
-Expected behavior:
-
-- Removes plastic phrasing.
-- Preserves narrator roughness and rhythm.
 
 ## Release Readiness
 
@@ -149,14 +71,20 @@ A release-ready version should include:
 - [ ] Root entrypoint
 - [ ] Nested skill package
 - [ ] References
+- [ ] Style profiles
 - [ ] Usage examples
 - [ ] Story project templates
 - [ ] License
 - [ ] Source map / attribution notes
 - [ ] Quality checklist
-- [ ] At least one worked example
+- [ ] Worked examples
+- [ ] Tests
 - [ ] Scene texture gate
 - [ ] Technical explanation gate
+- [ ] Review rubric
+- [ ] Story memory operations
+- [ ] Chapter contract
+- [ ] User voice calibration
 
 ## Principle
 
