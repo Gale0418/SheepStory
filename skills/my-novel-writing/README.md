@@ -2,7 +2,7 @@
 
 `my-novel-writing` is the main SheepStory skill.
 
-It is an outline-first fiction-writing skill for long-form stories, scenes, chapters, dialogue polish, continuity checks, cinematic scene texture, technical explanation voice, anti-AI-flavour revision, review scoring, memory updates, and genius-level strategy design.
+It is an outline-first fiction-writing and story-organization skill for long-form stories, scattered idea routing, chapter contracts, scenes, dialogue polish, continuity checks, cinematic scene texture, technical explanation voice, anti-AI-flavour revision, review scoring, memory updates, and genius-level strategy design.
 
 ## Files
 
@@ -20,6 +20,7 @@ references/
 ├── outline-gate.md
 ├── review-rubric.md
 ├── source-map.md
+├── story-cockpit-workflow.md
 ├── story-memory-ops.md
 ├── story-project-layout.md
 ├── style-preservation.md
@@ -38,8 +39,10 @@ style-profiles/
 
 Use this skill for:
 
-- planning a chapter before drafting
+- routing scattered ideas before planning
+- building a Story Cockpit / WebUI workflow
 - creating a chapter contract
+- planning a chapter before drafting
 - checking whether an outline contradicts prior canon
 - making a scene less peaceful without adding random violence
 - adding cinematic detail and concrete visual anchors
@@ -52,30 +55,40 @@ Use this skill for:
 - writing genius-vs-genius strategy scenes
 - creating a story bible and continuity memory
 
-## Most Important Rule
+## Most Important Rules
 
 ```text
+No idea goes directly into prose.
 No prose before outline approval.
 ```
 
-The agent must first produce a discussion outline and wait for explicit approval.
+The agent must route ideas, produce a discussion outline, and wait for explicit approval before prose.
 
 ## Minimal Usage Prompt
 
 ```text
-Use my-novel-writing to plan the next chapter. Do not draft prose yet.
+Use my-novel-writing to route these scattered ideas before planning. Do not draft prose yet.
 ```
 
 ## Strong Usage Prompt
 
 ```text
 Use my-novel-writing.
-First reconstruct continuity state.
+First route the ideas into character, plot thread, chapter contract, clue, conflict, technical beat, promise, or maybe-later.
+Then reconstruct continuity state.
 Then create a Chapter Contract.
 Then produce a beat outline with desire, obstacle, cost, turn, and irreversible change for each beat.
 Also produce a Scene Texture Plan with close physical anchor, character object, daily friction, sensory layer, and world detail revealed through action.
 If the scene involves science, engineering, equipment, or survival, include a Technical Reasoning Beat with problem, clue, principle, estimate, uncertainty, decision, risk, and human reaction.
 Do not write prose until I explicitly approve the outline.
+```
+
+## Cockpit Prompt
+
+```text
+Use my-novel-writing in Story Cockpit mode.
+Take these scattered ideas and sort them into Idea Inbox, Plot Threads, Story State, Chapter Contract, and Export Prompt.
+Do not write prose.
 ```
 
 ## Style Profile Prompt
