@@ -68,10 +68,10 @@ Do not over-polish.
 
 ```text
 Use my-novel-writing to add cinematic scene texture.
-Do not copy any specific copyrighted source.
 Do not add story-external encyclopedia worldbuilding.
 Reveal the world through body, objects, room/street/vehicle detail, windows/screens/vistas, daily friction, sensory layers, and character longing.
 Use close-to-wide movement: body → object → room → vista → wider world → desire.
+Avoid source-cloning: do not reproduce one source's exact wording, named setting, characters, or plot beats.
 ```
 
 ## 9. Hard-SF / Military Texture
@@ -89,7 +89,7 @@ Use my-novel-writing to add technical explanation voice.
 The explanation must be caused by a scene problem and must change an action, decision, risk, or emotional beat.
 Use practical reasoning, measurements, uncertainty, dry crisis humor, and first-person competence if appropriate.
 Do not make it sound like a textbook.
-Do not copy any specific copyrighted passage or recognizable author voice.
+Avoid source-cloning: do not imitate one source's exact lines or signature phrasing.
 ```
 
 ## 11. Worked Reasoning Beat
