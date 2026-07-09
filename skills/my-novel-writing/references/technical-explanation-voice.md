@@ -4,7 +4,7 @@
 
 This reference helps the skill write competent first-person or close-POV technical prose: practical reasoning, crisis humor, worked calculations, engineering constraints, and scientific explanation embedded in character voice.
 
-The target is not to copy any copyrighted passage, book, franchise, translation, setting, plot, character, or distinctive author voice. The target is a general craft pattern:
+The target is not to reproduce any specific passage, book, franchise, translation, setting, plot, character, or distinctive author voice. The target is a general craft pattern:
 
 ```text
 Explain the science because the character needs it to survive, decide, build, repair, argue, or understand what went wrong.
@@ -185,7 +185,7 @@ Before presenting prose, verify:
 - [ ] Humor does not erase danger.
 - [ ] Competence includes uncertainty, cost, or fallibility.
 - [ ] The voice still sounds like a person under pressure, not a textbook.
-- [ ] No protected passage, distinctive phrasing, franchise lore, or copied scene structure is used.
+- [ ] No specific passage, distinctive phrasing, franchise lore, or copied scene structure is used.
 
 ## Principle
 
