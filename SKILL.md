@@ -1,6 +1,6 @@
 ---
 name: sheep-story
-description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, or polishing fiction with outline approval, story state, conflict pressure, cinematic scene texture, technical explanation voice, review quality, memory updates, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
+description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, organizing scattered ideas, or polishing fiction with outline approval, story state, idea routing, chapter contracts, conflict pressure, cinematic scene texture, technical explanation voice, review quality, memory updates, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
 ---
 
 # SheepStory
@@ -24,6 +24,7 @@ Before writing prose, verify:
 ```text
 Do I know the current story state?
 Do I know the chapter contract or scene goal?
+Do I know which ideas belong here and which must wait?
 Do I know the conflict pressure?
 Do I know the scene texture plan?
 Do I know whether technical reasoning is needed and what action it changes?
@@ -37,6 +38,7 @@ If any answer is no, do not draft prose yet.
 When available, load and follow:
 
 - `skills/my-novel-writing/references/voice-calibration.md`
+- `skills/my-novel-writing/references/story-cockpit-workflow.md`
 - `skills/my-novel-writing/references/story-project-layout.md`
 - `skills/my-novel-writing/references/story-memory-ops.md`
 - `skills/my-novel-writing/references/chapter-contract.md`
@@ -55,28 +57,30 @@ When available, load and follow:
 
 ## Non-Negotiable Rules
 
-1. No prose before outline approval.
-2. No drafting without continuity state.
-3. No peaceful scene unless the peace has dramatic function.
-4. No fake genius: intelligence must be shown through observation, reasoning, tradeoff, and cost.
-5. No perfect plan: strategy must be the best available plan under current constraints.
-6. No enemy stupidity: competent opponents get a red-team pass.
-7. No over-polishing: remove AI flavour without sterilizing the author's voice.
-8. No detached worldbuilding lecture: setting and systems must enter through scene texture.
-9. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
-10. No vague review: name the failure mode, preserve what works, and list memory updates.
+1. No idea goes directly into prose; route it to a character, thread, chapter contract, world rule, clue, conflict, technical beat, promise, or maybe-later pile.
+2. No prose before outline approval.
+3. No drafting without continuity state.
+4. No peaceful scene unless the peace has dramatic function.
+5. No fake genius: intelligence must be shown through observation, reasoning, tradeoff, and cost.
+6. No perfect plan: strategy must be the best available plan under current constraints.
+7. No enemy stupidity: competent opponents get a red-team pass.
+8. No over-polishing: remove AI flavour without sterilizing the author's voice.
+9. No detached worldbuilding lecture: setting and systems must enter through scene texture.
+10. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
+11. No vague review: name the failure mode, preserve what works, and list memory updates.
 
 ## Default Workflow
 
-1. Identify task stage: setup, planning, drafting, review, dialogue polish, style polish, scene texture, technical explanation, memory update, or genius strategy.
-2. Reconstruct current story state.
-3. Create a chapter contract when the chapter is complex, technical, tactical, or continuity-heavy.
-4. Produce a discussion outline with scene texture and technical reasoning when setting, equipment, science, or hard-SF constraints matter.
-5. Run continuity, conflict, texture, technical explanation, failure-mode, and relevant strategy checks.
-6. Ask for explicit approval.
-7. Draft only after approval.
-8. Run post-draft checks and memory update notes.
-9. Present the result and list unresolved risks.
+1. Identify task stage: cockpit/idea routing, setup, planning, drafting, review, dialogue polish, style polish, scene texture, technical explanation, memory update, or genius strategy.
+2. If the user has scattered ideas, route ideas before planning.
+3. Reconstruct current story state.
+4. Create a chapter contract when the chapter is complex, technical, tactical, or continuity-heavy.
+5. Produce a discussion outline with scene texture and technical reasoning when setting, equipment, science, or hard-SF constraints matter.
+6. Run continuity, conflict, texture, technical explanation, failure-mode, and relevant strategy checks.
+7. Ask for explicit approval.
+8. Draft only after approval.
+9. Run post-draft checks and memory update notes.
+10. Present the result and list unresolved risks.
 
 ## Approval Gate
 
@@ -92,4 +96,4 @@ Generic reactions like 「嗯嗯」「好像可以」「有趣」「繼續想」
 
 ## Principle
 
-SheepStory is not for making AI write more. It is for making AI remember, reason, see the scene, understand the technical pressure, protect what works, and only then write.
+SheepStory is not for making AI write more. It is for making AI remember, route ideas, reason, see the scene, understand the technical pressure, protect what works, and only then write.
