@@ -10,7 +10,7 @@ Do not make the AI write more. Make it remember, reason, see the scene, face con
 
 ## Skill entrypoints
 
-This repo now supports two common layouts:
+This repo supports two common layouts:
 
 ```text
 SKILL.md                         # Root compatibility entrypoint
@@ -25,18 +25,30 @@ Use the nested skill directly when your agent supports skill folders. Use the ro
 skills/my-novel-writing/
 ├── README.md
 ├── SKILL.md
-└── references/
-    ├── anti-ai-flavour.md
-    ├── cinematic-scene-texture.md
-    ├── conflict-pressure.md
-    ├── continuity-check.md
-    ├── dialogue-checklist.md
-    ├── genius-strategy.md
-    ├── outline-gate.md
-    ├── source-map.md
-    ├── story-project-layout.md
-    ├── style-preservation.md
-    └── technical-explanation-voice.md
+├── references/
+│   ├── anti-ai-flavour.md
+│   ├── chapter-contract.md
+│   ├── cinematic-scene-texture.md
+│   ├── conflict-pressure.md
+│   ├── continuity-check.md
+│   ├── dialogue-checklist.md
+│   ├── failure-modes.md
+│   ├── genius-strategy.md
+│   ├── outline-gate.md
+│   ├── review-rubric.md
+│   ├── source-map.md
+│   ├── story-memory-ops.md
+│   ├── story-project-layout.md
+│   ├── style-preservation.md
+│   ├── technical-explanation-voice.md
+│   └── voice-calibration.md
+└── style-profiles/
+    ├── cinematic-hard-sf.md
+    ├── dark-strategy.md
+    ├── light-novel-dialogue.md
+    ├── military-sf.md
+    ├── quiet-emotional-detail.md
+    └── technical-first-person.md
 ```
 
 ## Supporting files
@@ -49,6 +61,23 @@ docs/
 examples/
 ├── usage-prompts.md
 └── worked-outline-example.md
+
+worked-examples/
+├── fake-genius-to-reasoning-chain.md
+├── lore-dump-to-scene-texture.md
+├── peaceful-scene-to-conflict-pressure.md
+├── polite-dialogue-to-subtext.md
+└── textbook-science-to-technical-voice.md
+
+tests/
+├── 01-outline-gate.md
+├── 02-continuity-missing.md
+├── 03-too-peaceful.md
+├── 04-fake-genius.md
+├── 05-lore-dump.md
+├── 06-technical-decoration.md
+├── 07-dialogue-exposition.md
+└── 08-over-polish.md
 
 templates/story-project/
 ├── story.md
@@ -68,6 +97,7 @@ templates/story-project/
 7. No over-polishing: remove AI flavour without sterilizing the author's voice.
 8. No detached worldbuilding lecture: setting and systems must enter through scene texture.
 9. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
+10. No vague review: name the failure mode, preserve what works, and list memory updates.
 
 ## Recommended use
 
@@ -80,6 +110,8 @@ Use my-novel-writing to polish this dialogue without making it polite.
 Use my-novel-writing to design a genius-vs-genius scene with limited resources.
 Use my-novel-writing to add cinematic scene texture without story-external worldbuilding lectures.
 Use my-novel-writing to add technical reasoning with dry crisis humor and practical stakes.
+Use my-novel-writing with style profile technical-first-person.
+Use my-novel-writing to review this chapter with scores and what to preserve.
 ```
 
 If your agent only supports one root skill file, use:
@@ -119,15 +151,17 @@ Before treating a new version as release-ready, run through:
 docs/quality-checklist.md
 ```
 
-The checklist includes tests for:
+For regression-style checks, run prompts from:
 
-- outline gate behavior
-- missing continuity behavior
-- conflict smoothing detection
-- fake genius rejection
-- scene texture without lore dumps
-- technical explanation with scene consequence
-- anti-AI-flavour preservation
+```text
+tests/
+```
+
+For transformation examples, read:
+
+```text
+worked-examples/
+```
 
 ## Design notes
 
