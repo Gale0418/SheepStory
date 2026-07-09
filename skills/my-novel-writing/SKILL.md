@@ -1,6 +1,6 @@
 ---
 name: my-novel-writing
-description: Use when planning, drafting, revising, continuity-checking, or polishing fiction where outline approval, story state, conflict pressure, scene texture, technical explanation voice, authorial voice, or genius-level strategy matters. This skill is for novels, serial fiction, scenes, chapters, dialogue, and story-world continuity.
+description: Use when planning, drafting, revising, continuity-checking, or polishing fiction where outline approval, story state, conflict pressure, scene texture, technical explanation voice, review quality, memory updates, authorial voice, or genius-level strategy matters. This skill is for novels, serial fiction, scenes, chapters, dialogue, and story-world continuity.
 ---
 
 # My Novel Writing
@@ -9,7 +9,7 @@ description: Use when planning, drafting, revising, continuity-checking, or poli
 
 This skill helps write fiction without letting the AI become a smooth, forgetful, over-polite content machine.
 
-It is designed to prevent nine common failures:
+It is designed to prevent ten common failures:
 
 1. Drafting prose before the outline is approved.
 2. Forgetting previous plot, character state, emotional consequences, object state, or timeline.
@@ -20,6 +20,7 @@ It is designed to prevent nine common failures:
 7. Removing AI flavour so aggressively that the author's voice becomes sterile.
 8. Explaining worldbuilding outside the scene instead of revealing it through lived details.
 9. Adding science, math, or engineering explanation that does not change a scene decision, risk, action, or emotional beat.
+10. Reviewing drafts without naming failure modes, preservation targets, and memory updates.
 
 ## When to Use
 
@@ -34,6 +35,7 @@ Use this skill when the user asks to:
 - check continuity, timeline, promises, payoffs, or character knowledge
 - polish dialogue that feels expository, too polite, or too direct
 - remove AI flavour from prose
+- review a draft and identify what fails and what to preserve
 - write genius, strategist, detective, mastermind, scientist, inventor, tactician, or high-IQ antagonist scenes
 - design a plan under limited resources
 - make sure a twist has setup, cost, and consequences
@@ -52,7 +54,7 @@ Before writing prose, ask:
 
 ```text
 Do I know the current story state?
-Do I know the scene goal?
+Do I know the chapter contract or scene goal?
 Do I know the conflict pressure?
 Do I know the scene texture plan?
 Do I know whether technical reasoning is needed and what action it changes?
@@ -72,6 +74,8 @@ Use when the user wants to start a new story, organize a long story, or create r
 Read:
 
 - `references/story-project-layout.md`
+- `references/story-memory-ops.md`
+- `references/voice-calibration.md`
 - `references/source-map.md` when explaining what inspired the structure
 
 Output a proposed project structure and ask what story information is already known.
@@ -82,6 +86,8 @@ Use when the user is deciding what a chapter, scene, arc, or reveal should do be
 
 Read:
 
+- `references/voice-calibration.md`
+- `references/chapter-contract.md` for chapters, turning points, or complex scenes
 - `references/outline-gate.md`
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
@@ -89,7 +95,7 @@ Read:
 - `references/technical-explanation-voice.md` when science, engineering, math, hard-SF, equipment, or practical reasoning matters
 - `references/genius-strategy.md` when high-intelligence planning or tactics are involved
 
-Output a discussion outline and stop. Do not draft prose until explicit approval.
+Output a chapter contract or discussion outline and stop. Do not draft prose until explicit approval.
 
 ### 3. Drafting / Continuing
 
@@ -97,6 +103,7 @@ Use only after explicit outline approval.
 
 Before drafting, read:
 
+- `references/voice-calibration.md`
 - `references/outline-gate.md`
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
@@ -106,7 +113,7 @@ Before drafting, read:
 - `references/dialogue-checklist.md` if the scene has dialogue
 - `references/genius-strategy.md` if the scene contains high-intelligence tactics, mystery, deduction, or mastermind planning
 
-Draft prose, then run the post-draft gates before presenting the final text.
+Draft prose, then run post-draft gates before presenting the final text.
 
 ### 4. Revision / Review
 
@@ -114,6 +121,8 @@ Use when the user provides existing prose or asks what is wrong with a chapter.
 
 Read:
 
+- `references/review-rubric.md`
+- `references/failure-modes.md`
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
 - `references/cinematic-scene-texture.md` when the prose lacks image, atmosphere, or lived-in worldbuilding
@@ -122,7 +131,7 @@ Read:
 - `references/style-preservation.md`
 - `references/anti-ai-flavour.md`
 
-Output concrete findings first. Include location, issue, why it fails, and how to revise.
+Output concrete findings first. Always include what to preserve.
 
 ### 5. Style Polish / Anti-AI Flavour
 
@@ -130,12 +139,37 @@ Use when the user asks to remove AI flavour, make text more human, preserve roug
 
 Read:
 
+- `references/voice-calibration.md`
 - `references/anti-ai-flavour.md`
 - `references/style-preservation.md`
 - `references/cinematic-scene-texture.md` when the passage needs concrete image, sensory detail, or scene-contained worldbuilding
 - `references/technical-explanation-voice.md` when the passage needs technical reasoning, dry humor, or practical competence
 
 Never over-polish. Fiction should feel chosen, not sterilized.
+
+### 6. Memory Update
+
+Use after drafting or revising a chapter.
+
+Read:
+
+- `references/story-memory-ops.md`
+- `references/continuity-check.md`
+
+Output memory updates needed for continuity state, character files, timeline, questions, promises, object state, and relationship state.
+
+## Style Profiles
+
+When the user requests a specific texture, optionally load a profile from `style-profiles/`:
+
+- `style-profiles/cinematic-hard-sf.md`
+- `style-profiles/technical-first-person.md`
+- `style-profiles/military-sf.md`
+- `style-profiles/quiet-emotional-detail.md`
+- `style-profiles/light-novel-dialogue.md`
+- `style-profiles/dark-strategy.md`
+
+Profiles are preferences, not hard rules. The current story state and user instructions take priority.
 
 ## Hard Rules
 
@@ -155,30 +189,29 @@ Generic reactions such as 「嗯嗯」「好像可以」「有趣」「繼續想
 
 ### Continuity First
 
-Before writing any prose, load or reconstruct story state:
-
-- last chapter ending
-- current location
-- active characters
-- emotional state
-- injuries, debts, secrets, promises
-- who knows what
-- object ownership and status
-- open questions, mysteries, foreshadowing, and payoffs
-- facts that must not be contradicted
+Before writing any prose, load or reconstruct story state.
 
 If the context is missing, produce a continuity question list instead of drafting.
 
+### Chapter Contract Before Complex Chapters
+
+For long, high-continuity, tactical, technical, or emotional turning-point chapters, create a chapter contract before the beat outline.
+
+The contract must identify:
+
+- what the chapter must accomplish
+- what it must not do
+- required continuity
+- required emotional change
+- required conflict pressure
+- required scene texture
+- required technical reasoning, if any
+- forbidden shortcuts
+- end state
+
 ### Conflict Pressure Required
 
-Each scene beat must have:
-
-- desire
-- obstacle
-- cost
-- turn
-- irreversible change
-- subtext or hidden pressure
+Each scene beat must have desire, obstacle, cost, turn, irreversible change, and subtext or hidden pressure.
 
 If a beat has no active pressure, revise the outline before drafting.
 
@@ -186,32 +219,11 @@ If a beat has no active pressure, revise the outline before drafting.
 
 If a scene includes setting, technology, institutions, military systems, social structure, or speculative worldbuilding, reveal it through scene texture.
 
-Prefer:
-
-- body, object, room, window, corridor, screen, vehicle, tool, or daily friction
-- close-to-wide visual movement
-- world details that affect mood, choice, action, or desire
-- sensory detail filtered through the POV character
-
-Avoid:
-
-- story-external encyclopedia paragraphs
-- detached worldbuilding lectures
-- institutional explanations before the character touches their consequences
-- lore that does not change action, mood, choice, or tension
+Avoid detached worldbuilding lectures and lore that does not change action, mood, choice, or tension.
 
 ### Technical Explanation Must Change the Scene
 
 If a scene includes science, math, engineering, military procedure, or practical reasoning, the explanation must be motivated by scene pressure.
-
-Before including technical explanation, know:
-
-- the immediate problem
-- the observed clue
-- the known rule or remembered principle
-- the estimate, calculation, or test
-- the uncertainty or safety margin
-- the action, decision, risk, or emotional beat changed by the result
 
 If nothing changes, cut or compress the explanation.
 
@@ -219,61 +231,49 @@ If nothing changes, cut or compress the explanation.
 
 A peaceful scene is allowed only if it creates contrast, dread, intimacy, false safety, setup, or future damage.
 
-Do not let characters resolve major conflict just because healthy communication is available.
-
 ### Genius Is Not Narration
 
-Do not portray intelligence by saying the character is smart.
-
-Show intelligence through:
-
-- hidden observations
-- constrained reasoning
-- rejected plans
-- tradeoffs
-- cost
-- opponent competence
-- fallback logic
-- model updates after failure
+Show intelligence through hidden observations, constrained reasoning, rejected plans, tradeoffs, cost, opponent competence, fallback logic, and model updates after failure.
 
 ### No Perfect Plan
-
-A plan that requires perfect obedience, perfect timing, enemy stupidity, no collateral consequences, and information the character does not possess is invalid.
 
 The correct plan is the best available plan under current constraints, not the cleanest victory.
 
 ### Anti-AI-Flavour Pass
 
-After drafting prose, run an anti-AI-flavour pass:
+After drafting prose, remove plastic phrasing while preserving ambiguity, roughness, rhythm, authorial texture, concrete scene texture, and practical technical voice.
 
-- replace generic emotional summary with visible action
-- vary sentence and paragraph rhythm
-- cut vague dramatic abstractions
-- remove over-explanation
-- make dialogue pursue intention against obstacle
-- preserve ambiguity, roughness, rhythm, and authorial texture
-- keep concrete scene texture that carries world, character, and desire
-- keep technical explanation practical, pressured, and voiced
+### Review Must Preserve What Works
 
-Do not make every sentence elegant. Do not turn fiction into sanitized content.
+Every review must include:
+
+- critical issues
+- medium issues when useful
+- what to preserve
+- revision plan
+- unresolved questions only when blocking
 
 ## Working Pattern
 
 1. Identify the stage.
 2. Load the minimum required reference files.
 3. Reconstruct story state before any prose task.
-4. Produce a discussion outline with scene texture and technical reasoning beats when needed.
-5. Run continuity, conflict, texture, technical explanation, and relevant strategy gates on the outline.
-6. Ask for explicit approval.
-7. Draft only after approval.
-8. Run post-draft checks: continuity, conflict, scene texture, technical explanation, dialogue, style preservation, anti-AI flavour.
-9. Present the result and list any unresolved risks.
+4. Create a chapter contract when needed.
+5. Produce a discussion outline with scene texture and technical reasoning beats when needed.
+6. Run continuity, conflict, texture, technical explanation, and relevant strategy gates on the outline.
+7. Ask for explicit approval.
+8. Draft only after approval.
+9. Run post-draft checks: continuity, conflict, scene texture, technical explanation, dialogue, style preservation, anti-AI flavour, failure modes.
+10. Output memory updates needed.
+11. Present unresolved risks.
 
 ## Output Expectations
 
 When planning, use this shape:
 
 ```markdown
+## Chapter Contract
+
 ## Proposed Outline
 
 ### Scene / Chapter Goal
@@ -321,17 +321,33 @@ When planning, use this shape:
 When reviewing, use this shape:
 
 ```markdown
-## Findings
+## Review Summary
 
-| Location | Issue | Why it fails | Revision direction |
+## Scores
+
+| Category | Score | Reason |
+|---|---:|---|
+
+## Critical Issues
+
+| Location | Issue | Why it breaks the story | Fix direction |
 |---|---|---|---|
+
+## What To Preserve
+
+## Revision Plan
+
+## Unresolved Questions
 ```
 
 When drafting, produce prose only after the user approves the outline.
 
 ## References
 
+- `references/voice-calibration.md`
 - `references/story-project-layout.md`
+- `references/story-memory-ops.md`
+- `references/chapter-contract.md`
 - `references/outline-gate.md`
 - `references/continuity-check.md`
 - `references/conflict-pressure.md`
@@ -341,4 +357,6 @@ When drafting, produce prose only after the user approves the outline.
 - `references/dialogue-checklist.md`
 - `references/style-preservation.md`
 - `references/anti-ai-flavour.md`
+- `references/failure-modes.md`
+- `references/review-rubric.md`
 - `references/source-map.md`
