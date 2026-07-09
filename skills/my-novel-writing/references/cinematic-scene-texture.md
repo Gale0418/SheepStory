@@ -4,7 +4,7 @@
 
 This reference helps the skill create prose with concrete scene texture, visual continuity, and lived-in worldbuilding.
 
-The target is not to copy any specific copyrighted book, franchise, translation, setting, institution, or plot. The target is a general technique:
+The target is not to reproduce any specific book, franchise, translation, setting, institution, or plot. The target is a general technique:
 
 ```text
 Let the world enter through the character's body, objects, habits, friction, view, and desire.
