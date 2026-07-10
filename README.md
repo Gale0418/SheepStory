@@ -14,7 +14,7 @@ This repo supports two common layouts:
 
 ```text
 SKILL.md                         # Root compatibility entrypoint
-skills/my-novel-writing/SKILL.md # Full skill implementation
+skills/sheep-story/SKILL.md # Full skill implementation
 ```
 
 Use the nested skill directly when your agent supports skill folders. Use the root `SKILL.md` when your agent only scans the repository root.
@@ -22,7 +22,7 @@ Use the nested skill directly when your agent supports skill folders. Use the ro
 ## Current package
 
 ```text
-skills/my-novel-writing/
+skills/sheep-story/
 ├── README.md
 ├── SKILL.md
 ├── references/
@@ -32,18 +32,24 @@ skills/my-novel-writing/
 │   ├── conflict-pressure.md
 │   ├── continuity-check.md
 │   ├── dialogue-checklist.md
+│   ├── editorial-rewrite.md
 │   ├── failure-modes.md
 │   ├── genius-strategy.md
 │   ├── outline-gate.md
+│   ├── opposition-design.md
 │   ├── review-rubric.md
 │   ├── source-map.md
 │   ├── story-cockpit-workflow.md
+│   ├── story-foundation.md
+│   ├── story-architecture.md
 │   ├── story-memory-ops.md
 │   ├── story-project-layout.md
 │   ├── style-preservation.md
 │   ├── technical-explanation-voice.md
 │   └── voice-calibration.md
 └── style-profiles/
+    ├── sheepstory-house-style.md
+    ├── zh-tw-fiction.md
     ├── cinematic-hard-sf.md
     ├── dark-strategy.md
     ├── light-novel-dialogue.md
@@ -79,7 +85,25 @@ tests/
 ├── 05-lore-dump.md
 ├── 06-technical-decoration.md
 ├── 07-dialogue-exposition.md
-└── 08-over-polish.md
+├── 08-over-polish.md
+├── 09-quiet-scene.md
+├── 10-direct-dialogue.md
+├── 11-quick-mode.md
+├── 12-approved-outline.md
+├── 13-mixed-revision.md
+├── 14-document-framing.md
+├── 15-claim-preservation.md
+├── 16-adult-plain-language.md
+├── 17-minimal-no-op.md
+├── 18-vague-new-story.md
+├── 19-world-first-seed.md
+├── 20-character-first-seed.md
+├── 21-specified-foundation.md
+├── 22-optional-structure.md
+├── 23-coherent-opposition.md
+├── 24-capability-ceiling.md
+├── 25-promise-and-ending.md
+└── 26-project-only-constraint.md
 
 templates/
 ├── cockpit/
@@ -88,25 +112,32 @@ templates/
 │   ├── idea.md
 │   └── plot-thread.md
 └── story-project/
+    ├── project-brief.md
     ├── story.md
     ├── characters/_template.md
     ├── chapters/_template.md
-    └── continuity/state.md
+    ├── worldbuilding/world-book.md
+    ├── continuity/state.md
+    └── continuity/promises/_template.md
 ```
 
 ## Core rules
 
-1. No idea goes directly into prose; route it to a character, thread, chapter contract, world rule, clue, conflict, technical beat, promise, or maybe-later pile.
-2. No prose before outline approval.
-3. No drafting without continuity state.
-4. No peaceful scene unless the peace has dramatic function.
+1. Route canon-affecting ideas before prose; allow local phrasing, gestures, sensory detail, and non-canon texture without bookkeeping.
+2. Standard and longform original prose require outline approval; bounded quick work may use a specific prompt as the approved brief.
+3. Load continuity proportionately: persistent state for longform work, relevant context for standard work, and only the supplied brief for standalone quick work.
+4. Quiet scenes are valid when they have a dramatic function; pressure and irreversible change belong at scene or chapter level, not every beat.
 5. No fake genius: intelligence must be shown through observation, reasoning, tradeoff, and cost.
 6. No perfect plan: strategy must be the best available plan under current constraints.
 7. No enemy stupidity: competent opponents get a red-team pass.
 8. No over-polishing: remove AI flavour without sterilizing the author's voice.
-9. No detached worldbuilding lecture: setting and systems must enter through scene texture.
+9. Keep worldbuilding inside scene texture unless the user intentionally requests a dramatic document, archive, epigraph, or reference format.
 10. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
-11. No vague review: name the failure mode, preserve what works, and list memory updates.
+11. No vague review: name the failure mode, preserve what works, and propose classified memory patches when persistent state changed.
+12. Select structure by story function; four-act structure is available but never mandatory.
+13. Keep protagonists within approved capability ceilings and give persistent opposition independent agency.
+14. Store project-only requirements in the Project Brief instead of turning examples into generic defaults.
+15. Track promise lifecycles and answer the core dramatic question at major endings without forcing total closure.
 
 ## SheepStory Cockpit
 
@@ -129,31 +160,30 @@ docs/webui-design.md
 The skill workflow rules are in:
 
 ```text
-skills/my-novel-writing/references/story-cockpit-workflow.md
+skills/sheep-story/references/story-cockpit-workflow.md
 ```
 
-## Recommended use
+## Installation & Usage
 
-Copy or link `skills/my-novel-writing/` into an Agent Skills-compatible environment, then ask for tasks like:
+Install this repository as a Codex Plugin by pointing your plugin manager to the root directory (where `.codex-plugin/plugin.json` is located).
 
-```text
-Use my-novel-writing to route these scattered ideas before planning.
-Use my-novel-writing to create a chapter contract from these ideas.
-Use my-novel-writing to export a prompt for the next chapter outline.
-Use my-novel-writing to plan the next chapter.
-Use my-novel-writing to continuity-check this outline.
-Use my-novel-writing to polish this dialogue without making it polite.
-Use my-novel-writing to design a genius-vs-genius scene with limited resources.
-Use my-novel-writing to add cinematic scene texture without story-external worldbuilding lectures.
-Use my-novel-writing to add technical reasoning with dry crisis humor and practical stakes.
-Use my-novel-writing with style profile technical-first-person.
-Use my-novel-writing to review this chapter with scores and what to preserve.
-```
-
-If your agent only supports one root skill file, use:
+Once installed, you can ask your agent for tasks like:
 
 ```text
+Use sheep-story to build a World Book and Character Cards for a new story.
+Use sheep-story to route these scattered ideas before planning.
+Use sheep-story to create a chapter contract from these ideas.
+Use sheep-story to export a prompt for the next chapter outline.
 Use sheep-story to plan the next chapter.
+Use sheep-story to select an architecture for this complete short story.
+Use sheep-story to model this institution as coherent opposition without inventing a mastermind.
+Use sheep-story to continuity-check this outline.
+Use sheep-story to polish this dialogue without making it polite.
+Use sheep-story to design a genius-vs-genius scene with limited resources.
+Use sheep-story to add cinematic scene texture without story-external worldbuilding lectures.
+Use sheep-story to add technical reasoning with dry crisis humor and practical stakes.
+Use sheep-story with style profile technical-first-person.
+Use sheep-story to review this chapter with scores and what to preserve.
 ```
 
 ## Style target
@@ -210,7 +240,7 @@ docs/fiction-skill-design.md
 The implementation mapping and source inspirations are in:
 
 ```text
-skills/my-novel-writing/references/source-map.md
+skills/sheep-story/references/source-map.md
 ```
 
 ## License

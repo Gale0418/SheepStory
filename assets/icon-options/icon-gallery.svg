@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 410" width="800" height="410" role="img" aria-label="SheepStory book icon gallery">
+  <rect width="800" height="410" rx="24" fill="#F5F4EF"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#27313B" text-anchor="middle">
+    <image href="book-01-starbound.svg" x="16" y="16" width="128" height="128"/>
+    <image href="book-02-bookmark.svg" x="176" y="16" width="128" height="128"/>
+    <image href="book-03-landscape.svg" x="336" y="16" width="128" height="128"/>
+    <image href="book-04-cozy.svg" x="496" y="16" width="128" height="128"/>
+    <image href="book-05-blueprint.svg" x="656" y="16" width="128" height="128"/>
+    <text x="80" y="162">01 Starbound</text>
+    <text x="240" y="162">02 Bookmark</text>
+    <text x="400" y="162">03 Landscape</text>
+    <text x="560" y="162">04 Cozy</text>
+    <text x="720" y="162">05 Blueprint</text>
+    <image href="book-06-strategy.svg" x="16" y="214" width="128" height="128"/>
+    <image href="book-07-lightnovel.svg" x="176" y="214" width="128" height="128"/>
+    <image href="book-08-quill.svg" x="336" y="214" width="128" height="128"/>
+    <image href="book-09-birdpages.svg" x="496" y="214" width="128" height="128"/>
+    <image href="book-10-sheep-secret.svg" x="656" y="214" width="128" height="128"/>
+    <text x="80" y="360">06 Strategy</text>
+    <text x="240" y="360">07 Light Novel</text>
+    <text x="400" y="360">08 Quill</text>
+    <text x="560" y="360">09 Bird Pages</text>
+    <text x="720" y="360">10 Sheep Secret</text>
+  </g>
+</svg>

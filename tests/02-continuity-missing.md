@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to continue chapter 8.
+Use sheep-story in longform mode to continue chapter 8.
 ```
 
 ## Expected Good Behavior

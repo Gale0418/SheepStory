@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Technical blueprint book</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#0C4A6E"/>
+  <path d="M46 190c29-21 56-21 82-2V66c-26-17-54-18-82-1z" fill="none" stroke="#E0F2FE" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M210 190c-29-21-56-21-82-2V66c26-17 54-18 82-1z" fill="none" stroke="#7DD3FC" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M128 66v122M61 105h48M61 132h35M148 105h48M148 132h35" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="85" cy="159" r="12" fill="none" stroke="#BAE6FD" stroke-width="5"/>
+  <path d="M166 151h24v17h-24zM178 143v33" fill="none" stroke="#BAE6FD" stroke-width="5"/>
+  <path d="M48 48h160M48 208h160" stroke="#0EA5E9" stroke-width="4" stroke-dasharray="8 8"/>
+</svg>

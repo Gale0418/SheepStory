@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to remove AI flavour from a rough first-person passage.
+Use sheep-story to remove AI flavour from a rough first-person passage.
 ```
 
 ## Expected Good Behavior

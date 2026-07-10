@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to plan the opening of a future city chapter with rich worldbuilding.
+Use sheep-story to plan the opening of a future city chapter with rich worldbuilding.
 ```
 
 ## Expected Good Behavior

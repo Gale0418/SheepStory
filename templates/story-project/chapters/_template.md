@@ -9,17 +9,58 @@ time:
 
 # Chapter Title
 
-## Chapter Goal
+## Chapter Role
 
-What must change by the end?
+What is this chapter's job in the story?
 
-## Continuity State Before Chapter
+## This Chapter Must Accomplish
+-
 
-- Last event:
-- Current location:
-- Character states:
-- Open threads:
-- Forbidden contradictions:
+## This Chapter Must Not Do
+-
+
+## Required Continuity
+-
+
+## Required Emotional Change
+- Starting emotional state:
+- Ending emotional state:
+- What causes the change:
+
+## Required Conflict Pressure
+- Main desire:
+- Main obstacle:
+- Cost:
+- Irreversible change:
+
+## Required Scene Texture
+- Close physical anchor:
+- Wider scale / vista:
+- World detail through action:
+- Character longing or denial:
+
+## Required Technical Reasoning
+- Immediate problem:
+- Observation:
+- Principle:
+- Decision changed:
+
+## Required Clue / Reveal / Setup
+- Clue:
+- Reveal:
+- Setup:
+- Payoff target:
+
+## Forbidden Shortcuts
+- No sudden enemy stupidity
+- No instant emotional resolution
+- No lore dump outside the scene
+- No decorative technical lecture
+- No perfect plan with perfect resources
+
+## End State
+
+By the end, what is permanently different?
 
 ## Beat Outline
 

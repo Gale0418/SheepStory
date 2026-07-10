@@ -1,99 +1,67 @@
 ---
 name: sheep-story
-description: Root compatibility entrypoint for SheepStory. Use when planning, drafting, revising, continuity-checking, organizing scattered ideas, or polishing fiction with outline approval, story state, idea routing, chapter contracts, conflict pressure, cinematic scene texture, technical explanation voice, review quality, memory updates, authorial voice, anti-AI-flavour, or genius-level strategy. Delegates to skills/my-novel-writing for the full implementation.
+description: Use when planning, drafting, revising, reviewing, continuity-checking, or organizing fiction; managing SheepStory story data; editing supplied fiction, synopsis, lore, pitches, or author notes for clarity, concision, naturalness, or voice; or explicitly invoking SheepStory for a prose rewrite.
 ---
 
-# SheepStory
+# SheepStory Compatibility Entrypoint
 
-This is the root compatibility entrypoint for the SheepStory fiction-writing skill.
-
-Use the full implementation at:
+Use the canonical implementation at:
 
 ```text
-skills/my-novel-writing/SKILL.md
+skills/sheep-story/SKILL.md
 ```
 
-If the environment supports nested skills, use `my-novel-writing` directly.
+When the environment discovers nested plugin skills, use `sheep-story` from that directory. When it scans only a repository-root `SKILL.md`, apply the compatibility rules below and load stage-specific references from `skills/sheep-story/`.
 
-If the environment only scans a root `SKILL.md`, treat this file as the active skill and follow the rules below.
+## Select a Mode
 
-## Core Operating Law
+### Quick
 
-Before writing prose, verify:
+Use for microfiction, short standalone scenes, narrow rewrites, dialogue polish, style polish, and supplied prose. Treat a sufficiently specific prompt as the approved brief. Do not require a chapter contract or persistent memory.
 
-```text
-Do I know the current story state?
-Do I know the chapter contract or scene goal?
-Do I know which ideas belong here and which must wait?
-Do I know the conflict pressure?
-Do I know the scene texture plan?
-Do I know whether technical reasoning is needed and what action it changes?
-Has the user approved the outline?
-```
+### Standard
 
-If any answer is no, do not draft prose yet.
+Use by default for scene or chapter work. Reconstruct relevant continuity, propose a compact outline for original prose, and wait for explicit approval.
 
-## Required References
+### Longform
 
-When available, load and follow:
+Use for ongoing or continuity-heavy novels and complex tactical, technical, mystery, or emotional turning-point chapters. Require a chapter contract, explicit outline approval, and a Memory Patch Proposal after state-changing work.
 
-- `skills/my-novel-writing/references/voice-calibration.md`
-- `skills/my-novel-writing/references/story-cockpit-workflow.md`
-- `skills/my-novel-writing/references/story-project-layout.md`
-- `skills/my-novel-writing/references/story-memory-ops.md`
-- `skills/my-novel-writing/references/chapter-contract.md`
-- `skills/my-novel-writing/references/outline-gate.md`
-- `skills/my-novel-writing/references/continuity-check.md`
-- `skills/my-novel-writing/references/conflict-pressure.md`
-- `skills/my-novel-writing/references/cinematic-scene-texture.md`
-- `skills/my-novel-writing/references/technical-explanation-voice.md`
-- `skills/my-novel-writing/references/genius-strategy.md`
-- `skills/my-novel-writing/references/dialogue-checklist.md`
-- `skills/my-novel-writing/references/style-preservation.md`
-- `skills/my-novel-writing/references/anti-ai-flavour.md`
-- `skills/my-novel-writing/references/failure-modes.md`
-- `skills/my-novel-writing/references/review-rubric.md`
-- `skills/my-novel-writing/references/source-map.md`
+Choose the lightest safe mode and follow explicit user mode choices.
 
-## Non-Negotiable Rules
+## Compatibility Rules
 
-1. No idea goes directly into prose; route it to a character, thread, chapter contract, world rule, clue, conflict, technical beat, promise, or maybe-later pile.
-2. No prose before outline approval.
-3. No drafting without continuity state.
-4. No peaceful scene unless the peace has dramatic function.
-5. No fake genius: intelligence must be shown through observation, reasoning, tradeoff, and cost.
-6. No perfect plan: strategy must be the best available plan under current constraints.
-7. No enemy stupidity: competent opponents get a red-team pass.
-8. No over-polishing: remove AI flavour without sterilizing the author's voice.
-9. No detached worldbuilding lecture: setting and systems must enter through scene texture.
-10. No decorative science lecture: technical explanation must change action, decision, risk, or emotion.
-11. No vague review: name the failure mode, preserve what works, and list memory updates.
+1. Route only canon-affecting ideas: changes to character state, plot, world rules, timeline, clues, promises, relationships, or important objects.
+2. For a new underspecified story, ask one high-leverage question at a time and approve a World Book plus core Character Cards before plot or prose.
+3. Allow local sensory detail, phrasing, gestures, and non-canon texture without bookkeeping.
+4. Preserve supplied prose and authorial voice; do not over-polish.
+5. In standard and longform modes, do not draft substantial original story direction before explicit outline approval.
+6. Revision, review, dialogue polish, and style polish of supplied text bypass the approval gate.
+7. Classify important continuity facts as `verified`, `inferred`, or `unknown`; do not invent missing canon.
+8. Require active pressure or a clear dramatic function at scene level, not irreversible change in every beat.
+9. Reveal worldbuilding through the scene unless an intentional document format is requested.
+10. Include technical explanation only when it changes action, decision, risk, understanding, or emotion.
+11. Show intelligence through reconstructable reasoning, tradeoffs, cost, opponent competence, and model updates.
+12. Keep decisive actions within approved capability ceilings; route new exceptional abilities before use.
+13. Treat structure models, including four-act structure, as conditional tools rather than universal defaults.
+14. Track promise status and answer the core dramatic question at major endings without forcing every minor thread closed.
+15. Treat style profiles as optional preferences, never universal defaults.
+16. Propose memory changes before applying them; never silently rewrite canon.
 
-## Default Workflow
+## Reference Routing
 
-1. Identify task stage: cockpit/idea routing, setup, planning, drafting, review, dialogue polish, style polish, scene texture, technical explanation, memory update, or genius strategy.
-2. If the user has scattered ideas, route ideas before planning.
-3. Reconstruct current story state.
-4. Create a chapter contract when the chapter is complex, technical, tactical, or continuity-heavy.
-5. Produce a discussion outline with scene texture and technical reasoning when setting, equipment, science, or hard-SF constraints matter.
-6. Run continuity, conflict, texture, technical explanation, failure-mode, and relevant strategy checks.
-7. Ask for explicit approval.
-8. Draft only after approval.
-9. Run post-draft checks and memory update notes.
-10. Present the result and list unresolved risks.
+- Planning: `skills/sheep-story/references/outline-gate.md`, `skills/sheep-story/references/conflict-pressure.md`, plus `skills/sheep-story/references/story-architecture.md` for complete arcs and `skills/sheep-story/references/opposition-design.md` for persistent opposition.
+- New story setup: record supplied durable requirements in the Project Brief immediately, use `skills/sheep-story/references/story-foundation.md`, then apply `skills/sheep-story/references/story-project-layout.md` after Foundation approval.
+- Drafting: `skills/sheep-story/references/voice-calibration.md`, `style-preservation.md`, plus task-specific references.
+- Editorial rewrite: `skills/sheep-story/references/editorial-rewrite.md`, `voice-calibration.md`, and `style-preservation.md`.
+- Review: `skills/sheep-story/references/review-rubric.md`, `style-preservation.md`, plus visible failure-mode references.
+- Memory: `skills/sheep-story/references/story-memory-ops.md` and `continuity-check.md`.
+- Cockpit routing: `skills/sheep-story/references/story-cockpit-workflow.md`.
 
-## Approval Gate
+## Approval
 
-Explicit approval examples:
-
-- 「可以，開始寫」
-- 「照這個寫」
-- 「大綱 OK」
-- 「確認，動筆」
-- `Approved. Draft it.`
-
-Generic reactions like 「嗯嗯」「好像可以」「有趣」「繼續想」 do not count as approval.
+Explicit approval includes 「可以，開始寫」「照這個寫」「大綱 OK」「確認，動筆」 and equivalent unambiguous instructions. Generic reactions such as 「嗯嗯」「好像可以」「有趣」「繼續想」 are not approval.
 
 ## Principle
 
-SheepStory is not for making AI write more. It is for making AI remember, route ideas, reason, see the scene, understand the technical pressure, protect what works, and only then write.
+Make the workflow proportional: remember and reason before writing, without turning every sentence into project management.

@@ -14,23 +14,23 @@ ideas-to-avoid: []
 
 ## Must Accomplish
 
-- 
+- [Required outcome]
 
 ## Must Not Do
 
-- 
+- [Forbidden outcome]
 
 ## Ideas To Use
 
-- 
+- [Idea]
 
 ## Ideas To Avoid
 
-- 
+- [Idea]
 
 ## Required Continuity
 
-- 
+- [Continuity requirement]
 
 ## Required Emotional Change
 
@@ -59,9 +59,23 @@ ideas-to-avoid: []
 - Principle:
 - Decision changed:
 
+## Required Clue / Reveal / Setup
+
+- Required clue:
+- Required reveal:
+- Required setup:
+- Payoff target:
+
+## Relevant Promise Changes (When Applicable)
+
+| Promise | Starting status | Required status change | Evidence required |
+|---|---|---|---|
+
+Use `None` when the chapter does not touch a tracked promise. Do not invent a promise change to fill this table.
+
 ## Forbidden Shortcuts
 
-- No prose before outline approval.
+- In standard and longform workflows, no prose before outline approval.
 - No lore dump outside the scene.
 - No decorative technical lecture.
 - No perfect plan.
@@ -71,3 +85,13 @@ ideas-to-avoid: []
 ## End State
 
 What is permanently different by the end?
+
+## Ending Contract (When Applicable)
+
+- Core dramatic question and answer:
+- Climax choice, refusal, failure, or action:
+- Price paid:
+- Immediate consequence:
+- New stable or unstable condition:
+- Open threads intentionally preserved:
+- Optional opening-ending resonance:

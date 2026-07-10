@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Book with a feather pen</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#14532D"/>
+  <path d="M49 188c27-19 53-19 79-2V89c-25-16-52-17-79-2z" fill="#F0FDF4"/>
+  <path d="M207 188c-27-19-53-19-79-2V89c25-16 52-17 79-2z" fill="#DCFCE7"/>
+  <path d="M128 90v96" stroke="#86EFAC" stroke-width="7"/>
+  <path d="M158 67c30 7 32 39 9 59-16 14-33 20-49 22 9-16 19-34 40-81z" fill="#FDE68A"/>
+  <path d="M120 154 173 77" stroke="#713F12" stroke-width="6" stroke-linecap="round"/>
+  <path d="M70 125h29M70 148h24" stroke="#86EFAC" stroke-width="6" stroke-linecap="round"/>
+  <path d="M159 198h39" stroke="#BBF7D0" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to review dialogue where two officers explain their own military system to each other.
+Use sheep-story to review dialogue where two officers explain their own military system to each other.
 ```
 
 ## Expected Good Behavior

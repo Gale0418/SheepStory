@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Book opening toward a sunrise horizon</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#0F766E"/>
+  <circle cx="128" cy="87" r="31" fill="#FDE68A"/>
+  <path d="M39 188c32-23 62-23 89-2V143c-27-18-57-17-89 4z" fill="#ECFEFF"/>
+  <path d="M217 188c-32-23-62-23-89-2V143c27-18 57-17 89 4z" fill="#CCFBF1"/>
+  <path d="M128 143v43" stroke="#99F6E4" stroke-width="7"/>
+  <path d="M50 157c16-15 34-19 54-13M152 144c20-6 38-2 54 13" fill="none" stroke="#14B8A6" stroke-width="7" stroke-linecap="round"/>
+  <path d="M78 104c14-18 29-27 50-27s36 9 50 27" fill="none" stroke="#FEF3C7" stroke-width="6" stroke-linecap="round"/>
+</svg>

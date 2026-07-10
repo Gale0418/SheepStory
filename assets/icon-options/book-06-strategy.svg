@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Strategy book with a chess knight</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#18181B"/>
+  <path d="M54 184c27-19 51-19 74-2V74c-24-16-50-17-74-2z" fill="#27272A" stroke="#FDE68A" stroke-width="5"/>
+  <path d="M202 184c-27-19-51-19-74-2V74c24-16 50-17 74-2z" fill="#3F3F46" stroke="#FDE68A" stroke-width="5"/>
+  <path d="M128 75v107" stroke="#FBBF24" stroke-width="6"/>
+  <path d="M157 151c0-24 20-26 20-47 16 8 22 24 17 42-4 15-17 24-35 25z" fill="#FDE68A"/>
+  <path d="M158 151h40l-8 17h-40z" fill="#D97706"/>
+  <circle cx="176" cy="121" r="4" fill="#18181B"/>
+  <path d="M73 104h29M73 126h21" stroke="#A1A1AA" stroke-width="6" stroke-linecap="round"/>
+</svg>

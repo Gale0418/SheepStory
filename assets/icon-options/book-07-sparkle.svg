@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Light novel book with sparkles</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#4C1D95"/>
+  <path d="M47 183c28-20 55-20 81-2V81c-26-16-53-17-81-2z" fill="#F5F3FF"/>
+  <path d="M209 183c-28-20-55-20-81-2V81c26-16 53-17 81-2z" fill="#DDD6FE"/>
+  <path d="M128 82v99" stroke="#C4B5FD" stroke-width="7"/>
+  <path d="m52 60 5 12 13 5-13 5-5 13-5-13-13-5 13-5zM194 55l4 10 11 4-11 4-4 11-4-11-11-4 11-4zM193 134l3 8 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#FDE68A"/>
+  <path d="M70 116h34M70 141h25M152 116h34M152 141h29" stroke="#A78BFA" stroke-width="6" stroke-linecap="round"/>
+</svg>

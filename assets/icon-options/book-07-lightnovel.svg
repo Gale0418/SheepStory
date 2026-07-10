@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Light novel book with spark">
+  <title>Book icon option 07: light novel book with spark</title>
+  <rect width="256" height="256" rx="48" fill="#E86F73"/>
+  <path d="M40 93c31-15 60-12 88 8v108c-28-18-57-21-88-7z" fill="#FFF8F0" stroke="#4B3040" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M216 93c-31-15-60-12-88 8v108c28-18 57-21 88-7z" fill="#FFE9E1" stroke="#4B3040" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 101v108" stroke="#4B3040" stroke-width="8" stroke-linecap="round"/>
+  <path d="M64 128h54M64 153h43M192 128h-54M192 153h-43" stroke="#D99A9D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M181 39l6 17 17 6-17 6-6 17-6-17-17-6 17-6z" fill="#F7D774" stroke="#4B3040" stroke-width="5" stroke-linejoin="round"/>
+</svg>

@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to plan a scene where the mastermind smiles because he already saw through everything.
+Use sheep-story to plan a scene where the mastermind smiles because he already saw through everything.
 ```
 
 ## Expected Good Behavior

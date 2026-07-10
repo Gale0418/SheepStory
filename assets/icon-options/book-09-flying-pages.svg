@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Book with flying pages</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#1E3A8A"/>
+  <path d="M48 190c28-19 54-20 80-2v-72c-25-16-52-17-80-2z" fill="#EFF6FF"/>
+  <path d="M208 190c-28-19-54-20-80-2v-72c25-16 52-17 80-2z" fill="#DBEAFE"/>
+  <path d="M128 116v72" stroke="#93C5FD" stroke-width="7"/>
+  <path d="M77 82c12-13 24-11 31 1-12 3-22 5-31-1zM118 61c12-13 24-11 31 1-12 3-22 5-31-1zM161 84c12-13 24-11 31 1-12 3-22 5-31-1z" fill="#BFDBFE"/>
+  <path d="M72 145h30M154 145h29M72 166h22M162 166h22" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/>
+</svg>

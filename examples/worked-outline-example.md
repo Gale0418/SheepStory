@@ -5,7 +5,7 @@ This example shows the expected behavior of SheepStory before drafting prose.
 ## User Request
 
 ```text
-Use my-novel-writing to plan a scene where a weak but brilliant exiled prince uses a poor rebel cell to win a local battle, but an unknown ace pilot breaks his plan.
+Use sheep-story to plan a scene where a weak but brilliant exiled prince uses a poor rebel cell to win a local battle, but an unknown ace pilot breaks his plan.
 Do not draft prose yet.
 ```
 

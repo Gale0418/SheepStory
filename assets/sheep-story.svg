@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="#f4f4f5"/>
+  <!-- Sheep Body -->
+  <path d="M30 60 C 20 60, 20 40, 35 40 C 40 25, 60 25, 65 40 C 80 40, 80 60, 70 60 Z" fill="#ffffff" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Sheep Head -->
+  <circle cx="70" cy="50" r="12" fill="#333333"/>
+  <!-- Sheep Eye -->
+  <circle cx="74" cy="46" r="2" fill="#ffffff"/>
+  <!-- Sheep Ear -->
+  <path d="M78 50 Q 85 55 78 60 Z" fill="#333333"/>
+  <!-- Legs -->
+  <rect x="40" y="60" width="6" height="15" fill="#333333" rx="2"/>
+  <rect x="55" y="60" width="6" height="15" fill="#333333" rx="2"/>
+  <!-- Pen Nib (Story aspect) -->
+  <path d="M20 75 L 30 65 L 35 70 L 25 80 Z" fill="#666666"/>
+  <path d="M20 75 L 15 85 L 25 80 Z" fill="#333333"/>
+</svg>

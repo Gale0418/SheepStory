@@ -24,7 +24,7 @@ Help the user convert scattered ideas into:
 - character state changes
 - chapter contracts
 - continuity updates
-- exportable prompts for `my-novel-writing`
+- exportable prompts for `sheep-story`
 
 ## Non-Goals
 
@@ -155,12 +155,12 @@ Fields:
 
 ### 6. Export Prompt
 
-Generates a structured prompt for `my-novel-writing`.
+Generates a structured prompt for the `sheep-story` plugin.
 
 Example:
 
 ```markdown
-Use my-novel-writing.
+Use sheep-story.
 
 ## Current Story State
 ...
@@ -195,7 +195,7 @@ Link to character / plot thread / chapter
 ↓
 Create chapter contract
 ↓
-Export prompt to my-novel-writing
+Export prompt to sheep-story
 ↓
 Generate outline only
 ↓
@@ -266,6 +266,10 @@ interface ChapterContract {
   chapterRole: string;
   mustAccomplish: string[];
   mustNotDo: string[];
+  requiredClue?: string;
+  requiredReveal?: string;
+  requiredSetup?: string;
+  payoffTarget?: string;
   ideasToUse: string[];
   ideasToAvoid: string[];
   requiredContinuity: string[];
@@ -275,7 +279,7 @@ interface ChapterContract {
   technicalReasoning?: string;
   forbiddenShortcuts: string[];
   endState: string;
-  status: 'contract-needed' | 'outline-needed' | 'awaiting-approval' | 'drafting' | 'drafted' | 'memory-update-needed' | 'reviewed' | 'complete';
+  status: 'not-started' | 'contract-needed' | 'outline-needed' | 'awaiting-approval' | 'drafting' | 'drafted' | 'memory-update-needed' | 'reviewed' | 'complete';
 }
 ```
 
@@ -287,6 +291,7 @@ interface StoryState {
   currentTime?: string;
   currentLocation?: string;
   activeCharacterIds: string[];
+  characterStates: Record<string, string>;
   openQuestions: string[];
   openPromises: string[];
   objectState: Record<string, string>;
@@ -316,7 +321,7 @@ story-projects/           # local markdown projects
 
 1. Ideas can be captured instantly.
 2. Ideas cannot enter a chapter until routed.
-3. A chapter cannot draft until it has a contract.
+3. A longform chapter cannot draft until it has a contract and approved outline. Standard chapters require an approved outline and require a contract only when complexity warrants it. Quick mode may treat a sufficiently specific request as the approved brief.
 4. A contract cannot include unlimited ideas.
 5. After drafting, memory update is required.
 6. The system must always show the next smallest action.
@@ -329,7 +334,7 @@ The MVP succeeds if the user can turn 20 scattered ideas into:
 - 3–5 plot threads
 - several linked character states
 - 1 chapter contract
-- 1 export prompt for `my-novel-writing`
+- 1 export prompt for `sheep-story`
 
 ## Principle
 

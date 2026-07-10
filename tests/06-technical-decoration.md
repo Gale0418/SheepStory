@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to add a technical explanation to a survival scene.
+Use sheep-story to add a technical explanation to a survival scene.
 ```
 
 ## Expected Good Behavior

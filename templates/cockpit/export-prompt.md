@@ -1,7 +1,7 @@
 # Export Prompt Template
 
 ```markdown
-Use my-novel-writing.
+Use sheep-story.
 
 ## Current Story State
 
@@ -29,19 +29,19 @@ End state:
 
 ## Ideas To Use
 
-- 
+- [Idea]
 
 ## Ideas To Avoid
 
-- 
+- [Idea]
 
 ## Plot Threads To Advance
 
-- 
+- [Plot thread]
 
 ## Style Profiles
 
-- 
+- [Style profile]
 
 ## Task
 

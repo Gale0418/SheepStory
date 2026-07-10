@@ -3,12 +3,15 @@ title:
 genre:
 subgenre:
 status: planning
+foundation-status: proposed
 pov:
 tense:
 themes: []
 ---
 
 # Story Bible
+
+Read `project-brief.md` first for project-scoped requirements, prohibitions, capability ceilings, boundaries, and open decisions.
 
 ## Synopsis
 
@@ -24,6 +27,8 @@ What experience should the reader expect?
 |---|---|---|
 
 ## World Premise
+
+See `worldbuilding/world-book.md` for approved rules, limits, institutions, lived consequences, and canon status.
 
 ## Rules / Constraints
 

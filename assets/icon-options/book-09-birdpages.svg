@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Book with pages becoming a bird">
+  <title>Book icon option 09: pages becoming a bird</title>
+  <rect width="256" height="256" rx="48" fill="#5A4B6E"/>
+  <path d="M40 116c29-14 59-10 88 9v91c-29-18-59-21-88-8z" fill="#FFF9E9" stroke="#302C4A" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M216 116c-29-14-59-10-88 9v91c29-18 59-21 88-8z" fill="#FFF0D8" stroke="#302C4A" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 125v91" stroke="#302C4A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M62 150h51M62 175h41M194 150h-51M194 175h-41" stroke="#B4A2C8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 96c13-33 34-47 64-48-12 15-16 31-11 49 19-8 36-5 49 8-26 16-53 18-79 7-9-4-17-9-23-16z" fill="#F7D774" stroke="#302C4A" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="178" cy="66" r="3" fill="#302C4A"/>
+</svg>

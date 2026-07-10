@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to write chapter 1 about a runaway princess.
+Use sheep-story in standard mode to write chapter 1 about a runaway princess.
 ```
 
 ## Expected Good Behavior

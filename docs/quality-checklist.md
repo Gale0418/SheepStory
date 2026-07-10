@@ -5,29 +5,46 @@ Use this checklist before calling the skill release-ready.
 ## Skill Structure
 
 - [ ] Root `SKILL.md` exists for environments that scan only the repository root.
-- [ ] Main implementation exists at `skills/my-novel-writing/SKILL.md`.
+- [ ] Main implementation exists at `skills/sheep-story/SKILL.md`.
 - [ ] `SKILL.md` has frontmatter with `name` and `description`.
-- [ ] References are colocated under `skills/my-novel-writing/references/`.
-- [ ] Story Cockpit workflow exists at `skills/my-novel-writing/references/story-cockpit-workflow.md`.
+- [ ] References are colocated under `skills/sheep-story/references/`.
+- [ ] Story Cockpit workflow exists at `skills/sheep-story/references/story-cockpit-workflow.md`.
+- [ ] Story Foundation workflow adaptively handles world-first, character-first, situation-first, and no-seed starts.
 - [ ] WebUI design exists at `docs/webui-design.md`.
 - [ ] Cockpit templates exist under `templates/cockpit/`.
-- [ ] Style profiles exist under `skills/my-novel-writing/style-profiles/`.
+- [ ] Style profiles exist under `skills/sheep-story/style-profiles/`.
+- [ ] Voice calibration is genre-neutral; SheepStory house taste and zh-TW behavior are opt-in profiles.
 - [ ] README explains how to use the skill.
 - [ ] Source map records inspirations and style boundaries.
 - [ ] Templates exist for a story project.
+- [ ] Project Brief isolates required, forbidden, and project-specific constraints from generic skill defaults.
+- [ ] World Book and Character Card templates distinguish proposed material from approved canon.
+- [ ] Character Cards define flaw/coping strategy and capability ceiling.
+- [ ] Promise templates track lifecycle state and closure evidence.
 - [ ] Worked examples exist for common rewrite transformations.
-- [ ] Tests exist for common failure modes.
+- [ ] Structural and static validation script exists (e.g., `tests/run_static_checks.ps1` or similar).
+- [ ] Prompt specifications exist for common behavioral failure modes.
 
 ## Behavioral Gates
 
+- [ ] A new underspecified story asks one high-leverage Foundation question at a time.
+- [ ] Supplied world or character seeds are preserved instead of replaced by preferred defaults.
+- [ ] A sufficient or approved Foundation bypasses redundant intake.
+- [ ] World Book and Character Cards are cross-checked and approved before substantial plot or prose.
+- [ ] The skill selects quick, standard, or longform mode proportionately.
+- [ ] Quick mode accepts a sufficiently specific bounded prompt without unnecessary contract or memory setup.
+- [ ] Standard and longform original prose retain explicit approval gates.
 - [ ] The skill routes scattered ideas before planning.
-- [ ] No idea goes directly into prose.
+- [ ] Canon-affecting ideas are routed before prose; local non-canon texture remains free to improvise.
 - [ ] Ideas can be assigned to character, thread, chapter contract, clue, conflict, technical beat, promise, or maybe-later.
-- [ ] The skill refuses to draft prose before outline approval.
+- [ ] Standard and longform original prose require outline approval; quick-mode exceptions remain bounded and explicit.
 - [ ] The skill reconstructs continuity before prose.
 - [ ] The skill asks targeted questions when continuity is missing.
 - [ ] Complex chapters use a chapter contract.
-- [ ] Each beat is checked for desire, obstacle, cost, turn, and irreversible change.
+- [ ] Complete stories and arcs select a structure model by function; four-act structure remains optional.
+- [ ] Major endings answer the core dramatic question, show consequence, and preserve only intentional open threads.
+- [ ] Opening-ending resonance remains optional rather than decorative compliance.
+- [ ] Each scene has pressure or dramatic function; individual beats advance at least one meaningful dimension without requiring universal irreversibility.
 - [ ] Peaceful scenes must have dramatic function.
 - [ ] Scenes with setting or worldbuilding include a scene texture plan.
 - [ ] Worldbuilding enters through action, objects, friction, sensory detail, POV, or desire.
@@ -37,33 +54,38 @@ Use this checklist before calling the skill release-ready.
 - [ ] Technical explanation preserves human voice, uncertainty, and pressure.
 - [ ] Genius characters require domain, observation, reasoning chain, options, cost, and blind spot.
 - [ ] Competent opponents receive a red-team pass.
+- [ ] Personal, institutional, environmental, relational, and internal opposition can act independently of the protagonist.
+- [ ] Opposition is coherent without requiring sympathy, redemption, or a secret mastermind.
 - [ ] Strategy scenes avoid perfect resources and perfect information.
+- [ ] Protagonist solutions remain within approved skills, information, resources, help, time, and physical limits.
 - [ ] Reviews identify failure modes.
 - [ ] Reviews include what to preserve.
-- [ ] After drafting, the skill lists memory updates needed.
+- [ ] Editorial rewrites select an observable mode instead of treating "humanize" as an operation.
+- [ ] Editorial rewrites preserve facts, claims, stance, uncertainty, qualifications, terminology, and authorial markers.
+- [ ] Concise and plain-language modes do not delete accuracy; conversational mode does not force slang or fake intimacy.
+- [ ] Already effective text may remain unchanged.
+- [ ] After state-changing longform drafting, the skill produces a classified Memory Patch Proposal.
+- [ ] Memory files are changed only after authorization and are re-read for post-apply validation.
 - [ ] Anti-AI-flavour pass preserves voice and roughness.
 
-## Test Prompts
+## Test Strategy
 
-Run the test files in `tests/`:
+Run the structural validation script in `tests/` to verify plugin integrity:
 
 ```text
-tests/01-outline-gate.md
-tests/02-continuity-missing.md
-tests/03-too-peaceful.md
-tests/04-fake-genius.md
-tests/05-lore-dump.md
-tests/06-technical-decoration.md
-tests/07-dialogue-exposition.md
-tests/08-over-polish.md
+tests/run_static_checks.ps1
 ```
+
+
+The files in `tests/` are prompt-based acceptance specifications. Tests 01–08 are negative controls for known failure modes; tests 09–26 are positive controls that prevent safeguards from overcorrecting and cover approval, rewriting, Foundation, architecture, opposition, capability ceilings, promises, endings, and project-only constraints. Run each prompt through a fresh skill-enabled session and compare the response with its pass criteria.
+Note: This script only performs static and structural validation (e.g., checking manifest formatting, file existence, and reference links). It does NOT perform live LLM behavior testing. LLM behavior tests are manual for now.
 
 ## Cockpit Smoke Test
 
 Prompt:
 
 ```text
-Use my-novel-writing in Story Cockpit mode.
+Use sheep-story in Story Cockpit mode.
 Here are ten scattered ideas. Route them before planning.
 Do not draft prose.
 ```
@@ -91,8 +113,10 @@ worked-examples/peaceful-scene-to-conflict-pressure.md
 
 A release-ready version should include:
 
-- [ ] Root entrypoint
-- [ ] Nested skill package
+- [ ] Plugin manifest (`.codex-plugin/plugin.json`)
+- [ ] Plugin icon (`assets/sheep-story.svg`)
+- [ ] Root entrypoint (`SKILL.md`)
+- [ ] Nested skill package (`skills/sheep-story/`)
 - [ ] References
 - [ ] Story Cockpit workflow
 - [ ] WebUI design document

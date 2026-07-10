@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Open book with landscape pages">
+  <title>Book icon option 03: open book with landscape pages</title>
+  <rect width="256" height="256" rx="48" fill="#176B73"/>
+  <circle cx="184" cy="73" r="24" fill="#F7D774"/>
+  <path d="M35 116c31-14 62-10 93 11v91c-31-20-62-23-93-9z" fill="#FDF7E8" stroke="#123B4A" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M221 116c-31-14-62-10-93 11v91c31-20 62-23 93-9z" fill="#FFF8DC" stroke="#123B4A" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M39 153l30-27 26 21 26-32M217 153l-30-27-26 21-26-32" fill="none" stroke="#4C9B72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 128v90" stroke="#123B4A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M57 177h57M199 177h-57" stroke="#B7D4C2" stroke-width="6" stroke-linecap="round"/>
+</svg>

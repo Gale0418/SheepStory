@@ -3,7 +3,7 @@
 ## Prompt
 
 ```text
-Use my-novel-writing to review this scene: two rivals discuss their misunderstanding, apologize, and become friends.
+Use sheep-story to review this scene: two rivals discuss their misunderstanding, apologize, and become friends.
 ```
 
 ## Expected Good Behavior

@@ -1,0 +1,38 @@
+{
+  "name": "sheep-story",
+  "version": "0.1.0+codex.20260710213622",
+  "description": "A novel writing and story cockpit plugin.",
+  "author": {
+    "name": "Gale0418",
+    "url": "https://github.com/Gale0418"
+  },
+  "repository": "https://github.com/Gale0418/SheepStory",
+  "license": "MIT",
+  "keywords": [
+    "fiction",
+    "novel-writing",
+    "continuity",
+    "story-cockpit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SheepStory",
+    "shortDescription": "Write fiction with proportional planning and continuity control.",
+    "longDescription": "SheepStory is a fiction-writing Agent Skill for proportional quick, standard, and longform workflows. It reduces continuity drift, routes canon-affecting ideas, protects authorial voice, tests conflict and reasoning, and requires outline approval when the scope warrants it.",
+    "developerName": "Gale0418",
+    "category": "Writing",
+    "brandColor": "#6B8E23",
+    "composerIcon": "./assets/icon-options/book-10-sheepish.svg",
+    "logo": "./assets/icon-options/book-10-sheepish.svg",
+    "defaultPrompt": [
+      "Use sheep-story to build a World Book and Character Cards for a new story.",
+      "Use sheep-story to route these canon-affecting ideas.",
+      "Use sheep-story to review this scene without flattening its voice."
+    ],
+    "capabilities": [
+      "fiction-writing",
+      "story-continuity",
+      "idea-routing"
+    ]
+  }
+}

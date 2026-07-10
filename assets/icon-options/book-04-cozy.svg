@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Cozy illustrated book with a heart</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#FFEDD5"/>
+  <path d="M52 178c26-18 51-19 76-2V70c-24-16-50-18-76-2z" fill="#FFF7ED"/>
+  <path d="M204 178c-26-18-51-19-76-2V70c24-16 50-18 76-2z" fill="#FED7AA"/>
+  <path d="M128 71v105" stroke="#FB923C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 113c-18-21-42 6 0 34 42-28 18-55 0-34z" fill="#EA580C"/>
+  <path d="M73 91h30M153 91h30M73 157h25M158 157h25" stroke="#FDBA74" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="54" cy="57" r="8" fill="#FDBA74"/>
+  <circle cx="202" cy="57" r="8" fill="#FDBA74"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Classic closed book with bookmark</title>
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#FFF7ED"/>
+  <path d="M64 54h113c10 0 18 8 18 18v118c0 10-8 18-18 18H64z" fill="#B91C1C"/>
+  <path d="M64 54h13v154H64c-10 0-18-8-18-18V72c0-10 8-18 18-18z" fill="#7F1D1D"/>
+  <path d="M91 77h74M91 101h57M91 125h68" stroke="#FECACA" stroke-width="8" stroke-linecap="round"/>
+  <path d="M154 48v88l-14-10-14 10V48z" fill="#FBBF24"/>
+  <path d="M176 208H72" stroke="#FDE68A" stroke-width="6" stroke-linecap="round"/>
+</svg>
