@@ -36,7 +36,7 @@ Not approval:
 
 ## Required Outline Fields
 
-For each chapter or scene, produce:
+For Standard and Longform modes (or gated mixed work), you MUST produce the full template below for each chapter or scene. For Quick mode, you may omit this full template if no substantial choices remain to be made.
 
 ```markdown
 ## Proposed Outline
