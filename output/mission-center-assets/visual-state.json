@@ -1,0 +1,147 @@
+{
+  "status": "Review",
+  "goal": "在保留聲音型台詞能力的基礎上，建立可驗證、可回復且不污染 canon 的作者實驗室與故事狀態基座。",
+  "progress": 93,
+  "active": [
+    "建立 SheepStory 作者實驗室與故事狀態基座",
+    "第三里程碑整合驗證與收尾"
+  ],
+  "blocked": [],
+  "agents": [
+    {
+      "id": "MC-011",
+      "name": "建立 SheepStory 作者實驗室與故事狀態基座",
+      "task": "MC-011 建立 SheepStory 作者實驗室與故事狀態基座",
+      "status": "Review",
+      "zone": "Review",
+      "avatar": 7,
+      "active": true
+    },
+    {
+      "id": "MC-018",
+      "name": "第三里程碑整合驗證與收尾",
+      "task": "MC-018 第三里程碑整合驗證與收尾",
+      "status": "Review",
+      "zone": "Review",
+      "avatar": 2,
+      "active": true
+    },
+    {
+      "id": "MC-004",
+      "name": "建立並執行聲音型台詞回歸驗證",
+      "task": "MC-004 建立並執行聲音型台詞回歸驗證",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 13,
+      "active": false
+    },
+    {
+      "id": "MC-005",
+      "name": "擴展跨類型聲音型台詞模型與前向案例庫",
+      "task": "MC-005 擴展跨類型聲音型台詞模型與前向案例庫",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 10,
+      "active": false
+    },
+    {
+      "id": "MC-006",
+      "name": "收尾首個可驗證里程碑",
+      "task": "MC-006 收尾首個可驗證里程碑",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 4,
+      "active": false
+    },
+    {
+      "id": "MC-007",
+      "name": "研究非詞彙聲音、語助詞、韻律人格與儀式語言",
+      "task": "MC-007 研究非詞彙聲音、語助詞、韻律人格與儀式語言",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 4,
+      "active": false
+    },
+    {
+      "id": "MC-008",
+      "name": "設計聲音簽名與詠唱的可操作分類法",
+      "task": "MC-008 設計聲音簽名與詠唱的可操作分類法",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 8,
+      "active": false
+    },
+    {
+      "id": "MC-009",
+      "name": "更新 SheepStory 聲音型台詞規則與路由",
+      "task": "MC-009 更新 SheepStory 聲音型台詞規則與路由",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 4,
+      "active": false
+    },
+    {
+      "id": "MC-010",
+      "name": "建立跨類型前向案例與回歸驗證",
+      "task": "MC-010 建立跨類型前向案例與回歸驗證",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 8,
+      "active": false
+    },
+    {
+      "id": "MC-012",
+      "name": "彙整跨模型、GitHub 與本機架構研究",
+      "task": "MC-012 彙整跨模型、GitHub 與本機架構研究",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 10,
+      "active": false
+    },
+    {
+      "id": "MC-013",
+      "name": "建立非 canon 作者實驗室規則",
+      "task": "MC-013 建立非 canon 作者實驗室規則",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 4,
+      "active": false
+    },
+    {
+      "id": "MC-014",
+      "name": "建立故事狀態 ledger 與來源治理規則",
+      "task": "MC-014 建立故事狀態 ledger 與來源治理規則",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 5,
+      "active": false
+    },
+    {
+      "id": "MC-015",
+      "name": "建立匯入、執行追蹤、快照與回滾安全契約",
+      "task": "MC-015 建立匯入、執行追蹤、快照與回滾安全契約",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 5,
+      "active": false
+    },
+    {
+      "id": "MC-016",
+      "name": "建立節奏揭露 advisory 與擴充邊界",
+      "task": "MC-016 建立節奏揭露 advisory 與擴充邊界",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 16,
+      "active": false
+    },
+    {
+      "id": "MC-017",
+      "name": "建立 Tests 30–45 與 runner 契約",
+      "task": "MC-017 建立 Tests 30–45 與 runner 契約",
+      "status": "Done",
+      "zone": "Done",
+      "avatar": 11,
+      "active": false
+    }
+  ]
+}

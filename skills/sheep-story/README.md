@@ -10,6 +10,7 @@ It is an outline-first fiction-writing and story-organization skill for long-for
 SKILL.md
 references/
 ├── anti-ai-flavour.md
+├── authoring-laboratory.md
 ├── chapter-contract.md
 ├── cinematic-scene-texture.md
 ├── conflict-pressure.md
@@ -19,14 +20,18 @@ references/
 ├── failure-modes.md
 ├── genius-strategy.md
 ├── outline-gate.md
+├── pacing-reveal-and-extensions.md
+├── project-recovery-and-runs.md
 ├── review-rubric.md
 ├── source-map.md
 ├── story-cockpit-workflow.md
 ├── story-foundation.md
 ├── story-memory-ops.md
 ├── story-project-layout.md
+├── story-state-ledgers.md
 ├── style-preservation.md
 ├── technical-explanation-voice.md
+├── vocal-impact.md
 └── voice-calibration.md
 style-profiles/
 ├── sheepstory-house-style.md
@@ -55,6 +60,7 @@ Use this skill for:
 - reviewing drafts with scores, failure modes, and what to preserve
 - updating long-story memory after a chapter
 - polishing dialogue so it has intention, obstacle, and subtext
+- preserving earned battle cries, invocations, screams, repeated names, broken speech, crowd responses, and other low-semantic vocal lines
 - removing AI flavour without over-polishing
 - writing genius-vs-genius strategy scenes
 - creating a story bible and continuity memory

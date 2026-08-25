@@ -42,6 +42,7 @@ $manifestText = Read-ProjectText '.codex-plugin/plugin.json'
 $rootSkill = Read-ProjectText 'SKILL.md'
 $skill = Read-ProjectText 'skills/sheep-story/SKILL.md'
 $calibration = Read-ProjectText 'skills/sheep-story/references/voice-calibration.md'
+$vocalImpact = Read-ProjectText 'skills/sheep-story/references/vocal-impact.md'
 $memory = Read-ProjectText 'skills/sheep-story/references/story-memory-ops.md'
 $cockpit = Read-ProjectText 'skills/sheep-story/references/story-cockpit-workflow.md'
 $editorial = Read-ProjectText 'skills/sheep-story/references/editorial-rewrite.md'
@@ -65,6 +66,93 @@ $worldBookTemplate = Read-ProjectText 'templates/story-project/worldbuilding/wor
 $characterTemplate = Read-ProjectText 'templates/story-project/characters/_template.md'
 $houseProfile = Read-ProjectText 'skills/sheep-story/style-profiles/sheepstory-house-style.md'
 $zhTwProfile = Read-ProjectText 'skills/sheep-story/style-profiles/zh-tw-fiction.md'
+$authoringLab = Read-ProjectText 'skills/sheep-story/references/authoring-laboratory.md'
+$stateLedgers = Read-ProjectText 'skills/sheep-story/references/story-state-ledgers.md'
+$recoveryRuns = Read-ProjectText 'skills/sheep-story/references/project-recovery-and-runs.md'
+$pacingExtensions = Read-ProjectText 'skills/sheep-story/references/pacing-reveal-and-extensions.md'
+$labTemplate = Read-ProjectText 'templates/cockpit/authoring-lab.md'
+$ledgerTemplate = Read-ProjectText 'templates/cockpit/story-state-ledger.md'
+$advisoryTemplate = Read-ProjectText 'templates/cockpit/pacing-reveal-advisory.md'
+$runManifestTemplate = Read-ProjectText 'templates/ops/run-manifest.md'
+$extensionTemplate = Read-ProjectText 'templates/ops/extension-contract.md'
+
+function Get-MarkdownSection {
+    param(
+        [string]$Content,
+        [string]$Heading
+    )
+
+    $escapedHeading = [regex]::Escape($Heading)
+    $match = [regex]::Match(
+        $Content,
+        "(?ms)^##\s+$escapedHeading\s*\r?\n(?<body>.*?)(?=\r?\n##\s+|\z)"
+    )
+    if ($match.Success) {
+        return $match.Groups['body'].Value
+    }
+    return ''
+}
+
+function Test-BehaviorSpec {
+    param(
+        [string]$RelativePath,
+        [string[]]$ScenarioAnchors
+    )
+
+    $content = Read-ProjectText $RelativePath
+    if (-not $content) {
+        return
+    }
+
+    $prompt = Get-MarkdownSection $content 'Prompt'
+    $expected = Get-MarkdownSection $content 'Expected Good Behavior'
+    $bad = Get-MarkdownSection $content 'Bad Behavior To Reject'
+    $pass = Get-MarkdownSection $content 'Pass Criteria'
+
+    foreach ($section in @{
+        Prompt = $prompt
+        'Expected Good Behavior' = $expected
+        'Bad Behavior To Reject' = $bad
+        'Pass Criteria' = $pass
+    }.GetEnumerator()) {
+        if ([string]::IsNullOrWhiteSpace($section.Value)) {
+            $failures.Add("Behavior spec $RelativePath is missing section: $($section.Key)")
+        }
+    }
+
+    if ($prompt -notmatch '(?s)```.*```') {
+        $failures.Add("Behavior spec $RelativePath must include a fenced prompt")
+    }
+
+    $expectedBulletMatches = [regex]::Matches($expected, '(?m)^\s*-\s+(?<body>.+)$')
+    $badBulletMatches = [regex]::Matches($bad, '(?m)^\s*-\s+(?<body>.+)$')
+    $expectedBullets = $expectedBulletMatches.Count
+    $badBullets = $badBulletMatches.Count
+    if ($expectedBullets -lt 4) {
+        $failures.Add("Behavior spec $RelativePath needs at least four positive decisions")
+    }
+    if ($badBullets -lt 4) {
+        $failures.Add("Behavior spec $RelativePath needs at least four rejected decisions")
+    }
+
+    $expectedScenarioBullets = @($expectedBulletMatches | Where-Object {
+        $bullet = $_.Groups['body'].Value
+        @($ScenarioAnchors | Where-Object { $bullet -match $_ }).Count -gt 0
+    }).Count
+    $badScenarioBullets = @($badBulletMatches | Where-Object {
+        $bullet = $_.Groups['body'].Value
+        @($ScenarioAnchors | Where-Object { $bullet -match $_ }).Count -gt 0
+    }).Count
+    if ($expectedScenarioBullets -lt 3 -or $badScenarioBullets -lt 3) {
+        $failures.Add("Behavior spec $RelativePath must carry scenario anchors into at least three distinct positive and three distinct negative decisions")
+    }
+    if ($expected -eq $bad) {
+        $failures.Add("Behavior spec $RelativePath positive and negative decisions must differ")
+    }
+    if ($pass -notmatch '(?i)evidence|context|consequence|function') {
+        $failures.Add("Behavior spec $RelativePath pass criteria must require observable reasoning")
+    }
+}
 
 if ($manifestText) {
     $manifest = $manifestText | ConvertFrom-Json
@@ -93,6 +181,52 @@ Require-Match $memory '(?m)^## Apply Authorization\s*$' 'Memory operations must 
 Require-Match $memory '(?m)^## Post-Apply Validation\s*$' 'Memory operations must define post-apply validation.'
 Reject-Match $cockpit '(?i)A chapter cannot draft until it has a contract' 'Cockpit contract policy must respect operating modes.'
 Require-Match $skill 'references/editorial-rewrite\.md' 'Canonical skill must route editorial rewrite work to its dedicated reference.'
+Require-Match $skill 'references/vocal-impact\.md' 'Canonical skill must route applicable low-semantic vocal lines to Vocal Impact.'
+Require-Match $vocalImpact '(?i)does not need to add facts|does not need to add new facts' 'Vocal Impact must distinguish informational content from dramatic function.'
+Require-Match $vocalImpact '(?is)affect.*embodiment.*rhythm.*timing' 'Vocal Impact must cover affect, embodiment, rhythm, and timing.'
+Require-Match $vocalImpact '(?i)low semantic content.*not permission|low-semantic content.*not permission' 'Vocal Impact must reject arbitrary low-semantic writing.'
+Require-Match $vocalImpact '(?i)abstract nouns.*fate.*eternity|fate.*eternity.*scene-specific' 'Vocal Impact must reject unearned abstract grandeur.'
+Require-Match $vocalImpact '(?i)judge the line in its scene|contextual charge' 'Vocal Impact must evaluate vocal lines in context.'
+Require-Match $vocalImpact '(?i)themed shop.*eccentric employee|themed places and eccentric speakers' 'Vocal Impact must allow purposeful incongruity from established places or speakers.'
+Require-Match $vocalImpact '(?i)non-lexical.*not.*fixed|fixed.*dictionary|morphology.*prosody.*turn position' 'Vocal Impact must read non-lexical sound from multiple contextual cues rather than a fixed emotion dictionary.'
+Require-Match $vocalImpact '(?is)stable baseline.*pressure variation.*social mask.*recovery' 'Vocal Impact must model voice signatures as baseline, pressure variation, social mask, and recovery or cost.'
+Require-Match $vocalImpact '(?i)mask on.*crack.*mask off|mask on.*crack.*off' 'Vocal Impact must make an eccentric speaker''s mask cycle observable without requiring a crack every time.'
+Require-Match $vocalImpact '(?is)function.*build-up.*movement.*constraint.*cost.*response.*consequence' 'Vocal Impact must ground chants and battle cries in function, action, constraints, costs, responses, and consequences.'
+Require-Match $vocalImpact '(?i)delivery, pitch, pause, draw, breath, ritual, mask, voice_asset' 'Vocal Impact metadata guidance must use the finite engine-neutral delivery field set.'
+Require-Match $vocalImpact '(?i)unknown.*flag|flag.*unknown' 'Vocal Impact must flag unknown vocal cues instead of inventing their meaning.'
+Require-Match $vocalImpact '(?i)optional.*profile|not universal.*prose|subtitle' 'Vocal Impact must keep subtitle limits optional rather than universal prose rules.'
+Require-Match $vocalImpact '(?i)blanket ban.*tildes|two-character maximum|density.*necessity.*readability' 'Vocal Impact must use density, necessity, and readability guardrails instead of hard bans on sound notation.'
+Require-Match $vocalImpact '(?i)breath.*injury.*distance.*fatigue.*vocal folds' 'Vocal Impact must account for breath, injury, distance, fatigue, and vocal-fold consequences at high intensity.'
+Require-Match $vocalImpact '(?i)context window.*multiple signals|one loudness.*cannot' 'Vocal Impact must not treat a single loudness value as proof of a climax.'
+
+Test-BehaviorSpec 'tests/28-vocal-evidence-and-voice-signature.md' @(
+    'breathy laugh|laugh that masks pain|laugh'
+    'clipped gasp|gasp'
+    'hoarse|exertion'
+    'unfamiliar interjection|ritual'
+)
+Test-BehaviorSpec 'tests/29-ritual-media-and-intensity.md' @(
+    'call-and-response|dropped beat|silent'
+    'battle cry|injured|out of breath'
+    'cashier|mask-on|crack'
+    'metadata|voice_asset|player state|translation text'
+)
+Test-BehaviorSpec 'tests/30-reader-consensus.md' @('reader|lens|reaction', 'canon|story state', 'evidence|interpretation', 'revision|review|provenance')
+Test-BehaviorSpec 'tests/31-lab-sandbox-isolation.md' @('experiment|sandbox', 'story|character|canon|canonical', 'event|relationship|state', 'provenance|mutation|approval')
+Test-BehaviorSpec 'tests/32-non-canon-character-lab.md' @('character|cast', 'canon|state', 'evidence|biography', 'capability|ceiling|backstory|relationship', 'contradiction')
+Test-BehaviorSpec 'tests/33-alternate-takes.md' @('take', 'canon', 'promise')
+Test-BehaviorSpec 'tests/34-bridge-writing.md' @('endpoint|event', 'bridge|connective', 'contradiction|seam|continuity', 'canon|approval', 'capability|promise|timeline')
+Test-BehaviorSpec 'tests/35-claim-provenance.md' @('claim', 'provenance', 'inference', 'canon')
+Test-BehaviorSpec 'tests/36-event-timeline-ledger.md' @('time|timeline|ordering|simultaneity', 'event|causality', 'evidence|participant|location|trigger|consequence', 'canon|ledger|editorial')
+Test-BehaviorSpec 'tests/37-promise-ledger-reuse.md' @('promise', 'evidence', 'chapter')
+Test-BehaviorSpec 'tests/38-editorial-issues.md' @('issue', 'evidence', 'status')
+Test-BehaviorSpec 'tests/39-import-quarantine.md' @('import', 'preview', 'quarantine', 'provenance')
+Test-BehaviorSpec 'tests/40-run-trace-snapshot-rollback.md' @('run', 'snapshot', 'rollback', 'approval')
+Test-BehaviorSpec 'tests/41-pacing-reveal-advisory.md' @('pacing', 'reveal', 'reader')
+Test-BehaviorSpec 'tests/42-extension-boundary.md' @('extension|continue', 'branch|parent', 'capability|ceiling', 'canon|canonical|promotion|authorization', 'contradiction|stop condition')
+Test-BehaviorSpec 'tests/43-context-budget-parser-boundary.md' @('context|source|omitted|truncated', 'parser|structure|metadata', 'intent|consensus', 'canon|canonical|mutate', 'evidence|truth')
+Test-BehaviorSpec 'tests/44-multiple-truth.md' @('reading|interpretation', 'canon|canonical|story bible', 'evidence', 'dissent|consensus', 'ledger|branch|authorization')
+Test-BehaviorSpec 'tests/45-deterministic-validator-boundary.md' @('event', 'claim', 'promise', 'source')
 foreach ($mode in 'Natural', 'Concise', 'Plain Language', 'Conversational', 'Voice-Preserving') {
     Require-Match $editorial "(?m)^###?\s+$mode\b" "Editorial rewrite guidance must define $mode mode."
 }
@@ -133,6 +267,56 @@ Require-Match $projectBrief '(?m)^## Capability Ceilings\b' 'Project Brief must 
 Require-Match $projectBrief '(?m)^## Forbidden Elements / Outcomes\b' 'Project Brief must capture forbidden elements and outcomes.'
 Require-Match $promiseTemplate '(?i)proposed.*open.*advanced.*reframed.*paid.*delayed.*contradicted.*intentionally-unresolved.*retired' 'Promise template must define the complete lifecycle.'
 Require-Match $promiseTemplate '(?m)^## Closure Evidence\b' 'Promise template must require closure evidence.'
+Require-Match $authoringLab '(?is)(?=.*reader simulation)(?=.*non-canon character)(?=.*alternate takes)(?=.*bridge writing)' 'Authoring Laboratory must cover all four sandbox experiments.'
+Require-Match $authoringLab '(?is)(?=.*evidence)(?=.*dissent)(?=.*uncertainty)' 'Authoring Laboratory must require evidence, dissent, and uncertainty.'
+Require-Match $authoringLab '(?i)majority response.*canon|consensus.*cannot prove' 'Reader consensus must not promote itself to canon.'
+Require-Match $authoringLab '(?i)lab files must not.*canon|No lab result may promote itself' 'Authoring Laboratory must isolate sandbox output from canon.'
+Require-Match $stateLedgers '(?i)single canon(?:ical)? source|single truth source' 'State ledgers must preserve a single canonical source.'
+Require-Match $stateLedgers '(?i)claim provenance|provenance' 'State ledgers must track claim provenance.'
+Require-Match $stateLedgers '(?i)event.*timeline|timeline.*event' 'State ledgers must track events and timeline uncertainty.'
+Require-Match $stateLedgers '(?i)existing.*promise|promise.*lifecycle' 'State ledgers must reuse existing promise lifecycle.'
+Require-Match $stateLedgers '(?i)editorial issue' 'State ledgers must define editorial issues separately from canon.'
+Require-Match $ledgerTemplate '(?i)Origin.*Confidence.*Competing reading.*First seen.*Last checked.*Affected entities.*Promotion authorization' 'Claim ledger must capture full provenance and promotion fields.'
+Require-Match $ledgerTemplate '(?i)Location.*Participants.*Trigger' 'Event ledger must capture location, participants, and trigger.'
+Require-Match $ledgerTemplate '(?i)Severity.*Owner.*Resolution link' 'Issue ledger must capture severity, owner, and resolution link.'
+Require-Match $ledgerTemplate '(?is)Claims.*Source.*Provenance.*Status' 'Claim rows must expose source, provenance, and status.'
+Require-Match $ledgerTemplate '(?is)Events / Timeline.*Source.*Provenance.*Status' 'Event rows must expose source, provenance, and status.'
+Require-Match $ledgerTemplate '(?is)Promise References.*Source.*Provenance.*Status' 'Promise rows must expose source, provenance, and status.'
+Require-Match $ledgerTemplate '(?is)Editorial Issues.*Source.*Provenance.*Status' 'Editorial issue rows must expose source, provenance, and status.'
+Require-Match $stateLedgers '(?i)deterministic validator' 'State ledgers must define a deterministic validator boundary.'
+Require-Match $stateLedgers '(?i)same snapshot.*same ordered findings|same ordered findings.*same snapshot' 'Deterministic validation must be stable for identical inputs.'
+Require-Match $stateLedgers '(?i)must not infer events from prose|must not.*interpret irony or metaphor' 'Deterministic validation must not pretend to understand prose.'
+Require-Match $recoveryRuns '(?i)import preview.*quarantine|quarantine.*import preview' 'Recovery contracts must define import preview and quarantine.'
+Require-Match $recoveryRuns '(?i)run trace|run manifest' 'Recovery contracts must define an inspectable run trace.'
+Require-Match $recoveryRuns '(?i)snapshot.*rollback|rollback.*snapshot' 'Recovery contracts must define snapshot and rollback boundaries.'
+Require-Match $recoveryRuns '(?i)contract-only|contract' 'Recovery guidance must remain contract-only.'
+Require-Match $recoveryRuns '(?i)current-hash.*diverg|diverg.*current-hash' 'Recovery guidance must define a post-snapshot current-hash divergence guard.'
+Require-Match $recoveryRuns '(?i)ownership|owned' 'Recovery guidance must define ownership.'
+Require-Match $recoveryRuns '(?i)new revision.*default|default.*new revision' 'Recovery guidance must default to a new revision.'
+Require-Match $recoveryRuns '(?i)three-way review|three way review' 'Recovery guidance must require manual three-way review after divergence.'
+Require-Match $pacingExtensions '(?i)advisory.*pacing.*reveal|pacing.*reveal.*advisory' 'Pacing and reveal guidance must remain advisory.'
+Reject-Match $pacingExtensions '(?i)(?:require|impose|enforce).{0,30}(?:fixed|KPI|percentage|ratio|interval)' 'Pacing guidance must not impose fixed KPIs.'
+Require-Match $pacingExtensions '(?i)export.*boundary|branch.*boundary|autonomous extension' 'Extension guidance must define export, branching, and autonomous boundaries.'
+Require-Match $pacingExtensions '(?i)context budget.*partial|partial.*context budget' 'Extension guidance must account for context budget limits.'
+Require-Match $pacingExtensions '(?i)parser.*(?:not|cannot).*intent|intent.*(?:not|cannot).*parser' 'Parser output must not claim authorial intent.'
+Require-Match $labTemplate '(?i)evidence|sandbox|authorization' 'Authoring lab template must capture evidence, sandbox, and authorization.'
+Require-Match $labTemplate '(?i)context-budget|Sources Loaded' 'Authoring lab template must capture context budget and loaded sources.'
+Require-Match $ledgerTemplate '(?i)Claims|Events / Timeline|Promise References|Editorial Issues' 'Ledger template must cover claims, events, promises, and editorial issues.'
+Require-Match $advisoryTemplate '(?i)advisory-kind|context-budget|competing' 'Advisory template must capture kind, context budget, and competing readings.'
+Require-Match $advisoryTemplate '(?i)Reviewer Decision|Decision evidence|Authorization record' 'Advisory template must capture reviewer decision, evidence, and authorization.'
+Require-Match $advisoryTemplate '(?i)result-completeness|Dissent|Affected promises/events' 'Advisory template must capture completeness, dissent, and affected story state.'
+Require-Match $advisoryTemplate '(?i)Changed choices|Continuity effects|Merge decision' 'Advisory template must capture branch differences and merge decision.'
+Require-Match $runManifestTemplate '(?i)Import Preview / Quarantine|Snapshot Boundary|Rollback Plan' 'Run manifest must capture preview, snapshot, and rollback.'
+Require-Match $runManifestTemplate '(?i)ownership|Owned paths|current hashes' 'Run manifest must capture ownership and current hashes.'
+Require-Match $runManifestTemplate '(?i)current-hash.*diverg|diverg.*current-hash' 'Run manifest must capture the hash divergence guard.'
+Require-Match $runManifestTemplate '(?i)three-way review|three way review' 'Run manifest must require manual three-way review.'
+Require-Match $runManifestTemplate '(?i)new revision|guarded atomic apply' 'Run manifest rollback must create a new revision or use a guarded atomic apply.'
+Require-Match $extensionTemplate '(?i)parent branch|parent-branch|Parent snapshot' 'Extension contract must capture the parent branch.'
+Require-Match $extensionTemplate '(?i)allowed paths|allowed-paths|write permissions' 'Extension contract must capture allowed paths and write permissions.'
+Require-Match $extensionTemplate '(?i)Artifacts|artifacts|Validation|validation' 'Extension contract must capture artifacts and validation.'
+Require-Match $extensionTemplate '(?i)approval|awaiting-approval' 'Extension contract must capture approval.'
+Require-Match (Read-ProjectText 'tests/39-import-quarantine.md') '(?i)original_bytes_hash|original bytes.*encoding hash|idempotence|zero-write' 'Import behavior must cover original bytes, encoding hash, idempotence, and zero-write preview.'
+Require-Match $extensionTemplate '(?i)source-snapshot|context-budget|Stop Condition|No canon mutation' 'Extension contract must define source, budget, stop, and canon boundaries.'
 Require-Match $chapterContract '(?m)^## Ending Contract \(When Applicable\)\s*$' 'Chapter Contract must define a conditional ending contract.'
 Require-Match $chapterContract '(?i)core (?:dramatic )?question.*answer' 'Ending Contract must answer the core dramatic question.'
 Require-Match $chapterContract '(?m)^## Relevant Promise Changes \(When Applicable\)\s*$' 'Reference Chapter Contract must keep promise changes conditional.'
@@ -183,7 +367,7 @@ foreach ($mutation in 'Childhood-friend protagonists are the default.', '青梅�
     }
 }
 
-foreach ($test in 9..26) {
+foreach ($test in 9..45) {
     $pattern = '{0:D2}-*.md' -f $test
     if (-not (Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'tests') -Filter $pattern -File)) {
         $failures.Add("Missing positive-control acceptance specification: $pattern")

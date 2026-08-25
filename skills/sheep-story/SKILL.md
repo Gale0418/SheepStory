@@ -78,6 +78,10 @@ Read:
 - `references/story-memory-ops.md` only when persistent state is involved
 - `references/chapter-contract.md` only when producing a contract
 
+For reader simulation, non-canon character experiments, alternate takes, or bridge writing, also read `references/authoring-laboratory.md`. Keep all experiment output sandbox-only and record evidence, dissent, provenance, and an approval destination. For claim, event, promise, or editorial tracking, read `references/story-state-ledgers.md`; use the existing canonical files as the single truth source.
+
+For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, or automatic canon mutation.
+
 Output an idea routing table, plot-thread map, state checklist, chapter contract, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
 
 ### Project Setup
@@ -123,7 +127,7 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, or genius-strategy references only when those concerns are present. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, or genius-strategy references only when those concerns are present. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
 ### Revision / Review
 
@@ -135,6 +139,10 @@ Always read:
 Read `references/failure-modes.md` and other specialist references only for visible or requested concerns. Give concrete findings first and always identify what to preserve. Do not force a new outline for revision-only work.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
+
+When a review might mistake low informational content for useless dialogue, read `references/vocal-impact.md`. Judge sound, breath, rhythm, timing, character fit, and consequence before cutting the line.
+
+When review includes reader evidence, competing interpretations, state claims, pacing/reveal advice, or a branch, load only the applicable laboratory, ledger, or advisory reference. Treat consensus and parser output as evidence to evaluate, never as canon or proof of intent.
 
 ### Style Polish / Anti-AI Flavour
 
@@ -232,6 +240,8 @@ For a story, arc, or governing-thread ending, answer the core dramatic question 
 
 During review or polish, name concrete failure modes, preserve effective voice and roughness, and keep unresolved questions only when they block a sound result.
 
+Do not require every spoken line to add facts. A cry, name, fragment, chant, laugh, or repeated command may act through affect, embodiment, rhythm, ritual, coordination, anticipation, or release. Low semantic content does not excuse generic abstraction, borrowed grandeur, or missing setup.
+
 ## Cockpit Output Shapes
 
 ### Idea Routing
@@ -284,6 +294,8 @@ Produce a discussion outline only. Do not draft prose until explicitly approved.
 10. Produce a Memory Patch Proposal when longform state changed.
 11. Present only unresolved risks that matter.
 
+For laboratory, advisory, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, dissent, and authorization status; never promote sandbox output or silently write canon.
+
 ## Reference Index
 
 - `references/voice-calibration.md`
@@ -302,8 +314,13 @@ Produce a discussion outline only. Do not draft prose until explicitly approved.
 - `references/technical-explanation-voice.md`
 - `references/genius-strategy.md`
 - `references/dialogue-checklist.md`
+- `references/vocal-impact.md`
 - `references/style-preservation.md`
 - `references/anti-ai-flavour.md`
 - `references/failure-modes.md`
 - `references/review-rubric.md`
 - `references/source-map.md`
+- `references/authoring-laboratory.md`
+- `references/story-state-ledgers.md`
+- `references/project-recovery-and-runs.md`
+- `references/pacing-reveal-and-extensions.md`

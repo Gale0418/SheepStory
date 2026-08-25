@@ -57,6 +57,10 @@ Choose the lightest safe mode and follow explicit user mode choices.
 - Review: `skills/sheep-story/references/review-rubric.md`, `style-preservation.md`, plus visible failure-mode references.
 - Memory: `skills/sheep-story/references/story-memory-ops.md` and `continuity-check.md`.
 - Cockpit routing: `skills/sheep-story/references/story-cockpit-workflow.md`.
+- Authoring experiments: `skills/sheep-story/references/authoring-laboratory.md` (reader simulation, sandbox-only characters, alternate takes, and bridge writing).
+- State evidence: `skills/sheep-story/references/story-state-ledgers.md` (claim provenance, events, existing promises, and editorial issues without duplicating canon).
+- Recovery and run contracts: `skills/sheep-story/references/project-recovery-and-runs.md`.
+- Pacing, reveal, and extension boundaries: `skills/sheep-story/references/pacing-reveal-and-extensions.md`.
 
 ## Approval
 
@@ -65,3 +69,5 @@ Explicit approval includes 「可以，開始寫」「照這個寫」「大綱 O
 ## Principle
 
 Make the workflow proportional: remember and reason before writing, without turning every sentence into project management.
+
+Laboratory, advisory, recovery, and extension work remains Markdown-only and contract-only. Consensus, parser output, and sandbox results are evidence or proposals, not canon; canonical files remain the single truth source and require explicit authorization for mutation.

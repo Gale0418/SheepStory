@@ -11,7 +11,12 @@ This file records which external skill projects and craft preferences inspired e
 | `story-project-layout` / future `my-story-init` | `danjdewhurst/story-skills` | story bible, character files, worldbuilding, plot, scenes, continuity, questions, promises, chapter index | Do not require a full CLI continuity engine in version 1 |
 | `outline-gate` / future `my-chapter-writing` | `wgwtest/novel-writing` + `danjdewhurst/story-skills` chapter-writing | outline-first drafting, stage routing, context loading before prose, post-write updates | Do not let the agent auto-produce long prose before user approval |
 | `continuity-check` / future `my-continuity-check` | `danjdewhurst/story-skills` + `haowjy/creative-writing-skills` story-memory concept | persistent story state, open questions, promises, object state, who knows what | Do not overbuild a database before markdown state files work |
+| `authoring-laboratory` | `haowjy/creative-writing-skills` + `hannsxpeter/scriveno` | bounded reader simulation, character experiments, alternate takes, and writer-facing review handoffs | Keep every result non-canon until explicit promotion; simulated agreement is not reader truth |
+| `story-state-ledgers` | `jmorenobl/bookwright` + `Yaemikoreal/OpenNovel` | claim provenance, explicit event/timeline records, deterministic structural checks, and existing-promise reuse | Markdown canon remains authoritative; do not copy runtime code or let an index become a second truth source |
+| `project-recovery-and-runs` | `iLearn-Lab/NovelClaw` + `Yaemikoreal/OpenNovel` + `wgwtest/novel-project-strategy` | inspectable runs, recovery preview, quarantine, snapshots, and rollback discipline | Contract-only in this milestone; never overwrite post-snapshot user work or silently repair imports |
+| `pacing-reveal-and-extensions` | `EdwardAThomson/StoryDaemon` + `katelouie/bardic` + `Feed-Scription/openovel` | evidence-based pacing/reveal advice and explicit export, branch, and autonomous-agent boundaries | Do not import fixed tension KPIs, an interactive-fiction runtime, or autonomous canon mutation into core |
 | `dialogue-checklist` / future `my-dialogue-polish` | `JoelLewis/skill-library` dialogue-craft concept | intention, obstacle, subtext, anti-exposition, read-aloud check | Do not force English screenwriting voice onto Chinese prose |
+| `vocal-impact` | Derived from the SheepStory discussion about low-information, high-impact lines | affect, embodiment, rhythm, timing, ritual, coordination, anticipation, release, and context-charged vocal action | Do not turn one memorable line into a universal style, imitate franchise phrasing, or equate volume and abstraction with force |
 | `anti-ai-flavour` + `style-preservation` / future `my-style-polish` | `d-wwei/great-writer` humanizer + `haowjy/creative-writing-skills` style-creator concept | anti-AI flavour, oral test, rhythm variation, style learning, author texture | Do not over-polish fiction into sterile commercial copy |
 | `cinematic-scene-texture` / future `my-scene-texture` | User preference for detailed military / hard-SF / cinematic prose such as To the Stars, Halo novels, and Project Hail Mary at the broad craft level | concrete objects, close-to-wide visual movement, POV-filtered sensory detail, worldbuilding through action/friction/desire | Do not reproduce one source's exact wording, named setting, character roster, or plot beats |
 | `technical-explanation-voice` / future `my-technical-voice` | User preference for hard-SF technical reasoning, survival engineering, crisis humor, and competent first-person explanation at the broad craft level | practical calculations, materials, physical constraints, measurement, anomaly detection, dry humor under pressure, explanation that changes action | Do not imitate one source so closely that it becomes recognizable as that specific source |
@@ -74,6 +79,7 @@ continuity check
 scene texture
 technical explanation voice
 dialogue polish
+vocal impact
 style polish / anti-AI flavour
 genius strategy
 ```
@@ -87,6 +93,7 @@ my-continuity-check/
 my-scene-texture/
 my-technical-voice/
 my-dialogue-polish/
+my-vocal-impact/
 my-style-polish/
 my-genius-strategy/
 ```
