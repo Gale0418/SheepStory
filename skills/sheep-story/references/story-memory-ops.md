@@ -4,7 +4,7 @@
 
 This file defines how the skill updates long-fiction memory after planning, drafting, and revising.
 
-The goal is to prevent the story from resetting every chapter without turning every transient feeling, contrast beat, player review, or tonal impression into permanent canon.
+The goal is to prevent the story from resetting every chapter without turning every transient feeling, contrast beat, player review, luck event, or tonal impression into permanent canon.
 
 ## Memory Layers
 
@@ -13,12 +13,12 @@ Use these layers when available:
 ```text
 story.md                         # Story bible
 documents / reader promise       # Approved emotional and tonal contract
-characters/                      # Character files
-worldbuilding/                   # Locations, systems, factions, artifacts
+characters/                      # Character files, including durable origin/condition profiles when needed
+worldbuilding/                   # Locations, systems, factions, artifacts, environmental baselines
 plot/timeline.md                 # Time order
 scenes/                          # Scene records
 chapters/                        # Chapter drafts and indexes
-continuity/state.md              # Current physical / psychological / relational / epistemic state
+continuity/state.md              # Current physical / psychological / relational / epistemic / resource state
 continuity/questions/            # Open mysteries
 continuity/promises/             # Foreshadowing, vows, threats, Chekhov guns
 misunderstanding ledgers         # Active divergent models and repair windows, when needed
@@ -43,6 +43,27 @@ Canonical files preserve the story's approved truth. Character files may separat
 
 Use `character-memory-belief.md` when those layers matter. Use `misunderstanding-tragedy.md` when differences between models drive sustained action.
 
+## Durable Conditions vs Mutable State
+
+Keep these separate:
+
+```text
+durable origin / inherited condition
+!= current resources / status / access
+!= current environment
+!= current psychological state
+!= intrinsic capability
+```
+
+Examples:
+
+- family background may remain canon while current wealth is lost
+- noble birth may remain true while legal status is revoked
+- a safe childhood environment remains history while the character is currently trapped in war
+- high intelligence remains capability while tools, staff, credentials, and access disappear
+
+Use `character-conditions-advantage.md` for this separation.
+
 ## Before Planning a Chapter
 
 Read or reconstruct:
@@ -57,10 +78,13 @@ Read or reconstruct:
 8. timeline constraints
 9. relationship state
 10. object state
-11. active mid-term psychological pressures
-12. relevant knowledge / belief boundaries
-13. active misunderstandings, repair windows, and irreversible thresholds
-14. unprocessed high-intensity consequences or recovery needs
+11. current resources, status, equipment, networks, and institutional access when relevant
+12. current environmental pressure when it differs from baseline
+13. active luck / fate / contingency rule when the project has one
+14. active mid-term psychological pressures
+15. relevant knowledge / belief boundaries
+16. active misunderstandings, repair windows, and irreversible thresholds
+17. unprocessed high-intensity consequences or recovery needs
 
 If missing, ask targeted questions instead of inventing.
 
@@ -87,6 +111,9 @@ For each meaningful beat, track only applicable changes:
 - which repair window opens or closes
 - what words-actions-body divergence becomes observable
 - what object changes owner/status/location
+- what money, equipment, staff, network, legal status, authority, or access changes
+- what current environmental pressure changes
+- what explicit luck / fate event changes an option or complication
 - what relationship dimension shifts
 - what short-term emotion or mid-term pressure changes
 - what tonal debt, recovery need, or reader-promise risk changes
@@ -119,13 +146,16 @@ Update:
 - relationship dimensions and tensions
 - epistemic state
 - active misunderstandings and repair windows
+- current resource / status / access state
+- current environmental pressure
+- active luck / fate state only when project-established and still relevant
 - object state
 - location / access constraints
 - public claims / threats / promises
 - injuries, losses, debts, secrets
 - unprocessed reader-promise or tonal consequences when they constrain later scenes
 
-Do not persist every fleeting emotion, gesture, joke, or tonal color. Persist what will constrain or color later scenes.
+Do not persist every fleeting emotion, gesture, joke, coincidence, or tonal color. Persist what will constrain or color later scenes.
 
 ### 3. Character Files
 
@@ -133,6 +163,9 @@ For each active character, update only story-bearing changes:
 
 - current goal
 - stable identity changes only when genuinely earned
+- durable origin or inherited-condition corrections only when canon changes or a reveal establishes new truth
+- capability ceiling changes only when genuinely earned or approved
+- persistent resistance / control changes when established by the story
 - mid-term psychological state
 - what they learned
 - what they believe or suspect now
@@ -146,6 +179,8 @@ For each active character, update only story-bearing changes:
 - contrast or words-actions pattern only if it is durable rather than one scene beat
 - failure-state behavior if newly demonstrated
 - voice or embodied-baseline notes only if a recurring pattern emerges
+
+Do not copy mutable cash, equipment, current rank, current location, or current danger level into permanent identity merely because it lasted one chapter. Keep them in continuity state unless they become durable biography.
 
 Do not promote one emergency reaction into a permanent trait without repeated evidence or explicit approval.
 
@@ -185,7 +220,21 @@ For every active belief-divergence thread, record only changes:
 
 Use `templates/cockpit/misunderstanding-ledger.md` for complex cascades.
 
-### 7. Reader-Promise / Tone State
+### 7. Resource / Condition State
+
+For story-bearing changes, record:
+
+- money / material resources gained, spent, frozen, stolen, or destroyed
+- equipment, staff, allies, patronage, or network access gained or lost
+- legal / political / institutional status changes
+- authority or credentials gained, revoked, or exposed as false
+- current environment changes that alter safety, scarcity, surveillance, or recovery
+- explicit resistance changes if an injury, ritual, technology, corruption, or transformation modifies them
+- luck / fate rule changes only when the setting treats them as persistent state
+
+Do not let a previous resource silently reappear because the character's origin or capability remains unchanged.
+
+### 8. Reader-Promise / Tone State
 
 Record only durable tonal obligations:
 
@@ -199,7 +248,7 @@ Record only durable tonal obligations:
 
 Do not create a running score for every scene. Use `reader-promise-and-tone.md` when the emotional contract materially changes.
 
-### 8. Scene Records
+### 9. Scene Records
 
 For each scene, record:
 
@@ -211,6 +260,9 @@ For each scene, record:
 - new information and who received it
 - belief / suspicion changes if important
 - misunderstanding reinforcement or repair if important
+- resource / status / access changes if important
+- environmental-pressure change if important
+- explicit luck/fate contingency and the option it created, if relevant
 - emotional consequence
 - relationship consequence
 - object changes
@@ -239,6 +291,48 @@ Do not write `relationship +10` as the only state.
 Track only relevant dimensions such as trust, respect, affection, attraction, dependence, fear, resentment, debt, safety, rivalry, or authority.
 
 Relationships may be asymmetric and internally conflicted. Reconcile accumulated evidence instead of stacking incompatible summaries.
+
+## Condition / Resource Update Rule
+
+Do not treat an external change as an intrinsic character rewrite.
+
+```text
+resource / status / environment change
+-> available options change
+-> strategic / social consequences
+-> possible psychological response
+```
+
+The psychological response is a separate update, not automatic.
+
+Examples:
+
+```text
+loses family fortune
+-> fewer material options and less safety net
+-> may feel panic, relief, shame, anger, or nothing unusual depending on character appraisal
+
+enters war zone
+-> safety and supply constraints change
+-> does not automatically become cynical or traumatized in the same scene
+```
+
+Use `character-conditions-advantage.md` when the causal layer is unclear.
+
+## Luck / Fate Update Rule
+
+If the project has an explicit luck or fate mechanic, record the contingency and the new option / complication it created.
+
+Do not record `luck caused success` when character decisions, competence, or resources were still required.
+
+Prefer:
+
+```text
+contingency
+-> option changes
+-> character acts
+-> consequence
+```
 
 ## Contrast Update Rule
 
@@ -292,8 +386,16 @@ Use this shape:
 ### Character Files
 - Character:
   - [verified/inferred/unknown] Identity / goal / coping change:
+  - [verified/inferred/unknown] Capability / resistance change:
   - [verified/inferred/unknown] Knowledge / belief / memory change:
   - [verified/inferred/unknown] Contrast / failure-state change:
+
+### Resource / Status / Environment State
+- Character / group:
+  - [verified/inferred/unknown] Money / equipment / staff / network:
+  - [verified/inferred/unknown] Legal / political / institutional access:
+  - [verified/inferred/unknown] Current environment / scarcity / danger:
+  - [verified/inferred/unknown] Luck / fate state if project-established:
 
 ### Timeline
 - ...
@@ -346,6 +448,7 @@ Before writing:
 - preserve unrelated file content and existing formatting
 - keep contradictions in the proposal instead of silently rewriting history
 - preserve the difference between canonical truth and a character's mistaken belief or memory
+- preserve durable origin separately from mutable resources, status, and environment
 - preserve reader-only information and tonal plans from cast knowledge
 
 If the task is analysis-only or no story files are available, return the proposal without applying it.
@@ -356,13 +459,16 @@ After applying authorized changes:
 
 1. re-read every affected memory file
 2. verify the written facts match the approved proposal
-3. check character, object, relationship, knowledge, belief, memory, misunderstanding, tone, and timeline consistency
-4. confirm no reader-only or POV-private information leaked into another character
-5. confirm false beliefs remain character state rather than world truth
-6. confirm a repaired misunderstanding is not accidentally still active elsewhere
-7. confirm recovery and aftermath obligations were not silently deleted
-8. confirm no unrelated canon was removed or rewritten
-9. report the files changed and any unresolved contradiction
+3. check character, object, relationship, knowledge, belief, memory, misunderstanding, resource, status, environment, tone, and timeline consistency
+4. confirm intrinsic capability did not silently recreate lost resources, equipment, contacts, credentials, or authority
+5. confirm starting environment / origin was not overwritten merely because the current environment changed
+6. confirm luck / fate did not get rewritten as guaranteed outcome instead of contingency
+7. confirm no reader-only or POV-private information leaked into another character
+8. confirm false beliefs remain character state rather than world truth
+9. confirm a repaired misunderstanding is not accidentally still active elsewhere
+10. confirm recovery and aftermath obligations were not silently deleted
+11. confirm no unrelated canon was removed or rewritten
+12. report the files changed and any unresolved contradiction
 
 If validation fails, preserve the previous canon where possible, identify the failed item, and request a decision instead of inventing a repair.
 
@@ -371,11 +477,11 @@ If validation fails, preserve the previous canon where possible, identify the fa
 If a new draft contradicts existing memory:
 
 1. do not silently rewrite memory to fit the draft
-2. determine whether the conflict is canonical truth, character belief, remembered version, public claim, or reader expectation
+2. determine whether the conflict is canonical truth, character belief, remembered version, public claim, resource/status state, current environment, or reader expectation
 3. flag genuine canon contradictions
 4. ask whether to revise the draft or retcon canon when necessary
 5. record the decision only after authorization
 
 ## Principle
 
-Memory files are not bureaucracy. They are the immune system of a long story. Canon remembers what happened; characters may remember, believe, deny, perform, and misunderstand it differently; the reader promise remembers what kind of consequence the story said would matter.
+Memory files are not bureaucracy. They are the immune system of a long story. Canon remembers what happened; condition state remembers what the character actually has access to; characters may remember, believe, deny, perform, and misunderstand differently; the reader promise remembers what kind of consequence the story said would matter.
