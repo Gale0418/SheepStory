@@ -4,7 +4,7 @@
 
 This file defines how the skill updates long-fiction memory after planning, drafting, and revising.
 
-The goal is to prevent the story from resetting every chapter without turning every transient feeling, contrast beat, player review, luck event, or tonal impression into permanent canon.
+The goal is to prevent the story from resetting every chapter, arc, or sequel without turning every transient feeling, contrast beat, player review, luck event, analytical ending label, or tonal impression into permanent canon.
 
 ## Memory Layers
 
@@ -13,12 +13,13 @@ Use these layers when available:
 ```text
 story.md                         # Story bible
 documents / reader promise       # Approved emotional and tonal contract
+ending outcome contracts         # Approved major-ending outcome shape, when needed
 characters/                      # Character files, including durable origin/condition profiles when needed
 worldbuilding/                   # Locations, systems, factions, artifacts, environmental baselines
 plot/timeline.md                 # Time order
 scenes/                          # Scene records
 chapters/                        # Chapter drafts and indexes
-continuity/state.md              # Current physical / psychological / relational / epistemic / resource state
+continuity/state.md              # Current physical / psychological / relational / epistemic / resource / major-outcome state
 continuity/questions/            # Open mysteries
 continuity/promises/             # Foreshadowing, vows, threats, Chekhov guns
 misunderstanding ledgers         # Active divergent models and repair windows, when needed
@@ -64,6 +65,25 @@ Examples:
 
 Use `character-conditions-advantage.md` for this separation.
 
+## Ending Cost vs Sequel Inherited State
+
+A previous finale's story-incurred cost becomes inherited state for the next story or arc.
+
+Do not count the same loss twice merely because the sequel begins with it still present.
+
+```text
+Story A:
+story-incurred loss -> ending cost
+
+Story B:
+same unresolved loss at opening -> inherited state
+new damage caused in Story B -> Story B story-incurred cost
+```
+
+Preserve mixed ending domains rather than storing one label such as `victory` or `bad ending`.
+
+Use `ending-outcome-model.md` when personal, relationship, mission, community, world, recovery, or future outcomes diverge.
+
 ## Before Planning a Chapter
 
 Read or reconstruct:
@@ -85,6 +105,7 @@ Read or reconstruct:
 15. relevant knowledge / belief boundaries
 16. active misunderstandings, repair windows, and irreversible thresholds
 17. unprocessed high-intensity consequences or recovery needs
+18. major outcome / recovery state inherited from a previous arc, season, volume, or defeat when relevant
 
 If missing, ask targeted questions instead of inventing.
 
@@ -117,6 +138,8 @@ For each meaningful beat, track only applicable changes:
 - what relationship dimension shifts
 - what short-term emotion or mid-term pressure changes
 - what tonal debt, recovery need, or reader-promise risk changes
+- what personal / relationship / mission / institutional / world outcome changes when approaching a major ending
+- what cost becomes irreversible, what recovery becomes possible, and what future remains open or closed
 - what promise or question is opened, advanced, or paid off
 - what new continuity obligation is created
 
@@ -154,8 +177,9 @@ Update:
 - public claims / threats / promises
 - injuries, losses, debts, secrets
 - unprocessed reader-promise or tonal consequences when they constrain later scenes
+- major outcome / recovery state after an arc or finale when it will constrain later work
 
-Do not persist every fleeting emotion, gesture, joke, coincidence, or tonal color. Persist what will constrain or color later scenes.
+Do not persist every fleeting emotion, gesture, joke, coincidence, analytical label, or tonal color. Persist what will constrain or color later scenes.
 
 ### 3. Character Files
 
@@ -180,7 +204,7 @@ For each active character, update only story-bearing changes:
 - failure-state behavior if newly demonstrated
 - voice or embodied-baseline notes only if a recurring pattern emerges
 
-Do not copy mutable cash, equipment, current rank, current location, or current danger level into permanent identity merely because it lasted one chapter. Keep them in continuity state unless they become durable biography.
+Do not copy mutable cash, equipment, current rank, current location, current ending label, or current danger level into permanent identity merely because it lasted one chapter. Keep them in continuity state unless they become durable biography.
 
 Do not promote one emergency reaction into a permanent trait without repeated evidence or explicit approval.
 
@@ -196,7 +220,7 @@ Record:
 
 ### 5. Questions and Promises
 
-For every mystery, clue, vow, threat, foreshadowing, tonal promise, or expected payoff:
+For every mystery, clue, vow, threat, foreshadowing, tonal promise, ending promise, or expected payoff:
 
 - opened
 - advanced
@@ -248,7 +272,40 @@ Record only durable tonal obligations:
 
 Do not create a running score for every scene. Use `reader-promise-and-tone.md` when the emotional contract materially changes.
 
-### 9. Scene Records
+### 9. Major Outcome / Recovery State
+
+Use after a major arc, volume, season, final battle, catastrophic defeat, or substantial partial resolution when the result will constrain later work.
+
+Record separately:
+
+```markdown
+Personal outcome:
+Relationship / fellowship outcome:
+Mission outcome:
+Community / institutional outcome:
+World / civilization outcome:
+Moral / thematic value preserved or lost:
+Permanent story-incurred cost:
+Recovery already achieved:
+Recovery still owed / impossible:
+Future possibility:
+```
+
+Do not store only `happy ending`, `victory`, or `defeat`.
+
+When the next story begins:
+
+- carry permanent losses forward
+- carry political / institutional consequences forward
+- carry relationship repair or rupture forward
+- carry unresolved psychological recovery forward
+- carry surviving resources and access forward
+- carry the changed world environment forward
+- reclassify those prior-story consequences as inherited state for the new story's cost accounting
+
+Use `ending-outcome-model.md` and `templates/cockpit/ending-outcome-contract.md` for complex mixed outcomes.
+
+### 10. Scene Records
 
 For each scene, record:
 
@@ -267,6 +324,7 @@ For each scene, record:
 - relationship consequence
 - object changes
 - tonal escalation / recovery function when important
+- major-ending outcome contribution when the scene is part of a final movement
 - open threads
 
 ## Psychological Update Rule
@@ -333,6 +391,35 @@ contingency
 -> character acts
 -> consequence
 ```
+
+## Major Outcome Update Rule
+
+Do not infer a global ending label from one domain.
+
+Prefer:
+
+```text
+outcome by domain
++ who paid story-incurred cost
++ what remains permanently lost
++ what recovery occurred
++ what future became possible
+-> compact ending classification
+```
+
+Examples of invalid shortcuts:
+
+```text
+expected couple did not form -> bad ending
+protagonist survived -> low-cost happy ending
+many characters died -> tragedy
+grim post-apocalyptic setting -> high finale cost
+expensive victory -> automatically pyrrhic
+```
+
+If a positive outcome occurs, preserve the causal path that made it possible. Record what persistence, fellowship, trust, information, mercy, capability, resources, or prior choices created the final option.
+
+Use `ending-outcome-model.md` for the full distinction.
 
 ## Contrast Update Rule
 
@@ -425,6 +512,13 @@ Use this shape:
 - Recovery or escalation obligation:
 - Promise reinforced / complicated / subverted:
 
+### Major Outcome / Recovery State
+- Personal / relationship / mission / world outcome:
+- Permanent story-incurred cost:
+- Recovery achieved / still owed:
+- Future possibility:
+- State that becomes inherited for the next arc / sequel:
+
 ### Conflicts / Decisions Needed
 - Existing canon:
 - Draft claim:
@@ -449,6 +543,7 @@ Before writing:
 - keep contradictions in the proposal instead of silently rewriting history
 - preserve the difference between canonical truth and a character's mistaken belief or memory
 - preserve durable origin separately from mutable resources, status, and environment
+- preserve analytical ending labels separately from the actual canonical outcomes they summarize
 - preserve reader-only information and tonal plans from cast knowledge
 
 If the task is analysis-only or no story files are available, return the proposal without applying it.
@@ -459,16 +554,19 @@ After applying authorized changes:
 
 1. re-read every affected memory file
 2. verify the written facts match the approved proposal
-3. check character, object, relationship, knowledge, belief, memory, misunderstanding, resource, status, environment, tone, and timeline consistency
+3. check character, object, relationship, knowledge, belief, memory, misunderstanding, resource, status, environment, tone, major-outcome, and timeline consistency
 4. confirm intrinsic capability did not silently recreate lost resources, equipment, contacts, credentials, or authority
 5. confirm starting environment / origin was not overwritten merely because the current environment changed
 6. confirm luck / fate did not get rewritten as guaranteed outcome instead of contingency
-7. confirm no reader-only or POV-private information leaked into another character
-8. confirm false beliefs remain character state rather than world truth
-9. confirm a repaired misunderstanding is not accidentally still active elsewhere
-10. confirm recovery and aftermath obligations were not silently deleted
-11. confirm no unrelated canon was removed or rewritten
-12. report the files changed and any unresolved contradiction
+7. confirm prior-story cost carried into a sequel as inherited state without being erased or double-counted as newly incurred loss
+8. confirm personal, relationship, mission, and world outcomes were not collapsed into one label
+9. confirm recovery did not become an unexplained reset
+10. confirm no reader-only or POV-private information leaked into another character
+11. confirm false beliefs remain character state rather than world truth
+12. confirm a repaired misunderstanding is not accidentally still active elsewhere
+13. confirm recovery and aftermath obligations were not silently deleted
+14. confirm no unrelated canon was removed or rewritten
+15. report the files changed and any unresolved contradiction
 
 If validation fails, preserve the previous canon where possible, identify the failed item, and request a decision instead of inventing a repair.
 
@@ -477,11 +575,11 @@ If validation fails, preserve the previous canon where possible, identify the fa
 If a new draft contradicts existing memory:
 
 1. do not silently rewrite memory to fit the draft
-2. determine whether the conflict is canonical truth, character belief, remembered version, public claim, resource/status state, current environment, or reader expectation
+2. determine whether the conflict is canonical truth, character belief, remembered version, public claim, resource/status state, current environment, major outcome/recovery state, or reader expectation
 3. flag genuine canon contradictions
 4. ask whether to revise the draft or retcon canon when necessary
 5. record the decision only after authorization
 
 ## Principle
 
-Memory files are not bureaucracy. They are the immune system of a long story. Canon remembers what happened; condition state remembers what the character actually has access to; characters may remember, believe, deny, perform, and misunderstand differently; the reader promise remembers what kind of consequence the story said would matter.
+Memory files are not bureaucracy. They are the immune system of a long story. Canon remembers what happened; condition state remembers what the character actually has access to; major-outcome state remembers what the last arc truly won, lost, and failed to heal; characters may remember, believe, deny, perform, and misunderstand differently; the reader promise remembers what kind of consequence the story said would matter.
