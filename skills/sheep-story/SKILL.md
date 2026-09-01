@@ -118,6 +118,7 @@ Conditionally read:
 - `references/technical-explanation-voice.md` when technical reasoning matters
 - `references/genius-strategy.md` for deduction, tactics, or mastermind conflicts
 - `references/social-cognitive-profile.md` when intelligence, observation, social skill, charisma, empathy, masking, hidden agenda, or character misreading materially affects the scene
+- `references/trait-expression-library.md` when standout personality, humor, talkativeness, awkwardness, warmth, bluntness, formality, or conversational habits materially distinguish a character
 
 Output the mode-appropriate outline or contract. In standard and longform modes, stop for explicit approval.
 
@@ -128,7 +129,7 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, or social-cognitive references only when those concerns are present. Read `references/social-cognitive-profile.md` when dialogue depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, social-cognitive, or trait-expression references only when those concerns are present. Read `references/social-cognitive-profile.md` when dialogue depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
 ### Revision / Review
 
@@ -140,6 +141,8 @@ Always read:
 Read `references/failure-modes.md` and other specialist references only for visible or requested concerns. Give concrete findings first and always identify what to preserve. Do not force a new outline for revision-only work.
 
 When reviewing inconsistent characterization, social miscalibration, fake genius, unearned deduction, masking, hidden agendas, or reveal behavior, read `references/social-cognitive-profile.md`.
+
+When reviewing characters who all sound alike, a trait that has become a repetitive gimmick, humor with poor timing, flat warmth, generic awkwardness, talkativeness, bluntness, or other conversational personality issues, read `references/trait-expression-library.md`.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
 
@@ -317,6 +320,7 @@ For laboratory, advisory, recovery, or extension work, stop at the declared cont
 - `references/technical-explanation-voice.md`
 - `references/genius-strategy.md`
 - `references/social-cognitive-profile.md`
+- `references/trait-expression-library.md`
 - `references/dialogue-checklist.md`
 - `references/vocal-impact.md`
 - `references/style-preservation.md`
