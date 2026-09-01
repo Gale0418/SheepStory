@@ -60,10 +60,13 @@ Choose the lightest safe mode and follow explicit user mode choices.
 27. Treat an advantage budget as a friction diagnostic, not a mandatory point-buy balance rule. Do not compensate exceptional advantages with irrelevant quirks or arbitrary punishment; preserve intentional power fantasy when it is part of the reader promise.
 28. Keep willpower / commitment persistence, emotional regulation, stress tolerance, and belief or influence resistance separable when pressure matters. High power does not automatically imply resistance to the same power.
 29. Treat luck or fate as a project-specific contingency rule that changes options or complications while preserving consequential character agency; do not use it as automatic plot armor or forced failure.
+30. Classify major endings by outcome scope, story-incurred cost, recovery, and future possibility before calling them happy, tragic, bittersweet, or pyrrhic. Relationship failure is not total failure; protagonist survival is not proof of low cost; inherited catastrophe is not automatically finale cost.
+31. Let personal, relationship, fellowship, mission, community, world, and thematic outcomes diverge when the story supports it. Hopeful endings may retain permanent scars, and high body count does not by itself define tragedy.
+32. Positive endings need causal engines too: show what persistence, fellowship, trust, information, mercy, skill, or earlier choices actually created that made survival, repair, or victory possible. Do not declare a happy epilogue after suffering without recovery or adaptation.
 
 ## Reference Routing
 
-- Planning: `skills/sheep-story/references/outline-gate.md`, `skills/sheep-story/references/conflict-pressure.md`, plus `skills/sheep-story/references/story-architecture.md` for complete arcs and `skills/sheep-story/references/opposition-design.md` for persistent opposition.
+- Planning: `skills/sheep-story/references/outline-gate.md`, `skills/sheep-story/references/conflict-pressure.md`, plus `skills/sheep-story/references/story-architecture.md` for complete arcs, `skills/sheep-story/references/ending-outcome-model.md` for finales or mixed ending outcomes, and `skills/sheep-story/references/opposition-design.md` for persistent opposition.
 - New story setup: record supplied durable requirements in the Project Brief immediately, use `skills/sheep-story/references/story-foundation.md`, then apply `skills/sheep-story/references/story-project-layout.md` after Foundation approval.
 - AI role-play card design, greeting design, alternate openings, example-dialogue coverage, user-role assumptions, field hygiene, player-review attribution, or card regression testing: `skills/sheep-story/references/character-card-engineering.md`.
 - Capability versus resistance, willpower versus regulation, wealth/status/network leverage, inherited obligations or stigma, starting/current environment, luck/fate, exceptional advantages, disadvantages, or resource-access modeling: `skills/sheep-story/references/character-conditions-advantage.md`.
@@ -75,11 +78,12 @@ Choose the lightest safe mode and follow explicit user mode choices.
 - Misunderstanding-driven comedy, romance, mystery, conflict, or tragedy: `skills/sheep-story/references/misunderstanding-tragedy.md`.
 - Facial expression, gaze, breath, posture, gesture, movement, distance, touch, object interaction, physiological leakage, or other meaningful action beats: `skills/sheep-story/references/embodied-expression.md`.
 - Reader promise, tonal hazard stacks, darkness / hope range, recovery rhythm, surprise contract, influence translation, or ending tone: `skills/sheep-story/references/reader-promise-and-tone.md`.
+- Finale classification, Hope × Cost analysis, personal-vs-world outcome, inherited-vs-story cost, recovery profile, sacrificial victory, pyrrhic victory, eucatastrophe, wistful ending, or mixed ending design: `skills/sheep-story/references/ending-outcome-model.md`.
 - Long-horizon persona drift, knowledge leakage, Role-Location-Plot alignment, dense multi-character continuity, resource/access continuity, or text/voice/body coherence: `skills/sheep-story/references/narrative-coherence-gate.md`.
 - Drafting: `skills/sheep-story/references/voice-calibration.md`, `style-preservation.md`, plus task-specific references.
 - Editorial rewrite: `skills/sheep-story/references/editorial-rewrite.md`, `voice-calibration.md`, and `style-preservation.md`.
 - Review: `skills/sheep-story/references/review-rubric.md`, `style-preservation.md`, plus visible failure-mode references.
-- Memory: `skills/sheep-story/references/story-memory-ops.md`, `continuity-check.md`, plus character dynamics, memory/belief, misunderstanding, reader-promise, or condition references when those states changed.
+- Memory: `skills/sheep-story/references/story-memory-ops.md`, `continuity-check.md`, plus character dynamics, memory/belief, misunderstanding, reader-promise, ending-outcome, or condition references when those states changed.
 - Cockpit routing: `skills/sheep-story/references/story-cockpit-workflow.md`.
 - Authoring experiments: `skills/sheep-story/references/authoring-laboratory.md` (reader simulation, sandbox-only characters, alternate takes, and bridge writing).
 - State evidence: `skills/sheep-story/references/story-state-ledgers.md` (claim provenance, events, existing promises, and editorial issues without duplicating canon).
@@ -94,4 +98,4 @@ Explicit approval includes 「可以，開始寫」「照這個寫」「大綱 O
 
 Make the workflow proportional: remember and reason before writing, without turning every sentence into project management.
 
-Laboratory, advisory, recovery, and extension work remains Markdown-only and contract-only. Consensus, parser output, public-card ratings, and player reviews are evidence or proposals, not canon or proof of causality; canonical files remain the single truth source and require explicit authorization for mutation.
+Laboratory, advisory, ending-analysis, recovery, and extension work remains Markdown-only and contract-only. Consensus, parser output, public-card ratings, player reviews, and analytical ending labels are evidence or proposals, not canon or proof of causality; canonical files remain the single truth source and require explicit authorization for mutation.
