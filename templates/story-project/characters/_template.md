@@ -46,7 +46,7 @@ Which two wants, beliefs, roles, or needs cannot remain comfortably aligned?
 
 ## Social-Cognitive Profile
 
-Use only the axes that materially distinguish this character. Numeric ratings are optional.
+Use only the axes that materially distinguish this character. Numeric ratings are optional. Ordinary characters can stay compact; expand the profile only when cognition, observation, social skill, deception, or masking is dramatically important.
 
 ### Capabilities
 
@@ -73,13 +73,25 @@ Use only the axes that materially distinguish this character. Numeric ratings ar
 - What this character routinely misses:
 - What makes them update their model of another person:
 
+### Optional Mask Dynamics
+
+Fill only when disguise, hidden competence, false harmlessness, or a hidden agenda materially affects the story.
+
+- Displayed persona:
+- Capabilities / agenda intentionally hidden:
+- Leak pattern:
+- Mask maintenance pressure or cost:
+- Mask drop trigger:
+- Post-reveal delta (voice / posture / warmth / humor / threat / competence display / none):
+- Second mask after partial exposure:
+
 ### State and Relationship Modifiers
 
 - Current stress / fatigue / fear / confidence effects:
 - People or statuses that change their behavior:
 - Skills they intentionally hide, suppress, or exaggerate:
 
-Do not infer one axis from another. High reasoning does not imply charisma; high empathy does not imply tact; high observation does not imply correct inference; high social skill does not imply kindness.
+Do not infer one axis from another. High reasoning does not imply charisma; high empathy does not imply tact; high observation does not imply correct inference; high social skill does not imply kindness. A hidden agenda does not automatically imply a false personality.
 
 ## Unacceptable Cost
 
