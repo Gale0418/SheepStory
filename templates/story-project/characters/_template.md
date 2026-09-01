@@ -33,6 +33,25 @@ What concrete, personal outcome does this character pursue beneath any public ca
 
 Which two wants, beliefs, roles, or needs cannot remain comfortably aligned?
 
+## Optional Contrast / Dissonance
+
+Fill only when gap appeal, public-private contrast, indirect affection, hypocrisy, self-deception, or a words-actions gap materially affects the story.
+
+- Expected surface:
+- Contrasting side:
+- Shared causal root:
+- Trigger / access condition:
+- Who sees which side:
+- What the character says:
+- What they actually do:
+- What their body leaks or suppresses:
+- Character's own explanation:
+- More accurate interpretation, if known:
+- Cost of exposure:
+- Relationship or plot payoff:
+
+Use `skills/sheep-story/references/contrast-and-dissonance.md`. Do not assume spoken words simply mean their opposite.
+
 ## Strengths
 
 ## Limits / Blind Spots
@@ -43,6 +62,19 @@ Which two wants, beliefs, roles, or needs cannot remain comfortably aligned?
 - Physical, social, moral, informational, or technical limits:
 - Available help and resources:
 - Capabilities that require explicit approval before use:
+
+## Failure-State Continuity
+
+Fill for important characters whose identity depends on status, control, romance, victory, certainty, employment, a mission, or another condition that may fail.
+
+- Defining strategy or status:
+- What can defeat or remove it:
+- What remains true afterward:
+- What the character protects first:
+- Fallback strategies:
+- What they can learn or update:
+- What they will not surrender:
+- Voice / behavior change after failure, if any:
 
 ## Trait Expression
 
@@ -153,8 +185,10 @@ Keep canonical truth separate from this character's internal model.
 - Remembers differently from canon, if intentionally established:
 - Pretends not to know / deliberately hides:
 - Cannot know yet:
+- Believes another person knows / wants / fears:
+- Public claim that differs from private belief:
 
-Use `skills/sheep-story/references/character-memory-belief.md` when memory retrieval, mistaken belief, knowledge leakage, or Theory-of-Mind lookahead matters.
+Use `skills/sheep-story/references/character-memory-belief.md` when memory retrieval, mistaken belief, knowledge leakage, or Theory-of-Mind lookahead matters. Use `skills/sheep-story/references/misunderstanding-tragedy.md` when divergent models drive a sustained conflict.
 
 ## Current Pressure
 
