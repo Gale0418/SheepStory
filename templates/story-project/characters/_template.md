@@ -44,9 +44,20 @@ Which two wants, beliefs, roles, or needs cannot remain comfortably aligned?
 - Available help and resources:
 - Capabilities that require explicit approval before use:
 
+## Trait Expression
+
+Keep ordinary characters compact. Use only what materially distinguishes them.
+
+- 1-3 standout traits:
+- Conversational habit:
+- Characteristic failure:
+- Situation that amplifies or suppresses the trait, if relevant:
+
+For archetypes and combinations, use `skills/sheep-story/references/trait-expression-library.md`.
+
 ## Social-Cognitive Profile
 
-Use only the axes that materially distinguish this character. Numeric ratings are optional. Ordinary characters can stay compact; expand the profile only when cognition, observation, social skill, deception, or masking is dramatically important.
+Expand only when cognition, observation, social skill, deception, or masking is dramatically important. Numeric ratings are optional.
 
 ### Capabilities
 
@@ -93,6 +104,30 @@ Fill only when disguise, hidden competence, false harmlessness, or a hidden agen
 
 Do not infer one axis from another. High reasoning does not imply charisma; high empathy does not imply tact; high observation does not imply correct inference; high social skill does not imply kindness. A hidden agenda does not automatically imply a false personality.
 
+## Psychological Dynamics
+
+Use only for recurring or story-bearing dynamics; transient scene emotion belongs in continuity state.
+
+- Long-term identity / values that should remain stable:
+- Mid-term pressure that can accumulate across scenes:
+- Common appraisal pattern (what events tend to mean to them):
+- Recurring coping / defense mechanism, if established:
+- Recovery conditions or supports:
+- Relationship dimensions that matter (trust / respect / fear / affection / debt / attraction / dependence / rivalry, etc.):
+
+See `skills/sheep-story/references/character-dynamics.md` when an event should alter emotion, pressure, coping, or relationships over time.
+
+## Optional Embodied Baseline
+
+Record only distinctive recurring baselines; scene-specific action beats should not be stored here.
+
+- Gaze / posture baseline:
+- Gesture / object habit:
+- Stress leak or overcontrol pattern:
+- Meaningful deviation readers may notice:
+
+Use `skills/sheep-story/references/embodied-expression.md` for scene performance.
+
 ## Unacceptable Cost
 
 ## Voice
@@ -107,9 +142,19 @@ Do not infer one axis from another. High reasoning does not imply charisma; high
 | Character | Relationship | Current tension |
 |---|---|---|
 
-## Knowledge State
+## Epistemic State
 
-What this character knows, does not know, misunderstands, or hides.
+Keep canonical truth separate from this character's internal model.
+
+- Knows / has direct evidence for:
+- Believes:
+- Suspects / current hypotheses:
+- Misunderstands / believes falsely:
+- Remembers differently from canon, if intentionally established:
+- Pretends not to know / deliberately hides:
+- Cannot know yet:
+
+Use `skills/sheep-story/references/character-memory-belief.md` when memory retrieval, mistaken belief, knowledge leakage, or Theory-of-Mind lookahead matters.
 
 ## Current Pressure
 
@@ -126,8 +171,9 @@ Treat this as proposed until explicitly approved.
 ## Current State
 
 - Physical:
-- Emotional:
-- Social:
+- Short-term affect:
+- Mid-term psychological pressure:
+- Social / relationship:
 - Strategic:
 
 ## Change Log
