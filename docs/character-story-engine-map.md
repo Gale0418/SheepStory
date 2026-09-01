@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This document organizes the character-card research, character conditions, character simulation layers, contrast mechanisms, misunderstanding engines, embodied performance, and reader-promise controls into one routing map.
+This document organizes the character-card research, character conditions, character simulation layers, contrast mechanisms, misunderstanding engines, embodied performance, reader-promise controls, and ending outcomes into one routing map.
 
-It is an index and design rationale, not a requirement to fill every field for every character.
+It is an index and design rationale, not a requirement to fill every field for every character or ending.
 
 ## Full Pipeline
 
@@ -68,9 +68,13 @@ EMBODIED PERFORMANCE
 COHERENCE / PROMISE GATE
   |
   +-- canon, persona, knowledge, emotion, relationship, resources, space, tone, user agency
+  |
+ENDING OUTCOME
+  |
+  +-- personal / relationship / mission / world outcomes + story cost + recovery + future
 ```
 
-No scene needs every layer expanded. Use the smallest set that explains the behavior.
+No scene needs every layer expanded. Use the smallest set that explains the behavior. No ending needs every outcome row expanded unless the domains genuinely diverge.
 
 ## Routing Table
 
@@ -86,6 +90,7 @@ No scene needs every layer expanded. Use the smallest set that explains the beha
 | Build a tragedy or comedy from different beliefs | `misunderstanding-tragedy.md` | `character-dynamics.md`, `conflict-pressure.md` |
 | Write expressions, gestures, breath, movement, and action beats | `embodied-expression.md` | `dialogue-checklist.md` |
 | Establish emotional contract, tonal hazard, and ending range | `reader-promise-and-tone.md` | `story-architecture.md` |
+| Classify or design a mixed, sacrificial, bittersweet, pyrrhic, restorative, or tragic ending | `ending-outcome-model.md` | `reader-promise-and-tone.md`, `story-architecture.md` |
 | Audit long-horizon consistency | `narrative-coherence-gate.md` | `continuity-check.md` |
 
 Paths are relative to `skills/sheep-story/references/` unless otherwise stated.
@@ -342,6 +347,100 @@ character optimism
 
 SheepStory should translate creator or work shorthand into abstract functions and tone vectors, never use a living creator's name as a style-transfer command.
 
+## Ending Outcome Layer
+
+The ending layer prevents `happy / bad / tragic` from becoming an omnibus stat.
+
+### Outcome Vector
+
+Separate at least the domains that matter:
+
+```text
+personal survival / autonomy
+personal governing desire
+romance / relationship
+fellowship / family
+mission
+community / institution
+world / civilization
+moral / thematic value
+future possibility
+```
+
+These may deliberately diverge.
+
+```text
+world saved           = success
+mission completed     = success
+romance               = failure
+protagonist survives  = success
+full recovery         = failure
+future possibility    = success
+```
+
+That is a coherent mixed ending, not a classification error.
+
+### Cost Layers
+
+Keep separate:
+
+```text
+inherited / background catastrophe
+story-incurred cost
+terminal / resolution cost
+```
+
+A universe may begin after civilization has already been devastated while the central plot itself ends generously. Conversely, a protagonist may personally survive while civilians or institutions pay catastrophic story-incurred cost.
+
+### Recovery
+
+Goal success and recovery are independent.
+
+Track as relevant:
+
+```text
+physical
+psychological
+relationship
+community / institution
+world / environment
+identity / memory
+```
+
+A hopeful ending does not require reset. It may establish a viable transformed future while permanent injuries, grief, disability, or losses remain.
+
+### Hope × Cost Quick View
+
+| | Lower Story-Incurred Cost | Higher Story-Incurred Cost |
+|---|---|---|
+| Governing hope succeeds | restorative / clean happy | earned / bittersweet / sacrificial / eucatastrophic |
+| Governing hope fails | wistful / graceful loss | tragedy / catastrophic defeat |
+
+Use this only after defining scope. Recovery is a third discriminator.
+
+### Positive Outcomes Need Causality
+
+Bad endings have engines; good endings need them too.
+
+```text
+pressure
+→ reason to continue
+→ costly choice
+→ trust / information / fellowship / mercy / competence accumulates
+→ earlier choices create a real new option
+→ resolution
+→ residual cost remains visible
+→ recovery creates a future
+```
+
+Persistence must buy something causal. Fellowship is not merely a team roster; it is distributed capability, trust, and reciprocal action earned across the story.
+
+### Pyrrhic Is Narrow
+
+Do not call every expensive victory pyrrhic.
+
+Use `pyrrhic` when the cost seriously undermines or nearly cancels the value of what was won. If a saved future clearly remains worth living despite severe personal sacrifice, `sacrificial` or `bittersweet hopeful` may be more precise.
+
 ## Character Card Review Loop
 
 ```text
@@ -388,6 +487,7 @@ Separate:
 | Failure-state continuity | Is there still a person after defeat? |
 | Embodied efficiency | Do action beats carry meaning rather than twitch constantly? |
 | Luck agency | Does coincidence change options without automatically resolving outcomes? |
+| Ending integrity | Are outcome scope, story-incurred cost, recovery, and future possibility kept separate? |
 | Tonal fidelity | Does scene causality match the reader promise? |
 | Token efficiency | Does permanent context change behavior? |
 
@@ -411,6 +511,12 @@ Separate:
 - player attempts early clarification
 - action contradicts spoken claim
 - tone shifts from comedy to danger
+- romance fails while mission / world succeeds
+- protagonist survives while collective cost remains catastrophic
+- inherited apocalypse is separated from story-incurred finale cost
+- many characters die but the governing value / future survives
+- a costly victory is tested for whether it is truly pyrrhic
+- a hopeful epilogue preserves scars and shows an actual recovery mechanism
 
 ## Organization Rule
 
@@ -428,7 +534,8 @@ Add a new reference only when it introduces a distinct reasoning process:
 - Misunderstanding: divergent models and causal cascade
 - Embodiment: physical performance
 - Reader Promise: audience contract
+- Ending Outcome: outcome scope, cost, recovery, and future possibility
 
 ## Principle
 
-SheepStory should not merely remember who a character is. It should explain how a card initializes them, what advantages and constraints their circumstances provide, how a scene activates them, how their body expresses them, how other people misread them, how consequences update them, and what emotional contract the reader believes the story will honor.
+SheepStory should not merely remember who a character is. It should explain how a card initializes them, what advantages and constraints their circumstances provide, how a scene activates them, how their body expresses them, how other people misread them, how consequences update them, what emotional contract the reader believes the story will honor, and what actually survives or changes when the story ends.
