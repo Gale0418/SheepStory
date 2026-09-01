@@ -135,6 +135,25 @@ Create a card only for characters important enough to affect choices or persiste
 
 ### Strengths / Limits / Blind Spots
 
+### Capability Ceiling
+
+### Social-Cognitive Profile
+- Reasoning / domain intelligence:
+- Physical observation:
+- Social observation / context awareness:
+- Pattern recognition / negative evidence:
+- Theory of mind / calibration:
+- Conversation skill:
+- Charisma / presence:
+- Empathy:
+- Tact / face-saving:
+- Assertiveness:
+- Persuasion / framing:
+- Deception / masking:
+- Emotional regulation:
+- Core self vs social mask:
+- Characteristic failure pattern:
+
 ### Unacceptable Cost
 
 ### Knowledge / Misunderstanding / Secrets
@@ -153,6 +172,8 @@ Create a card only for characters important enough to affect choices or persiste
 - Unknown:
 ```
 
+Use only the Social-Cognitive axes that materially differentiate the character. Do not infer one axis from another: intelligence, observation, social skill, charisma, empathy, tact, assertiveness, and ethics can diverge sharply. If these capacities matter to the story, use `social-cognitive-profile.md` to define them without turning every Character Card into a stat sheet.
+
 Treat the change direction as a hypothesis until the user approves it. Do not assign hidden identities, romance, betrayal, death, redemption, corruption, or final arcs without user evidence or approval.
 
 ## Cross-Check
@@ -164,6 +185,8 @@ Before presenting the Foundation, verify:
 - rules have limits and cannot solve every conflict
 - each core character has agency beyond serving another character's arc
 - relationships contain goals, leverage, dependency, or friction appropriate to the story
+- cognitive and social strengths are uneven enough to create distinctive choices, dialogue, and mistakes when those differences matter
+- a low skill is expressed through plausible failure patterns rather than caricature, broken grammar, or generic stupidity
 - no World Book and Character Card facts contradict each other
 - every inferred item is visibly marked and reversible
 - unresolved unknowns are either blocking or safely deferred
@@ -213,6 +236,7 @@ Do not prefer any city, nation, era, genre, technology, magic system, species, r
 - treating proposed material as approved canon
 - asking every template field as a separate question
 - inventing dramatic secrets or deaths to make a card feel interesting
+- collapsing intelligence, observation, charisma, empathy, tact, and ethics into one "smart" or "social" trait
 - repeating Foundation intake for an existing project
 - drafting a sample chapter before Foundation approval
 

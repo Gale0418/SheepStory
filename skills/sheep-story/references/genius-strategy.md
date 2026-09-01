@@ -36,6 +36,20 @@ Show intelligence through observable work:
 - updating a model after failure
 - forcing the opponent into a bad choice
 
+## Rule 2: Intelligence Is Not a Social Composite
+
+Do not infer charisma, empathy, tact, observation, or social fluency from reasoning ability alone. When those capacities matter, read `social-cognitive-profile.md`.
+
+A brilliant character may be socially clumsy. A charming character may reason poorly. An observant character may notice excellent evidence but lack the knowledge to interpret it. A socially perceptive character may understand another person's feelings and still choose the cruel response.
+
+For deduction, keep these steps distinct:
+
+```text
+observation → relevant knowledge → hypotheses → confidence → response
+```
+
+High observation increases available evidence; it does not guarantee the correct conclusion. High reasoning improves inference; it does not supply missing facts. High confidence is not proof of accuracy.
+
 ## Genius Character Pass
 
 Before drafting a genius scene, define:
@@ -47,9 +61,12 @@ What are they bad at?
 
 ### Hidden Observation
 What detail do they notice that others miss?
+Was it physical evidence, social evidence, context, or negative evidence?
 
 ### Reasoning Chain
 What steps connect observation to conclusion?
+What alternative hypothesis did they consider?
+How confident should they actually be?
 Can a careful reader reconstruct it later?
 
 ### Option Set

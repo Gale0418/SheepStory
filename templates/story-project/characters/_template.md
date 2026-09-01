@@ -44,6 +44,43 @@ Which two wants, beliefs, roles, or needs cannot remain comfortably aligned?
 - Available help and resources:
 - Capabilities that require explicit approval before use:
 
+## Social-Cognitive Profile
+
+Use only the axes that materially distinguish this character. Numeric ratings are optional.
+
+### Capabilities
+
+- Reasoning / domain intelligence:
+- Physical observation:
+- Social observation / context awareness:
+- Pattern recognition / negative evidence:
+- Theory of mind / calibration:
+- Conversation skill:
+- Charisma / presence:
+- Empathy:
+- Tact / face-saving:
+- Assertiveness:
+- Persuasion / framing:
+- Deception / masking:
+- Emotional regulation:
+
+### Traits and Expression
+
+- Stable social or cognitive traits:
+- Core self vs social mask:
+- Characteristic overuse or failure pattern:
+- What this character notices first:
+- What this character routinely misses:
+- What makes them update their model of another person:
+
+### State and Relationship Modifiers
+
+- Current stress / fatigue / fear / confidence effects:
+- People or statuses that change their behavior:
+- Skills they intentionally hide, suppress, or exaggerate:
+
+Do not infer one axis from another. High reasoning does not imply charisma; high empathy does not imply tact; high observation does not imply correct inference; high social skill does not imply kindness.
+
 ## Unacceptable Cost
 
 ## Voice

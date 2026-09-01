@@ -47,11 +47,13 @@ Choose the lightest safe mode and follow explicit user mode choices.
 14. Track promise status and answer the core dramatic question at major endings without forcing every minor thread closed.
 15. Treat style profiles as optional preferences, never universal defaults.
 16. Propose memory changes before applying them; never silently rewrite canon.
+17. Keep reasoning, observation, social skill, charisma, empathy, tact, assertiveness, and ethics separable when they affect character behavior; do not infer one from another.
 
 ## Reference Routing
 
 - Planning: `skills/sheep-story/references/outline-gate.md`, `skills/sheep-story/references/conflict-pressure.md`, plus `skills/sheep-story/references/story-architecture.md` for complete arcs and `skills/sheep-story/references/opposition-design.md` for persistent opposition.
 - New story setup: record supplied durable requirements in the Project Brief immediately, use `skills/sheep-story/references/story-foundation.md`, then apply `skills/sheep-story/references/story-project-layout.md` after Foundation approval.
+- Character cognition, observation, social ability, charisma, empathy, tact, or characteristic social failure: `skills/sheep-story/references/social-cognitive-profile.md`.
 - Drafting: `skills/sheep-story/references/voice-calibration.md`, `style-preservation.md`, plus task-specific references.
 - Editorial rewrite: `skills/sheep-story/references/editorial-rewrite.md`, `voice-calibration.md`, and `style-preservation.md`.
 - Review: `skills/sheep-story/references/review-rubric.md`, `style-preservation.md`, plus visible failure-mode references.

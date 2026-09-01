@@ -53,6 +53,29 @@ Try a direction like:
 
 Let the unsaid thing press against the spoken thing.
 
+## Social-Cognitive Pass
+
+When intelligence, observation, social skill, charisma, empathy, tact, or status reading affects the exchange, read `social-cognitive-profile.md` and keep these layers separate:
+
+```text
+capability + traits + current state + relationship + goal + pressure
+→ social strategy
+→ line
+```
+
+Do not make every socially skilled character eloquent in the same way. Do not make every socially weak character quiet. A poor social performer may interrupt, overshare, lecture, flatter badly, miss an exit, answer literally, or keep escalating after the listener disengages.
+
+Do not infer intelligence from polished speech or stupidity from plain speech. High reasoning can coexist with low tact; high empathy can coexist with low assertiveness; high charisma can coexist with poor context awareness.
+
+For socially perceptive characters, distinguish:
+
+- what they actually observe
+- what they infer from it
+- how confident they are
+- whether they choose to reveal that inference
+
+A character who understands another person may still deliberately embarrass them, protect their face, pretend not to notice, or exploit the insight.
+
 ## Anti-Exposition Pass
 
 Flag dialogue if:
@@ -82,6 +105,8 @@ For each major character, track:
 - what they refuse to say
 - what they over-explain
 - what they notice first
+- what they routinely miss
+- how they fail socially when stressed
 - what they joke about under stress
 
 If two characters can swap lines without changing the scene, the dialogue lacks voice.
