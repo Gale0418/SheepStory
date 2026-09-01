@@ -6,7 +6,7 @@ Use this index to choose the right design document without loading every file.
 
 | Document | Scope | Use it when |
 |---|---|---|
-| `character-story-engine-map.md` | Full character-card-to-story pipeline | You need the broad map: card fields, traits, cognition, dynamics, memory, contrast, misunderstanding, embodiment, tone, and coherence |
+| `character-story-engine-map.md` | Full character-card-to-story pipeline | You need the broad map: card fields, traits, conditions, cognition, dynamics, memory, contrast, misunderstanding, embodiment, tone, and coherence |
 | `character-system-architecture.md` | Internal character simulation architecture | You are working mainly on appraisal, emotional dynamics, memory, beliefs, relationships, Theory of Mind, or embodiment |
 | `character-card-research-method.md` | Public-card and player-review research method | You are auditing a card, attributing behavior to prompt fields, weighting reviews, or designing a controlled comparison |
 | `social-cognitive-character-benchmarks.md` | Named analytical benchmarks | You need examples of context readers, intent readers, evidence observers, social failures, masking, and hidden operators |
@@ -22,6 +22,7 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 ### Character Initialization and Expression
 
 - `character-card-engineering.md` — greetings, examples, user role, field hygiene, player reviews, regression probes
+- `character-conditions-advantage.md` — intrinsic capability, resistance, origin leverage, environment, luck, advantage and disadvantage audits
 - `trait-expression-library.md` — everyday conversational personality
 - `contrast-and-dissonance.md` — gap appeal, words/actions/body, hypocrisy, self-deception, indirect affection
 - `social-cognitive-profile.md` — intelligence, observation, empathy, charisma, tact, calibration, masking
@@ -38,7 +39,7 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 - `dialogue-checklist.md` — intention, subtext, social strategy, contrast, belief, and response
 - `embodied-expression.md` — face, gaze, breath, posture, gesture, movement, distance, touch, and objects
 - `reader-promise-and-tone.md` — emotional contract, tonal hazards, recovery, surprise, and ending range
-- `narrative-coherence-gate.md` — long-horizon persona, knowledge, relationship, spatial, temporal, and tonal consistency
+- `narrative-coherence-gate.md` — long-horizon persona, knowledge, relationship, spatial, temporal, resource, and tonal consistency
 
 ### Structure, World, and Review
 
@@ -58,6 +59,7 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 
 - `templates/story-project/project-brief.md`
 - `templates/story-project/characters/_template.md`
+- `templates/story-project/characters/_conditions-template.md` — optional advanced profile for capability, resistance, origin, environment, luck, and advantage audits
 - `templates/story-project/continuity/state.md`
 - `templates/story-project/continuity/promises/_template.md`
 
@@ -75,6 +77,12 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 ```text
 "Why does this bot repeat or ignore changed state?"
 → character-card-engineering.md
+
+"This protagonist is brilliant, rich, charismatic, lucky, and born into privilege. Where does all of that belong?"
+→ character-conditions-advantage.md
+
+"She is terrified and shaking but still refuses to surrender."
+→ character-conditions-advantage.md + character-dynamics.md
 
 "This stern character is secretly adorable."
 → contrast-and-dissonance.md
@@ -94,7 +102,13 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 "A genius knows things they could not know."
 → social-cognitive-profile.md + character-memory-belief.md
 
-"The story forgot who is where, who knows what, or what grief still matters."
+"A poor background is being treated as if it automatically means cynical or criminal."
+→ character-conditions-advantage.md + character-dynamics.md
+
+"Luck keeps solving every crisis by coincidence."
+→ character-conditions-advantage.md + reader-promise-and-tone.md
+
+"The story forgot who is where, who knows what, what resources exist, or what grief still matters."
 → narrative-coherence-gate.md + continuity-check.md
 ```
 
