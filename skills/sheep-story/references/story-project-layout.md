@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This layout gives long fiction and interactive character projects durable memory outside the model. Use only the folders the project needs. The structure should track canon, reader promise, characters, worldbuilding, continuity, belief divergence, and chapter state without turning every short story into a database migration.
+This layout gives long fiction and interactive character projects durable memory outside the model. Use only the folders the project needs. The structure should track canon, reader promise, characters, conditions/resources, worldbuilding, continuity, belief divergence, and chapter state without turning every short story into a database migration.
 
 ## Recommended Structure
 
@@ -73,7 +73,7 @@ themes: []
 ## Notes
 ```
 
-Before creating these files for a new underspecified story, use `story-foundation.md` to produce and approve the Reader Promise when relevant, World Book, core Character Cards, and User / Player Role Contract for interactive work. Do not write model-generated proposals into canon as if the user had confirmed them.
+Before creating these files for a new underspecified story, use `story-foundation.md` to produce and approve the Reader Promise when relevant, World Book, core Character Cards, important condition/origin assumptions, and User / Player Role Contract for interactive work. Do not write model-generated proposals into canon as if the user had confirmed them.
 
 ## project-brief.md
 
@@ -85,6 +85,10 @@ Read the Project Brief before the Story Bible. It records:
 - user / player role assumptions for interactive work
 - project-specific immutable truths
 - capability ceilings
+- important character-condition / origin assumptions
+- environment contract
+- luck / fate / contingency contract when present
+- exceptional-advantage / friction contract when needed
 - world costs
 - content boundaries
 - influence shorthand translated into functions
@@ -94,7 +98,7 @@ Project-specific restrictions remain scoped to this story. Do not convert them i
 
 ## reader-promise.md
 
-Create this only when tone, suffering, hope, humor, surprise, recovery, or ending range needs durable tracking across a long project.
+Create this only when tone, suffering, hope, humor, surprise, recovery, power fantasy, or ending range needs durable tracking across a long project.
 
 Use `templates/cockpit/reader-promise.md` and `reader-promise-and-tone.md`.
 
@@ -107,6 +111,7 @@ Track:
 - treatment of violence or trauma
 - surprise and relationship contract
 - agency / consequence contract
+- power / competence expectations when relevant
 - likely ending range
 - prohibited tonal outcomes
 
@@ -150,6 +155,8 @@ first-appearance:
 
 ## Capability Ceiling
 
+## Optional Conditions / Origin / Advantage Profile
+
 ## Failure-State Continuity
 
 ## Trait Expression
@@ -179,7 +186,26 @@ first-appearance:
 ## Change Log
 ```
 
-Do not fill every section by default. A supporting character usually needs only function, agency, desire, one to three standout traits, a characteristic failure, and relevant continuity. Expand contrast, cognition, psychology, memory, or body only when those mechanisms drive story behavior.
+Do not fill every section by default. A supporting character usually needs only function, agency, desire, one to three standout traits, a characteristic failure, and relevant continuity. Expand conditions/origin, contrast, cognition, psychology, memory, or body only when those mechanisms drive story behavior.
+
+### Optional Condition Add-On
+
+Use `templates/story-project/characters/_conditions-template.md` only when capability versus resistance, origin leverage, inherited constraints, mutable resources/access, environment, luck/fate, or exceptional advantages materially affect decisions.
+
+Use `character-conditions-advantage.md` to preserve:
+
+```text
+intrinsic capability
+!= resistance / control
+!= origin leverage
+!= mutable resources / status / access
+!= starting environment
+!= current environment
+!= luck / fate
+!= personality
+```
+
+Do not duplicate the add-on for ordinary characters whose background never changes a consequential option.
 
 ## character-cards/
 
@@ -220,6 +246,10 @@ state-changes: []
 
 ## Belief / Misunderstanding Changes
 
+## Resource / Status / Access Changes, if any
+
+## Current Environmental Pressure Change, if any
+
 ## Emotional and Relationship Consequences
 
 ## Object / Location Changes
@@ -237,6 +267,12 @@ state-changes: []
 # Continuity State
 
 ## Character State
+
+## Resource / Status / Access State
+
+## Current Environmental Pressure
+
+## Luck / Fate State, only when project-established
 
 ## Object State
 
@@ -259,7 +295,7 @@ state-changes: []
 ## Open Threads
 ```
 
-A false belief can be verified as character state without becoming canonical truth.
+A false belief can be verified as character state without becoming canonical truth. A lost resource stays lost until a later event restores it. A changed current environment does not rewrite the character's origin history.
 
 ## Misunderstanding Ledgers
 
@@ -300,26 +336,30 @@ Before writing a new chapter:
 3. Read `story.md`.
 4. Read `chapters/_index.md`.
 5. Read the previous chapter or previous scene record.
-6. Read relevant character files.
+6. Read relevant character files and optional condition profiles.
 7. Read `plot/timeline.md`.
-8. Read `continuity/state.md`.
+8. Read `continuity/state.md`, including current resources/status/access and environmental pressure when relevant.
 9. Read active misunderstanding ledgers, questions, and promises.
-10. For a long, tactical, technical, emotional-turning-point, misunderstanding-driven, tonal-turn, or continuity-heavy chapter, create and validate a chapter contract.
+10. For a long, tactical, technical, emotional-turning-point, misunderstanding-driven, resource/status-changing, tonal-turn, or continuity-heavy chapter, create and validate a chapter contract.
 11. Produce the outline.
 12. Wait for approval before original prose.
 13. Draft, or revise supplied prose directly when no original prose is requested.
-14. Update continuity, belief, misunderstanding, relationship, promise, and reader-promise obligations.
+14. Update continuity, resource/status/access, belief, misunderstanding, relationship, promise, and reader-promise obligations.
 
 ## Organization Guardrails
 
 - Do not duplicate canonical facts across many summaries without a declared source of truth.
 - Do not copy public card reviews into Character Cards as personality facts.
+- Do not create a condition profile merely because the character has parents, money, or a hometown; use it only when those conditions change options.
+- Do not treat mutable wealth/status/equipment as intrinsic capability.
+- Do not overwrite origin environment when the current environment changes.
+- Do not create a luck-state ledger for ordinary coincidence in a project with no luck/fate mechanic.
 - Do not create a misunderstanding ledger for one line of harmless confusion.
 - Do not persist every expression or short-term emotion.
 - Do not let optional folders become mandatory bureaucracy.
 - Archive superseded audits and exports rather than mixing versions.
-- Keep creator notes, runtime prompts, story canon, and research evidence in their own layers.
+- Keep creator notes, runtime prompts, story canon, mutable condition state, and research evidence in their own layers.
 
 ## Principle
 
-The project layout is external memory, not decoration. It should make the next correct decision easier: what is true, what each character believes, what the reader has been promised, what remains unresolved, and which files are merely evidence rather than canon.
+The project layout is external memory, not decoration. It should make the next correct decision easier: what is true, what the character can actually do, what resources and access they currently possess, what pressure the environment imposes, what each character believes, what the reader has been promised, what remains unresolved, and which files are merely evidence rather than canon.
