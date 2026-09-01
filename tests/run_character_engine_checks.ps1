@@ -113,6 +113,7 @@ $conditions = Read-RequiredText 'skills/sheep-story/references/character-conditi
 $contrast = Read-RequiredText 'skills/sheep-story/references/contrast-and-dissonance.md'
 $misunderstanding = Read-RequiredText 'skills/sheep-story/references/misunderstanding-tragedy.md'
 $tone = Read-RequiredText 'skills/sheep-story/references/reader-promise-and-tone.md'
+$ending = Read-RequiredText 'skills/sheep-story/references/ending-outcome-model.md'
 $dialogue = Read-RequiredText 'skills/sheep-story/references/dialogue-checklist.md'
 $memory = Read-RequiredText 'skills/sheep-story/references/story-memory-ops.md'
 $foundation = Read-RequiredText 'skills/sheep-story/references/story-foundation.md'
@@ -123,7 +124,9 @@ $continuityState = Read-RequiredText 'templates/story-project/continuity/state.m
 $cardAudit = Read-RequiredText 'templates/cockpit/character-card-audit.md'
 $misunderstandingLedger = Read-RequiredText 'templates/cockpit/misunderstanding-ledger.md'
 $readerPromiseTemplate = Read-RequiredText 'templates/cockpit/reader-promise.md'
+$endingTemplate = Read-RequiredText 'templates/cockpit/ending-outcome-contract.md'
 $researchMethod = Read-RequiredText 'docs/character-card-research-method.md'
+$endingCases = Read-RequiredText 'docs/ending-outcome-case-map.md'
 $systemMap = Read-RequiredText 'docs/character-story-engine-map.md'
 
 foreach ($path in @(
@@ -131,7 +134,8 @@ foreach ($path in @(
     'references/character-conditions-advantage.md',
     'references/contrast-and-dissonance.md',
     'references/misunderstanding-tragedy.md',
-    'references/reader-promise-and-tone.md'
+    'references/reader-promise-and-tone.md',
+    'references/ending-outcome-model.md'
 )) {
     Require-Match $skill ([regex]::Escape($path)) "Canonical skill must route $path"
 }
@@ -141,7 +145,8 @@ foreach ($path in @(
     'skills/sheep-story/references/character-conditions-advantage.md',
     'skills/sheep-story/references/contrast-and-dissonance.md',
     'skills/sheep-story/references/misunderstanding-tragedy.md',
-    'skills/sheep-story/references/reader-promise-and-tone.md'
+    'skills/sheep-story/references/reader-promise-and-tone.md',
+    'skills/sheep-story/references/ending-outcome-model.md'
 )) {
     Require-Match $rootSkill ([regex]::Escape($path)) "Root compatibility skill must route $path"
 }
@@ -197,31 +202,62 @@ Require-Match $tone '(?i)Influence Stack Translation' 'Tone guidance must transl
 Require-Match $tone '(?i)do not imitate|not imitation|rather than imitating' 'Tone guidance must prohibit creator-style imitation.'
 Require-Match $tone '(?i)Darkness is not tragedy' 'Tone guidance must separate darkness from tragedy.'
 Require-Match $tone '(?i)Ending Contract' 'Tone guidance must define an ending contract.'
+Require-Match $tone 'ending-outcome-model\.md' 'Tone guidance must route complex finales to the ending-outcome model.'
+
+Require-Match $ending '(?i)Outcome Vector' 'Ending guidance must define a multidimensional outcome vector.'
+Require-Match $ending '(?i)Inherited / Background Cost' 'Ending guidance must separate inherited/background cost.'
+Require-Match $ending '(?i)Story-Incurred Cost' 'Ending guidance must separate story-incurred cost.'
+Require-Match $ending '(?i)Recovery / Restoration' 'Ending guidance must model recovery independently from goal success.'
+Require-Match $ending '(?i)Hope × Cost Quadrant|Hope x Cost Quadrant' 'Ending guidance must preserve the Hope-by-Cost quick view.'
+Require-Match $ending '(?i)Relationship Outcome Is Its Own Axis' 'Ending guidance must not infer total failure from romance failure.'
+Require-Match $ending '(?i)Hope and Recovery Engine' 'Ending guidance must require causal positive outcomes.'
+Require-Match $ending '(?i)Pyrrhic Victory' 'Ending guidance must distinguish pyrrhic victory.'
+Require-Match $ending '(?i)Background-Catastrophe Inflation' 'Ending guidance must reject charging inherited apocalypse to finale cost.'
+Require-Match $ending '(?i)Multi-Part Outcome Movement' 'Ending guidance must support outcome movement across sequels or volumes.'
+Require-Match $ending '(?i)Courage Is Independent of Ending Success' 'Ending guidance must separate courage from success.'
 
 Require-Match $dialogue 'contrast-and-dissonance\.md' 'Dialogue guidance must route word-action contrast.'
 Require-Match $dialogue 'misunderstanding-tragedy\.md' 'Dialogue guidance must route misunderstanding-driven exchanges.'
 Require-Match $dialogue 'character-card-engineering\.md' 'Dialogue guidance must route card examples and greetings.'
 Require-Match $memory '(?i)Active Misunderstandings|Misunderstanding State' 'Story memory must track active misunderstandings.'
 Require-Match $memory '(?i)Reader-Promise / Tone State' 'Story memory must track durable tonal obligations.'
+Require-Match $memory '(?i)Ending Cost vs Sequel Inherited State' 'Story memory must preserve prior-ending cost as sequel inherited state.'
+Require-Match $memory '(?i)Major Outcome / Recovery State' 'Story memory must track resolved outcome domains and recovery.'
 Require-Match $foundation '(?i)Reader Promise' 'Story foundation must include an optional reader promise.'
 Require-Match $foundation '(?i)User / Player Role Contract' 'Story foundation must include a user/player role contract when relevant.'
 
 Require-Match $characterTemplate '(?i)Optional Contrast / Dissonance' 'Character template must include optional contrast fields.'
 Require-Match $characterTemplate '(?i)Failure-State Continuity' 'Character template must include failure-state continuity.'
 Require-Match $projectBrief '(?i)Reader Experience / Core Promise' 'Project brief must record reader experience.'
+Require-Match $projectBrief '(?i)Ending Outcome Contract' 'Project brief must record durable ending-outcome requirements.'
 Require-Match $projectBrief '(?i)User / Player Role Contract' 'Project brief must record user-role assumptions.'
 Require-Match $continuityState '(?i)Active Misunderstandings' 'Continuity state must track active misunderstandings.'
 Require-Match $continuityState '(?i)Reader-Promise / Tone State' 'Continuity state must track durable tone state.'
+Require-Match $continuityState '(?i)Major Outcome / Recovery State' 'Continuity state must carry major ending outcomes into later arcs.'
 Require-Match $cardAudit '(?i)Prompt-to-Behavior Attribution' 'Card audit template must support prompt-to-behavior attribution.'
 Require-Match $misunderstandingLedger '(?i)Repair Windows' 'Misunderstanding ledger must track repair windows.'
 Require-Match $readerPromiseTemplate '(?i)Tonal Hazard Stack' 'Reader-promise template must track tonal hazards.'
+Require-Match $readerPromiseTemplate '(?i)Ending Outcome Range' 'Reader-promise template must expose ending outcome ranges.'
+Require-Match $endingTemplate '(?i)Outcome Vector' 'Ending-outcome template must track outcome domains.'
+Require-Match $endingTemplate '(?i)Inherited / Background Cost' 'Ending-outcome template must separate inherited cost.'
+Require-Match $endingTemplate '(?i)Story-Incurred Cost' 'Ending-outcome template must track story-incurred cost.'
+Require-Match $endingTemplate '(?i)Recovery / Restoration' 'Ending-outcome template must track recovery.'
+Require-Match $endingTemplate '(?i)Causal Hope Engine' 'Ending-outcome template must track the causal source of positive outcomes.'
 Require-Match $researchMethod '(?i)configuration confounds' 'Research method must document configuration confounds.'
+Require-Match $endingCases '(?i)Aldnoah\.Zero' 'Ending case map must include Aldnoah.Zero.'
+Require-Match $endingCases '(?i)Muv-Luv Alternative' 'Ending case map must include Muv-Luv Alternative.'
+Require-Match $endingCases '(?i)Knights of Sidonia' 'Ending case map must include Knights of Sidonia.'
+Require-Match $endingCases '(?i)Guilty Crown' 'Ending case map must include Guilty Crown.'
+Require-Match $endingCases '(?i)Gundam' 'Ending case map must include contrasting Gundam outcomes.'
 Require-Match $systemMap '(?i)Full Pipeline' 'System map must organize the complete character/story pipeline.'
 Require-Match $systemMap 'character-conditions-advantage\.md' 'System map must route the conditions and advantage layer.'
+Require-Match $systemMap '(?i)ENDING OUTCOME' 'System map must include the ending-outcome layer.'
 
 Reject-Match $contrast '(?i)"I hate you"\s*(always|=)\s*"I love you"' 'Contrast guidance must not endorse automatic opposite meaning.'
 Reject-Match $tone '(?i)imitate the style of' 'Tone guidance must not instruct imitation of named creators.'
 Reject-Match $conditions '(?i)extreme genius.*balancing flaw.*cannot cook' 'Conditions guidance must not endorse cosmetic fake balance.'
+Reject-Match $ending '(?i)did not end up together.*therefore.*bad ending' 'Ending guidance must not treat romance failure as automatic total failure.'
+Reject-Match $ending '(?i)many characters died.*therefore.*tragedy' 'Ending guidance must not treat body count as automatic tragedy.'
 
 Test-BehaviorSpec 'tests/46-character-card-causal-audit.md' @(
     'goal lock|at all costs',
@@ -253,6 +289,13 @@ Test-BehaviorSpec 'tests/50-character-conditions-advantage.md' @(
     'willpower|emotional regulation',
     'luck|plot armor',
     'cannot cook|insects'
+)
+Test-BehaviorSpec 'tests/51-ending-outcome-model.md' @(
+    'romance|couple',
+    'inherited|background',
+    'world|civilization|mission',
+    'pyrrhic|sacrificial',
+    'sequel|inherited state'
 )
 
 if ($failures.Count -gt 0) {
