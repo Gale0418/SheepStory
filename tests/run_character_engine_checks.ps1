@@ -152,7 +152,7 @@ Require-Match $card '(?i)configuration|model.*preset|preset.*model' 'Character-c
 Require-Match $card '(?i)regression' 'Character-card guidance must turn concrete failures into regression probes.'
 
 Require-Match $contrast '(?i)Gap appeal.*audience response|audience response.*Gap appeal' 'Contrast guidance must distinguish gap appeal from a standalone trait.'
-Require-Match $contrast '(?i)What the character says.*What they do.*body' 'Contrast guidance must separate words, actions, and body.'
+Require-Match $contrast '(?is)What the character says.*What they do.*body' 'Contrast guidance must separate words, actions, and body.'
 Require-Match $contrast '(?i)Hypocrisy' 'Contrast guidance must distinguish hypocrisy.'
 Require-Match $contrast '(?i)Self-Deception' 'Contrast guidance must distinguish self-deception.'
 Require-Match $contrast '(?i)Value-Action Conflict' 'Contrast guidance must distinguish value-action conflict.'
