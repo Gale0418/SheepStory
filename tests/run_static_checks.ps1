@@ -128,6 +128,7 @@ Require-Path 'docs/character-card-research-method.md'
 Require-Path 'docs/character-story-engine-map.md'
 Require-Path 'tests/fixtures/authoring-lab-forward-fixture.md'
 Require-Path 'tests/run_regression_checks.ps1'
+Require-Path 'tests/run_character_engine_checks.ps1'
 foreach ($test in 9..49) {
     $pattern = '{0:D2}-*.md' -f $test
     if (-not (Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'tests') -Filter $pattern -File)) {
@@ -162,6 +163,15 @@ Test-SkillFrontmatter 'SKILL.md'
 Test-SkillFrontmatter 'skills/sheep-story/SKILL.md'
 Test-LocalMarkdownLinks
 Test-InlineCodePaths
+
+$characterEngineCheckPath = Join-Path $ProjectRoot 'tests/run_character_engine_checks.ps1'
+if (Test-Path -LiteralPath $characterEngineCheckPath) {
+    try {
+        & $characterEngineCheckPath -ProjectRoot $ProjectRoot | Out-Null
+    } catch {
+        $failures.Add("Character engine checks failed: $($_.Exception.Message)")
+    }
+}
 
 $iconPath = Join-Path $ProjectRoot 'assets/sheep-story.svg'
 if (Test-Path -LiteralPath $iconPath) {
