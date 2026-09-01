@@ -12,6 +12,37 @@ This file records user requirements and project scope. Mark model proposals as p
 
 ## Reader Experience / Core Promise
 
+- Core emotional experience:
+- Primary genre / mode:
+- Baseline tone:
+- Expected sources of pleasure:
+- Expected sources of pain or tension:
+- Darkness floor / ceiling:
+- Hope floor / ceiling:
+- Humor function:
+- Recovery / respite rhythm:
+- Violence / trauma treatment:
+- Mystery / surprise contract:
+- Romance / relationship contract:
+- Agency / consequence contract:
+- Likely ending range:
+- Prohibited tonal outcomes:
+
+Use `skills/sheep-story/references/reader-promise-and-tone.md` when tone, suffering, hope, surprise, recovery, or an influence stack materially shapes the project.
+
+## User / Player Role Contract
+
+Fill when the work is interactive, role-play oriented, second-person, or built from a character card.
+
+- Default user role:
+- Fixed facts required by the premise:
+- Negotiable assumptions:
+- What characters initially believe about the user:
+- What may be wrong:
+- What the user can refuse:
+- How the story continues after refusal:
+- Actions / feelings the narrative must not assign to the user:
+
 ## Format And Scale
 
 - Form:
@@ -49,6 +80,13 @@ Facts that must remain true in this project even when a twist would be convenien
 ## Voice And Style Profiles
 
 - [Declared voice or style profile]
+
+## Influence Translation
+
+When the user supplies several works, creators, genres, or memes as shorthand, translate them into functions rather than imitating a creator's distinctive style.
+
+| Source shorthand | Requested function | Tone / structure implication | What not to copy |
+|---|---|---|---|
 
 ## Mutable Creative Choices
 

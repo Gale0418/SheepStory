@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Build an approved World Book and core Character Cards before substantial planning or prose begins. Start from whatever creative seed the user actually has instead of forcing every story through the same questionnaire.
+Build an approved Reader Promise, World Book, and core Character Cards before substantial planning or prose begins when the selected mode requires them. Start from whatever creative seed the user actually has instead of forcing every story through the same questionnaire.
 
 Use this reference only when starting a new story or project without an approved Foundation. Skip it for continuation, revision, an already approved Foundation, or a sufficiently specified Quick standalone request.
 
@@ -36,18 +36,21 @@ Derive character possibilities from how people survive, benefit, resist, enforce
 
 ### Character-First
 
-Use when the user has a protagonist, relationship, voice, contradiction, occupation, wound, or desire but no settled world.
+Use when the user has a protagonist, relationship, voice, contradiction, contrast, occupation, wound, or desire but no settled world.
 
-Ask first about the character pressure that should drive the story: what they want, what they cannot tolerate, what contradiction traps them, or what cost they refuse.
+Ask first about the character pressure that should drive the story: what they want, what they cannot tolerate, what contradiction traps them, what gap between surface and action matters, or what cost they refuse.
 
 Only then offer world candidates. Make each candidate challenge the supplied character differently; do not attach a preferred genre merely because it is familiar.
 
 ### Situation / Image / Theme
 
-Use when the seed is an event, scene image, relationship moment, question, theme, mood, object, or ending.
+Use when the seed is an event, scene image, relationship moment, question, theme, mood, object, meme, creator/work shorthand, or ending.
 
-Identify what must remain recognizable in the seed. When several interpretations are plausible, offer two or three distinct Foundation candidates. For each candidate, show only:
+Identify what must remain recognizable in the seed. Translate named inspirations into requested functions, reader experience, and tonal vectors rather than imitating a creator's distinctive style.
 
+When several interpretations are plausible, offer two or three distinct Foundation candidates. For each candidate, show only:
+
+- reader promise / expected experience
 - world premise
 - central character pressure
 - story engine
@@ -76,6 +79,42 @@ Follow these rules:
 6. mark remaining non-blocking gaps as `unknown`
 
 If the user prefers exploration, generate two or three candidates instead of interrogating them. If the user supplies a correction, update the proposal rather than defending the model's version.
+
+## Reader Promise
+
+Capture only durable emotional and tonal requirements:
+
+```markdown
+## Reader Promise
+
+### Core Emotional Experience
+
+### Primary Genre / Mode
+
+### Baseline Tone
+
+### Darkness / Hope Range
+
+### Humor Function
+
+### Recovery / Respite Rhythm
+
+### Mystery / Surprise Contract
+
+### Romance / Relationship Contract
+
+### Agency / Consequence Contract
+
+### Likely Ending Range
+
+### Prohibited Tonal Outcomes
+
+### Influence Translation
+| Source shorthand | Requested function | Tone / structure implication | What not to copy |
+|---|---|---|---|
+```
+
+Use `reader-promise-and-tone.md` when the emotional contract materially constrains the project. Do not force this section to become a mood questionnaire for simple Quick work.
 
 ## World Book
 
@@ -118,7 +157,7 @@ Exclude encyclopedia detail that does not constrain action, character, conflict,
 
 ## Character Cards
 
-Create a card only for characters important enough to affect choices or persistent state.
+Create a card only for characters important enough to affect choices or persistent state. Keep ordinary characters compact and expand only the layers that drive story behavior.
 
 ```markdown
 ## Character Card
@@ -133,9 +172,29 @@ Create a card only for characters important enough to affect choices or persiste
 
 ### Contradiction
 
+### Optional Contrast / Dissonance
+- Expected surface:
+- Contrasting side:
+- Shared causal root:
+- Trigger / access condition:
+- Words / actions / body gap:
+- Cost / payoff:
+
 ### Strengths / Limits / Blind Spots
 
 ### Capability Ceiling
+
+### Failure-State Continuity
+- Defining strategy or status:
+- What remains after it fails:
+- Fallback:
+- What will not be surrendered:
+
+### Trait Expression
+- 1-3 standout traits:
+- Conversational habit:
+- Characteristic failure:
+- Situation trigger:
 
 ### Social-Cognitive Profile
 - Reasoning / domain intelligence:
@@ -156,7 +215,7 @@ Create a card only for characters important enough to affect choices or persiste
 
 ### Unacceptable Cost
 
-### Knowledge / Misunderstanding / Secrets
+### Knowledge / Belief / Memory / Secrets
 
 ### Voice
 
@@ -172,14 +231,34 @@ Create a card only for characters important enough to affect choices or persiste
 - Unknown:
 ```
 
-Use only the Social-Cognitive axes that materially differentiate the character. Do not infer one axis from another: intelligence, observation, social skill, charisma, empathy, tact, assertiveness, and ethics can diverge sharply. If these capacities matter to the story, use `social-cognitive-profile.md` to define them without turning every Character Card into a stat sheet.
+Use only the Trait, Contrast, Social-Cognitive, Dynamic, and Epistemic fields that materially differentiate the character. Do not infer one axis from another: intelligence, observation, social skill, charisma, empathy, tact, assertiveness, and ethics can diverge sharply.
+
+Use `trait-expression-library.md`, `contrast-and-dissonance.md`, `social-cognitive-profile.md`, `character-dynamics.md`, and `character-memory-belief.md` only as needed. Do not turn every Character Card into a psychological census form.
 
 Treat the change direction as a hypothesis until the user approves it. Do not assign hidden identities, romance, betrayal, death, redemption, corruption, or final arcs without user evidence or approval.
+
+## User / Player Role Contract
+
+For interactive or character-card projects, define:
+
+```markdown
+Default role:
+Fixed facts required by the premise:
+Negotiable assumptions:
+What characters initially believe about the user:
+What may be wrong:
+What the user can refuse:
+How the story continues after refusal:
+Actions / feelings never assigned to the user:
+```
+
+A character may desire a relationship or outcome. The Foundation should not declare the user's consent or emotional result complete unless the user explicitly requires it.
 
 ## Cross-Check
 
 Before presenting the Foundation, verify:
 
+- the reader promise matches the intended world and story engine
 - world conditions create specific choices or pressure for the characters
 - character actions reveal, use, resist, or change the world
 - rules have limits and cannot solve every conflict
@@ -187,6 +266,11 @@ Before presenting the Foundation, verify:
 - relationships contain goals, leverage, dependency, or friction appropriate to the story
 - cognitive and social strengths are uneven enough to create distinctive choices, dialogue, and mistakes when those differences matter
 - a low skill is expressed through plausible failure patterns rather than caricature, broken grammar, or generic stupidity
+- contrasts have a shared causal root rather than appearing by scene convenience
+- words-actions gaps are not automatically interpreted as romance or their literal opposite
+- important characters remain coherent after losing their defining status or strategy
+- interactive assumptions preserve user refusal and alternative continuation
+- named inspirations have been translated into functions rather than style imitation
 - no World Book and Character Card facts contradict each other
 - every inferred item is visibly marked and reversible
 - unresolved unknowns are either blocking or safely deferred
@@ -198,11 +282,13 @@ Present:
 ```markdown
 ## Story Foundation Proposal
 
-### Core Promise
+### Core Promise / Reader Experience
 
 ### World Book
 
 ### Core Character Cards
+
+### User / Player Role Contract, if relevant
 
 ### Relationship / Conflict Engine
 
@@ -220,8 +306,8 @@ Ask the user to approve, combine, or revise the proposal. Do not draft prose dur
 After explicit approval:
 
 1. mark the Foundation `approved`
-2. create or propose updates to `story.md`, the World Book, and Character Cards
-3. proceed to plot threads, chapter contracts, and outline work
+2. create or propose updates to `story.md`, the Project Brief, World Book, and Character Cards
+3. proceed to plot threads, misunderstanding ledgers, chapter contracts, and outline work as needed
 4. retain the normal approval gate before original prose
 
 ## Genericity Boundary
@@ -237,9 +323,12 @@ Do not prefer any city, nation, era, genre, technology, magic system, species, r
 - asking every template field as a separate question
 - inventing dramatic secrets or deaths to make a card feel interesting
 - collapsing intelligence, observation, charisma, empathy, tact, and ethics into one "smart" or "social" trait
+- treating gap appeal as a random opposite trait
+- hard-coding the user into romance, obedience, rescue, or guilt without permission
+- treating a creator name as a style-transfer command
 - repeating Foundation intake for an existing project
 - drafting a sample chapter before Foundation approval
 
 ## Principle
 
-Discover the story's foundation from the user's strongest seed, then make world and character constrain each other before plot begins.
+Discover the story's foundation from the user's strongest seed, then make reader promise, world, character, and user agency constrain one another before plot begins.
