@@ -117,6 +117,7 @@ Conditionally read:
 - `references/cinematic-scene-texture.md` when setting or worldbuilding matters
 - `references/technical-explanation-voice.md` when technical reasoning matters
 - `references/genius-strategy.md` for deduction, tactics, or mastermind conflicts
+- `references/social-cognitive-profile.md` when intelligence, observation, social skill, charisma, empathy, masking, hidden agenda, or character misreading materially affects the scene
 
 Output the mode-appropriate outline or contract. In standard and longform modes, stop for explicit approval.
 
@@ -127,7 +128,7 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, or genius-strategy references only when those concerns are present. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, or social-cognitive references only when those concerns are present. Read `references/social-cognitive-profile.md` when dialogue depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
 ### Revision / Review
 
@@ -137,6 +138,8 @@ Always read:
 - `references/style-preservation.md`
 
 Read `references/failure-modes.md` and other specialist references only for visible or requested concerns. Give concrete findings first and always identify what to preserve. Do not force a new outline for revision-only work.
+
+When reviewing inconsistent characterization, social miscalibration, fake genius, unearned deduction, masking, hidden agendas, or reveal behavior, read `references/social-cognitive-profile.md`.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
 
@@ -313,6 +316,7 @@ For laboratory, advisory, recovery, or extension work, stop at the declared cont
 - `references/cinematic-scene-texture.md`
 - `references/technical-explanation-voice.md`
 - `references/genius-strategy.md`
+- `references/social-cognitive-profile.md`
 - `references/dialogue-checklist.md`
 - `references/vocal-impact.md`
 - `references/style-preservation.md`
