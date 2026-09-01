@@ -19,6 +19,10 @@ Prevent these failures:
 - making opponents stupid or plans perfect
 - flattening the author's voice during polish
 - detaching worldbuilding or technical explanation from scene consequence
+- flattening characters into static trait labels or a single charisma/intelligence stat
+- resetting emotion, relationships, belief, or memory between scenes
+- confusing world truth with what a character knows, believes, remembers, or suspects
+- decorating every line with generic gestures instead of meaningful embodiment
 
 ## Select an Operating Mode
 
@@ -61,6 +65,7 @@ Do I know the scene goal or approved chapter contract?
 Have canon-affecting ideas been routed?
 Does the scene have pressure or another clear dramatic function?
 Do setting and technical details change action, perception, risk, or emotion?
+Do active characters have only the knowledge, memory, belief, and physical access they should have?
 Is approval required in this mode, and if so, has the user given it?
 ```
 
@@ -117,8 +122,12 @@ Conditionally read:
 - `references/cinematic-scene-texture.md` when setting or worldbuilding matters
 - `references/technical-explanation-voice.md` when technical reasoning matters
 - `references/genius-strategy.md` for deduction, tactics, or mastermind conflicts
-- `references/social-cognitive-profile.md` when intelligence, observation, social skill, charisma, empathy, masking, hidden agenda, or character misreading materially affects the scene
 - `references/trait-expression-library.md` when standout personality, humor, talkativeness, awkwardness, warmth, bluntness, formality, or conversational habits materially distinguish a character
+- `references/social-cognitive-profile.md` when intelligence, observation, social skill, charisma, empathy, masking, hidden agenda, or character misreading materially affects the scene
+- `references/character-dynamics.md` when event appraisal, emotional continuity, coping, accumulated pressure, or relationship evolution affects the story
+- `references/character-memory-belief.md` when memory retrieval, knowledge boundaries, belief, suspicion, secrets, misunderstanding, or Theory of Mind affects the scene
+- `references/embodied-expression.md` when facial expression, gaze, breath, posture, gesture, movement, distance, touch, object interaction, or body-language evidence matters
+- `references/narrative-coherence-gate.md` for long-horizon, multi-character, reveal-dense, or spatially complex planning where persona drift, knowledge leakage, or Role-Location-Plot mismatch is plausible
 
 Output the mode-appropriate outline or contract. In standard and longform modes, stop for explicit approval.
 
@@ -129,7 +138,11 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, social-cognitive, or trait-expression references only when those concerns are present. Read `references/social-cognitive-profile.md` when dialogue depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment. Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, trait-expression, social-cognitive, character-dynamics, character-memory-belief, embodied-expression, or coherence references only when those concerns are present.
+
+Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
+
+Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
 ### Revision / Review
 
@@ -140,9 +153,17 @@ Always read:
 
 Read `references/failure-modes.md` and other specialist references only for visible or requested concerns. Give concrete findings first and always identify what to preserve. Do not force a new outline for revision-only work.
 
+When reviewing characters who all sound alike, a trait that has become a repetitive gimmick, humor with poor timing, flat warmth, generic awkwardness, talkativeness, bluntness, or other conversational personality issues, read `references/trait-expression-library.md`.
+
 When reviewing inconsistent characterization, social miscalibration, fake genius, unearned deduction, masking, hidden agendas, or reveal behavior, read `references/social-cognitive-profile.md`.
 
-When reviewing characters who all sound alike, a trait that has become a repetitive gimmick, humor with poor timing, flat warmth, generic awkwardness, talkativeness, bluntness, or other conversational personality issues, read `references/trait-expression-library.md`.
+When reviewing emotional reset, unexplained mood changes, unearned relationship shifts, repetitive defenses, or events that should still matter psychologically, read `references/character-dynamics.md`.
+
+When reviewing knowledge leakage, impossible callbacks, mistaken beliefs, secrets, memory use, unreliable recollection, or character mental models, read `references/character-memory-belief.md`.
+
+When reviewing repetitive action beats, body-language clichés, accidental text/voice/body mismatch, or physically impossible gestures and movement, read `references/embodied-expression.md`.
+
+For long-form or dense multi-character review, read `references/narrative-coherence-gate.md`, especially around midpoint / act transitions, time skips, reunions, battles, and major identity or secret reveals.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
 
@@ -168,6 +189,8 @@ Read:
 
 - `references/story-memory-ops.md`
 - `references/continuity-check.md`
+- `references/character-dynamics.md` when psychological or relationship state changed
+- `references/character-memory-belief.md` when knowledge, belief, memory, suspicion, or secret state changed
 
 Produce a Memory Patch Proposal. Do not silently modify canon.
 
@@ -216,6 +239,25 @@ Classify important facts as:
 
 Ask targeted questions when an unknown blocks the selected mode. Do not demand a full story bible for quick standalone work.
 
+### Preserve Epistemic Layers
+
+Do not collapse:
+
+```text
+world truth
+character knowledge
+character belief
+character memory
+current inference
+publicly displayed knowledge
+```
+
+A mistaken belief can be verified as a character fact without becoming world truth. Reader or narrator knowledge does not automatically belong to the cast.
+
+### Let Psychology Evolve Without Reset or Drift
+
+Stable identity does not require identical reactions. Distinguish long-term identity, mid-term accumulated pressure, and short-term affect. Let meaningful events update appraisal, emotion, coping, relationships, memory, or belief when earned. Do not reset emotional consequences between scenes, and do not silently promote temporary state into a permanent trait.
+
 ### Use Chapter Contracts Where They Pay for Themselves
 
 Require a chapter contract in longform mode. In standard mode, use one for high-continuity, tactical, technical, mystery, or emotional turning-point chapters. Skip it in quick mode unless the user asks for one.
@@ -237,6 +279,10 @@ Include technical explanation only when it changes action, decision, risk, under
 Show intelligence through observation, constrained reasoning, rejected options, tradeoffs, cost, opponent competence, fallback logic, and model updates after failure. Choose the best available plan under current constraints, not a perfect plan.
 
 Keep decisive actions within approved capability ceilings: established skill, information, resources, time, physical limits, help, and cost. Route any new exceptional capability as a canon-affecting proposal before using it.
+
+### Use Embodiment Selectively
+
+Do not attach a facial expression or gesture to every line. Use body-language action beats when they emphasize, contradict, leak, conceal, regulate, pace, position, affect another person, or create observable evidence. Respect location, visibility, injury, restraint, equipment, and physical access.
 
 ### Close Stories Without Mechanical Closure
 
@@ -319,8 +365,12 @@ For laboratory, advisory, recovery, or extension work, stop at the declared cont
 - `references/cinematic-scene-texture.md`
 - `references/technical-explanation-voice.md`
 - `references/genius-strategy.md`
-- `references/social-cognitive-profile.md`
 - `references/trait-expression-library.md`
+- `references/social-cognitive-profile.md`
+- `references/character-dynamics.md`
+- `references/character-memory-belief.md`
+- `references/embodied-expression.md`
+- `references/narrative-coherence-gate.md`
 - `references/dialogue-checklist.md`
 - `references/vocal-impact.md`
 - `references/style-preservation.md`
