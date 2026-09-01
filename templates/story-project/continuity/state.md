@@ -21,6 +21,13 @@ Keep canonical truth separate from each character's internal model.
 
 A false belief can be a verified character-state fact without becoming canonical truth.
 
+## Active Misunderstandings
+
+Track only misunderstandings that currently drive action, relationship, mystery, comedy, or risk. Use `templates/cockpit/misunderstanding-ledger.md` for complex cascades.
+
+| Thread | Canonical truth | Character A model | Character B / institution model | Reinforcing evidence created | Next repair window | Irreversible threshold / risk |
+|---|---|---|---|---|---|---|
+
 ## Relationship State
 
 Use only dimensions that matter to the story. Relationships may be asymmetric.
@@ -49,6 +56,13 @@ Use when multi-location, travel, confinement, injury, or visibility matters.
 
 | Character / object | Current location | Access / visibility / audibility constraint | Earliest plausible movement / change | Evidence |
 |---|---|---|---|---|
+
+## Reader-Promise / Tone State
+
+Use only for longform work where intensity, recovery, or a tonal turn needs continuity.
+
+| Recent high-intensity event | Unprocessed consequence | Current dominant tone | Countertone / recovery available | Next escalation necessary? | Promise risk |
+|---|---|---|---|---|---|
 
 ## Open Threads
 
