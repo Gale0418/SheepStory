@@ -6,9 +6,10 @@ Use this index to choose the right design document without loading every file.
 
 | Document | Scope | Use it when |
 |---|---|---|
-| `character-story-engine-map.md` | Full character-card-to-story pipeline | You need the broad map: card fields, traits, conditions, cognition, dynamics, memory, contrast, misunderstanding, embodiment, tone, and coherence |
+| `character-story-engine-map.md` | Full character-card-to-story pipeline | You need the broad map: card fields, traits, conditions, cognition, dynamics, memory, contrast, misunderstanding, embodiment, tone, ending outcomes, and coherence |
 | `character-system-architecture.md` | Internal character simulation architecture | You are working mainly on appraisal, emotional dynamics, memory, beliefs, relationships, Theory of Mind, or embodiment |
 | `character-card-research-method.md` | Public-card and player-review research method | You are auditing a card, attributing behavior to prompt fields, weighting reviews, or designing a controlled comparison |
+| `ending-outcome-case-map.md` | Spoiler-heavy ending case studies | You want worked examples of mixed personal/world/romance outcomes, inherited-versus-story cost, recovery, or high-cost hopeful endings |
 | `social-cognitive-character-benchmarks.md` | Named analytical benchmarks | You need examples of context readers, intent readers, evidence observers, social failures, masking, and hidden operators |
 | `fiction-skill-design.md` | Overall SheepStory skill design | You need the original design goals and broad workflow rationale |
 | `quality-checklist.md` | Quality and release checks | You need a general review checklist |
@@ -39,6 +40,7 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 - `dialogue-checklist.md` — intention, subtext, social strategy, contrast, belief, and response
 - `embodied-expression.md` — face, gaze, breath, posture, gesture, movement, distance, touch, and objects
 - `reader-promise-and-tone.md` — emotional contract, tonal hazards, recovery, surprise, and ending range
+- `ending-outcome-model.md` — outcome vectors, Hope × Cost, inherited versus story-incurred cost, recovery, sacrificial / pyrrhic / transformative endings, and causal hope engines
 - `narrative-coherence-gate.md` — long-horizon persona, knowledge, relationship, spatial, temporal, resource, and tonal consistency
 
 ### Structure, World, and Review
@@ -46,6 +48,7 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 - `story-foundation.md`
 - `story-project-layout.md`
 - `story-architecture.md`
+- `ending-outcome-model.md`
 - `outline-gate.md`
 - `chapter-contract.md`
 - `conflict-pressure.md`
@@ -68,6 +71,7 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 - `templates/cockpit/character-card-audit.md`
 - `templates/cockpit/misunderstanding-ledger.md`
 - `templates/cockpit/reader-promise.md`
+- `templates/cockpit/ending-outcome-contract.md`
 - `templates/cockpit/chapter-contract.md`
 - `templates/cockpit/authoring-lab.md`
 - `templates/cockpit/story-state-ledger.md`
@@ -95,6 +99,18 @@ Runtime guidance lives under `skills/sheep-story/references/`.
 
 "The story begins cheerful but the audience can smell doom."
 → reader-promise-and-tone.md
+
+"They saved the world but the expected couple never got together. Is that a bad ending?"
+→ ending-outcome-model.md
+
+"Humanity was already almost extinct before chapter one, but the protagonists end happily. Is the ending still high-cost?"
+→ ending-outcome-model.md + character-conditions-advantage.md
+
+"Everyone died, but the mission succeeded and the next generation has a future. Tragedy or victory?"
+→ ending-outcome-model.md
+
+"The hero survived but millions died. Is that low-cost happy?"
+→ ending-outcome-model.md
 
 "All characters sound like the same assistant."
 → trait-expression-library.md + dialogue-checklist.md
