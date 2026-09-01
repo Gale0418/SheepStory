@@ -2,23 +2,36 @@
 
 ## Character State
 
-| Character | Physical | Emotional | Social | Strategic | Last updated |
-|---|---|---|---|---|---|
+| Character | Physical | Short-term affect | Mid-term psychological pressure | Social / relationship | Strategic | Last updated |
+|---|---|---|---|---|---|---|
+
+Record only state that can constrain or color later scenes. Do not persist every fleeting emotion.
 
 ## Object State
 
 | Object | Owner | Location | Status | Last changed |
 |---|---|---|---|---|
 
-## Knowledge State
+## Epistemic State
 
-| Character | Knows | Misunderstands | Hides | Must not know yet |
-|---|---|---|---|---|
+Keep canonical truth separate from each character's internal model.
+
+| Character | Knows / direct evidence | Believes | Suspects / infers | Misremembers / misunderstands | Pretends / hides | Must not know yet |
+|---|---|---|---|---|---|---|
+
+A false belief can be a verified character-state fact without becoming canonical truth.
 
 ## Relationship State
 
-| Pair / Group | Current relationship | Tension | Last changed |
-|---|---|---|---|
+Use only dimensions that matter to the story. Relationships may be asymmetric.
+
+| Direction / Pair / Group | Relevant dimensions (trust / respect / affection / fear / resentment / debt / dependence / rivalry / etc.) | Current tension / contradiction | Last changed | Evidence |
+|---|---|---|---|---|
+
+## Active Psychological Pressures
+
+| Character | Pressure / unresolved emotion | Trigger / cause | Current coping / defense | Recovery condition / open need | Last changed |
+|---|---|---|---|---|---|
 
 ## Injuries / Damage / Losses
 
@@ -29,6 +42,13 @@
 
 | Speaker / faction | Claim / promise / threat | Audience | Consequence |
 |---|---|---|---|
+
+## Location / Access Constraints
+
+Use when multi-location, travel, confinement, injury, or visibility matters.
+
+| Character / object | Current location | Access / visibility / audibility constraint | Earliest plausible movement / change | Evidence |
+|---|---|---|---|---|
 
 ## Open Threads
 
