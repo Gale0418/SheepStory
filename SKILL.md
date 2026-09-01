@@ -49,17 +49,24 @@ Choose the lightest safe mode and follow explicit user mode choices.
 16. Propose memory changes before applying them; never silently rewrite canon.
 17. Keep reasoning, observation, social skill, charisma, empathy, tact, assertiveness, and ethics separable when they affect character behavior; do not infer one from another.
 18. Treat expressive traits such as enthusiasm, humor, talkativeness, bluntness, formality, warmth, or awkwardness as situation-activated tendencies rather than fixed catchphrases.
+19. Keep world truth, character knowledge, belief, memory, suspicion, and displayed knowledge separate when they matter.
+20. Distinguish long-term identity, mid-term psychological pressure, and short-term affect; do not reset consequences between scenes or mistake temporary state for a new trait.
+21. Use facial expression, gesture, breathing, posture, gaze, movement, touch, distance, and object interaction selectively when they carry subtext, evidence, rhythm, or consequence.
 
 ## Reference Routing
 
 - Planning: `skills/sheep-story/references/outline-gate.md`, `skills/sheep-story/references/conflict-pressure.md`, plus `skills/sheep-story/references/story-architecture.md` for complete arcs and `skills/sheep-story/references/opposition-design.md` for persistent opposition.
 - New story setup: record supplied durable requirements in the Project Brief immediately, use `skills/sheep-story/references/story-foundation.md`, then apply `skills/sheep-story/references/story-project-layout.md` after Foundation approval.
-- Character cognition, observation, social ability, charisma, empathy, tact, or characteristic social failure: `skills/sheep-story/references/social-cognitive-profile.md`.
 - Conversational personality, standout traits, humor, talkativeness, awkwardness, warmth, bluntness, social habits, or characteristic expression: `skills/sheep-story/references/trait-expression-library.md`.
+- Character cognition, observation, social ability, charisma, empathy, tact, masking, hidden agenda, or characteristic social failure: `skills/sheep-story/references/social-cognitive-profile.md`.
+- Event appraisal, emotional continuity, accumulated pressure, coping / defense, or relationship evolution: `skills/sheep-story/references/character-dynamics.md`.
+- Character memory, knowledge, belief, suspicion, secrets, mistaken recollection, or Theory-of-Mind reasoning: `skills/sheep-story/references/character-memory-belief.md`.
+- Facial expression, gaze, breath, posture, gesture, movement, distance, touch, object interaction, physiological leakage, or other meaningful action beats: `skills/sheep-story/references/embodied-expression.md`.
+- Long-horizon persona drift, knowledge leakage, Role-Location-Plot alignment, dense multi-character continuity, or text/voice/body coherence: `skills/sheep-story/references/narrative-coherence-gate.md`.
 - Drafting: `skills/sheep-story/references/voice-calibration.md`, `style-preservation.md`, plus task-specific references.
 - Editorial rewrite: `skills/sheep-story/references/editorial-rewrite.md`, `voice-calibration.md`, and `style-preservation.md`.
 - Review: `skills/sheep-story/references/review-rubric.md`, `style-preservation.md`, plus visible failure-mode references.
-- Memory: `skills/sheep-story/references/story-memory-ops.md` and `continuity-check.md`.
+- Memory: `skills/sheep-story/references/story-memory-ops.md`, `continuity-check.md`, plus character dynamics or character memory/belief references when those states changed.
 - Cockpit routing: `skills/sheep-story/references/story-cockpit-workflow.md`.
 - Authoring experiments: `skills/sheep-story/references/authoring-laboratory.md` (reader simulation, sandbox-only characters, alternate takes, and bridge writing).
 - State evidence: `skills/sheep-story/references/story-state-ledgers.md` (claim provenance, events, existing promises, and editorial issues without duplicating canon).
