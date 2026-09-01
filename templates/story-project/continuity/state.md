@@ -91,6 +91,28 @@ Use only for longform work where intensity, recovery, or a tonal turn needs cont
 | Recent high-intensity event | Unprocessed consequence | Current dominant tone | Countertone / recovery available | Next escalation necessary? | Promise risk |
 |---|---|---|---|---|---|
 
+## Major Outcome / Recovery State
+
+Use after a major arc, season, volume, catastrophic defeat, or partial resolution when the result will become inherited state for later work.
+
+Do not store only `victory` or `defeat`. Preserve mixed domains and the cost that survives into the next arc.
+
+| Arc / event | Personal outcome | Relationship / fellowship outcome | Mission / institutional / world outcome | Permanent story-incurred cost | Recovery achieved / still owed | Future possibility / inherited constraint |
+|---|---|---|---|---|---|---|
+
+Examples of state that should persist into a sequel:
+
+- dead characters remain dead unless canon establishes a reversal
+- permanent injuries / disabilities remain unless recovery is established
+- destroyed institutions, homes, fleets, or resources remain lost
+- political legitimacy, peace treaties, exile, imprisonment, or changed authority remain active
+- repaired relationships stay changed rather than resetting to old conflict for convenience
+- unresolved grief, trauma, resentment, debt, and recovery needs remain available to later scenes
+- a failed world-level objective remains part of the next story's starting environment
+- a prior victory can create new obligations, power vacuums, expectations, or resources
+
+Use `skills/sheep-story/references/ending-outcome-model.md` when classifying the result. A previous finale's story-incurred cost becomes inherited state for the sequel; do not count it as newly incurred cost again unless the later story creates additional loss.
+
 ## Open Threads
 
 | Thread | Type | Introduced in | Current status |
