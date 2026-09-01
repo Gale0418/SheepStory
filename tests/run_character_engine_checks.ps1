@@ -109,6 +109,7 @@ function Test-BehaviorSpec {
 $skill = Read-RequiredText 'skills/sheep-story/SKILL.md'
 $rootSkill = Read-RequiredText 'SKILL.md'
 $card = Read-RequiredText 'skills/sheep-story/references/character-card-engineering.md'
+$conditions = Read-RequiredText 'skills/sheep-story/references/character-conditions-advantage.md'
 $contrast = Read-RequiredText 'skills/sheep-story/references/contrast-and-dissonance.md'
 $misunderstanding = Read-RequiredText 'skills/sheep-story/references/misunderstanding-tragedy.md'
 $tone = Read-RequiredText 'skills/sheep-story/references/reader-promise-and-tone.md'
@@ -116,6 +117,7 @@ $dialogue = Read-RequiredText 'skills/sheep-story/references/dialogue-checklist.
 $memory = Read-RequiredText 'skills/sheep-story/references/story-memory-ops.md'
 $foundation = Read-RequiredText 'skills/sheep-story/references/story-foundation.md'
 $characterTemplate = Read-RequiredText 'templates/story-project/characters/_template.md'
+$conditionsTemplate = Read-RequiredText 'templates/story-project/characters/_conditions-template.md'
 $projectBrief = Read-RequiredText 'templates/story-project/project-brief.md'
 $continuityState = Read-RequiredText 'templates/story-project/continuity/state.md'
 $cardAudit = Read-RequiredText 'templates/cockpit/character-card-audit.md'
@@ -126,6 +128,7 @@ $systemMap = Read-RequiredText 'docs/character-story-engine-map.md'
 
 foreach ($path in @(
     'references/character-card-engineering.md',
+    'references/character-conditions-advantage.md',
     'references/contrast-and-dissonance.md',
     'references/misunderstanding-tragedy.md',
     'references/reader-promise-and-tone.md'
@@ -135,6 +138,7 @@ foreach ($path in @(
 
 foreach ($path in @(
     'skills/sheep-story/references/character-card-engineering.md',
+    'skills/sheep-story/references/character-conditions-advantage.md',
     'skills/sheep-story/references/contrast-and-dissonance.md',
     'skills/sheep-story/references/misunderstanding-tragedy.md',
     'skills/sheep-story/references/reader-promise-and-tone.md'
@@ -150,6 +154,23 @@ Require-Match $card '(?i)Failure-State Continuity' 'Character-card guidance must
 Require-Match $card '(?i)Player Review as Evidence' 'Character-card guidance must treat player reviews as evidence.'
 Require-Match $card '(?i)configuration|model.*preset|preset.*model' 'Character-card review attribution must preserve runtime configuration uncertainty.'
 Require-Match $card '(?i)regression' 'Character-card guidance must turn concrete failures into regression probes.'
+
+Require-Match $conditions '(?i)Intrinsic Capability' 'Character-conditions guidance must separate intrinsic capability.'
+Require-Match $conditions '(?i)Resistance, Tolerance, and Control' 'Character-conditions guidance must separate resistance and control.'
+Require-Match $conditions '(?i)Origin Leverage' 'Character-conditions guidance must model origin leverage.'
+Require-Match $conditions '(?i)Environmental Pressure' 'Character-conditions guidance must model environmental pressure.'
+Require-Match $conditions '(?i)Narrative Contingency / Luck' 'Character-conditions guidance must model luck separately from capability.'
+Require-Match $conditions '(?i)Willpower Is Not Emotional Regulation' 'Character-conditions guidance must separate willpower from emotional regulation.'
+Require-Match $conditions '(?i)Luck Must Not Become Plot Armor' 'Character-conditions guidance must reject luck as plot armor.'
+Require-Match $conditions '(?i)Advantage Budget' 'Character-conditions guidance must define an advantage budget diagnostic.'
+Require-Match $conditions '(?i)Do Not Force Artificial Weaknesses' 'Character-conditions guidance must reject cosmetic balancing flaws.'
+Require-Match $conditions '(?i)Power Fantasy Exception' 'Character-conditions guidance must preserve intentional power fantasy.'
+Require-Match $conditions '(?i)Origin Does Not Equal Destiny' 'Character-conditions guidance must reject deterministic origin stereotypes.'
+Require-Match $conditionsTemplate '(?i)Willpower / commitment persistence' 'Conditions template must preserve willpower separately.'
+Require-Match $conditionsTemplate '(?i)Starting environment' 'Conditions template must separate starting environment.'
+Require-Match $conditionsTemplate '(?i)Narrative Contingency' 'Conditions template must support optional luck/fate mechanics.'
+Require-Match $conditionsTemplate '(?i)Advantage Audit' 'Conditions template must include an advantage audit.'
+Require-Match $conditionsTemplate '(?i)Disadvantage Audit' 'Conditions template must include a disadvantage audit.'
 
 Require-Match $contrast '(?i)Gap appeal.*audience response|audience response.*Gap appeal' 'Contrast guidance must distinguish gap appeal from a standalone trait.'
 Require-Match $contrast '(?is)What the character says.*What they do.*body' 'Contrast guidance must separate words, actions, and body.'
@@ -196,9 +217,11 @@ Require-Match $misunderstandingLedger '(?i)Repair Windows' 'Misunderstanding led
 Require-Match $readerPromiseTemplate '(?i)Tonal Hazard Stack' 'Reader-promise template must track tonal hazards.'
 Require-Match $researchMethod '(?i)configuration confounds' 'Research method must document configuration confounds.'
 Require-Match $systemMap '(?i)Full Pipeline' 'System map must organize the complete character/story pipeline.'
+Require-Match $systemMap 'character-conditions-advantage\.md' 'System map must route the conditions and advantage layer.'
 
 Reject-Match $contrast '(?i)"I hate you"\s*(always|=)\s*"I love you"' 'Contrast guidance must not endorse automatic opposite meaning.'
 Reject-Match $tone '(?i)imitate the style of' 'Tone guidance must not instruct imitation of named creators.'
+Reject-Match $conditions '(?i)extreme genius.*balancing flaw.*cannot cook' 'Conditions guidance must not endorse cosmetic fake balance.'
 
 Test-BehaviorSpec 'tests/46-character-card-causal-audit.md' @(
     'goal lock|at all costs',
@@ -223,6 +246,13 @@ Test-BehaviorSpec 'tests/49-reader-promise-tone-stack.md' @(
     'Urobuchi|Yuasa|Nagatsuki|Inoue',
     'recovery',
     'imitate|imitation'
+)
+Test-BehaviorSpec 'tests/50-character-conditions-advantage.md' @(
+    'wealth|political status',
+    'war-torn|scarcity',
+    'willpower|emotional regulation',
+    'luck|plot armor',
+    'cannot cook|insects'
 )
 
 if ($failures.Count -gt 0) {

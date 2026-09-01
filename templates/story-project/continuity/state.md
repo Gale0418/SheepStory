@@ -7,6 +7,33 @@
 
 Record only state that can constrain or color later scenes. Do not persist every fleeting emotion.
 
+## Resource / Status / Access State
+
+Track mutable leverage separately from intrinsic capability and permanent origin.
+
+| Character / group | Money / material resources | Equipment / staff / network | Legal / political status | Institutional / location access | Lost / gained in | Evidence |
+|---|---|---|---|---|---|---|
+
+Do not let intelligence, charisma, family history, or previous status silently recreate resources that were lost.
+
+## Current Environmental Pressure
+
+Use when the current environment materially differs from baseline or changes available choices.
+
+| Location / group | Safety / conflict | Scarcity / hazard | Institutional pressure | Recovery / supply access | Current consequence | Last changed |
+|---|---|---|---|---|---|---|
+
+Origin environment belongs in character/world foundation; this table tracks current pressure.
+
+## Luck / Fate State
+
+Fill only when the project has an explicit luck, fate, probability, or recurring contingency mechanic.
+
+| Subject | Established rule | Recent contingency | Option / complication created | What still required agency | Boundary / plot-armor check |
+|---|---|---|---|---|---|
+
+Do not add this table to ordinary realistic stories merely to explain coincidence.
+
 ## Object State
 
 | Object | Owner | Location | Status | Last changed |
@@ -52,7 +79,7 @@ Use only dimensions that matter to the story. Relationships may be asymmetric.
 
 ## Location / Access Constraints
 
-Use when multi-location, travel, confinement, injury, or visibility matters.
+Use when multi-location, travel, confinement, injury, visibility, authority, or physical access matters.
 
 | Character / object | Current location | Access / visibility / audibility constraint | Earliest plausible movement / change | Evidence |
 |---|---|---|---|---|

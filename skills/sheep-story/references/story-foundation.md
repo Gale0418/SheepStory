@@ -34,11 +34,15 @@ Ask first about the missing rule, cost, enforcement mechanism, lived consequence
 
 Derive character possibilities from how people survive, benefit, resist, enforce, misunderstand, or pay for the supplied world conditions. Keep all derived characters proposed.
 
+Distinguish environmental pressure from personality. A violent, impoverished, privileged, safe, or tightly controlled environment changes exposure and options; it does not by itself determine temperament, morality, competence, or trauma response.
+
 ### Character-First
 
-Use when the user has a protagonist, relationship, voice, contradiction, contrast, occupation, wound, or desire but no settled world.
+Use when the user has a protagonist, relationship, voice, contradiction, contrast, occupation, wound, desire, origin, family position, rare ability, unusual resistance, or resource condition but no settled world.
 
-Ask first about the character pressure that should drive the story: what they want, what they cannot tolerate, what contradiction traps them, what gap between surface and action matters, or what cost they refuse.
+Ask first about the character pressure that should drive the story: what they want, what they cannot tolerate, what contradiction traps them, what gap between surface and action matters, what cost they refuse, or which exceptional condition actually changes their available options.
+
+Keep intrinsic capability, resistance, origin leverage, resources, and environment separate. If the seed is "brilliant heir from a dangerous world," do not silently convert wealth into intelligence or danger into cynicism.
 
 Only then offer world candidates. Make each candidate challenge the supplied character differently; do not attach a preferred genre merely because it is familiar.
 
@@ -116,6 +120,8 @@ Capture only durable emotional and tonal requirements:
 
 Use `reader-promise-and-tone.md` when the emotional contract materially constrains the project. Do not force this section to become a mood questionnaire for simple Quick work.
 
+If the project intentionally promises overwhelming competence, strong luck, inherited privilege, or low-friction power fantasy, record that promise rather than secretly inventing compensating misery later.
+
 ## World Book
 
 Capture only story-bearing world information:
@@ -136,6 +142,13 @@ Capture only story-bearing world information:
 ### Lived Consequences
 
 ### Resources / Scarcity / Enforcement
+
+### Environmental Pressure
+- Safety / war / crime:
+- Scarcity / disease / pollution:
+- Institutional brutality / surveillance:
+- Social mobility / access:
+- Education / healthcare / technology access:
 
 ### Knowledge Boundary
 - Public:
@@ -184,6 +197,16 @@ Create a card only for characters important enough to affect choices or persiste
 
 ### Capability Ceiling
 
+### Optional Conditions / Advantage Profile
+- Intrinsic capability that matters:
+- Resistance / control that matters:
+- Origin leverage / inherited constraints:
+- Starting environment vs current environment:
+- Resources / status / network / access:
+- Luck / fate rule, if project-established:
+- Exceptional advantages and natural counterpressure:
+- Problems the advantages do not solve:
+
 ### Failure-State Continuity
 - Defining strategy or status:
 - What remains after it fails:
@@ -231,9 +254,9 @@ Create a card only for characters important enough to affect choices or persiste
 - Unknown:
 ```
 
-Use only the Trait, Contrast, Social-Cognitive, Dynamic, and Epistemic fields that materially differentiate the character. Do not infer one axis from another: intelligence, observation, social skill, charisma, empathy, tact, assertiveness, and ethics can diverge sharply.
+Use only the Condition, Trait, Contrast, Social-Cognitive, Dynamic, and Epistemic fields that materially differentiate the character. Do not infer one axis from another: intelligence, observation, social skill, charisma, empathy, tact, assertiveness, willpower, emotional regulation, origin, status, resources, and ethics can diverge sharply.
 
-Use `trait-expression-library.md`, `contrast-and-dissonance.md`, `social-cognitive-profile.md`, `character-dynamics.md`, and `character-memory-belief.md` only as needed. Do not turn every Character Card into a psychological census form.
+Use `character-conditions-advantage.md`, `trait-expression-library.md`, `contrast-and-dissonance.md`, `social-cognitive-profile.md`, `character-dynamics.md`, and `character-memory-belief.md` only as needed. For an advanced condition profile, use `templates/story-project/characters/_conditions-template.md`. Do not turn every Character Card into a psychological or socioeconomic census form.
 
 Treat the change direction as a hypothesis until the user approves it. Do not assign hidden identities, romance, betrayal, death, redemption, corruption, or final arcs without user evidence or approval.
 
@@ -264,6 +287,13 @@ Before presenting the Foundation, verify:
 - rules have limits and cannot solve every conflict
 - each core character has agency beyond serving another character's arc
 - relationships contain goals, leverage, dependency, or friction appropriate to the story
+- intrinsic capability is not silently standing in for money, status, equipment, contacts, credentials, or authority
+- capability and resistance are separated when the setting treats them differently
+- willpower, emotional regulation, stress tolerance, and influence resistance are not collapsed when their differences matter
+- origin, wealth, family status, stigma, and environment change options without being treated as deterministic personality traits
+- luck or fate, if present, changes contingencies without automatically resolving outcomes or erasing agency
+- exceptional advantages have meaningful option effects; any counterpressure is causal rather than arbitrary punishment
+- cosmetic quirks are not mislabeled as meaningful balancing flaws
 - cognitive and social strengths are uneven enough to create distinctive choices, dialogue, and mistakes when those differences matter
 - a low skill is expressed through plausible failure patterns rather than caricature, broken grammar, or generic stupidity
 - contrasts have a shared causal root rather than appearing by scene convenience
@@ -288,6 +318,8 @@ Present:
 
 ### Core Character Cards
 
+### Important Origin / Resource / Environment Conditions, if relevant
+
 ### User / Player Role Contract, if relevant
 
 ### Relationship / Conflict Engine
@@ -307,12 +339,13 @@ After explicit approval:
 
 1. mark the Foundation `approved`
 2. create or propose updates to `story.md`, the Project Brief, World Book, and Character Cards
-3. proceed to plot threads, misunderstanding ledgers, chapter contracts, and outline work as needed
-4. retain the normal approval gate before original prose
+3. create optional condition profiles only for characters whose origin/resources/environment/resistance/luck materially affects later choices
+4. proceed to plot threads, misunderstanding ledgers, chapter contracts, and outline work as needed
+5. retain the normal approval gate before original prose
 
 ## Genericity Boundary
 
-Do not prefer any city, nation, era, genre, technology, magic system, species, relationship, identity, plot event, death, ending, or named inspiration. Use examples only when the user supplied them for the current project.
+Do not prefer any city, nation, era, genre, technology, magic system, species, relationship, identity, class position, plot event, death, ending, or named inspiration. Use examples only when the user supplied them for the current project.
 
 ## Common Mistakes
 
@@ -323,6 +356,13 @@ Do not prefer any city, nation, era, genre, technology, magic system, species, r
 - asking every template field as a separate question
 - inventing dramatic secrets or deaths to make a card feel interesting
 - collapsing intelligence, observation, charisma, empathy, tact, and ethics into one "smart" or "social" trait
+- treating wealth, poverty, noble birth, stigma, or a dangerous birthplace as personality
+- assuming exceptional power grants matching resistance without a world rule
+- treating high willpower as emotional calm or high emotional regulation as moral commitment
+- granting equipment, money, contacts, legal authority, or credentials because the character is clever or charismatic
+- using luck as automatic plot armor or bad luck as forced failure
+- fake-balancing an exceptional character with an irrelevant quirk
+- punishing a powerful character solely because the author feels they are "too strong"
 - treating gap appeal as a random opposite trait
 - hard-coding the user into romance, obedience, rescue, or guilt without permission
 - treating a creator name as a style-transfer command
@@ -331,4 +371,4 @@ Do not prefer any city, nation, era, genre, technology, magic system, species, r
 
 ## Principle
 
-Discover the story's foundation from the user's strongest seed, then make reader promise, world, character, and user agency constrain one another before plot begins.
+Discover the story's foundation from the user's strongest seed, then make reader promise, world, character, conditions, resources, and user agency constrain one another before plot begins.

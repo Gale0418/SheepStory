@@ -63,6 +63,25 @@ Use `skills/sheep-story/references/contrast-and-dissonance.md`. Do not assume sp
 - Available help and resources:
 - Capabilities that require explicit approval before use:
 
+## Optional Conditions / Origin / Advantage Profile
+
+Fill only when capability versus resistance, origin leverage, inherited obligations, resources, environment, luck/fate, or exceptional advantages materially change story options.
+
+Use `templates/story-project/characters/_conditions-template.md` and `skills/sheep-story/references/character-conditions-advantage.md` rather than expanding every ordinary Character Card.
+
+Keep these distinctions intact when relevant:
+
+```text
+intrinsic capability
+!= resistance / control
+!= origin leverage
+!= current resources / authority
+!= starting environment
+!= current environment
+!= luck / fate
+!= personality
+```
+
 ## Failure-State Continuity
 
 Fill for important characters whose identity depends on status, control, romance, victory, certainty, employment, a mission, or another condition that may fail.
@@ -135,6 +154,8 @@ Fill only when disguise, hidden competence, false harmlessness, or a hidden agen
 - Skills they intentionally hide, suppress, or exaggerate:
 
 Do not infer one axis from another. High reasoning does not imply charisma; high empathy does not imply tact; high observation does not imply correct inference; high social skill does not imply kindness. A hidden agenda does not automatically imply a false personality.
+
+For pressure-sensitive characters, do not treat Emotional Regulation as a synonym for Willpower, Stress Tolerance, or Belief / Influence Resistance; use the optional conditions profile when those distinctions matter.
 
 ## Psychological Dynamics
 

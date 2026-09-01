@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document organizes the character-card research, character simulation layers, contrast mechanisms, misunderstanding engines, embodied performance, and reader-promise controls into one routing map.
+This document organizes the character-card research, character conditions, character simulation layers, contrast mechanisms, misunderstanding engines, embodied performance, and reader-promise controls into one routing map.
 
 It is an index and design rationale, not a requirement to fill every field for every character.
 
@@ -24,6 +24,10 @@ WORLD / CANON
 CHARACTER FOUNDATION
   |
   +-- identity, values, wants, wounds, contradictions, capability ceiling
+  |
+CHARACTER CONDITIONS
+  |
+  +-- intrinsic capability, resistance, origin leverage, environment, resources, luck
   |
 TRAIT EXPRESSION
   |
@@ -51,7 +55,7 @@ MISUNDERSTANDING ENGINE
   |
 SCENE DECISION
   |
-  +-- goal + pressure + relationship + activated memory + ToM lookahead
+  +-- goal + pressure + relationship + activated memory + resources + access + ToM lookahead
   |
 DIALOGUE / ACTION
   |
@@ -63,7 +67,7 @@ EMBODIED PERFORMANCE
   |
 COHERENCE / PROMISE GATE
   |
-  +-- canon, persona, knowledge, emotion, relationship, space, tone, user agency
+  +-- canon, persona, knowledge, emotion, relationship, resources, space, tone, user agency
 ```
 
 No scene needs every layer expanded. Use the smallest set that explains the behavior.
@@ -73,6 +77,7 @@ No scene needs every layer expanded. Use the smallest set that explains the beha
 | Need | Primary reference | Secondary reference |
 |---|---|---|
 | Design or audit an AI role-play card | `character-card-engineering.md` | `trait-expression-library.md`, `social-cognitive-profile.md` |
+| Separate capability, resistance, family/resources, environment, or luck | `character-conditions-advantage.md` | `social-cognitive-profile.md`, `reader-promise-and-tone.md` |
 | Make an ordinary supporting character distinct | `trait-expression-library.md` | `voice-calibration.md` |
 | Separate intelligence, observation, charisma, empathy, or tact | `social-cognitive-profile.md` | `genius-strategy.md` |
 | Design gap appeal, hypocrisy, indirect affection, or words-actions conflict | `contrast-and-dissonance.md` | `embodied-expression.md`, `character-memory-belief.md` |
@@ -108,29 +113,31 @@ role
 
 ### Tier 2 — Recurring Character
 
-Add:
+Add only when useful:
 
 - contradiction
 - relationship-specific behavior
 - failure-state continuity
 - one or two embodied signatures
 - relevant knowledge boundary
+- one or two story-bearing origin / resource / environmental conditions
 
-### Tier 3 — Psychological or Social Driver
+### Tier 3 — Psychological, Social, or Structural Driver
 
 Add only relevant axes from:
 
+- character conditions / advantage model
 - social-cognitive profile
 - appraisal and coping
 - memory / belief
 - contrast or mask dynamics
 - relationship dimensions
 
-### Tier 4 — Plot-Critical Mind
+### Tier 4 — Plot-Critical Mind or Exceptional Position
 
-For detectives, masterminds, unreliable narrators, political operators, tragic pairs, and persistent antagonists, track evidence chains, belief updates, repair windows, deception, and post-failure strategies.
+For detectives, masterminds, unreliable narrators, political operators, tragic pairs, persistent antagonists, heirs, rare-power users, or characters whose social position changes the plot, track evidence chains, belief updates, resources, access, obligations, repair windows, deception, and post-failure strategies.
 
-Detail budget follows narrative relevance and distinctiveness, not intelligence or status.
+Detail budget follows narrative relevance and distinctiveness, not intelligence, wealth, status, or power.
 
 ## Character Card Layer
 
@@ -144,6 +151,85 @@ Public AI-character ecosystems exposed several practical facts:
 6. Concrete player reviews can become regression probes.
 
 The engineering reference therefore treats a card as a prompt program rather than a biography form.
+
+## Character Conditions Layer
+
+The conditions layer prevents several different causes from collapsing into one stat or one personality label.
+
+```text
+intrinsic capability
+!= resistance / tolerance
+!= origin leverage
+!= current environment
+!= narrative luck
+```
+
+### Intrinsic Capability
+
+What can the person do before equipment, status, networks, or luck are added?
+
+Keep broad labels decomposed when the distinction matters. `Intelligence` may need reasoning, knowledge, observation, planning, or calibration. `Charisma` may need presence, conversation, tact, persuasion, appearance response, or status fluency.
+
+### Resistance and Control
+
+Keep these separable when pressure matters:
+
+```text
+willpower / commitment persistence
+emotional regulation
+stress tolerance
+belief / influence resistance
+setting-specific corruption resistance
+```
+
+A frightened person can remain committed. A composed person can quietly surrender. Power does not automatically imply resistance to that power.
+
+### Origin Leverage
+
+Family wealth, status, education, patronage, legal protection, networks, inherited enemies, debts, obligations, and stigma change available options without becoming personality traits.
+
+```text
+same capability
++ different safety net / status
+→ different risk, consequence, and institutional access
+```
+
+Origin may shape learned behavior through repeated experience, but origin is not destiny.
+
+### Environmental Pressure
+
+Keep the character's starting environment separate from the current environment.
+
+A person raised in safety but stranded in a war zone carries different expectations from someone raised under chronic war pressure even when both face the same immediate danger.
+
+Environment changes what is ordinary, scarce, dangerous, trusted, or recoverable. It does not automatically assign trauma, cynicism, violence, or competence.
+
+### Narrative Contingency / Luck
+
+Luck should change options rather than erase agency.
+
+```text
+lucky event opens an escape route
+→ character still decides whether and how to use it
+```
+
+Do not use good luck as permanent plot armor or bad luck as an excuse to force failure regardless of skill.
+
+### Advantage Budget
+
+The Advantage Budget is a diagnostic, not a mandatory point-buy system.
+
+When a character has many exceptional advantages, ask:
+
+- which advantages actually add new options
+- which overlap
+- which plausibly attract obligation, visibility, dependency, exploitation, or stronger opposition
+- what problems remain outside their domain
+- whether low-friction power fantasy is itself the reader promise
+
+Do not "balance" extreme power with irrelevant quirks such as inability to cook unless the quirk genuinely changes consequential choices.
+
+Counterpressure should arise from causality, not authorial punishment.
 
 ## Contrast Layer
 
@@ -293,12 +379,15 @@ Separate:
 |---|---|
 | Schema quality | Are fields clear and correctly placed? |
 | Character fidelity | Does behavior remain recognizable? |
+| Condition causality | Are capability, resistance, resources, origin, environment, and chance kept causally separate? |
+| Resource integrity | Does the character use only established money, status, tools, contacts, credentials, and access? |
 | Interaction robustness | Can the character survive refusal and changed state? |
 | User agency | Can the player reject assumptions? |
 | State updating | Does new evidence alter goals and beliefs? |
 | Epistemic integrity | Does the character know only what they can know? |
 | Failure-state continuity | Is there still a person after defeat? |
 | Embodied efficiency | Do action beats carry meaning rather than twitch constantly? |
+| Luck agency | Does coincidence change options without automatically resolving outcomes? |
 | Tonal fidelity | Does scene causality match the reader promise? |
 | Token efficiency | Does permanent context change behavior? |
 
@@ -308,6 +397,12 @@ Separate:
 - user refuses task
 - authority or ownership changes
 - defining strategy fails
+- character loses access to wealth, title, network, or equipment
+- character moves from safe origin conditions into severe scarcity or danger
+- high-will character becomes visibly frightened
+- high-regulation character changes commitment while remaining composed
+- lucky coincidence opens an option but does not solve the scene
+- defining advantage encounters a problem outside its domain
 - character is moved outside the opening scenario
 - character is asked about unknown information
 - old emotional cue reappears
@@ -323,16 +418,17 @@ Do not create a new module for every trope.
 
 Add a new reference only when it introduces a distinct reasoning process:
 
+- Card Engineering: prompt-field and player-evidence operations
+- Conditions / Advantage: capability, resistance, leverage, environment, resources, chance
 - Trait Library: observable tendency
 - Contrast: expectation and channel mismatch
-- Social-Cognitive: capability
+- Social-Cognitive: cognitive and social capability
 - Dynamics: state evolution
 - Memory/Belief: epistemic boundaries
 - Misunderstanding: divergent models and causal cascade
 - Embodiment: physical performance
 - Reader Promise: audience contract
-- Card Engineering: prompt-field and player-evidence operations
 
 ## Principle
 
-SheepStory should not merely remember who a character is. It should explain how a card initializes them, how a scene activates them, how their body expresses them, how other people misread them, how consequences update them, and what emotional contract the reader believes the story will honor.
+SheepStory should not merely remember who a character is. It should explain how a card initializes them, what advantages and constraints their circumstances provide, how a scene activates them, how their body expresses them, how other people misread them, how consequences update them, and what emotional contract the reader believes the story will honor.
