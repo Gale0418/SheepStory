@@ -23,6 +23,10 @@ Prevent these failures:
 - resetting emotion, relationships, belief, or memory between scenes
 - confusing world truth with what a character knows, believes, remembers, or suspects
 - decorating every line with generic gestures instead of meaningful embodiment
+- treating character-card fields as interchangeable storage
+- turning gap appeal or indirect affection into an automatic opposite-language decoder
+- preserving misunderstanding plots through selective stupidity or ignored clarification
+- stacking darkness, suffering, surrealism, and twists without a reader promise or recovery logic
 
 ## Select an Operating Mode
 
@@ -66,6 +70,8 @@ Have canon-affecting ideas been routed?
 Does the scene have pressure or another clear dramatic function?
 Do setting and technical details change action, perception, risk, or emotion?
 Do active characters have only the knowledge, memory, belief, and physical access they should have?
+If contrast or misunderstanding drives the scene, are the underlying signals and beliefs causally supported?
+If tone materially changes, does it remain inside the approved reader promise or a deliberately prepared subversion?
 Is approval required in this mode, and if so, has the user given it?
 ```
 
@@ -85,9 +91,9 @@ Read:
 
 For reader simulation, non-canon character experiments, alternate takes, or bridge writing, also read `references/authoring-laboratory.md`. Keep all experiment output sandbox-only and record evidence, dissent, provenance, and an approval destination. For claim, event, promise, or editorial tracking, read `references/story-state-ledgers.md`; use the existing canonical files as the single truth source.
 
-For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, or automatic canon mutation.
+For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. For character-card field audits, player-review attribution, or external card imports, read `references/character-card-engineering.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, automatic canon mutation, or automated scraping pipeline.
 
-Output an idea routing table, plot-thread map, state checklist, chapter contract, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
+Output an idea routing table, plot-thread map, state checklist, chapter contract, card audit, misunderstanding ledger, reader-promise sheet, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
 
 ### Project Setup
 
@@ -98,11 +104,17 @@ Read:
 - `references/story-memory-ops.md`
 - `references/voice-calibration.md`
 
+Conditionally read:
+
+- `references/reader-promise-and-tone.md` when genre experience, darkness, hope, humor, surprise, or ending range is a durable project requirement
+- `references/character-card-engineering.md` when the project is interactive, role-play oriented, imported from a character card, or intended for character-card export
+- `references/contrast-and-dissonance.md` when a core character premise depends on gap appeal, public-private contrast, or words-actions conflict
+
 For bounded Quick work, microfiction, or a sufficiently specified standalone short story, bypass the full Foundation intake, World Book, Character Cards, and Foundation approval. Treat the supplied prompt as the approved brief, ask only genuinely blocking questions, and keep invented facts local unless durable project constraints require a Project Brief.
 
 For a new story without an approved Foundation, detect the strongest world, character, situation, image, theme, or mood seed and follow `references/story-foundation.md`. Ask one high-leverage question at a time, build a proposed World Book and Character Cards, and stop for Foundation approval before plot or prose. Skip redundant intake when the supplied or existing Foundation is already sufficient.
 
-As soon as the user supplies format, scale, required or forbidden elements, project-specific immutable truths, capability ceilings, content boundaries, or other durable project requirements, create or update `templates/story-project/project-brief.md`. Preserve explicit user requirements during Foundation work; only model-proposed additions remain proposed. Keep every constraint scoped to the current project.
+As soon as the user supplies format, scale, required or forbidden elements, project-specific immutable truths, capability ceilings, content boundaries, reader-promise constraints, user-role assumptions, or other durable project requirements, create or update `templates/story-project/project-brief.md`. Preserve explicit user requirements during Foundation work; only model-proposed additions remain proposed. Keep every constraint scoped to the current project.
 
 After Foundation approval, propose the remaining project structure and distinguish verified canon, inferred material, and unknowns.
 
@@ -122,12 +134,16 @@ Conditionally read:
 - `references/cinematic-scene-texture.md` when setting or worldbuilding matters
 - `references/technical-explanation-voice.md` when technical reasoning matters
 - `references/genius-strategy.md` for deduction, tactics, or mastermind conflicts
+- `references/character-card-engineering.md` for greeting, opening-state, user-role, field-placement, example-dialogue, or card-robustness planning
 - `references/trait-expression-library.md` when standout personality, humor, talkativeness, awkwardness, warmth, bluntness, formality, or conversational habits materially distinguish a character
 - `references/social-cognitive-profile.md` when intelligence, observation, social skill, charisma, empathy, masking, hidden agenda, or character misreading materially affects the scene
+- `references/contrast-and-dissonance.md` when gap appeal, public-private contrast, indirect affection, hypocrisy, self-deception, or words-actions-body divergence affects the scene
 - `references/character-dynamics.md` when event appraisal, emotional continuity, coping, accumulated pressure, or relationship evolution affects the story
 - `references/character-memory-belief.md` when memory retrieval, knowledge boundaries, belief, suspicion, secrets, misunderstanding, or Theory of Mind affects the scene
+- `references/misunderstanding-tragedy.md` when divergent beliefs, failed repair, dramatic irony, or a partial-information cascade drives conflict
 - `references/embodied-expression.md` when facial expression, gaze, breath, posture, gesture, movement, distance, touch, object interaction, or body-language evidence matters
-- `references/narrative-coherence-gate.md` for long-horizon, multi-character, reveal-dense, or spatially complex planning where persona drift, knowledge leakage, or Role-Location-Plot mismatch is plausible
+- `references/reader-promise-and-tone.md` when tonal escalation, darkness, hope, humor, recovery, surprise, or an influence stack affects the outline
+- `references/narrative-coherence-gate.md` for long-horizon, multi-character, reveal-dense, or spatially complex planning where persona drift, knowledge leakage, Role-Location-Plot mismatch, or reader-promise drift is plausible
 
 Output the mode-appropriate outline or contract. In standard and longform modes, stop for explicit approval.
 
@@ -138,9 +154,9 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, trait-expression, social-cognitive, character-dynamics, character-memory-belief, embodied-expression, or coherence references only when those concerns are present.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, card-engineering, trait-expression, social-cognitive, contrast, character-dynamics, character-memory-belief, misunderstanding, embodied-expression, reader-promise, or coherence references only when those concerns are present.
 
-Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
+Read `references/character-card-engineering.md` when drafting a greeting, alternate opening, card examples, user-role interaction, or export-ready character-card material. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/contrast-and-dissonance.md` when spoken claims, actions, body, self-image, or private motive deliberately diverge. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/misunderstanding-tragedy.md` when characters act from divergent models or when a repair window opens or closes. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/reader-promise-and-tone.md` when the scene changes the expected emotional contract, intensity, respite, or genre signal. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
 
 Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
@@ -153,23 +169,31 @@ Always read:
 
 Read `references/failure-modes.md` and other specialist references only for visible or requested concerns. Give concrete findings first and always identify what to preserve. Do not force a new outline for revision-only work.
 
+When reviewing an AI character card, greeting imprint, field pollution, user-role contamination, goal lock, example-script leakage, entity aliasing, threat loops, or player-review evidence, read `references/character-card-engineering.md`.
+
 When reviewing characters who all sound alike, a trait that has become a repetitive gimmick, humor with poor timing, flat warmth, generic awkwardness, talkativeness, bluntness, or other conversational personality issues, read `references/trait-expression-library.md`.
 
 When reviewing inconsistent characterization, social miscalibration, fake genius, unearned deduction, masking, hidden agendas, or reveal behavior, read `references/social-cognitive-profile.md`.
+
+When reviewing arbitrary contradiction, mechanical tsundere translation, unearned gap appeal, hypocrisy confusion, words-actions mismatch, self-deception, or public-private contrast, read `references/contrast-and-dissonance.md`.
 
 When reviewing emotional reset, unexplained mood changes, unearned relationship shifts, repetitive defenses, or events that should still matter psychologically, read `references/character-dynamics.md`.
 
 When reviewing knowledge leakage, impossible callbacks, mistaken beliefs, secrets, memory use, unreliable recollection, or character mental models, read `references/character-memory-belief.md`.
 
+When reviewing misunderstanding plots, selective stupidity, coincidence barricades, endless distrust, ignored clarification, weak repair windows, or missing aftermath, read `references/misunderstanding-tragedy.md`.
+
 When reviewing repetitive action beats, body-language clichés, accidental text/voice/body mismatch, or physically impossible gestures and movement, read `references/embodied-expression.md`.
 
-For long-form or dense multi-character review, read `references/narrative-coherence-gate.md`, especially around midpoint / act transitions, time skips, reunions, battles, and major identity or secret reveals.
+When reviewing tonal bait-and-switch, unprocessed suffering, darkness without choice, humor that erases harm, absent respite, influence-stack confusion, or ending-contract failure, read `references/reader-promise-and-tone.md`.
+
+For long-form or dense multi-character review, read `references/narrative-coherence-gate.md`, especially around midpoint / act transitions, time skips, reunions, battles, major identity or secret reveals, and tonal turns.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
 
 When a review might mistake low informational content for useless dialogue, read `references/vocal-impact.md`. Judge sound, breath, rhythm, timing, character fit, and consequence before cutting the line.
 
-When review includes reader evidence, competing interpretations, state claims, pacing/reveal advice, or a branch, load only the applicable laboratory, ledger, or advisory reference. Treat consensus and parser output as evidence to evaluate, never as canon or proof of intent.
+When review includes reader evidence, competing interpretations, state claims, public-card ratings, player comments, pacing/reveal advice, or a branch, load only the applicable laboratory, ledger, card-engineering, or advisory reference. Treat consensus, parser output, stars, downloads, and reviews as evidence to evaluate, never as canon, causal proof, or proof of authorial intent.
 
 ### Style Polish / Anti-AI Flavour
 
@@ -191,6 +215,8 @@ Read:
 - `references/continuity-check.md`
 - `references/character-dynamics.md` when psychological or relationship state changed
 - `references/character-memory-belief.md` when knowledge, belief, memory, suspicion, or secret state changed
+- `references/misunderstanding-tragedy.md` when an active belief divergence, repair window, or irreversible threshold changed
+- `references/reader-promise-and-tone.md` only when a durable tonal contract or unresolved consequence changed
 
 Produce a Memory Patch Proposal. Do not silently modify canon.
 
@@ -213,9 +239,9 @@ Treat profiles as preferences, not hard rules. Current story state, supplied pro
 
 ### Route Canon-Affecting Ideas
 
-Route an idea before prose when it changes canon, character state, plot direction, world rules, timeline, clues, promises, relationships, or important object state.
+Route an idea before prose when it changes canon, character state, plot direction, world rules, timeline, clues, promises, relationships, important object state, user-role contract, or durable reader promise.
 
-Assign it to a character, plot thread, chapter contract, world rule, technical beat, conflict, promise, clue, or maybe-later pile.
+Assign it to a character, plot thread, chapter contract, world rule, technical beat, conflict, promise, clue, misunderstanding ledger, reader-promise sheet, or maybe-later pile.
 
 Allow local sensory detail, phrasing, gestures, incidental props, and other non-canon texture to be improvised without bookkeeping.
 
@@ -245,11 +271,13 @@ Do not collapse:
 
 ```text
 world truth
+character observation
 character knowledge
 character belief
 character memory
 current inference
 publicly displayed knowledge
+reader knowledge
 ```
 
 A mistaken belief can be verified as a character fact without becoming world truth. Reader or narrator knowledge does not automatically belong to the cast.
@@ -258,15 +286,39 @@ A mistaken belief can be verified as a character fact without becoming world tru
 
 Stable identity does not require identical reactions. Distinguish long-term identity, mid-term accumulated pressure, and short-term affect. Let meaningful events update appraisal, emotion, coping, relationships, memory, or belief when earned. Do not reset emotional consequences between scenes, and do not silently promote temporary state into a permanent trait.
 
+### Design Character Cards as Prompt Programs
+
+Give identity, personality, scenario, greeting, examples, user role, lore, system instructions, and creator notes distinct jobs. Treat the greeting as an initial-condition demonstration, not a disposable hello. Keep user assumptions negotiable unless the premise truly requires them. Give absolute goals scope, authority, evidence thresholds, and exit conditions. Preserve important characters after their defining strategy fails.
+
+Concrete player reports may become regression probes, but always record card version, model/preset uncertainty, alternative explanations, and attribution confidence.
+
+### Preserve Contrast Without Mechanical Reversal
+
+Keep spoken words, actions, body signals, self-explanation, and underlying motive separate. Distinguish indirect affection, protective lies, role performance, strategic deception, hypocrisy, self-deception, value conflict, and weakness against principle.
+
+Gap appeal requires an established baseline, a causally compatible contrasting side, an access or trigger condition, and a meaningful change in interpretation. A soft side does not erase harmful behavior or consequences.
+
+### Make Misunderstanding Causal
+
+A sustained misunderstanding must arise from different evidence, priors, vulnerabilities, incentives, or constraints. Major choices should remain defensible under each character's available information. Track repair windows, why they fail, how belief-driven actions create new evidence, and where the conflict crosses an irreversible threshold.
+
+In interactive work, accept valid clarification. Move the conflict to proof, trust, or consequences already created rather than forcing ignorance to survive.
+
+### Honor the Reader Promise
+
+When tone materially matters, define the emotional experience, darkness and hope range, humor function, recovery rhythm, surprise contract, and ending range. Translate creator, work, genre, or meme shorthand into narrative functions and tonal vectors; do not imitate a living creator's distinctive style.
+
+Darkness is not tragedy by itself. Preserve desire, choice, causal cost, recognition, and aftermath. Use tonal foreshadowing before major turns and do not let comedy automatically erase harm.
+
 ### Use Chapter Contracts Where They Pay for Themselves
 
-Require a chapter contract in longform mode. In standard mode, use one for high-continuity, tactical, technical, mystery, or emotional turning-point chapters. Skip it in quick mode unless the user asks for one.
+Require a chapter contract in longform mode. In standard mode, use one for high-continuity, tactical, technical, mystery, misunderstanding-driven, or emotional turning-point chapters. Skip it in quick mode unless the user asks for one.
 
 ### Require Scene-Level Pressure or Function
 
 Give every scene active pressure or a clear dramatic function such as intimacy, contrast, recovery, reflection, dread, setup, or consequence.
 
-Have each beat advance at least one of action, information, relationship, emotion, risk, or state. Require irreversible change at the scene or chapter level when appropriate, not in every beat.
+Have each beat advance at least one of action, information, relationship, emotion, risk, belief, or state. Require irreversible change at the scene or chapter level when appropriate, not in every beat.
 
 ### Keep Worldbuilding and Technical Detail Inside the Story
 
@@ -313,7 +365,13 @@ Use sheep-story in standard mode.
 ## Current Story State
 ...
 
+## Reader Promise
+...
+
 ## Chapter Contract
+...
+
+## Active Belief Divergence / Misunderstanding
 ...
 
 ## Ideas To Use
@@ -346,7 +404,7 @@ Produce a discussion outline only. Do not draft prose until explicitly approved.
 10. Produce a Memory Patch Proposal when longform state changed.
 11. Present only unresolved risks that matter.
 
-For laboratory, advisory, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, dissent, and authorization status; never promote sandbox output or silently write canon.
+For laboratory, advisory, card-audit, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, configuration uncertainty, dissent, and authorization status; never promote sandbox output, public-card ratings, or player comments into canon or causal proof.
 
 ## Reference Index
 
@@ -365,11 +423,15 @@ For laboratory, advisory, recovery, or extension work, stop at the declared cont
 - `references/cinematic-scene-texture.md`
 - `references/technical-explanation-voice.md`
 - `references/genius-strategy.md`
+- `references/character-card-engineering.md`
 - `references/trait-expression-library.md`
 - `references/social-cognitive-profile.md`
+- `references/contrast-and-dissonance.md`
 - `references/character-dynamics.md`
 - `references/character-memory-belief.md`
+- `references/misunderstanding-tragedy.md`
 - `references/embodied-expression.md`
+- `references/reader-promise-and-tone.md`
 - `references/narrative-coherence-gate.md`
 - `references/dialogue-checklist.md`
 - `references/vocal-impact.md`
