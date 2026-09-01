@@ -2,7 +2,7 @@
 
 ## Purpose
 
-These examples are design references for separating intelligence, observation, social ability, charisma, empathy, tact, and rhetoric. They are not style-imitation targets and should not be used as quote banks.
+These examples are design references for separating intelligence, observation, social ability, charisma, empathy, tact, rhetoric, masking, and hidden agenda. They are not style-imitation targets and should not be used as quote banks.
 
 The runtime guidance lives in `skills/sheep-story/references/social-cognitive-profile.md`. This document preserves the reasoning behind that model.
 
@@ -22,6 +22,9 @@ Useful separations include:
 - persuasion vs ethics
 - stable traits vs temporary state
 - capability vs relationship-specific behavior
+- core self vs displayed persona
+- hidden agenda vs social style
+- masking skill vs emotional regulation
 
 RimWorld is a useful structural analogy because Intellectual and Social are separate skills, while traits and pairwise social opinions are modeled separately. SheepStory should preserve the same kind of orthogonality rather than making one social stat explain everything.
 
@@ -42,6 +45,13 @@ RimWorld is a useful structural analogy because Intellectual and Social are sepa
 | Chesley Sullenberger / crisis communicator | Under extreme time pressure, communicates only the decision-relevant information | High social performance can mean saying less, not sounding grander |
 | Tony Hayward / high-status context failure | Centers personal inconvenience in a disaster context | Fluent speech cannot compensate for low empathy/context awareness |
 | United Airlines “re-accommodation” response | Euphemistic corporate language conflicts with the audience's visible reality | Politeness register without context alignment can worsen trust |
+| 夜神月 / suppressed mastermind | Maintains an exemplary, trustworthy surface while privately pursuing a radically different goal; self-control delays visible triumph until concealment seems unnecessary | Emotional regulation is part of deception; mask drop can be triggered by perceived victory rather than discovery |
+| 藍染惣右介 / persona-switch mastermind | A warm, reassuring public persona gives way to a colder, more dominant presentation once the disguise is no longer useful | Post-reveal voice, posture, warmth, and status display can change sharply without changing intelligence |
+| Tobi / deliberate fool mask | Performs incompetence and comic harmlessness to reduce threat perception, then drops the performance when strategic conditions change | Apparent stupidity can be an intentional display variable rather than a true capability limit |
+| Palpatine / layered masks | Uses more than one socially useful identity; partial exposure does not end manipulation because a new public frame replaces the old one | A reveal can expose one mask while another remains active |
+| Verbal Kint / Keyser Söze archetype | Appears physically and socially harmless while observing the environment and constructing a narrative that controls the interrogation | Masking can include body, competence display, improvisation, and threat suppression |
+| Gus Fring / low-delta operator | Public demeanor remains controlled and polite even after the audience understands the character is dangerous | Exposure need not cause an “evil mode”; behavior can stay nearly constant while interpretation changes |
+| Makima / calm-control archetype | Care, rewards, intimacy, and calm authority can function as instruments of control without requiring loud villain coding | Social warmth and manipulation can coexist; ethics must remain separate from social competence |
 
 ## Observation Archetypes
 
@@ -212,6 +222,119 @@ Result:
 
 They understand the wound and still touch it directly.
 
+## Mask and Hidden-Agenda Archetypes
+
+### Suppressed-Triumph Mastermind
+
+Public face:
+
+- competent
+- trustworthy
+- socially legible
+- emotionally controlled
+
+Private dynamic:
+
+- strong superiority or victory response is actively inhibited
+- the mask is safest while uncertainty remains
+- perceived victory becomes the dangerous moment because self-control feels unnecessary
+
+Best reveal design:
+
+Plant tiny moments where the character almost reacts too strongly, then recovers. The full release should feel like removal of restraint, not acquisition of a new personality.
+
+### Persona-Switch Mastermind
+
+Public face and core presentation differ strongly in:
+
+- voice
+- posture
+- warmth
+- humor
+- vocabulary
+- competence display
+- threat display
+
+Best reveal design:
+
+The switch should expose behaviors previously suppressed. It should not grant new skills retroactively.
+
+### Layered-Mask Operator
+
+Structure:
+
+```text
+Mask A -> partial exposure -> Mask B -> deeper exposure -> Core / unresolved layer
+```
+
+Best reveal design:
+
+Do not assume “caught once” ends manipulation. A politically skilled character may convert exposure into victimhood, necessity, patriotism, helplessness, or another useful frame.
+
+### Underestimated Fool
+
+Public face:
+
+- comic
+- confused
+- peripheral
+- forgettable
+- physically or socially nonthreatening
+
+Actual capability:
+
+- observation and strategic understanding are much higher than displayed
+
+Best reveal design:
+
+Let emergency reflexes, precise questions, impossible knowledge, or a brief change in voice create fair cracks before confirmation.
+
+### Low-Delta Hidden Operator
+
+Public face:
+
+- may be mostly genuine
+
+Hidden truth:
+
+- actions, values, affiliations, or goals were unknown
+
+Post-reveal delta:
+
+- minimal or zero
+
+Best reveal design:
+
+The horror or surprise comes from reinterpreting earlier politeness, routine, or care—not from a sudden villain performance.
+
+### No-Mask Secret Keeper
+
+The character did not fake personality. They simply never volunteered the important part.
+
+This distinction prevents SheepStory from treating every secretive character as an actor. `Hidden agenda != fake personality`.
+
+## Mask Dynamics Checklist
+
+For an important masked character, define only what matters:
+
+```markdown
+Core self:
+Displayed persona:
+Hidden capabilities or agenda:
+What the mask gains:
+What the mask costs:
+Leak pattern:
+Mask drop trigger:
+Post-reveal delta:
+Second mask after exposure?:
+```
+
+A strong reveal should answer at least three questions:
+
+1. What earlier behavior now means something different?
+2. What clue was visible but reasonably dismissible?
+3. Why did the character maintain this mask instead of using their full power openly?
+
 ## Design Guardrails
 
 1. Do not make low intelligence equal broken grammar.
@@ -224,6 +347,11 @@ They understand the wound and still touch it directly.
 8. Let characters deliberately hide or underperform skills.
 9. Distinguish a wrong inference from an unreasonable inference.
 10. Give different characters different characteristic failure modes.
+11. Do not require every hidden mastermind to become louder, crueler, or more theatrical after exposure.
+12. Do not confuse a hidden agenda with a false personality.
+13. Plant mask leaks that are fair in hindsight but not conclusive on first reading.
+14. Keep mask maintenance costly enough that pressure can matter.
+15. Let situation activate traits instead of forcing every trait into every line.
 
 ## Useful Source Anchors
 
@@ -233,7 +361,8 @@ They understand the wound and still touch it directly.
 - Herman Melville's public-domain *Bartleby, the Scrivener* for minimal refusal and boundary behavior.
 - Shakespeare's public-domain *Julius Caesar* for rhetoric separated from ethics.
 - NASA's historical archive for Kennedy's Rice University moon speech and rhetorical reframing.
+- ACL 2026 work on situation-aware trait activation and personality-consistent role-playing agents for the principle that stable traits should express differently across situations rather than becoming rigid catchphrases.
 
 ## Principle
 
-The target is not a ladder from “idiot” to “JFK.” The target is a multidimensional cast where each person notices, misunderstands, persuades, protects, embarrasses, comforts, and fails in a recognizably different way.
+The target is not a ladder from “idiot” to “JFK,” nor a binary from “normal person” to “evil mastermind.” The target is a multidimensional cast where each person notices, misunderstands, persuades, protects, embarrasses, comforts, performs, hides, leaks, and fails in a recognizably different way.
