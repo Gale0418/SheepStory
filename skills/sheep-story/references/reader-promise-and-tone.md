@@ -15,6 +15,9 @@ This reference helps prevent:
 - hopeful language attached to relentlessly nihilistic causality
 - every dramatic beat escalating at the same intensity
 - treating named creators as style-transfer commands
+- treating `happy`, `bad`, `bittersweet`, or `tragic` as one-dimensional ending scores
+
+Use `ending-outcome-model.md` when the finale needs separate accounting for personal, relationship, mission, world, cost, recovery, or future outcomes.
 
 ## Reader Promise
 
@@ -200,6 +203,86 @@ Humor can:
 
 Record whether a joke repairs, avoids, escalates, or reframes. Do not let a witty line automatically reset emotion or absolve harm.
 
+## Ending Outcome Routing
+
+Do not infer the ending's emotional category from body count, romance, protagonist survival, or grim worldbuilding alone.
+
+Before assigning an ending label, separate:
+
+```text
+personal outcome
+relationship outcome
+fellowship / family outcome
+mission outcome
+community / institutional outcome
+world / civilization outcome
+moral / thematic value
+future possibility
+```
+
+Then separate cost:
+
+```text
+inherited / background catastrophe
+story-incurred cost
+terminal / resolution cost
+```
+
+Then ask what can recover:
+
+```text
+physical
+psychological
+relationship
+community / institution
+world
+identity / memory
+```
+
+Only after those are clear should a compact label such as `clean happy`, `earned happy`, `bittersweet hopeful`, `sacrificial victory`, `wistful`, `pyrrhic`, `tragic`, or `catastrophic` be applied.
+
+### Hope × Cost Is a Quick View, Not the Whole Model
+
+| | Lower story-incurred cost | Higher story-incurred cost |
+|---|---|---|
+| Governing hope succeeds | restorative / clean happy | earned / bittersweet / sacrificial / eucatastrophic |
+| Governing hope fails | wistful / graceful loss | tragedy / catastrophic defeat |
+
+Recovery is the third major discriminator. Two stories in the same quadrant can feel radically different if one restores relationships and bodies while the other preserves only a future for the world.
+
+### Relationship Failure Is Not Total Failure
+
+`They do not end up together` may be a relationship failure while personal survival, mission, peace, or world outcomes succeed.
+
+Likewise, a couple can end together while the surrounding world collapses.
+
+### Background Apocalypse Is Not Finale Cost
+
+A story set after civilization already lost most of its population may still deliver a relatively restorative main-plot ending.
+
+Count inherited catastrophe as setting pressure. Count losses caused or made irreversible during the evaluated story as story-incurred cost.
+
+### Hope Needs a Causal Engine
+
+Do not build detailed engines for tragedy and then declare happiness in the epilogue.
+
+Positive outcomes should arise through established causality:
+
+```text
+pressure
+→ reason to continue
+→ costly choice
+→ accumulated trust / information / fellowship / mercy / competence
+→ a new option exists because of those choices
+→ resolution
+→ residual cost remains visible
+→ recovery creates a viable future
+```
+
+Persistence does not deserve reward merely because the protagonist persists. Track what continuing actually buys.
+
+Use `ending-outcome-model.md` and `templates/cockpit/ending-outcome-contract.md` when this needs explicit planning or review.
+
 ## Tragedy Quality Check
 
 Darkness is not tragedy by itself.
@@ -216,6 +299,8 @@ A strong tragedy usually preserves:
 - aftermath
 
 Random punishment produces shock. Tragedy produces recognition.
+
+High body count is not sufficient for tragedy if the governing mission, value, or future succeeds. Conversely, few deaths do not prevent a story from being tragic if the governing hope fails irreversibly.
 
 ## Influence Stack Translation
 
@@ -254,6 +339,11 @@ Flag:
 - surreal events erase continuity rather than complicate it
 - a creator-name shorthand is treated as a license for imitation
 - the ending resolves plot but violates the emotional contract
+- a relationship failure is mislabeled as total defeat
+- protagonist survival hides catastrophic collective cost
+- inherited world damage is incorrectly charged as finale cost
+- a `pyrrhic` label is used merely because victory was expensive
+- a happy epilogue erases permanent consequences instead of showing recovery or adaptation
 
 ## Scene-Level Tone Pass
 
@@ -276,14 +366,23 @@ Before final planning, define:
 
 ```markdown
 What emotional question must be answered:
+Primary ending subject / scale:
+Which personal, relationship, mission, community, and world outcomes may diverge:
 What can remain unresolved:
 What kind of catharsis is promised:
-What cost must remain visible:
+What inherited cost predates the evaluated story:
+What story-incurred cost must remain visible:
+What recovery / restoration is plausible:
+What future must remain possible or impossible:
 What outcome would feel like betrayal rather than surprise:
 ```
 
-A dark story does not require despair. A hopeful story does not require everyone to survive. The ending must answer the work's governing emotional contract through consequence.
+A dark story does not require despair. A hopeful story does not require everyone to survive. A happy ending does not require complete cure or reset. The ending must answer the work's governing emotional contract through consequence.
+
+Use `ending-outcome-model.md` for full outcome-vector, cost, recovery, hope-engine, sacrificial, pyrrhic, or mixed-ending analysis.
 
 ## Principle
 
 Tone is the reader's model of what kind of causality they have entered. Establish the promise, translate influences into functions, calibrate hazard stacks, and let surprise operate inside a world whose emotional rules remain trustworthy.
+
+For endings, ask not only `is it happy?` but `happy for whom, successful at what scale, paid by whom, recovered how far, and what future remains possible?`

@@ -31,6 +31,27 @@ This file records user requirements and project scope. Mark model proposals as p
 
 Use `skills/sheep-story/references/reader-promise-and-tone.md` when tone, suffering, hope, surprise, recovery, or an influence stack materially shapes the project.
 
+## Ending Outcome Contract
+
+Fill when the project has a meaningful expected ending shape, especially when `happy`, `bad`, `bittersweet`, or `tragic` would hide mixed outcomes.
+
+- Governing emotional question:
+- Primary ending subject / scale:
+- Personal outcome range:
+- Relationship / romance outcome range:
+- Fellowship / family outcome range:
+- Mission outcome range:
+- Community / institutional outcome range:
+- World / civilization outcome range:
+- Moral / thematic value that should survive or fail:
+- Story-incurred cost range:
+- Recovery / restoration range:
+- Future possibility / hope contract:
+- Ending modes allowed (clean / earned / bittersweet / sacrificial / eucatastrophic / wistful / pyrrhic / tragic / catastrophic / transformative / open):
+- Outcome combinations that would feel like betrayal:
+
+Do not infer `bad ending` from romance failure alone, `happy ending` from protagonist survival alone, or `high-cost ending` from catastrophe that existed before the evaluated story. Use `skills/sheep-story/references/ending-outcome-model.md` and `templates/cockpit/ending-outcome-contract.md` for complex finales.
+
 ## User / Player Role Contract
 
 Fill when the work is interactive, role-play oriented, second-person, or built from a character card.

@@ -26,6 +26,22 @@ approved-at:
 - Likely ending range:
 - Prohibited tonal outcomes:
 
+## Ending Outcome Range
+
+Use this only when the distinction matters. Do not reduce the ending to one `happy/bad` label before scope is clear.
+
+- Primary ending subject / scale:
+- Personal outcome range:
+- Relationship outcome range:
+- Mission / world outcome range:
+- Acceptable story-incurred cost range:
+- Recovery / restoration range:
+- Future possibility / hope requirement:
+- Is inherited background catastrophe separate from finale cost?:
+- Ending modes allowed:
+
+For complex finales use `templates/cockpit/ending-outcome-contract.md` and `skills/sheep-story/references/ending-outcome-model.md`.
+
 ## Influence Translation
 
 Translate inspirations into functions rather than imitation.
@@ -65,6 +81,8 @@ Translate inspirations into functions rather than imitation.
 - Cost that must remain visible:
 - Threads that may remain unresolved:
 - Outcome that would feel like betrayal rather than surprise:
+- Which outcome domains may intentionally diverge?:
+- What future must remain possible or impossible?:
 
 ## Approval
 
