@@ -16,6 +16,7 @@ What blocks them:
 What they hide:
 What they are really testing:
 What they think the listener knows / wants / fears, if important:
+What their actions or body communicate:
 What changes after the line:
 ```
 
@@ -57,15 +58,38 @@ Try a direction like:
 
 Let the unsaid thing press against the spoken thing.
 
+## Contrast and Dissonance Pass
+
+When words, actions, body, self-image, or underlying motive diverge, read `contrast-and-dissonance.md`.
+
+Track:
+
+```markdown
+What is said:
+What is done:
+What the body leaks or suppresses:
+What the speaker believes they are doing:
+What the listener infers:
+What the reader may infer:
+```
+
+Do not automatically treat the spoken line as meaning its opposite. A word-action gap may come from shame, protection, role performance, strategic deception, hypocrisy, self-deception, value conflict, weakness, or mixed motives.
+
+Gap appeal requires an established baseline and a causally compatible contrasting side. A cold character doing one gentle thing should change interpretation, relationship, or access—not merely satisfy a trope checkbox.
+
 ## Character-System Routing
 
 Use the lightest relevant layer:
 
+- `character-card-engineering.md` for greeting, example-dialogue, user-role, and card-field behavior.
 - `trait-expression-library.md` for everyday conversational personality such as humor, warmth, bluntness, talkativeness, awkwardness, or formality.
 - `social-cognitive-profile.md` when intelligence, observation, social skill, charisma, empathy, tact, masking, or inference matters.
+- `contrast-and-dissonance.md` when expected surface, hidden side, words, actions, body, self-story, or motive diverge.
 - `character-dynamics.md` when accumulated emotion, stress, coping, or relationship state changes the exchange.
 - `character-memory-belief.md` when past events, knowledge boundaries, mistaken beliefs, secrets, or Theory of Mind matter.
+- `misunderstanding-tragedy.md` when different beliefs, failed repair, or dramatic irony drives the exchange.
 - `embodied-expression.md` when gaze, breath, posture, gesture, movement, distance, touch, or object interaction carries subtext.
+- `reader-promise-and-tone.md` when the exchange changes the work's emotional or tonal contract.
 - `vocal-impact.md` when vocalization, prosody, screaming, chanting, repeated names, or low-semantic sound carries the beat.
 
 Do not load or expose every layer for ordinary conversation.
@@ -110,6 +134,32 @@ Before a line depends on history, ask:
 - Is the memory emotionally charged enough to change the current appraisal?
 
 Do not give a character a perfect callback because the author wants one. Use `character-memory-belief.md` for Anchoring, Selecting, Bounding, and Enacting.
+
+## Misunderstanding Pass
+
+When speakers hold different models, do not plan the dialogue from the canonical truth alone.
+
+For each side, define:
+
+```markdown
+Direct evidence:
+Current belief:
+Confidence:
+What they think the other person believes:
+What they cannot safely ask:
+What clarification would cost:
+What answer they expect:
+```
+
+Then ask:
+
+- Does the line attempt clarification, concealment, testing, accusation, or defensive action?
+- Does the reply provide new evidence or merely repeat the same assumption?
+- Does either side update?
+- Does a repair window open or close?
+- Will the action created by this exchange become reinforcing evidence later?
+
+A sustained misunderstanding should not survive a clear, credible clarification without a specific reason. In interactive work, do not ignore the user's valid attempt to resolve it; move the conflict to proof, trust, or consequences already created.
 
 ## Theory-of-Mind Lookahead
 
@@ -164,6 +214,21 @@ body: what is displayed
 
 Intentional conflict between the three creates subtext. Accidental conflict creates noise.
 
+## Character-Card Example Pass
+
+When this exchange will be stored as example dialogue, use `character-card-engineering.md` and state what the example teaches.
+
+```markdown
+Teaching target:
+Reusable behavior:
+Pressure / relationship state:
+Knowledge boundary:
+Scene-specific facts that must not generalize:
+User action or feeling accidentally assigned?:
+```
+
+Do not store a complete fixed plot in example dialogue and expect the model to infer only the voice.
+
 ## Anti-Exposition Pass
 
 Flag dialogue if:
@@ -183,6 +248,18 @@ Fix by:
 - hiding the real subject under a safer subject
 - letting memory, silence, body, or object interaction carry part of the meaning
 
+## Tone and Reader-Promise Pass
+
+For a line that marks a tonal turn, ask:
+
+- What emotion is the reader meant to feel?
+- Does the joke release, deny, or sharpen pressure?
+- Does the scene carry forward prior harm?
+- Is the line foreshadowing a darker mode or accidentally switching genres?
+- Is tenderness functioning as recovery, contrast, or false reassurance?
+
+A witty line does not automatically reset grief. A dark line does not automatically create tragedy.
+
 ## Voice Differentiation
 
 For each major character, track only useful distinctions:
@@ -198,6 +275,7 @@ For each major character, track only useful distinctions:
 - how they fail socially when stressed
 - what they joke about under stress
 - what emotion makes their baseline voice change
+- how words and actions diverge when they are ashamed, afraid, or deceptive
 
 If two characters can swap lines without changing the scene, the dialogue lacks voice.
 
@@ -213,6 +291,7 @@ Check:
 - Does every character sound like the same assistant?
 - Is there friction between lines?
 - Does voice / body delivery fit the intended subtext?
+- Can the listener reasonably infer what the plot requires from the available signal?
 
 ## Common Fixes
 
@@ -224,7 +303,9 @@ Check:
 - Let a character answer the question they wish had been asked.
 - Replace generic emotion labels with appraisal, behavior, or consequence.
 - Replace generic gesture with a character-specific baseline deviation.
+- Replace automatic opposite meaning with a specific motive for divergence.
+- Replace repeated misunderstanding with new evidence and a changing repair cost.
 
 ## Principle
 
-Dialogue is not people exchanging information. Dialogue is people with bounded knowledge, accumulated history, imperfect models, and physical bodies trying to move each other.
+Dialogue is not people exchanging information. Dialogue is people with bounded knowledge, accumulated history, imperfect models, conflicting signals, and physical bodies trying to move each other.
