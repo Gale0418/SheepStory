@@ -29,6 +29,7 @@ Prevent these failures:
 - stacking darkness, suffering, surrealism, and twists without a reader promise or recovery logic
 - confusing intrinsic ability, resistance, origin, resources, environment, and luck as if they were one personality or power score
 - balancing exceptional characters with irrelevant quirks or arbitrary punishment instead of causal friction
+- reducing endings to one `happy / bad / tragic` score that hides mixed personal, relationship, mission, world, cost, and recovery outcomes
 
 ## Select an Operating Mode
 
@@ -75,6 +76,7 @@ Do active characters have only the knowledge, memory, belief, resources, authori
 If contrast or misunderstanding drives the scene, are the underlying signals and beliefs causally supported?
 If an advantage, origin condition, environment, or luck changes the scene, is the mechanism established rather than inferred from personality?
 If tone materially changes, does it remain inside the approved reader promise or a deliberately prepared subversion?
+If this is a finale or major arc ending, have personal, relationship, mission, world, cost, recovery, and future outcomes been separated before assigning an ending label?
 Is approval required in this mode, and if so, has the user given it?
 ```
 
@@ -94,9 +96,9 @@ Read:
 
 For reader simulation, non-canon character experiments, alternate takes, or bridge writing, also read `references/authoring-laboratory.md`. Keep all experiment output sandbox-only and record evidence, dissent, provenance, and an approval destination. For claim, event, promise, or editorial tracking, read `references/story-state-ledgers.md`; use the existing canonical files as the single truth source.
 
-For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. For character-card field audits, player-review attribution, or external card imports, read `references/character-card-engineering.md`. For unusual capability, resistance, origin leverage, environmental pressure, luck, or advantage-budget questions, read `references/character-conditions-advantage.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, automatic canon mutation, or automated scraping pipeline.
+For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. For character-card field audits, player-review attribution, or external card imports, read `references/character-card-engineering.md`. For unusual capability, resistance, origin leverage, environmental pressure, luck, or advantage-budget questions, read `references/character-conditions-advantage.md`. For finale classification, ending design, mixed-success endings, sacrificial victories, pyrrhic outcomes, inherited-versus-story cost, or recovery analysis, read `references/ending-outcome-model.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, automatic canon mutation, or automated scraping pipeline.
 
-Output an idea routing table, plot-thread map, state checklist, chapter contract, card audit, misunderstanding ledger, reader-promise sheet, character-condition profile, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
+Output an idea routing table, plot-thread map, state checklist, chapter contract, card audit, misunderstanding ledger, reader-promise sheet, ending-outcome contract, character-condition profile, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
 
 ### Project Setup
 
@@ -110,6 +112,7 @@ Read:
 Conditionally read:
 
 - `references/reader-promise-and-tone.md` when genre experience, darkness, hope, humor, surprise, or ending range is a durable project requirement
+- `references/ending-outcome-model.md` when the project already specifies a meaningful finale shape, required survival / relationship / mission outcome, cost ceiling, recovery profile, or mixed ending
 - `references/character-card-engineering.md` when the project is interactive, role-play oriented, imported from a character card, or intended for character-card export
 - `references/character-conditions-advantage.md` when capability versus resistance, family/resources/status, inherited obligations, starting environment, current environment, luck, or exceptional advantages materially constrain the premise
 - `references/contrast-and-dissonance.md` when a core character premise depends on gap appeal, public-private contrast, or words-actions conflict
@@ -118,7 +121,7 @@ For bounded Quick work, microfiction, or a sufficiently specified standalone sho
 
 For a new story without an approved Foundation, detect the strongest world, character, situation, image, theme, or mood seed and follow `references/story-foundation.md`. Ask one high-leverage question at a time, build a proposed World Book and Character Cards, and stop for Foundation approval before plot or prose. Skip redundant intake when the supplied or existing Foundation is already sufficient.
 
-As soon as the user supplies format, scale, required or forbidden elements, project-specific immutable truths, capability ceilings, origin/resource conditions, environment constraints, luck/fate rules, content boundaries, reader-promise constraints, user-role assumptions, or other durable project requirements, create or update `templates/story-project/project-brief.md`. Preserve explicit user requirements during Foundation work; only model-proposed additions remain proposed. Keep every constraint scoped to the current project.
+As soon as the user supplies format, scale, required or forbidden elements, project-specific immutable truths, capability ceilings, origin/resource conditions, environment constraints, luck/fate rules, content boundaries, reader-promise constraints, ending-outcome requirements, user-role assumptions, or other durable project requirements, create or update `templates/story-project/project-brief.md`. Preserve explicit user requirements during Foundation work; only model-proposed additions remain proposed. Keep every constraint scoped to the current project.
 
 After Foundation approval, propose the remaining project structure and distinguish verified canon, inferred material, and unknowns.
 
@@ -134,6 +137,7 @@ Conditionally read:
 - `references/continuity-check.md` for an existing story
 - `references/chapter-contract.md` for standard-complex or longform work
 - `references/story-architecture.md` for a complete short story, multi-chapter arc, major ending, or other structure-sensitive unit
+- `references/ending-outcome-model.md` for a finale, final arc, major arc ending, sacrificial resolution, bittersweet ending, pyrrhic-victory question, or any ending where personal, relationship, mission, world, cost, and recovery may diverge
 - `references/opposition-design.md` when a person, group, institution, environment, relationship, or internal pattern persistently blocks the governing desire
 - `references/cinematic-scene-texture.md` when setting or worldbuilding matters
 - `references/technical-explanation-voice.md` when technical reasoning matters
@@ -159,9 +163,9 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, card-engineering, conditions/advantage, trait-expression, social-cognitive, contrast, character-dynamics, character-memory-belief, misunderstanding, embodied-expression, reader-promise, or coherence references only when those concerns are present.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, card-engineering, conditions/advantage, trait-expression, social-cognitive, contrast, character-dynamics, character-memory-belief, misunderstanding, embodied-expression, reader-promise, ending-outcome, or coherence references only when those concerns are present.
 
-Read `references/character-card-engineering.md` when drafting a greeting, alternate opening, card examples, user-role interaction, or export-ready character-card material. Read `references/character-conditions-advantage.md` when a scene depends on what the character can intrinsically do versus what their equipment, status, family, network, environment, resistance, or luck actually permits. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/contrast-and-dissonance.md` when spoken claims, actions, body, self-image, or private motive deliberately diverge. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/misunderstanding-tragedy.md` when characters act from divergent models or when a repair window opens or closes. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/reader-promise-and-tone.md` when the scene changes the expected emotional contract, intensity, respite, genre signal, or treatment of luck/power. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/resource/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
+Read `references/character-card-engineering.md` when drafting a greeting, alternate opening, card examples, user-role interaction, or export-ready character-card material. Read `references/character-conditions-advantage.md` when a scene depends on what the character can intrinsically do versus what their equipment, status, family, network, environment, resistance, or luck actually permits. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/contrast-and-dissonance.md` when spoken claims, actions, body, self-image, or private motive deliberately diverge. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/misunderstanding-tragedy.md` when characters act from divergent models or when a repair window opens or closes. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/reader-promise-and-tone.md` when the scene changes the expected emotional contract, intensity, respite, genre signal, or treatment of luck/power. Read `references/ending-outcome-model.md` during the final movement when the scene pays or preserves personal, relationship, mission, community, world, recovery, or future outcomes. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/resource/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
 
 Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
@@ -194,6 +198,8 @@ When reviewing repetitive action beats, body-language clichés, accidental text/
 
 When reviewing tonal bait-and-switch, unprocessed suffering, darkness without choice, humor that erases harm, absent respite, influence-stack confusion, power-fantasy sabotage, luck/fate inconsistency, or ending-contract failure, read `references/reader-promise-and-tone.md`.
 
+When reviewing a finale mislabeled because a couple did not form, the protagonist survived, many people died, the setting inherited an apocalypse, or an expensive victory is casually called `pyrrhic`, read `references/ending-outcome-model.md`. Separate outcome scope, story-incurred cost, recovery, and future possibility before judging the ending.
+
 For long-form or dense multi-character review, read `references/narrative-coherence-gate.md`, especially around midpoint / act transitions, time skips, reunions, battles, major identity or secret reveals, changes in wealth/status/resources/access, and tonal turns.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
@@ -225,6 +231,7 @@ Read:
 - `references/character-memory-belief.md` when knowledge, belief, memory, suspicion, or secret state changed
 - `references/misunderstanding-tragedy.md` when an active belief divergence, repair window, or irreversible threshold changed
 - `references/reader-promise-and-tone.md` only when a durable tonal contract or unresolved consequence changed
+- `references/ending-outcome-model.md` when a major arc or finale permanently resolves personal, relationship, mission, world, cost, recovery, or future obligations
 
 Produce a Memory Patch Proposal. Do not silently modify canon.
 
@@ -247,9 +254,9 @@ Treat profiles as preferences, not hard rules. Current story state, supplied pro
 
 ### Route Canon-Affecting Ideas
 
-Route an idea before prose when it changes canon, character state, plot direction, world rules, timeline, clues, promises, relationships, important object state, user-role contract, durable origin/resource/environment conditions, or durable reader promise.
+Route an idea before prose when it changes canon, character state, plot direction, world rules, timeline, clues, promises, relationships, important object state, user-role contract, durable origin/resource/environment conditions, durable reader promise, or approved ending-outcome contract.
 
-Assign it to a character, plot thread, chapter contract, world rule, technical beat, conflict, promise, clue, misunderstanding ledger, reader-promise sheet, condition profile, or maybe-later pile.
+Assign it to a character, plot thread, chapter contract, world rule, technical beat, conflict, promise, clue, misunderstanding ledger, reader-promise sheet, ending-outcome contract, condition profile, or maybe-later pile.
 
 Allow local sensory detail, phrasing, gestures, incidental props, and other non-canon texture to be improvised without bookkeeping.
 
@@ -351,9 +358,33 @@ When tone materially matters, define the emotional experience, darkness and hope
 
 Darkness is not tragedy by itself. Preserve desire, choice, causal cost, recognition, and aftermath. Use tonal foreshadowing before major turns and do not let comedy automatically erase harm.
 
+### Classify Endings by Outcome, Cost, Recovery, and Future
+
+Do not collapse a finale into one `happy`, `bad`, `bittersweet`, or `tragic` label before separating its domains.
+
+Track as needed:
+
+```text
+personal survival / autonomy
+personal governing desire
+relationship / romance
+fellowship / family
+mission
+community / institution
+world / civilization
+moral / thematic value
+future possibility
+```
+
+Separate inherited/background catastrophe from story-incurred and terminal cost. Separate goal success from recovery. A relationship can fail while the mission and world succeed; a protagonist can survive while the world pays catastrophic cost; many deaths do not automatically make the governing ending tragic.
+
+Treat `Hope × Cost` as a quick summary only. Use recovery as an additional discriminator and reserve `pyrrhic` for victories whose cost seriously undermines the value of what was won.
+
+Positive endings need causal engines too. Show what persistence, fellowship, trust, information, mercy, skill, or earlier choices actually created that made the resolution possible. Do not declare happiness after suffering without showing recovery, adaptation, or a viable future.
+
 ### Use Chapter Contracts Where They Pay for Themselves
 
-Require a chapter contract in longform mode. In standard mode, use one for high-continuity, tactical, technical, mystery, misunderstanding-driven, or emotional turning-point chapters. Skip it in quick mode unless the user asks for one.
+Require a chapter contract in longform mode. In standard mode, use one for high-continuity, tactical, technical, mystery, misunderstanding-driven, finale, or emotional turning-point chapters. Skip it in quick mode unless the user asks for one.
 
 ### Require Scene-Level Pressure or Function
 
@@ -379,7 +410,11 @@ Do not attach a facial expression or gesture to every line. Use body-language ac
 
 ### Close Stories Without Mechanical Closure
 
-For a story, arc, or governing-thread ending, answer the core dramatic question through choice and consequence. Track relevant promises by evidence and mark them paid, reframed, delayed, contradicted, retired, or intentionally unresolved. Do not use fixed payoff percentages or force every minor mystery closed. Opening-ending resonance is optional.
+For a story, arc, or governing-thread ending, answer the core dramatic question through choice and consequence. Track relevant promises by evidence and mark them paid, reframed, delayed, contradicted, retired, or intentionally unresolved.
+
+Do not require every outcome domain to align. Personal, relationship, mission, community, and world outcomes may deliberately diverge. Do not force every minor mystery closed, erase permanent cost for a reset, or invent suffering merely to make a finale feel serious.
+
+Opening-ending resonance is optional. A hopeful ending may retain scars; a tragic ending may retain tenderness or legacy; an open ending still needs to answer the emotional question the story promised to resolve.
 
 ### Preserve What Works
 
@@ -407,6 +442,9 @@ Use sheep-story in standard mode.
 ...
 
 ## Reader Promise
+...
+
+## Ending Outcome Contract, if this is a final movement
 ...
 
 ## Character Conditions / Resources
@@ -448,7 +486,7 @@ Produce a discussion outline only. Do not draft prose until explicitly approved.
 10. Produce a Memory Patch Proposal when longform state changed.
 11. Present only unresolved risks that matter.
 
-For laboratory, advisory, card-audit, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, configuration uncertainty, dissent, and authorization status; never promote sandbox output, public-card ratings, or player comments into canon or causal proof.
+For laboratory, advisory, card-audit, ending-analysis, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, configuration uncertainty, dissent, and authorization status; never promote sandbox output, public-card ratings, player comments, or analytical ending labels into canon by themselves.
 
 ## Reference Index
 
@@ -458,6 +496,7 @@ For laboratory, advisory, card-audit, recovery, or extension work, stop at the d
 - `references/story-project-layout.md`
 - `references/story-foundation.md`
 - `references/story-architecture.md`
+- `references/ending-outcome-model.md`
 - `references/opposition-design.md`
 - `references/story-memory-ops.md`
 - `references/chapter-contract.md`
