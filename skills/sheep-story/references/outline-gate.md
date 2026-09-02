@@ -82,6 +82,44 @@ What facts from earlier chapters matter here?
 What should the user decide before prose exists?
 ```
 
+## Conditional Prose-Craft Planning
+
+Do not add prose-craft bureaucracy to every outline. Route these only when the scene's effect materially depends on the craft dial.
+
+### POV / Narrative-Distance Plan
+
+If the planned scene depends on close versus remote narration, deliberate pullback, free-indirect diction, a viewpoint handoff, hidden information, or a risk of head-hopping, read `narrative-distance-and-pov.md` before finalizing the outline.
+
+Add only the decisions that constrain the prose:
+
+```markdown
+### POV / Lens Plan, if material
+- POV owner:
+- Access boundary — what this viewpoint may know / infer / not know:
+- Intended distance or movement — hold / glide in / glide out / deliberate cut / handoff:
+- Character-colored diction to preserve:
+- Transition point, if viewpoint changes:
+```
+
+Do not force deep POV as the default. A remote, observational, mixed-distance, or deliberate pullback plan may be correct.
+
+### Prose-Rhythm Plan
+
+If sentence or paragraph cadence is part of the intended scene effect — for example ritual repetition, clipped shock, breathless accumulation, deliberate monotone, comic timing, or a planned landing — read `prose-rhythm.md` before finalizing the outline.
+
+Record only a meaningful delivery constraint:
+
+```markdown
+### Prose Rhythm / Delivery, if material
+- Intended effect — rush / hover / hammer / numb / accumulate / release / other:
+- Deliberate rhythmic device to preserve:
+- Landing or transition that matters:
+```
+
+Do not prescribe sentence-length variance, a short-long pattern, punctuation quotas, or fixed paragraph sizes. Rhythm planning describes an intended effect, not a metric to optimize.
+
+Both plans are expression-layer constraints. They must not invent story facts, character knowledge, motives, sensory evidence, or canon merely to make a future draft fit the craft plan.
+
 ## Gate Decision
 
 After creating an outline that requires approval, stop and ask:

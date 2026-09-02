@@ -18,6 +18,8 @@ This file records which external skill projects and craft preferences inspired e
 | `dialogue-checklist` / future `my-dialogue-polish` | `JoelLewis/skill-library` dialogue-craft concept | intention, obstacle, subtext, anti-exposition, read-aloud check | Do not force English screenwriting voice onto Chinese prose |
 | `vocal-impact` | Derived from the SheepStory discussion about low-information, high-impact lines | affect, embodiment, rhythm, timing, ritual, coordination, anticipation, release, and context-charged vocal action | Do not turn one memorable line into a universal style, imitate franchise phrasing, or equate volume and abstraction with force |
 | `anti-ai-flavour` + `style-preservation` / future `my-style-polish` | `d-wwei/great-writer` humanizer + `haowjy/creative-writing-skills` style-creator concept | anti-AI flavour, oral test, rhythm variation, style learning, author texture | Do not over-polish fiction into sterile commercial copy |
+| `narrative-distance-and-pov` | `Calliope-Editor/writing-skills` psychic-distance craft + SheepStory epistemic-layer rules | grammatical person != distance, intent-first lens control, filter verbs as contextual evidence, POV ownership, controlled handoff, character-colored narration | Do not copy a fixed coaching ladder into core, force deep POV as the quality target, ban all filter verbs, or treat every viewpoint change as head-hop |
+| `prose-rhythm` | `Calliope-Editor/writing-skills` prose-rhythm craft + SheepStory anti-AI/style-preservation principles | effect-first cadence, phrase/sentence/paragraph/passage scales, sentence landings, syntax as tempo, meaningful repetition, read-aloud humility | Do not reduce rhythm to a sentence-length variance score, force alternating sentence lengths, erase deliberate monotone, or claim a text-only model literally heard the prose |
 | `cinematic-scene-texture` / future `my-scene-texture` | User preference for detailed military / hard-SF / cinematic prose such as To the Stars, Halo novels, and Project Hail Mary at the broad craft level | concrete objects, close-to-wide visual movement, POV-filtered sensory detail, worldbuilding through action/friction/desire | Do not reproduce one source's exact wording, named setting, character roster, or plot beats |
 | `technical-explanation-voice` / future `my-technical-voice` | User preference for hard-SF technical reasoning, survival engineering, crisis humor, and competent first-person explanation at the broad craft level | practical calculations, materials, physical constraints, measurement, anomaly detection, dry humor under pressure, explanation that changes action | Do not imitate one source so closely that it becomes recognizable as that specific source |
 | `genius-strategy` / future `my-genius-strategy` | Derived from the SheepStory discussion | constrained genius, adversarial red-team, battlefield anomaly, twist budget | Do not portray genius as perfect prediction or enemy stupidity |
@@ -36,6 +38,9 @@ Use broad craft principles:
 - practical scientific reasoning under scene pressure
 - calculations, measurements, and material properties that change decisions
 - dry crisis humor as character pressure release
+- deliberate control of narrative distance rather than default maximum closeness
+- cadence shaped by effect rather than a fixed sentence-length formula
+- repetition, monotone, fragments, and pullbacks preserved when they are intentional
 
 Avoid source-cloning:
 
@@ -60,6 +65,7 @@ Known licenses from the research phase:
 | `d-wwei/great-writer` | MIT | Can be studied and adapted with attribution/license preservation |
 | `haowjy/creative-writing-skills` | Apache-2.0 | Can be studied and adapted; preserve license/notice and mark modifications when distributing adapted material |
 | `tanaka-naoki/japanese-creative-writing` | MIT | Optional reference for Japanese-style fiction and kaidan structures |
+| `Calliope-Editor/writing-skills` | MIT | Can be studied for general craft structure; SheepStory keeps its own integrated editor/rewrite workflow rather than copying Calliope's read-only coaching contract |
 | `liuxiaopeng1981/hermes-writing-skills` | No license found during research | Do not copy or redistribute; private reading/reference only |
 
 ## Implementation Strategy
@@ -81,6 +87,8 @@ technical explanation voice
 dialogue polish
 vocal impact
 style polish / anti-AI flavour
+narrative distance / POV
+prose rhythm
 genius strategy
 ```
 
@@ -95,6 +103,8 @@ my-technical-voice/
 my-dialogue-polish/
 my-vocal-impact/
 my-style-polish/
+my-narrative-distance/
+my-prose-rhythm/
 my-genius-strategy/
 ```
 

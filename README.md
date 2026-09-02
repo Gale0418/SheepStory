@@ -14,12 +14,14 @@ This repo supports two common layouts:
 
 ```text
 SKILL.md                         # Root compatibility entrypoint
-skills/sheep-story/SKILL.md # Full skill implementation
+skills/sheep-story/SKILL.md      # Full skill implementation
 ```
 
 Use the nested skill directly when your agent supports skill folders. Use the root `SKILL.md` when your agent only scans the repository root.
 
-## Current package
+## Selected package map
+
+This is a representative navigation map, not an exhaustive inventory. The canonical stage routing and reference index live in `skills/sheep-story/SKILL.md`; static checks guard required files and acceptance specs.
 
 ```text
 skills/sheep-story/
@@ -27,25 +29,31 @@ skills/sheep-story/
 ├── SKILL.md
 ├── references/
 │   ├── anti-ai-flavour.md
-│   ├── chapter-contract.md
+│   ├── authoring-laboratory.md
+│   ├── character-conditions-advantage.md
+│   ├── character-dynamics.md
+│   ├── character-memory-belief.md
 │   ├── cinematic-scene-texture.md
 │   ├── conflict-pressure.md
 │   ├── continuity-check.md
 │   ├── dialogue-checklist.md
 │   ├── editorial-rewrite.md
-│   ├── failure-modes.md
+│   ├── embodied-expression.md
+│   ├── ending-outcome-model.md
 │   ├── genius-strategy.md
-│   ├── outline-gate.md
-│   ├── opposition-design.md
+│   ├── misunderstanding-tragedy.md
+│   ├── narrative-coherence-gate.md
+│   ├── narrative-distance-and-pov.md
+│   ├── pacing-reveal-and-extensions.md
+│   ├── prose-rhythm.md
+│   ├── reader-promise-and-tone.md
 │   ├── review-rubric.md
-│   ├── source-map.md
-│   ├── story-cockpit-workflow.md
-│   ├── story-foundation.md
-│   ├── story-architecture.md
+│   ├── social-cognitive-profile.md
 │   ├── story-memory-ops.md
 │   ├── story-project-layout.md
+│   ├── story-state-ledgers.md
 │   ├── style-preservation.md
-│   ├── technical-explanation-voice.md
+│   ├── trait-expression-library.md
 │   └── voice-calibration.md
 └── style-profiles/
     ├── sheepstory-house-style.md
@@ -60,66 +68,13 @@ skills/sheep-story/
 
 ## Supporting files
 
-```text
-docs/
-├── fiction-skill-design.md
-├── quality-checklist.md
-└── webui-design.md
+The repository also contains:
 
-examples/
-├── usage-prompts.md
-└── worked-outline-example.md
-
-worked-examples/
-├── fake-genius-to-reasoning-chain.md
-├── lore-dump-to-scene-texture.md
-├── peaceful-scene-to-conflict-pressure.md
-├── polite-dialogue-to-subtext.md
-└── textbook-science-to-technical-voice.md
-
-tests/
-├── 01-outline-gate.md
-├── 02-continuity-missing.md
-├── 03-too-peaceful.md
-├── 04-fake-genius.md
-├── 05-lore-dump.md
-├── 06-technical-decoration.md
-├── 07-dialogue-exposition.md
-├── 08-over-polish.md
-├── 09-quiet-scene.md
-├── 10-direct-dialogue.md
-├── 11-quick-mode.md
-├── 12-approved-outline.md
-├── 13-mixed-revision.md
-├── 14-document-framing.md
-├── 15-claim-preservation.md
-├── 16-adult-plain-language.md
-├── 17-minimal-no-op.md
-├── 18-vague-new-story.md
-├── 19-world-first-seed.md
-├── 20-character-first-seed.md
-├── 21-specified-foundation.md
-├── 22-optional-structure.md
-├── 23-coherent-opposition.md
-├── 24-capability-ceiling.md
-├── 25-promise-and-ending.md
-└── 26-project-only-constraint.md
-
-templates/
-├── cockpit/
-│   ├── chapter-contract.md
-│   ├── export-prompt.md
-│   ├── idea.md
-│   └── plot-thread.md
-└── story-project/
-    ├── project-brief.md
-    ├── story.md
-    ├── characters/_template.md
-    ├── chapters/_template.md
-    ├── worldbuilding/world-book.md
-    ├── continuity/state.md
-    └── continuity/promises/_template.md
-```
+- `docs/` for design notes, research method, system maps, and quality guidance
+- `examples/` and `worked-examples/` for usage patterns and transformations
+- `templates/` for story projects, cockpit records, continuity state, and ops contracts
+- `tests/` for behavioral acceptance specs and deterministic structural checks
+- `MissionCenter/` for project-level working notes and decisions
 
 ## Core rules
 
@@ -138,6 +93,35 @@ templates/
 13. Keep protagonists within approved capability ceilings and give persistent opposition independent agency.
 14. Store project-only requirements in the Project Brief instead of turning examples into generic defaults.
 15. Track promise lifecycles and answer the core dramatic question at major endings without forcing total closure.
+16. Treat POV ownership, grammatical person, narrative distance, character knowledge, narrator knowledge, and reader knowledge as separate controls. Closer is not automatically better.
+17. Shape prose rhythm by intended effect across phrase, sentence, paragraph, and passage scales. Do not confuse sentence-length variance with quality or erase deliberate repetition.
+
+## Prose craft engines
+
+### Narrative Distance / POV
+
+`skills/sheep-story/references/narrative-distance-and-pov.md` handles:
+
+- limited-POV ownership and impossible private access
+- head-hop versus intentional viewpoint handoff
+- filter verbs as contextual evidence rather than banned words
+- character-colored narration / free indirect discourse
+- deliberate glide-in, pullback, or distance hold
+- AI-flavour failures such as generic hovering narration and fake deep POV
+
+### Prose Rhythm
+
+`skills/sheep-story/references/prose-rhythm.md` handles:
+
+- sentence and clause cadence
+- paragraph architecture
+- sentence landings and explanatory tails
+- deliberate repetition, monotone, accumulation, and fragments
+- fake short/long variation and paragraph metronomes
+- the boundary between prose cadence and macro story pacing
+- read-aloud advice without pretending a text-only model literally heard the prose
+
+Both are specialist references. They are loaded only when the passage materially depends on those craft dials, rather than becoming mandatory overhead on every rewrite.
 
 ## SheepStory Cockpit
 
@@ -182,6 +166,9 @@ Use sheep-story to polish this dialogue without making it polite.
 Use sheep-story to design a genius-vs-genius scene with limited resources.
 Use sheep-story to add cinematic scene texture without story-external worldbuilding lectures.
 Use sheep-story to add technical reasoning with dry crisis humor and practical stakes.
+Use sheep-story to remove the AI feel from this passage without flattening its POV distance or deliberate roughness.
+Use sheep-story to repair this close-third passage without head-hopping or deleting every filter verb.
+Use sheep-story to fix the mechanical cadence in this paragraph while preserving its deliberate refrain and long accumulating sentence.
 Use sheep-story with style profile technical-first-person.
 Use sheep-story to review this chapter with scores and what to preserve.
 ```
@@ -217,7 +204,15 @@ Before treating a new version as release-ready, run through:
 docs/quality-checklist.md
 ```
 
-For regression-style checks, run prompts from:
+For deterministic checks:
+
+```text
+tests/run_static_checks.ps1
+tests/run_character_engine_checks.ps1
+tests/run_prose_craft_checks.ps1
+```
+
+For regression-style behavior specs, read prompts under:
 
 ```text
 tests/

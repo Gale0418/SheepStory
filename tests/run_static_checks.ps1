@@ -103,6 +103,8 @@ Require-Path 'skills/sheep-story/references/misunderstanding-tragedy.md'
 Require-Path 'skills/sheep-story/references/embodied-expression.md'
 Require-Path 'skills/sheep-story/references/reader-promise-and-tone.md'
 Require-Path 'skills/sheep-story/references/narrative-coherence-gate.md'
+Require-Path 'skills/sheep-story/references/narrative-distance-and-pov.md'
+Require-Path 'skills/sheep-story/references/prose-rhythm.md'
 Require-Path 'skills/sheep-story/style-profiles/sheepstory-house-style.md'
 Require-Path 'skills/sheep-story/style-profiles/zh-tw-fiction.md'
 Require-Path 'templates/story-project/chapters/_template.md'
@@ -129,7 +131,8 @@ Require-Path 'docs/character-story-engine-map.md'
 Require-Path 'tests/fixtures/authoring-lab-forward-fixture.md'
 Require-Path 'tests/run_regression_checks.ps1'
 Require-Path 'tests/run_character_engine_checks.ps1'
-foreach ($test in 9..49) {
+Require-Path 'tests/run_prose_craft_checks.ps1'
+foreach ($test in 9..53) {
     $pattern = '{0:D2}-*.md' -f $test
     if (-not (Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'tests') -Filter $pattern -File)) {
         $failures.Add("Missing positive-control acceptance specification: $pattern")
@@ -170,6 +173,15 @@ if (Test-Path -LiteralPath $characterEngineCheckPath) {
         & $characterEngineCheckPath -ProjectRoot $ProjectRoot | Out-Null
     } catch {
         $failures.Add("Character engine checks failed: $($_.Exception.Message)")
+    }
+}
+
+$proseCraftCheckPath = Join-Path $ProjectRoot 'tests/run_prose_craft_checks.ps1'
+if (Test-Path -LiteralPath $proseCraftCheckPath) {
+    try {
+        & $proseCraftCheckPath -ProjectRoot $ProjectRoot | Out-Null
+    } catch {
+        $failures.Add("Prose craft checks failed: $($_.Exception.Message)")
     }
 }
 

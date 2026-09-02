@@ -30,6 +30,19 @@ Do not over-polish.
 
 Useful roughness, asymmetry, silence, repetition, ambiguity, and awkwardness may carry voice. Keep them when they are intentional or character-bearing.
 
+## Craft-Level Escalation
+
+AI flavour is sometimes **structural, not lexical**. A passage can avoid every cliché phrase and still feel generated because the narrative lens or cadence behaves mechanically.
+
+Escalate only when the symptom materially depends on that craft dial:
+
+- If perception ownership, head-hopping, impossible private access, filter mediation, generic hovering narration, fake deep POV, or unexplained changes in closeness are part of the problem, read `narrative-distance-and-pov.md`.
+- If same-shaped sentences, repeated paragraph geometry, weak sentence landings, accidental drone, fragment confetti, fake short/long variety, or uncertain repetition are part of the problem, read `prose-rhythm.md`.
+
+Do not use these specialists as mandatory passes on every rewrite. Do not force deep POV, delete all filter verbs, maximize sentence-length variance, or erase deliberate monotone and repetition merely because the text was called "AI-like."
+
+The anti-AI goal remains the same: remove accidental template behavior while preserving intentional voice.
+
 ## Pass 1: Oral Test
 
 Ask:
@@ -81,6 +94,8 @@ Better direction:
 
 Do not explain the emotion if the scene can show it.
 
+Do not turn this into a universal show-don't-tell law. Direct thought or emotion may be the correct narrative distance. If the real problem is perceptual ownership or closeness rather than abstraction, use `narrative-distance-and-pov.md`.
+
 ## Pass 3: Rhythm Break
 
 Look for mechanical rhythm:
@@ -93,11 +108,13 @@ Look for mechanical rhythm:
 
 Fix by:
 
-- inserting one short sentence
-- letting a long sentence stretch forward
-- cutting a summary line
+- inserting one short sentence when it creates a useful interruption
+- letting a long sentence stretch forward when accumulation serves the moment
+- cutting a redundant summary line
 - breaking one paragraph earlier than expected
 - letting silence carry the reaction
+
+These are local options, not formulas. If the problem spans paragraph or passage architecture, or if deliberate repetition / monotone makes "vary it" ambiguous, read `prose-rhythm.md` before changing the pattern.
 
 ## Pass 4: Generic Phrase Removal
 
@@ -125,8 +142,10 @@ Creative writing may intentionally use:
 - stylized narration
 - strange rhythm
 - blunt statements
+- remote or cool narrative distance
+- abrupt distance cuts when the form establishes them
 
-Keep these if they express POV, character, genre, or tension.
+Keep these if they express POV, character, genre, tension, ritual, shock, or another intended effect.
 
 ## Final Checklist
 
@@ -136,10 +155,12 @@ Before presenting prose, verify:
 - [ ] No unexplained motivational-poster sentence.
 - [ ] No empty context-setting opening.
 - [ ] No empty closing summary.
-- [ ] Rhythm is varied.
+- [ ] Rhythm is controlled rather than mechanically normalized.
+- [ ] POV ownership and narrative distance remain intentional.
 - [ ] Dialogue has friction.
 - [ ] Chinese prose does not sound translated unless intentionally stylized.
-- [ ] The author's roughness, ambiguity, and rhythm are preserved.
+- [ ] The author's roughness, ambiguity, repetition, distance, and rhythm are preserved.
+- [ ] No new facts, motives, sensory evidence, or certainty were invented merely to make the prose feel less AI-like.
 
 ## Principle
 

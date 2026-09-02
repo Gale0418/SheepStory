@@ -2,35 +2,46 @@
 
 `sheep-story` is the main SheepStory skill.
 
-It is an outline-first fiction-writing and story-organization skill for long-form stories, scattered idea routing, chapter contracts, scenes, dialogue polish, continuity checks, cinematic scene texture, technical explanation voice, anti-AI-flavour revision, review scoring, memory updates, and genius-level strategy design.
+It is an outline-first fiction-writing and story-organization skill for long-form stories, scattered idea routing, chapter contracts, scenes, dialogue polish, continuity checks, cinematic scene texture, technical explanation voice, anti-AI-flavour revision, POV / narrative-distance control, prose-rhythm control, review scoring, memory updates, and genius-level strategy design.
 
-## Files
+## Selected files
+
+This is a representative navigation map rather than a complete inventory. Use `SKILL.md` as the canonical routing contract.
 
 ```text
 SKILL.md
 references/
 ├── anti-ai-flavour.md
 ├── authoring-laboratory.md
+├── character-conditions-advantage.md
+├── character-dynamics.md
+├── character-memory-belief.md
 ├── chapter-contract.md
 ├── cinematic-scene-texture.md
 ├── conflict-pressure.md
 ├── continuity-check.md
 ├── dialogue-checklist.md
 ├── editorial-rewrite.md
+├── embodied-expression.md
+├── ending-outcome-model.md
 ├── failure-modes.md
 ├── genius-strategy.md
+├── misunderstanding-tragedy.md
+├── narrative-coherence-gate.md
+├── narrative-distance-and-pov.md
 ├── outline-gate.md
 ├── pacing-reveal-and-extensions.md
-├── project-recovery-and-runs.md
+├── prose-rhythm.md
+├── reader-promise-and-tone.md
 ├── review-rubric.md
+├── social-cognitive-profile.md
 ├── source-map.md
-├── story-cockpit-workflow.md
 ├── story-foundation.md
 ├── story-memory-ops.md
 ├── story-project-layout.md
 ├── story-state-ledgers.md
 ├── style-preservation.md
-├── technical-explanation-voice.md
+├── trait-expression-library.md
 ├── vocal-impact.md
 └── voice-calibration.md
 style-profiles/
@@ -62,6 +73,8 @@ Use this skill for:
 - polishing dialogue so it has intention, obstacle, and subtext
 - preserving earned battle cries, invocations, screams, repeated names, broken speech, crowd responses, and other low-semantic vocal lines
 - removing AI flavour without over-polishing
+- diagnosing or revising POV ownership, head-hopping, filter mediation, free-indirect diction, and narrative-distance drift
+- repairing mechanical sentence / paragraph cadence while preserving deliberate repetition, monotone, accumulation, and roughness
 - writing genius-vs-genius strategy scenes
 - creating a story bible and continuity memory
 
@@ -70,6 +83,8 @@ Use this skill for:
 ```text
 Route canon-affecting ideas before prose. Local phrasing, gestures, sensory detail, and non-canon texture may be improvised without Cockpit bookkeeping.
 Standard and longform original prose require outline approval. Quick mode may treat a sufficiently specific bounded prompt as the approved brief.
+Narrative distance is an intent-controlled lens, not a race toward maximum closeness.
+Prose rhythm is judged by effect, not sentence-length variance.
 ```
 
 For standard and longform original prose, the agent must route relevant ideas, produce a discussion outline, and wait for explicit approval before prose. Quick mode may directly execute a sufficiently specific bounded request.
@@ -107,11 +122,27 @@ Do not write prose.
 Use sheep-story with style profile technical-first-person and cinematic-hard-sf.
 ```
 
+## Anti-AI / POV Prompt
+
+```text
+Use sheep-story to remove the AI feel from this supplied passage.
+Preserve the current POV owner, deliberate changes in narrative distance, facts, uncertainty, character diction, and useful roughness.
+Do not delete filter verbs mechanically or make the passage maximally deep just because close POV is available.
+```
+
+## Rhythm Prompt
+
+```text
+Use sheep-story to repair the mechanical cadence in this supplied passage.
+Preserve deliberate repetition, monotone, long accumulation, fragments, and narrator voice when they are doing intentional work.
+Do not optimize sentence-length variance or change macro story pacing.
+```
+
 ## Review Prompt
 
 ```text
 Use sheep-story to review this scene.
-Check continuity, conflict pressure, scene texture, technical explanation, dialogue subtext, fake-genius problems, AI flavour, and style preservation.
+Check continuity, conflict pressure, scene texture, technical explanation, dialogue subtext, POV ownership / narrative distance, prose rhythm, fake-genius problems, AI flavour, and style preservation.
 Return scores, critical issues, what to preserve, and a revision plan before suggesting rewrites.
 ```
 
@@ -124,4 +155,4 @@ Update continuity state, character files, timeline, questions, promises, object 
 
 ## Principle
 
-The skill exists to keep AI from becoming smooth, forgetful, over-polite, fake-clever, visually empty, technically decorative, and bad at remembering consequences.
+The skill exists to keep AI from becoming smooth, forgetful, over-polite, fake-clever, visually empty, technically decorative, rhythmically mechanical, careless about viewpoint access, and bad at remembering consequences.
