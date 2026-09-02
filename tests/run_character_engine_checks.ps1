@@ -119,6 +119,15 @@ $memory = Read-RequiredText 'skills/sheep-story/references/story-memory-ops.md'
 $foundation = Read-RequiredText 'skills/sheep-story/references/story-foundation.md'
 $characterTemplate = Read-RequiredText 'templates/story-project/characters/_template.md'
 $conditionsTemplate = Read-RequiredText 'templates/story-project/characters/_conditions-template.md'
+$conditionsSpec = Read-RequiredText 'tests/50-character-conditions-advantage.md'
+$conditionsPrompt = Get-MarkdownSection $conditionsSpec 'Prompt'
+$conditionsExpected = Get-MarkdownSection $conditionsSpec 'Expected Good Behavior'
+$conditionsBad = Get-MarkdownSection $conditionsSpec 'Bad Behavior To Reject'
+$conditionsPass = Get-MarkdownSection $conditionsSpec 'Pass Criteria'
+$originConditions = Get-MarkdownSection $conditions '3. Origin Leverage'
+$mutableConditions = Get-MarkdownSection $conditions '4. Mutable Resources, Status, and Institutional Access'
+$originTemplate = Get-MarkdownSection $conditionsTemplate 'Origin Leverage'
+$mutableTemplate = Get-MarkdownSection $conditionsTemplate 'Mutable Resources / Status / Access'
 $projectBrief = Read-RequiredText 'templates/story-project/project-brief.md'
 $continuityState = Read-RequiredText 'templates/story-project/continuity/state.md'
 $cardAudit = Read-RequiredText 'templates/cockpit/character-card-audit.md'
@@ -163,6 +172,16 @@ Require-Match $card '(?i)regression' 'Character-card guidance must turn concrete
 Require-Match $conditions '(?i)Intrinsic Capability' 'Character-conditions guidance must separate intrinsic capability.'
 Require-Match $conditions '(?i)Resistance, Tolerance, and Control' 'Character-conditions guidance must separate resistance and control.'
 Require-Match $conditions '(?i)Origin Leverage' 'Character-conditions guidance must model origin leverage.'
+Require-Match $conditions '(?is)Separate at least these six families.*1\. Intrinsic capability.*2\. Resistance / tolerance.*3\. Origin leverage.*4\. Mutable resources / status / institutional access.*5\. Environmental pressure.*6\. Narrative contingency' 'Character-conditions guidance must enumerate all six independent condition families in order.'
+Require-Match $conditions '(?is)## 3\. Origin Leverage.*## 4\. Mutable Resources, Status, and Institutional Access.*## 5\. Environmental Pressure.*## 6\. Narrative Contingency / Luck' 'Character-conditions guidance must keep mutable resources/status/access as a distinct layer between origin and environment.'
+Require-Match $originConditions '(?is)historical or inherited leverage.*not a ledger.*use right now' 'Origin leverage must remain a durable/history layer rather than current usable inventory.'
+Require-Match $mutableConditions '(?is)money or material reserves currently usable.*equipment.*currently controlled.*staff.*currently callable.*current legal or political office.*credentials.*institutional or location access' 'Mutable resource guidance must itself contain current money, equipment, network, status, credentials, and access fields.'
+Require-Match $mutableConditions '(?is)frozen, revoked, exhausted.*destroyed.*unavailable' 'Mutable resource guidance must represent lost or unavailable leverage explicitly.'
+Require-Match $conditions '(?i)Origin Is Not Current State' 'Character-conditions guidance must explicitly distinguish durable origin from mutable current state.'
+Require-Match $mutableConditions '(?is)### Current-State Source of Truth.*continuity/state\.md.*authoritative current-state ledger' 'Character-conditions guidance must keep its explicit continuity source-of-truth rule inside the mutable layer.'
+Require-Match $conditions '(?i)Origin-State Collapse' 'Character-conditions guidance must reject conflating origin with current mutable leverage.'
+Require-Match $conditions '(?i)State Resurrection' 'Character-conditions guidance must reject restoring lost leverage from durable origin.'
+Reject-Match $conditions '(?i)Separate at least these five families' 'Character-conditions guidance must not retain the obsolete five-family model.'
 Require-Match $conditions '(?i)Environmental Pressure' 'Character-conditions guidance must model environmental pressure.'
 Require-Match $conditions '(?i)Narrative Contingency / Luck' 'Character-conditions guidance must model luck separately from capability.'
 Require-Match $conditions '(?i)Willpower Is Not Emotional Regulation' 'Character-conditions guidance must separate willpower from emotional regulation.'
@@ -172,10 +191,19 @@ Require-Match $conditions '(?i)Do Not Force Artificial Weaknesses' 'Character-co
 Require-Match $conditions '(?i)Power Fantasy Exception' 'Character-conditions guidance must preserve intentional power fantasy.'
 Require-Match $conditions '(?i)Origin Does Not Equal Destiny' 'Character-conditions guidance must reject deterministic origin stereotypes.'
 Require-Match $conditionsTemplate '(?i)Willpower / commitment persistence' 'Conditions template must preserve willpower separately.'
+Require-Match $originTemplate '(?i)inherited or starting leverage.*current usable inventory' 'Conditions template must define origin as inherited/starting leverage rather than current inventory.'
+Require-Match $conditionsTemplate '(?is)## Origin Leverage.*## Mutable Resources / Status / Access.*## Environmental Pressure' 'Conditions template must keep mutable resources/status/access in its own section between origin and environment.'
+Require-Match $mutableTemplate '(?is)Money / material resources currently usable.*Equipment / assets currently controlled.*Staff / allies / network currently callable.*Current legal / political rank or status.*Credentials / licenses / clearance / delegated authority.*Institutional / location access.*Frozen / revoked / exhausted / unavailable' 'Conditions template mutable section must expose the complete current-state resource/status/access shape.'
+Require-Match $conditionsTemplate '(?i)continuity/state\.md' 'Conditions template must point ongoing mutable state to continuity/state.md.'
 Require-Match $conditionsTemplate '(?i)Starting environment' 'Conditions template must separate starting environment.'
 Require-Match $conditionsTemplate '(?i)Narrative Contingency' 'Conditions template must support optional luck/fate mechanics.'
 Require-Match $conditionsTemplate '(?i)Advantage Audit' 'Conditions template must include an advantage audit.'
 Require-Match $conditionsTemplate '(?i)Disadvantage Audit' 'Conditions template must include a disadvantage audit.'
+Require-Match $conditionsPrompt '(?i)accounts are frozen.*political office is revoked.*credentials are revoked' 'Test 50 prompt must exercise loss of mutable money, status, and credentials while origin remains durable.'
+Require-Match $conditionsPrompt '(?i)field research budget.*engineering kit.*lab pass' 'Test 50 prompt must exercise later gains that were not inherited at origin.'
+Require-Match $conditionsExpected '(?i)continuity/state\.md.*authoritative' 'Test 50 expected behavior must make continuity state authoritative for current mutable leverage.'
+Require-Match $conditionsBad '(?i)later field budget.*inherited origin leverage' 'Test 50 must reject rewriting later mutable gains into origin.'
+Require-Match $conditionsPass '(?i)both directions of mutation.*losses.*later gains' 'Test 50 pass criteria must pin both loss and gain directions.'
 
 Require-Match $contrast '(?i)Gap appeal.*audience response|audience response.*Gap appeal' 'Contrast guidance must distinguish gap appeal from a standalone trait.'
 Require-Match $contrast '(?is)What the character says.*What they do.*body' 'Contrast guidance must separate words, actions, and body.'
@@ -231,6 +259,8 @@ Require-Match $characterTemplate '(?i)Failure-State Continuity' 'Character templ
 Require-Match $projectBrief '(?i)Reader Experience / Core Promise' 'Project brief must record reader experience.'
 Require-Match $projectBrief '(?i)Ending Outcome Contract' 'Project brief must record durable ending-outcome requirements.'
 Require-Match $projectBrief '(?i)User / Player Role Contract' 'Project brief must record user-role assumptions.'
+Require-Match $continuityState '(?i)Resource / Status / Access State' 'Continuity state must remain the dedicated mutable resource/status/access ledger.'
+Require-Match $continuityState '(?i)Track mutable leverage separately from intrinsic capability and permanent origin' 'Continuity state must keep mutable leverage separate from intrinsic capability and origin.'
 Require-Match $continuityState '(?i)Active Misunderstandings' 'Continuity state must track active misunderstandings.'
 Require-Match $continuityState '(?i)Reader-Promise / Tone State' 'Continuity state must track durable tone state.'
 Require-Match $continuityState '(?i)Major Outcome / Recovery State' 'Continuity state must carry major ending outcomes into later arcs.'
@@ -285,6 +315,10 @@ Test-BehaviorSpec 'tests/49-reader-promise-tone-stack.md' @(
 )
 Test-BehaviorSpec 'tests/50-character-conditions-advantage.md' @(
     'wealth|political status',
+    'frozen|revoked',
+    'field research budget|engineering kit|lab pass',
+    'mutable resources|status|institutional access',
+    'continuity/state\.md|continuity state',
     'war-torn|scarcity',
     'willpower|emotional regulation',
     'luck|plot armor',

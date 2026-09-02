@@ -6,7 +6,7 @@ Use this reference when a character's capabilities, resistances, origin, resourc
 
 The core rule is simple:
 
-> Do not confuse what a person **is capable of**, what they **resist**, what they **were born into**, what the **world is doing around them**, and what **chance** tends to do.
+> Do not confuse what a person **is capable of**, what they **resist**, what they **were born into**, what resources, status, and access they **currently control**, what the **world is doing around them**, and what **chance** tends to do.
 
 These layers can produce similar visible outcomes for completely different reasons. Preserve the cause.
 
@@ -14,17 +14,18 @@ This reference is deliberately not a mandatory point-buy system. Numeric ratings
 
 ## Layer Families
 
-Separate at least these five families when they matter:
+Separate at least these six families when they matter:
 
 ```text
 1. Intrinsic capability
 2. Resistance / tolerance
 3. Origin leverage
-4. Environmental pressure
-5. Narrative contingency
+4. Mutable resources / status / institutional access
+5. Environmental pressure
+6. Narrative contingency
 ```
 
-Do not collapse them into one generic `power`, `charisma`, `background`, or `luck` score.
+Do not collapse them into one generic `power`, `charisma`, `background`, `resources`, or `luck` score.
 
 ## 1. Intrinsic Capability
 
@@ -158,20 +159,22 @@ Possible dimensions:
 
 - family wealth
 - family status
-- political access
+- political access available through family or birth
 - education access
 - professional inheritance
-- social network
-- legal protection
+- inherited social network
+- legal protection attached to origin
 - inherited reputation
 - inherited enemies
 - inherited obligations
 - cultural capital
 - safety net
 - citizenship / caste / class standing
-- patronage
-- debt
+- inherited patronage
+- inherited debt
 - stigma
+
+Origin is historical or inherited leverage, not a ledger of what the character can still use right now. If money is frozen, a title is revoked, allies leave, credentials expire, or access is granted later, keep the origin fact here and record the current usable state in the mutable layer below.
 
 ### Resource Is Not Personality
 
@@ -203,7 +206,51 @@ same mistake
 
 This difference can create divergent risk tolerance, institutional trust, ambition, resentment, or survival strategies without treating those adaptations as genetically attached to class.
 
-## 4. Environmental Pressure
+## 4. Mutable Resources, Status, and Institutional Access
+
+Mutable leverage answers:
+
+> What external resources, authority, people, credentials, and access can this character actually use now?
+
+This layer changes independently of origin and intrinsic capability. Track only resources or access that can alter current options, such as:
+
+- money or material reserves currently usable
+- equipment, vehicles, property, or other assets currently controlled
+- staff, retainers, active allies, or a network currently callable
+- current legal or political office, rank, title, or protected status
+- credentials, licenses, clearances, warrants, or delegated authority
+- institutional or location access
+- current patronage, sponsorship, or protection that is still honored
+- resources, authority, or access that are frozen, revoked, exhausted, captured, destroyed, unavailable, or temporarily suspended
+
+### Origin Is Not Current State
+
+Preserve both sides when they diverge:
+
+```text
+born into a wealthy political family
++ personal accounts frozen
++ office revoked
+→ wealthy political origin remains true
+→ current money / office / authority remain unavailable
+
+poor and unconnected origin
++ later receives a research budget
++ borrowed engineering kit
++ emergency laboratory credential
+→ origin remains poor and unconnected
+→ current resources / equipment / access now exist
+```
+
+Do not rewrite biography because current leverage changed, and do not resurrect current leverage merely because the origin still supports a historical claim.
+
+### Current-State Source of Truth
+
+For character initialization, an optional condition profile may record the current starting snapshot. In an ongoing story project, `continuity/state.md` is the authoritative current-state ledger after resources, status, equipment, networks, authority, or access change.
+
+Use the durable condition/origin profile to explain where leverage came from. Use continuity state to answer what remains usable now. When they differ, the current continuity state governs present options until a later established event restores or changes it.
+
+## 5. Environmental Pressure
 
 Environmental pressure answers:
 
@@ -267,7 +314,7 @@ An environment value is useful only if it changes:
 - how expensive recovery is
 - what counts as normal
 
-## 5. Narrative Contingency / Luck
+## 6. Narrative Contingency / Luck
 
 Luck is not an ordinary capability. Treat it as a project-level or diegetic rule only when the story actually uses chance asymmetrically.
 
@@ -531,11 +578,20 @@ Use only the rows that matter:
 - Setting-specific resistance:
 
 ### Origin Leverage
-- Wealth / material safety net:
-- Family / institutional status:
-- Education / access:
-- Network / patronage:
+- Family / inherited wealth and material safety net:
+- Family / inherited institutional status:
+- Education / starting access:
+- Inherited network / patronage:
 - Inherited obligations / enemies / stigma:
+
+### Mutable Resources / Status / Access
+- Money / material resources currently usable:
+- Equipment / assets currently controlled:
+- Staff / allies / network currently callable:
+- Current legal / political rank or status:
+- Credentials / authority:
+- Institutional / location access:
+- Frozen / revoked / unavailable resources or access:
 
 ### Environmental Pressure
 - Starting environment:
@@ -554,6 +610,8 @@ Use only the rows that matter:
 - Problems these advantages do not solve:
 ```
 
+For an ongoing project, keep mutable changes authoritative in `continuity/state.md` rather than maintaining two competing current-state ledgers.
+
 ## Review Failure Modes
 
 Flag these:
@@ -565,6 +623,16 @@ One value such as `charisma`, `intelligence`, or `will` silently controls unrela
 ### Resource-from-Ability
 
 The character's intelligence or charm conjures equipment, money, authority, contacts, or credentials never established.
+
+### Origin-State Collapse
+
+Inherited or starting leverage is treated as identical to what the character can currently use, so revoked authority, frozen money, lost equipment, departed staff, or blocked access silently remain available.
+
+The inverse is also wrong: a later grant of money, equipment, rank, or access must not rewrite the character's origin as if they were born with it.
+
+### State Resurrection
+
+A lost resource, status, or access path reappears solely because the durable origin or prior biography still mentions the source that once provided it.
 
 ### Environment-as-Personality
 
@@ -604,11 +672,12 @@ Use:
 - `contrast-and-dissonance.md` when actual capability differs from displayed competence or social expectation.
 - `reader-promise-and-tone.md` when luck, power fantasy, grim origin, or extreme environmental danger is part of the audience contract.
 - `narrative-coherence-gate.md` to ensure resources, status, location, authority, injury, and access remain consistent.
+- `story-memory-ops.md` and `continuity/state.md` when mutable resources, status, equipment, networks, authority, or access change over time.
 
 ## Principle
 
 A character is not only a personality inside a body.
 
-They are a person with capabilities and resistances, born into unequal leverage, acting inside an environment that opens and closes options, while chance may occasionally bend the path.
+They are a person with capabilities and resistances, born into unequal leverage, carrying a mutable set of usable resources and access, acting inside an environment that opens and closes options, while chance may occasionally bend the path.
 
 Keep those causes separate so the story can show how they interact.

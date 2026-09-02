@@ -23,14 +23,31 @@ Keep these separate when pressure matters.
 
 ## Origin Leverage
 
-- Wealth / material safety net:
-- Family / institutional status:
-- Education / technical access:
-- Network / patronage:
-- Legal or political protection:
+Record inherited or starting leverage, not the character's current usable inventory.
+
+- Family / inherited wealth and material safety net:
+- Family / inherited institutional status:
+- Education / starting technical access:
+- Inherited network / patronage:
+- Legal or political protection attached to origin:
 - Inherited reputation:
 - Inherited obligations / debts:
 - Inherited enemies / stigma:
+
+## Mutable Resources / Status / Access
+
+Record the starting/current snapshot only when it materially changes options.
+
+- Money / material resources currently usable:
+- Equipment / assets currently controlled:
+- Staff / allies / network currently callable:
+- Current legal / political rank or status:
+- Credentials / licenses / clearance / delegated authority:
+- Institutional / location access:
+- Frozen / revoked / exhausted / unavailable resources or access:
+- Evidence / last established:
+
+For an ongoing story project, `continuity/state.md` is authoritative after mutable state changes. Keep origin history unchanged unless canon itself changes; do not let old origin leverage silently restore lost resources or access.
 
 ## Environmental Pressure
 
