@@ -38,6 +38,7 @@ $resolution = Read-RequiredText 'skills/sheep-story/references/earned-resolution
 $architecture = Read-RequiredText 'skills/sheep-story/references/story-architecture.md'
 $ledger = Read-RequiredText 'skills/sheep-story/references/story-state-ledgers.md'
 $promise = Read-RequiredText 'templates/story-project/continuity/promises/_template.md'
+$projectBrief = Read-RequiredText 'templates/story-project/project-brief.md'
 $audit = Read-RequiredText 'templates/cockpit/foreshadowing-resolution-audit.md'
 $skill = Read-RequiredText 'skills/sheep-story/SKILL.md'
 $rootSkill = Read-RequiredText 'SKILL.md'
@@ -84,6 +85,11 @@ Require-Match $promise '(?i)First-Read Function' 'Promise template must record f
 Require-Match $promise '(?i)Intended Re-read Function' 'Promise template must record re-read function.'
 Require-Match $promise '(?i)Resolution / Credit Link' 'Promise template must connect setup to causal credit.'
 Require-Match $promise '(?i)Retrospective Fairness' 'Promise template must audit retrospective fairness.'
+
+Require-Match $projectBrief '(?i)Reveal / Foreshadowing / Resolution Contract' 'Project brief must support durable reveal and resolution contracts.'
+Require-Match $projectBrief '(?i)Reader solvability target' 'Project brief must expose reader-solvability expectations.'
+Require-Match $projectBrief '(?i)Dominant climax modality' 'Project brief must expose the promised climax modality.'
+Require-Match $projectBrief '(?i)Major canon decisions that still require approval' 'Project brief must preserve the approval boundary for undelegated twists.'
 
 Require-Match $architecture '(?i)Setup / Payoff Spine' 'Story architecture must include a setup/payoff spine.'
 Require-Match $architecture '(?i)Earned Climax Check' 'Story architecture must include an earned-climax check.'
