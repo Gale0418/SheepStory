@@ -91,6 +91,8 @@ Require-Path 'skills/sheep-story/references/continuity-check.md'
 Require-Path 'skills/sheep-story/references/editorial-rewrite.md'
 Require-Path 'skills/sheep-story/references/story-foundation.md'
 Require-Path 'skills/sheep-story/references/story-architecture.md'
+Require-Path 'skills/sheep-story/references/ending-outcome-model.md'
+Require-Path 'skills/sheep-story/references/earned-resolution-foreshadowing.md'
 Require-Path 'skills/sheep-story/references/opposition-design.md'
 Require-Path 'skills/sheep-story/references/story-project-layout.md'
 Require-Path 'skills/sheep-story/references/character-card-engineering.md'
@@ -117,6 +119,8 @@ Require-Path 'templates/cockpit/chapter-contract.md'
 Require-Path 'templates/cockpit/character-card-audit.md'
 Require-Path 'templates/cockpit/misunderstanding-ledger.md'
 Require-Path 'templates/cockpit/reader-promise.md'
+Require-Path 'templates/cockpit/ending-outcome-contract.md'
+Require-Path 'templates/cockpit/foreshadowing-resolution-audit.md'
 Require-Path 'skills/sheep-story/references/authoring-laboratory.md'
 Require-Path 'skills/sheep-story/references/story-state-ledgers.md'
 Require-Path 'skills/sheep-story/references/project-recovery-and-runs.md'
@@ -128,11 +132,13 @@ Require-Path 'templates/ops/run-manifest.md'
 Require-Path 'templates/ops/extension-contract.md'
 Require-Path 'docs/character-card-research-method.md'
 Require-Path 'docs/character-story-engine-map.md'
+Require-Path 'docs/resolution-causality-case-notes.md'
 Require-Path 'tests/fixtures/authoring-lab-forward-fixture.md'
 Require-Path 'tests/run_regression_checks.ps1'
 Require-Path 'tests/run_character_engine_checks.ps1'
 Require-Path 'tests/run_prose_craft_checks.ps1'
-foreach ($test in 9..53) {
+Require-Path 'tests/run_resolution_checks.ps1'
+foreach ($test in 9..54) {
     $pattern = '{0:D2}-*.md' -f $test
     if (-not (Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'tests') -Filter $pattern -File)) {
         $failures.Add("Missing positive-control acceptance specification: $pattern")
@@ -182,6 +188,15 @@ if (Test-Path -LiteralPath $proseCraftCheckPath) {
         & $proseCraftCheckPath -ProjectRoot $ProjectRoot | Out-Null
     } catch {
         $failures.Add("Prose craft checks failed: $($_.Exception.Message)")
+    }
+}
+
+$resolutionCheckPath = Join-Path $ProjectRoot 'tests/run_resolution_checks.ps1'
+if (Test-Path -LiteralPath $resolutionCheckPath) {
+    try {
+        & $resolutionCheckPath -ProjectRoot $ProjectRoot | Out-Null
+    } catch {
+        $failures.Add("Resolution/foreshadowing checks failed: $($_.Exception.Message)")
     }
 }
 

@@ -30,6 +30,9 @@ Prevent these failures:
 - confusing intrinsic ability, resistance, origin, resources, environment, and luck as if they were one personality or power score
 - balancing exceptional characters with irrelevant quirks or arbitrary punishment instead of causal friction
 - reducing endings to one `happy / bad / tragic` score that hides mixed personal, relationship, mission, world, cost, and recovery outcomes
+- hiding the existence of decisive rules, culprits, powers, or resources and calling the result foreshadowing after the fact
+- making competent allies or opponents commit arbitrary mistakes only to move the plot difficulty slider
+- resolving the climax through an established but cathartically unrelated mechanism without checking whether it bypasses the contest the story taught the reader to care about
 
 ## Select an Operating Mode
 
@@ -75,6 +78,7 @@ Do setting and technical details change action, perception, risk, or emotion?
 Do active characters have only the knowledge, memory, belief, resources, authority, and physical access they should have?
 If contrast or misunderstanding drives the scene, are the underlying signals and beliefs causally supported?
 If an advantage, origin condition, environment, or luck changes the scene, is the mechanism established rather than inferred from personality?
+If a reveal or climax solution matters, are the decisive existence/rules established and is causal credit honestly assigned?
 If tone materially changes, does it remain inside the approved reader promise or a deliberately prepared subversion?
 If this is a finale or major arc ending, have personal, relationship, mission, world, cost, recovery, and future outcomes been separated before assigning an ending label?
 Is approval required in this mode, and if so, has the user given it?
@@ -96,9 +100,9 @@ Read:
 
 For reader simulation, non-canon character experiments, alternate takes, or bridge writing, also read `references/authoring-laboratory.md`. Keep all experiment output sandbox-only and record evidence, dissent, provenance, and an approval destination. For claim, event, promise, or editorial tracking, read `references/story-state-ledgers.md`; use the existing canonical files as the single truth source.
 
-For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. For character-card field audits, player-review attribution, or external card imports, read `references/character-card-engineering.md`. For unusual capability, resistance, origin leverage, environmental pressure, luck, or advantage-budget questions, read `references/character-conditions-advantage.md`. For finale classification, ending design, mixed-success endings, sacrificial victories, pyrrhic outcomes, inherited-versus-story cost, or recovery analysis, read `references/ending-outcome-model.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, automatic canon mutation, or automated scraping pipeline.
+For pacing or reveal advice, read `references/pacing-reveal-and-extensions.md`. For import, recovery, snapshot, rollback, or run-trace questions, read `references/project-recovery-and-runs.md`. For character-card field audits, player-review attribution, or external card imports, read `references/character-card-engineering.md`. For unusual capability, resistance, origin leverage, environmental pressure, luck, or advantage-budget questions, read `references/character-conditions-advantage.md`. For finale classification, ending design, mixed-success endings, sacrificial victories, pyrrhic outcomes, inherited-versus-story cost, or recovery analysis, read `references/ending-outcome-model.md`. For clue placement, stealth foreshadowing, fair-play reveals, character-consistent mistakes, deus-ex-machina risk, competence collapse, induced error, coincidence, MVP/credit attribution, or climax-modality questions, read `references/earned-resolution-foreshadowing.md`. These are Markdown-only contracts and do not authorize a database, WebUI, runtime, parser, automatic canon mutation, or automated scraping pipeline.
 
-Output an idea routing table, plot-thread map, state checklist, chapter contract, card audit, misunderstanding ledger, reader-promise sheet, ending-outcome contract, character-condition profile, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
+Output an idea routing table, plot-thread map, state checklist, chapter contract, card audit, misunderstanding ledger, reader-promise sheet, ending-outcome contract, foreshadowing/resolution audit, character-condition profile, or export prompt. Do not design or implement the Cockpit WebUI unless the user separately asks for software work.
 
 ### Project Setup
 
@@ -116,6 +120,7 @@ Conditionally read:
 - `references/character-card-engineering.md` when the project is interactive, role-play oriented, imported from a character card, or intended for character-card export
 - `references/character-conditions-advantage.md` when capability versus resistance, family/resources/status, inherited obligations, starting environment, current environment, luck, or exceptional advantages materially constrain the premise
 - `references/contrast-and-dissonance.md` when a core character premise depends on gap appeal, public-private contrast, or words-actions conflict
+- `references/earned-resolution-foreshadowing.md` when the project premise already depends on a major approved mystery, hidden identity, twist, prophetic setup, long-term payoff object, or unusual climax contract
 
 For bounded Quick work, microfiction, or a sufficiently specified standalone short story, bypass the full Foundation intake, World Book, Character Cards, and Foundation approval. Treat the supplied prompt as the approved brief, ask only genuinely blocking questions, and keep invented facts local unless durable project constraints require a Project Brief.
 
@@ -138,6 +143,7 @@ Conditionally read:
 - `references/chapter-contract.md` for standard-complex or longform work
 - `references/story-architecture.md` for a complete short story, multi-chapter arc, major ending, or other structure-sensitive unit
 - `references/ending-outcome-model.md` for a finale, final arc, major arc ending, sacrificial resolution, bittersweet ending, pyrrhic-victory question, or any ending where personal, relationship, mission, world, cost, and recovery may diverge
+- `references/earned-resolution-foreshadowing.md` for twist/reveal architecture, fair-play mysteries, hidden setup, surprise rescues, mastermind contests, major character mistakes, outside intervention, or climaxes whose deciding mechanism may differ from the story's dominant contest
 - `references/opposition-design.md` when a person, group, institution, environment, relationship, or internal pattern persistently blocks the governing desire
 - `references/cinematic-scene-texture.md` when setting or worldbuilding matters
 - `references/technical-explanation-voice.md` when technical reasoning matters
@@ -163,9 +169,11 @@ Always read:
 - `references/voice-calibration.md`
 - `references/style-preservation.md`
 
-Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, card-engineering, conditions/advantage, trait-expression, social-cognitive, contrast, character-dynamics, character-memory-belief, misunderstanding, embodied-expression, reader-promise, ending-outcome, or coherence references only when those concerns are present.
+Conditionally read continuity, conflict, dialogue, scene-texture, technical, genius-strategy, card-engineering, conditions/advantage, trait-expression, social-cognitive, contrast, character-dynamics, character-memory-belief, misunderstanding, embodied-expression, reader-promise, ending-outcome, earned-resolution, or coherence references only when those concerns are present.
 
-Read `references/character-card-engineering.md` when drafting a greeting, alternate opening, card examples, user-role interaction, or export-ready character-card material. Read `references/character-conditions-advantage.md` when a scene depends on what the character can intrinsically do versus what their equipment, status, family, network, environment, resistance, or luck actually permits. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/contrast-and-dissonance.md` when spoken claims, actions, body, self-image, or private motive deliberately diverge. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/misunderstanding-tragedy.md` when characters act from divergent models or when a repair window opens or closes. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/reader-promise-and-tone.md` when the scene changes the expected emotional contract, intensity, respite, genre signal, or treatment of luck/power. Read `references/ending-outcome-model.md` during the final movement when the scene pays or preserves personal, relationship, mission, community, world, recovery, or future outcomes. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/resource/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
+Read `references/character-card-engineering.md` when drafting a greeting, alternate opening, card examples, user-role interaction, or export-ready character-card material. Read `references/character-conditions-advantage.md` when a scene depends on what the character can intrinsically do versus what their equipment, status, family, network, environment, resistance, or luck actually permits. Read `references/trait-expression-library.md` when a character needs a recognizable social or conversational signature without forcing every trait into every line. Read `references/social-cognitive-profile.md` when dialogue or action depends on uneven intelligence/social abilities, observation, social masks, deception, hidden agendas, or mask-drop behavior. Read `references/contrast-and-dissonance.md` when spoken claims, actions, body, self-image, or private motive deliberately diverge. Read `references/character-dynamics.md` when recent events or accumulated pressure should change appraisal, emotion, coping, or relationships. Read `references/character-memory-belief.md` when past events, secrets, character-specific knowledge, mistaken belief, memory, or Theory-of-Mind lookahead changes the response. Read `references/misunderstanding-tragedy.md` when characters act from divergent models or when a repair window opens or closes. Read `references/embodied-expression.md` when the body, gaze, breath, posture, gesture, spatial distance, or object handling carries subtext or consequence. Read `references/reader-promise-and-tone.md` when the scene changes the expected emotional contract, intensity, respite, genre signal, or treatment of luck/power. Read `references/ending-outcome-model.md` during the final movement when the scene pays or preserves personal, relationship, mission, community, world, recovery, or future outcomes. Read `references/earned-resolution-foreshadowing.md` when planting approved stealth clues, paying a promise, revealing hidden information, resolving a mystery, staging a major mistake, using outside intervention, or drafting a climax whose causal credit must remain legible. Read `references/narrative-coherence-gate.md` for complex long-running scenes at high risk of drift or knowledge/resource/spatial contradiction. Read `references/vocal-impact.md` when battle cries, invocations, screams, repeated names, broken speech, crowd responses, or other low-semantic vocal lines carry the moment.
+
+When planting stealth foreshadowing, do not announce the clue inside the prose. Give it a natural first-read function and keep the underlying canon/reveal inside the approved or explicitly delegated boundary.
 
 Draft after the mode's approval condition is satisfied, then run relevant post-draft checks.
 
@@ -200,6 +208,8 @@ When reviewing tonal bait-and-switch, unprocessed suffering, darkness without ch
 
 When reviewing a finale mislabeled because a couple did not form, the protagonist survived, many people died, the setting inherited an apocalypse, or an expensive victory is casually called `pyrrhic`, read `references/ending-outcome-model.md`. Separate outcome scope, story-incurred cost, recovery, and future possibility before judging the ending.
 
+When reviewing deus-ex-machina accusations, invisible culprits, retcon-as-foreshadowing, new powers at the climax, allies or enemies making convenient mistakes, a smart character suddenly ignoring obvious options, coincidence solving the problem, passive protagonists receiving unearned credit, or an established system that still feels like the wrong climax, read `references/earned-resolution-foreshadowing.md`.
+
 For long-form or dense multi-character review, read `references/narrative-coherence-gate.md`, especially around midpoint / act transitions, time skips, reunions, battles, major identity or secret reveals, changes in wealth/status/resources/access, and tonal turns.
 
 When the user asks for clarity, concision, plain language, conversational tone, naturalness, or a direct rewrite, also read `references/editorial-rewrite.md`.
@@ -232,6 +242,7 @@ Read:
 - `references/misunderstanding-tragedy.md` when an active belief divergence, repair window, or irreversible threshold changed
 - `references/reader-promise-and-tone.md` only when a durable tonal contract or unresolved consequence changed
 - `references/ending-outcome-model.md` when a major arc or finale permanently resolves personal, relationship, mission, world, cost, recovery, or future obligations
+- `references/earned-resolution-foreshadowing.md` when a tracked clue/promise is paid, reframed, exposed, retired, or becomes part of a major resolution
 
 Produce a Memory Patch Proposal. Do not silently modify canon.
 
@@ -296,6 +307,71 @@ reader knowledge
 ```
 
 A mistaken belief can be verified as a character fact without becoming world truth. Reader or narrator knowledge does not automatically belong to the cast.
+
+### Plant Foreshadowing Without Secret Canon
+
+Foreshadowing may be stealthy in prose. Canon creation may not be stealthy to the authoring workflow.
+
+Keep separate:
+
+```text
+underlying approved truth / reveal
+textual clue placement
+reader interpretation
+```
+
+Once the underlying reveal is approved or explicitly delegated within a bounded twist-authoring contract, SheepStory may place subtle clues without announcing each clue in the prose or outline. Give each clue a natural first-read function and an intended re-read function.
+
+Do not silently decide a murderer, betrayal, hidden identity, secret survival, world-is-a-simulation reveal, new superweapon, or equivalent major fact merely to create a surprise. When the user wants surprise from the authoring process itself, keep candidate twists sandboxed in the Authoring Laboratory until the active workflow authorizes promotion.
+
+A good reveal may hide the answer. It must not hide the existence of the rules required to produce the answer.
+
+### Earn Resolutions Without Competence Collapse
+
+Do not require characters to act optimally. Do require major mistakes and major victories to have causal ownership.
+
+Prefer crises caused by:
+
+- opponent competence
+- character-consistent values, flaws, attachments, or blind spots
+- incomplete information
+- opponent-exploited tendencies
+- established resource, legal, environmental, or timing constraints
+- chance that creates a new problem
+
+Prefer resolutions caused by:
+
+- protagonist or fellowship decisions
+- established skill, information, resources, relationships, mercy, or prior setup
+- induced opponent error
+- exploitation of an established opponent blind spot
+- persistence that actually buys time, information, trust, legitimacy, or another option
+- chance that opens a window the characters still have to use
+
+Flag `ally forgets basic procedure so the plot gets harder` and `villain forgets basic security so the hero can win` unless the mistake has a character or causal reason.
+
+For smart or previously capable characters, run a Best-Move Audit before accepting a disastrous choice: identify obvious alternatives, what the character considered, what belief/pressure closes those alternatives, and what changed from their earlier competence.
+
+After a major resolution, run the MVP test: identify who actually created the decisive option, who acted, and whether emotional credit matches causal credit.
+
+### Distinguish Established Resolution From Satisfying Resolution
+
+For a climax, separate:
+
+```text
+existence fairness
+causal fairness
+agency fairness
+competence fairness
+catharsis fit
+reader-promise fit
+```
+
+An outside army, remote weapon, law, institution, disease, environment, or other system can be fully established and still feel wrong if it bypasses the form of contest the story trained the reader to invest in.
+
+Track the promised climax modality — close combat, deduction, courtroom proof, political coalition, tactical maneuver, survival endurance, confession, heist, or another form — and the actual deciding mechanism. If they differ, make the displacement intentional, prepared, and thematically meaningful rather than a convenience.
+
+`Established` does not automatically mean `satisfying`.
 
 ### Separate Capability, Resistance, Origin, Environment, and Chance
 
@@ -447,6 +523,9 @@ Use sheep-story in standard mode.
 ## Ending Outcome Contract, if this is a final movement
 ...
 
+## Foreshadowing / Resolution Contract, if relevant
+...
+
 ## Character Conditions / Resources
 ...
 
@@ -486,7 +565,7 @@ Produce a discussion outline only. Do not draft prose until explicitly approved.
 10. Produce a Memory Patch Proposal when longform state changed.
 11. Present only unresolved risks that matter.
 
-For laboratory, advisory, card-audit, ending-analysis, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, configuration uncertainty, dissent, and authorization status; never promote sandbox output, public-card ratings, player comments, or analytical ending labels into canon by themselves.
+For laboratory, advisory, card-audit, ending-analysis, reveal-analysis, recovery, or extension work, stop at the declared contract boundary: preserve the source snapshot, context budget, provenance, configuration uncertainty, dissent, and authorization status; never promote sandbox output, public-card ratings, player comments, analytical ending labels, or candidate twists into canon by themselves.
 
 ## Reference Index
 
@@ -497,6 +576,7 @@ For laboratory, advisory, card-audit, ending-analysis, recovery, or extension wo
 - `references/story-foundation.md`
 - `references/story-architecture.md`
 - `references/ending-outcome-model.md`
+- `references/earned-resolution-foreshadowing.md`
 - `references/opposition-design.md`
 - `references/story-memory-ops.md`
 - `references/chapter-contract.md`

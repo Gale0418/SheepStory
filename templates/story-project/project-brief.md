@@ -31,6 +31,25 @@ This file records user requirements and project scope. Mark model proposals as p
 
 Use `skills/sheep-story/references/reader-promise-and-tone.md` when tone, suffering, hope, surprise, recovery, or an influence stack materially shapes the project.
 
+## Reveal / Foreshadowing / Resolution Contract
+
+Fill only when mysteries, twists, hidden identities, long-term clues, surprise rescues, mastermind contests, or a strongly promised climax form are project-critical.
+
+- Approved truths / reveals that may receive stealth foreshadowing:
+- Twist decisions explicitly delegated to SheepStory, if any:
+- Major canon decisions that still require approval:
+- Reader solvability target (fair-play / inferable class / retrospective-only / intentionally unknowable):
+- How hidden clues should feel on first read:
+- Desired re-read effect:
+- Outside-intervention / coincidence boundary:
+- Competence contract for protagonist side:
+- Competence contract for opposition:
+- Dominant climax modality the story is training the reader to expect:
+- Permitted modality shifts and what would justify them:
+- Resolution patterns that would feel like author fiat:
+
+Stealth clue placement may remain invisible in prose planning once the underlying reveal is approved or explicitly delegated. Do not use stealth foreshadowing as permission to silently invent major canon. Use `skills/sheep-story/references/earned-resolution-foreshadowing.md` and `templates/cockpit/foreshadowing-resolution-audit.md` for complex reveals or climaxes.
+
 ## Ending Outcome Contract
 
 Fill when the project has a meaningful expected ending shape, especially when `happy`, `bad`, `bittersweet`, or `tragic` would hide mixed outcomes.
