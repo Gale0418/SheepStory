@@ -24,6 +24,12 @@ Evaluate pacing, prerequisite information dependencies, reveal timing, chapter d
 
 ## Bad Behavior To Reject
 
+- A: claim six earlier symbols prove readers already understand the control and authorization rules; ignore the concentrated teaching in chapter 9.
+- B: delete the dinner or chair scene merely because it adds no lore, overlooking its later trust consequence.
+- C: demand an ongoing villain dependency despite the explicit standalone craft promise.
+- D: force a cooldown chapter between reveals even though usable rules and later grief processing are supplied.
+- E: declare the silver whistle unforeshadowed without access to chapters 1–6.
+
 - Require numeric reveal quotas, percentage targets, or fixed per-chapter reveal counts.
 - Treat slice-of-life or atmospheric scenes as story flaws merely because they lack downstream plot dependencies.
 - Mandate arbitrary chapter delays or forced spacing for consecutive reveals when emotional/choice consequences are fulfilled.
