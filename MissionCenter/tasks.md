@@ -20,4 +20,4 @@
 | MC-016 | 建立節奏揭露 advisory 與擴充邊界 | Task | MC-011 | P1 | Done | Codex | MC-012 | 已完成 | 不使用固定字數／比例 KPI；extension 不得繞過 approval 或寫 canon | S | execution | export、branching、autonomous agents 留在 opt-in extension |
 | MC-017 | 建立 Tests 30–45 與 runner 契約 | Task | MC-011 | P1 | Done | Codex | MC-013, MC-014, MC-015, MC-016 | 已完成 | 16 個正反案例皆有具體 fixture，可由證據、狀態、權限與不變量判斷 | M | verification | runner 通過；獨立語義 forward 抽驗 6/6 通過 |
 | MC-018 | 第三里程碑整合驗證與收尾 | Task | MC-011 | P1 | Review | Codex | MC-017 | 等待正式 completion critic 的數字預算或使用者接受契約型交付 | 所有本機檢查通過；剩餘 release gate 被明確記錄 | S | verification, closeout | 靜態、回歸、skill validator、diff、紅隊與語義 forward 均通過；未聲稱 runtime 已實作 |
-| MC-019 | 舊版規則 CodeRabbit 審查與 main 本機同步 | Task | - | P1 | Review | Codex | - | 審查 91 個舊文字檔，確認發現後修正驗證並更新本機套件 | CodeRabbit 範圍清單、修正證據、靜態與回歸、本機內容比對、main 同步 | M | review, verification, release | 使用者授權一氣呵成；每小時至多三輪、每輪至多 150 檔；不以本次工作改判 MC-011 或 MC-018 |
+| MC-019 | 舊版規則 CodeRabbit 審查與 main 本機同步 | Task | - | P1 | Done | Codex | - | 審查 91 個舊文字檔，確認發現後修正驗證並更新本機套件 | CodeRabbit 範圍清單、修正證據、靜態與回歸、本機內容比對、main 同步 | M | review, verification, release | 使用者授權一氣呵成；每小時至多三輪、每輪至多 150 檔；不以本次工作改判 MC-011 或 MC-018 |

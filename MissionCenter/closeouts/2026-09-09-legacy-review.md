@@ -24,7 +24,7 @@
 ## Unfinished
 
 - MC-011 與 MC-018 是先前里程碑的 Review，未被本次維護改判完成。
-- main 推送完成後由 MC-019 狀態與本次交付確認；舊任務不受影響。
+- 本次維護無未完成項目；舊任務不受影響。
 
 ## Risks
 
@@ -144,3 +144,9 @@ CodeRabbit 與有限模型抽驗不是完整敘事品質保證。每小時至多
 ## 最終複查
 
 第二輪（8 檔）提出 1 個 major：Scene Texture Plan 的觸發條件與品質清單不一致。核對 canonical SKILL 與 cinematic-scene-texture 後，將兩處統一為「設定、氣氛或世界觀對場景有實質影響時」，沒有把任何背景細節都升格成強制表單。第三輪僅審這 2 檔，CodeRabbit 回報 0 issues。所有成立問題已處理；本時段服務審查共三輪，未追加第四輪。
+
+## 最終保存與完成驗證
+
+- 功能與本機更新已以 8192d8c 推送 origin/main。
+- completion passport 記錄六個已修正發現，綁定 MC-019 的 canonical task digest 與本報告、smoke 證據；正式 Rust transition 驗證通過，MC-019 由 Review 轉為 Done。
+- Passport 位於 output/mission-center-passports/MC-019.json；本次不改判舊里程碑。

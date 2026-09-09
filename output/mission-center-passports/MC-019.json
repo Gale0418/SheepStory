@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "completion-passport",
+  "taskId": "MC-019",
+  "taskDigest": "915b08e611346e56923a413776d9d1c52920c97d9b11184504641a92d1943bcb",
+  "status": "current",
+  "verification": {
+    "result": "pass",
+    "evidenceRefs": [
+      "MissionCenter/closeouts/2026-09-09-legacy-review.md",
+      "MissionCenter/smoke-tests.md"
+    ]
+  },
+  "findings": [
+    {
+      "id": "test-coverage",
+      "severity": "Low",
+      "disposition": "fixed"
+    },
+    {
+      "id": "beat-progress",
+      "severity": "Low",
+      "disposition": "fixed"
+    },
+    {
+      "id": "snapshot-content-identity",
+      "severity": "High",
+      "disposition": "fixed"
+    },
+    {
+      "id": "editorial-validation",
+      "severity": "Low",
+      "disposition": "fixed"
+    },
+    {
+      "id": "export-contract",
+      "severity": "High",
+      "disposition": "fixed"
+    },
+    {
+      "id": "scene-texture-condition",
+      "severity": "High",
+      "disposition": "fixed"
+    }
+  ]
+}
