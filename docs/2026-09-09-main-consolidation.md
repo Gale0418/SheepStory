@@ -40,3 +40,7 @@ agent/repository-hygiene（f764109）的唯一增量是 17 行 .gitignore，原 
 新增文件保持 advisory，不設揭露密度 KPI、不自動刪章、不另建 promise lifecycle。既有 Test 41 保留。靜態 runner 僅驗證檔案與結構，不能證明敘事品質。
 
 驗證命令：`tests/run_static_checks.ps1`、`tests/run_regression_checks.ps1`、以 Python UTF-8 模式執行 skill-creator 的 quick_validate.py，以及 git diff --check。最終執行結果與發布狀態由本次交付回報；MissionCenter 原有歷史任務不因本次工作被改判完成。
+
+乾淨的 staged checkout 驗證發現兩個既有 regex 誤判：body-count 錯誤示例被當成正式主張，以及初讀／重讀跨行敘述無法匹配。修正測試後，乾淨副本的靜態與回歸檢查均通過，原本兩份 reference 的使用者修改未納入提交。UTF-8 skill validator 與 diff check 通過。
+
+CodeRabbit 以原 main `0a180d6` 為基準審查本次提交，涵蓋新模組與 fixtures，提出 1 個 minor：Test 55 尚未接入規格驗證。已將它接入通用 regression runner，檢查案例與必要區段；沒有放入不相干的 character-engine runner。這項檢查仍只是規格完整性，不冒充五案例的行為驗證。

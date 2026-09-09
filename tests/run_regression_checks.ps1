@@ -223,6 +223,7 @@ Test-BehaviorSpec 'tests/38-editorial-issues.md' @('issue', 'evidence', 'status'
 Test-BehaviorSpec 'tests/39-import-quarantine.md' @('import', 'preview', 'quarantine', 'provenance')
 Test-BehaviorSpec 'tests/40-run-trace-snapshot-rollback.md' @('run', 'snapshot', 'rollback', 'approval')
 Test-BehaviorSpec 'tests/41-pacing-reveal-advisory.md' @('pacing', 'reveal', 'reader')
+Test-BehaviorSpec 'tests/55-arc-information-architecture.md' @('arc-information-fixture\.md', 'A:', 'B:', 'C:', 'D:', 'E:')
 Test-BehaviorSpec 'tests/42-extension-boundary.md' @('extension|continue', 'branch|parent', 'capability|ceiling', 'canon|canonical|promotion|authorization', 'contradiction|stop condition')
 Test-BehaviorSpec 'tests/43-context-budget-parser-boundary.md' @('context|source|omitted|truncated', 'parser|structure|metadata', 'intent|consensus', 'canon|canonical|mutate', 'evidence|truth')
 Test-BehaviorSpec 'tests/44-multiple-truth.md' @('reading|interpretation', 'canon|canonical|story bible', 'evidence', 'dissent|consensus', 'ledger|branch|authorization')
