@@ -549,7 +549,7 @@ Fix: separate inherited background cost from cost incurred during the evaluated 
 
 ### Body-Count Tragedy Error
 
-`Many characters died, therefore tragedy.`
+`A large number of deaths alone is not enough to label the finale tragic.`
 
 Fix: ask whether the governing value or hope ultimately failed.
 

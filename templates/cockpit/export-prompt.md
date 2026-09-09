@@ -25,7 +25,13 @@ Required emotional change:
 Required conflict pressure:
 Required scene texture:
 Required technical reasoning:
+Required clue / reveal / setup, approval state, and answer-withholding constraints (if applicable):
+Relevant promise changes, preserving supplied IDs / states / evidence (or None):
+Forbidden shortcuts:
 End state:
+Ending contract (only for a story, arc, or major thread ending):
+
+Preserve all applicable obligations from the supplied chapter contract. These labels are a handoff aid, not a filter: retain any additional approved constraints, including Arc Information when material. Omit inapplicable fields rather than inventing requirements.
 
 ## Ideas To Use
 
@@ -55,12 +61,14 @@ For each beat, include:
 - Obstacle
 - Cost
 - Turn
-- Irreversible change
+- Meaningful advancement in action, information, relationship, emotion, risk, or state
 - Continuity effect
 
 Also include:
-- Scene Texture Plan
+- Scene Texture Plan when setting, atmosphere, or worldbuilding materially affects the scene
 - Technical Reasoning Beat if needed
 - Risks
 - Questions for me
+
+Use irreversible change at scene or chapter turns when appropriate, not in every beat. Ask only questions that block the requested outline.
 ```

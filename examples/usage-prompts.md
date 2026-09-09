@@ -17,7 +17,7 @@ Do not draft prose.
 Use sheep-story to plan the next chapter.
 First reconstruct current continuity state.
 Then produce a beat outline.
-Each beat must include desire, obstacle, cost, turn, and irreversible change.
+Each beat should advance action, information, relationship, emotion, risk, or state. Show desire, obstacle, cost, and turn where they serve the chapter; reserve irreversible change for scene or chapter turns when appropriate.
 Also include a Scene Texture Plan when the chapter needs atmosphere, setting, technology, military detail, or worldbuilding.
 If the chapter includes science, engineering, survival, or equipment constraints, include a Technical Reasoning Beat.
 Do not write prose until I explicitly approve the outline.

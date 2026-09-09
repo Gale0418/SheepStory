@@ -26,3 +26,7 @@
 | 2026-08-26 | MC-018 | Patch 空白檢查 | `git diff --check` | 無 whitespace error | exit 0；僅有未來 LF/CRLF 轉換提示 | 通過 | automated |
 | 2026-08-26 | MC-017 | 獨立語義 forward 抽驗 | Luna 依 Test 30、31、40、41、44、45 實際讀 fixture 並產生 SheepStory 回覆 | 假共識、sandbox 污染、回滾覆寫、KPI、重複真源與 parser 越界皆被拒絕 | 6/6 PASS；未寫入 canon | 通過 | manual |
 | 2026-08-26 | MC-018 | CodeRabbit fix-review | 第 1 輪審查 36 個規則／模板／測試檔，修正成立的 10 個 issues；第 2 輪重審 | 所有成立問題修正後不再產生 issues | 第 1 輪 10 issues；第 2 輪 `CodeRabbit raised 0 issues.` | 通過 | external-review |
+| 2026-09-09 | MC-019 | 舊規則修正的結構與回歸 | tests/run_static_checks.ps1；tests/run_regression_checks.ps1 | 保留既有行為、所有結構契約通過 | 兩個 runner 均 passed | 通過 | automated |
+| 2026-09-09 | MC-019 | 技能及本機套件 | Python UTF-8 quick_validate.py；validate_plugin.py；SHA256 比對 | 安裝內容等於本機來源 | 190 檔相符；版本 0.1.0+codex.20260909134058；兩個 validator 通過 | 通過 | automated |
+| 2026-09-09 | MC-019 | 缺內容識別與使用者後續修改 | 獨立 Luna 只讀規則與模板，評估 file-ID-only 與 H0/H1 情境 | 不覆蓋來源且不能偽造舊 hash | 兩例均停止 apply/rollback；匯出欄位風險已補明 | 通過 | manual |
+| 2026-09-09 | MC-019 | CodeRabbit 審查 | 隔離副本第一輪 91 檔、第二輪 8 檔、第三輪 2 檔 | 審查範圍真實且成立問題修正 | 5 issues → 1 issue → 0 issues；詳見 closeouts/2026-09-09-legacy-review.md | 通過 | external-review |

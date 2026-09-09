@@ -46,7 +46,7 @@ Use this checklist before calling the skill release-ready.
 - [ ] Opening-ending resonance remains optional rather than decorative compliance.
 - [ ] Each scene has pressure or dramatic function; individual beats advance at least one meaningful dimension without requiring universal irreversibility.
 - [ ] Peaceful scenes must have dramatic function.
-- [ ] Scenes with setting or worldbuilding include a scene texture plan.
+- [ ] Scenes where setting, atmosphere, or worldbuilding materially affects the scene include a scene texture plan; incidental location detail alone does not require one.
 - [ ] Worldbuilding enters through action, objects, friction, sensory detail, POV, or desire.
 - [ ] The skill rejects story-external encyclopedia lore dumps unless explicitly requested.
 - [ ] Technical explanation is caused by a scene problem.
@@ -74,10 +74,12 @@ Run the structural validation script in `tests/` to verify plugin integrity:
 
 ```text
 tests/run_static_checks.ps1
+tests/run_regression_checks.ps1
 ```
 
 
 The files in `tests/` are prompt-based acceptance specifications. Tests 01–08 are negative controls for known failure modes; tests 09–26 are positive controls that prevent safeguards from overcorrecting and cover approval, rewriting, Foundation, architecture, opposition, capability ceilings, promises, endings, and project-only constraints. Run each prompt through a fresh skill-enabled session and compare the response with its pass criteria.
+Tests 27–45 extend coverage to vocal expression, non-canon laboratories, state and provenance, recovery, pacing advice, extension limits, and deterministic-validator boundaries. Tests 46–55 cover character models, reader promises, ending outcomes, prose craft, earned resolution, and cross-chapter information architecture. Include the relevant later specifications in release validation; a static pass does not execute their behavioral prompts.
 Note: This script only performs static and structural validation (e.g., checking manifest formatting, file existence, and reference links). It does NOT perform live LLM behavior testing. LLM behavior tests are manual for now.
 
 ## Cockpit Smoke Test

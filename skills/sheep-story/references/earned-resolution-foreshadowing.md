@@ -75,6 +75,8 @@ first read: ordinary / ambiguous / incomplete
 second read: newly meaningful but still truthful
 ```
 
+The first read should feel ordinary or ambiguous; the second read should make the same clue newly meaningful without making it false.
+
 The ideal response is:
 
 > "I did not notice that." → "But it was there." → "Now it makes sense."

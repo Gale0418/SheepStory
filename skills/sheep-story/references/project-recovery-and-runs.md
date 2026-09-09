@@ -16,11 +16,11 @@ Each run manifest records run id, operator, intent, input snapshot, selected ref
 
 ## Snapshots and Rollback
 
-Before an authorized write, record a named snapshot of affected canonical files, their ownership, current hashes or stable identifiers, and the approval that permits the write. By default, an approved apply creates a new revision; it must never overwrite a file in place. Rollback restores only the affected files from a verified snapshot and records who requested it, why, what was restored, and what remains unresolved. It must not delete unrelated user work or rewrite history invisibly.
+Before an authorized write, record a named snapshot of affected canonical files, their ownership, a content hash for every owned file, and the approval that permits the write. An equivalent content-version value is allowed only if it detects content changes and can be compared consistently at snapshot and apply time; a path or stable file ID alone is insufficient. Record the identity method, including any normalization, and use the same method on both sides. By default, an approved apply creates a new revision; it must never overwrite a file in place. Rollback restores only the affected files from a verified snapshot and records who requested it, why, what was restored, and what remains unresolved. It must not delete unrelated user work or rewrite history invisibly.
 
 ### Post-Snapshot Current-Hash Divergence Guard
 
-Immediately before applying, re-read the owned target files and compare their current hashes with the hashes captured in the snapshot. If any post-snapshot current-hash diverges, ownership is unclear, or the same file has a subsequent user edit, stop without writing. Do not overwrite in place. Require a manual three-way review of snapshot, current file, and proposed revision; produce a new revision only after that review and renewed authorization.
+Immediately before applying, re-read the owned target files and compare their current hashes with the hashes captured in the snapshot (or compare the explicitly equivalent content-version values using the recorded method). If an identity is missing, unreadable, or incomparable, stop without writing and obtain a verifiable snapshot first. If any post-snapshot current-hash diverges, ownership is unclear, or the same file has a subsequent user edit, stop without writing. Do not overwrite in place. Require a manual three-way review of snapshot, current file, and proposed revision; produce a new revision only after that review and renewed authorization.
 
 ## Safety Boundary
 

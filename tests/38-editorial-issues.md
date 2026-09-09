@@ -19,7 +19,7 @@ Log continuity and editorial concerns as issues. Include evidence, affected clai
 - Resolve an issue by silently rewriting canon.
 - Treat issue severity as proof of a story truth.
 - Drop dissent or evidence after assigning an owner.
-- Mark an issue resolved without a resolution link, status validation, or validation.
+- Mark an issue resolved without a resolution link, validated status, or validation evidence.
 
 ## Pass Criteria
 
