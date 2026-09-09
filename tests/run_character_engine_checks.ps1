@@ -289,7 +289,7 @@ Reject-Match $contrast '(?i)"I hate you"\s*(always|=)\s*"I love you"' 'Contrast 
 Reject-Match $tone '(?i)imitate the style of' 'Tone guidance must not instruct imitation of named creators.'
 Reject-Match $conditions '(?i)extreme genius.*balancing flaw.*cannot cook' 'Conditions guidance must not endorse cosmetic fake balance.'
 Reject-Match $ending '(?i)did not end up together.*therefore.*bad ending' 'Ending guidance must not treat romance failure as automatic total failure.'
-Reject-Match $ending '(?i)many characters died.*therefore.*tragedy' 'Ending guidance must not treat body count as automatic tragedy.'
+Require-Match $ending '(?is)### Body-Count Tragedy Error\s+[^#]*Fix: ask whether the governing value or hope ultimately failed\.' 'Ending guidance must reject body-count classification and provide a value-based correction.'
 
 Test-BehaviorSpec 'tests/46-character-card-causal-audit.md' @(
     'goal lock|at all costs',

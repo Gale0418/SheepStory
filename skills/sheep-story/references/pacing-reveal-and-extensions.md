@@ -8,6 +8,8 @@ Reveal advice must distinguish what the reader knows, what a character knows, wh
 
 ## Export Boundary
 
+For multi-chapter scope, backloaded explanation, or questionable middle-unit contribution, read `arc-information-architecture.md`. Check prerequisite understanding, downstream function relative to the approved reader promise, deferred reveal debt, and reader/character processing space. Preserve justified slow burn, episodic experience, ambiguity, and deliberate density; missing context makes the finding partial. Reuse existing promise records rather than adding a lifecycle.
+
 An export carries a bounded source snapshot, selected context, advisory findings, unresolved risks, and requested destination. It must not silently include quarantined material, private notes, or unapproved alternates. Export is a prompt or document handoff, not a canon write.
 
 ## Branching Boundary

@@ -125,6 +125,8 @@ Require-Path 'skills/sheep-story/references/authoring-laboratory.md'
 Require-Path 'skills/sheep-story/references/story-state-ledgers.md'
 Require-Path 'skills/sheep-story/references/project-recovery-and-runs.md'
 Require-Path 'skills/sheep-story/references/pacing-reveal-and-extensions.md'
+Require-Path 'skills/sheep-story/references/arc-information-architecture.md'
+Require-Path 'tests/fixtures/arc-information-fixture.md'
 Require-Path 'templates/cockpit/authoring-lab.md'
 Require-Path 'templates/cockpit/story-state-ledger.md'
 Require-Path 'templates/cockpit/pacing-reveal-advisory.md'
@@ -138,7 +140,7 @@ Require-Path 'tests/run_regression_checks.ps1'
 Require-Path 'tests/run_character_engine_checks.ps1'
 Require-Path 'tests/run_prose_craft_checks.ps1'
 Require-Path 'tests/run_resolution_checks.ps1'
-foreach ($test in 9..54) {
+foreach ($test in 9..55) {
     $pattern = '{0:D2}-*.md' -f $test
     if (-not (Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'tests') -Filter $pattern -File)) {
         $failures.Add("Missing positive-control acceptance specification: $pattern")

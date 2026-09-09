@@ -32,6 +32,7 @@ Review these categories when relevant:
 | Character Agency | Do characters choose under pressure rather than get dragged by plot? |
 | Genius Logic | Is intelligence shown through observation, reasoning, tradeoff, cost, and opponent competence? |
 | Pacing | Do beats escalate, breathe, and pay consequences at the right density? |
+| Arc Information Architecture | For multi-chapter scope, are prerequisite understanding, structural contribution, deferred reveal debt, and reaction/consequence space supported by evidence? Use `arc-information-architecture.md`; no density quotas or automatic chapter deletion. |
 | Anti-AI Flavour | Does it avoid generic summary, symmetry, plastic phrasing, and over-explanation? |
 | Style Preservation | What roughness, rhythm, ambiguity, or voice must be preserved? |
 

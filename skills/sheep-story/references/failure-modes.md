@@ -1,5 +1,15 @@
 # Failure Modes
 
+## Cross-Chapter Information Risks
+
+Use `arc-information-architecture.md` for these advisory diagnoses with source locations and competing readings:
+
+- **Backloaded Exposition Avalanche**: earlier clues exist, but several interdependent explanations first become understandable near the payoff, leaving little room to apply them. Consider earlier demonstrations, staged consequences, or simplifying dependencies without revealing the answer prematurely.
+- **Disposable Middle**: removing units leaves the promised arc's later understanding, choices, relationships, or emotional effect unchanged. Check the approved reader promise before recommending consolidation; episodic experience, atmosphere, recovery, and slow-burn accumulation can be sufficient functions.
+- **Reaction Bandwidth Overload**: major revelations are replaced by more revelations before their interpretation or consequences can matter. Preserve deliberate shock or density when supported; do not prescribe fixed pauses.
+
+Incomplete arc context limits the finding; absence from loaded sources is not proof of absence from the story. These risks never authorize automatic canon changes.
+
 ## Purpose
 
 This file lists common ways AI fiction fails. Use it during outline review, draft review, and revision.

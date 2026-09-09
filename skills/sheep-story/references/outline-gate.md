@@ -122,6 +122,8 @@ Both plans are expression-layer constraints. They must not invent story facts, c
 
 ## Gate Decision
 
+For a multi-chapter outline, use `arc-information-architecture.md` before finalizing: identify which later understanding, choice, relationship, or intended experience depends on each substantial unit; trace major reveal prerequisites and deferred understanding. Report missing context as partial. Recommendations remain advisory and do not impose new approval gates or fixed reveal intervals.
+
 After creating an outline that requires approval, stop and ask:
 
 ```text

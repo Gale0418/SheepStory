@@ -59,7 +59,7 @@ Require-Match $docs 'resolution-causality-case-notes\.md' 'Documentation map mus
 
 Require-Match $resolution '(?i)Stealth Foreshadowing Is Allowed' 'Resolution guidance must define stealth foreshadowing.'
 Require-Match $resolution '(?i)approved truth boundary|approved canon' 'Stealth foreshadowing must preserve an approved canon boundary.'
-Require-Match $resolution '(?i)first read.*second read|first-read.*re-read' 'Foreshadowing guidance must distinguish first-read and re-read functions.'
+Require-Match $resolution '(?is)first read.*second read|first-read.*re-read' 'Foreshadowing guidance must distinguish first-read and re-read functions.'
 Require-Match $resolution '(?i)Retrospective Fairness Test' 'Resolution guidance must include retrospective fairness.'
 Require-Match $resolution '(?i)Setup Is Not the Same as Satisfaction' 'Resolution guidance must distinguish setup from satisfaction.'
 Require-Match $resolution '(?i)Existence Fairness' 'Resolution guidance must audit existence fairness.'

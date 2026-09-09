@@ -94,6 +94,7 @@ Choose the lightest safe mode and follow explicit user mode choices.
 - State evidence: `skills/sheep-story/references/story-state-ledgers.md` (claim provenance, events, existing promises, and editorial issues without duplicating canon).
 - Recovery and run contracts: `skills/sheep-story/references/project-recovery-and-runs.md`.
 - Pacing, reveal, and extension boundaries: `skills/sheep-story/references/pacing-reveal-and-extensions.md`.
+- Cross-chapter information flow, reveal debt, and structural contribution: `skills/sheep-story/references/arc-information-architecture.md`; use for arc planning or review, not every bounded scene.
 
 ## Approval
 

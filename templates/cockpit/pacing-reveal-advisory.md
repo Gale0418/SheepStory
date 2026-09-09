@@ -18,6 +18,13 @@ result-completeness: complete | partial
 | Signal | Evidence | Reader/character knowledge | Alternative reading |
 |---|---|---|---|
 
+## Optional Arc Information Topology Table (可選跨章資訊流拓撲表)
+
+(參照 `skills/sheep-story/references/arc-information-architecture.md`。只在跨章範圍需要時填寫，不設數字 KPI。)
+
+| Key Information / Reveal | Source Chapter / Setup Grounding | Epistemic Split (Reader vs Character) | Deferred prerequisite / payoff window | Downstream contribution or approved standalone experience |
+|---|---|---|---|---|
+
 ## Recommendation
 
 ## Risks and Unresolved Questions

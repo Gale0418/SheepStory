@@ -47,6 +47,8 @@ Use for multiple viewpoints, timelines, or fragments that accumulate toward a sh
 
 ## Architecture Contract
 
+For multi-chapter arcs, inspect `arc-information-architecture.md`: trace the necessary understanding behind major reveals, downstream chapter contributions, and space for consequences. Reuse the setup/payoff spine and existing promise IDs; this is a qualitative advisory, not a required reveal schedule.
+
 ```markdown
 # Architecture Contract
 

@@ -142,6 +142,7 @@ Conditionally read:
 - `references/continuity-check.md` for an existing story
 - `references/chapter-contract.md` for standard-complex or longform work
 - `references/story-architecture.md` for a complete short story, multi-chapter arc, major ending, or other structure-sensitive unit
+- `references/arc-information-architecture.md` when planning or reviewing a multi-chapter arc, backloaded exposition, reveal dependencies, or apparently disposable middle chapters; assess causal evidence without fixed pacing quotas
 - `references/ending-outcome-model.md` for a finale, final arc, major arc ending, sacrificial resolution, bittersweet ending, pyrrhic-victory question, or any ending where personal, relationship, mission, world, cost, and recovery may diverge
 - `references/earned-resolution-foreshadowing.md` for twist/reveal architecture, fair-play mysteries, hidden setup, surprise rescues, mastermind contests, major character mistakes, outside intervention, or climaxes whose deciding mechanism may differ from the story's dominant contest
 - `references/opposition-design.md` when a person, group, institution, environment, relationship, or internal pattern persistently blocks the governing desire

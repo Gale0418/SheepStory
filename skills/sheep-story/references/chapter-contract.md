@@ -52,6 +52,13 @@ What is this chapter's job in the story?
 - Setup:
 - Payoff target:
 
+## Arc Information (Only When Material)
+- Necessary understanding and source chapter / evidence:
+- Reader knowledge versus character knowledge:
+- Deferred prerequisite and intended payoff window:
+- Later choice, relationship, understanding, or experience depending on this unit:
+- Reaction / consequence space, or reason to preserve intentional density:
+
 ## Relevant Promise Changes (When Applicable)
 - Promise:
 - Starting status:
@@ -106,6 +113,8 @@ If the draft fails a required contract item, revise before polishing.
 Use the Ending Contract only for a story, arc, or major thread ending. The core dramatic question needs an answer, but minor mysteries may remain intentionally unresolved. Opening-ending resonance is optional and should change or deepen meaning rather than merely repeat an image or line.
 
 If the chapter does not touch a tracked promise, write `None` under Relevant Promise Changes. Do not invent a setup, reveal, or status change merely to fill the contract.
+
+Use `arc-information-architecture.md` only when the chapter's cross-chapter role matters. Arc Information may be omitted or marked None; standalone experiential value can satisfy the approved reader promise without downstream plot dependency.
 
 ## Principle
 
